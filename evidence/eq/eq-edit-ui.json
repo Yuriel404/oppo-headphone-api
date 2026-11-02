@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_0a91988305afd2ba7eea9bb7ae995c492b02ca92ec6a5e6759f8ddffd3666187",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Ab.M",
+    "method_name": "onClick",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Ab.M"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"name\":\"M\",\"field_count\":4,\"full_name\":\"Ab.M\",\"method_count\":2,\"raw_name\":\"Ab.M\",\"fields\":[{\"type\":\"int\",\"def_pos\":0,\"name\":\"f229a\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"f230b\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"f231c\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"f232p\"}],\"methods\":[{\"signature\":\"<init>(java.lang.Object, java.lang.Object, java.lang.Object, int): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V\"},{\"signature\":\"onClick(android.view.View): void\",\"def_pos\":0,\"name\":\"onClick\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/view/View;)V\"}],\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Ab.M",
+          "method_name": "onClick",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"Ab.M.onClick\",\"overload_index\":0,\"method_name\":\"onClick\",\"overload_count\":1,\"dex_descriptor\":\"(Landroid/view/View;)V\",\"class_name\":\"Ab.M\",\"mode\":\"java\",\"body\":\"    @Override // android.view.View.OnClickListener\\r\\n    public final void onClick(View view) {\\r\\n        Object obj = this.f232p;\\r\\n        Object obj2 = this.f231c;\\r\\n        Object obj3 = this.f230b;\\r\\n        switch (this.f229a) {\\r\\n            case 0:\\r\\n                Z z10 = (Z) obj3;\\r\\n                if (z10.C(\\\"importEqPreview confirm\\\") != null) {\\r\\n                    if (z10.E()) {\\r\\n                        androidx.fragment.app.f fVarC = z10.C(\\\"importEqInfo limit\\\");\\r\\n                        if (fVarC != null) {\\r\\n                            X1.a.H(fVarC, fVarC.getString(R.string.melody_ui_import_eq_limit));\\r\\n                        }\\r\\n                    } else {\\r\\n                        ta.c.e().i(1, z10.f278T, (ta.b) obj2);\\r\\n                        if (z10.E()) {\\r\\n                            z10.f265F.setVisible(false);\\r\\n                            if (z10.f307w0 && z10.D() == 1) {\\r\\n                                z10.f264E.m(z10.getString(R.string.melody_ui_import_eq));\\r\\n                            }\\r\\n                        }\\r\\n                    }\\r\\n                    ((androidx.appcompat.app.g) obj).dismiss();\\r\\n                    break;\\r\\n                }\\r\\n                break;\\r\\n            case 1:\\r\\n                com.coui.appcompat.card.c.b this$0 = (com.coui.appcompat.card.c.b) obj3;\\r\\n                kotlin.jvm.internal.i.f(this$0, \\\"this$0\\\");\\r\\n                com.coui.appcompat.card.c cVar = (com.coui.appcompat.card.c) obj;\\r\\n                int iIndexOf = this$0.f15585b.indexOf((com.coui.appcompat.card.c.a) obj2);\\r\\n                if (iIndexOf != cVar.f15580c) {\\r\\n                    cVar.f15580c = iIndexOf;\\r\\n                }\\r\\n                this$0.b(iIndexOf);\\r\\n                break;\\r\\n            case 2:\\r\\n                Y0 y10 = (Y0) obj3;\\r\\n                if (TextUtils.equals(y10.f21910F, y10.f21809e.getText())) {\\r\\n                    com.oplus.melody.app.discovery.A0 a3 = (com.oplus.melody.app.discovery.A0) obj2;\\r\\n                    String productId = a3.getProductId();\\r\\n                    String id2 = a3.getId();\\r\\n                    String softwareVersion = a3.getSoftwareVersion();\\r\\n                    Ra.B.j(AppConstant$FunctionType.FIRMWARE_UPGRADE_GUIDE.getFunType(), productId, id2, softwareVersion, \\\"4\\\" + ((String) obj));\\r\\n                    Wa.a.u().getClass();\\r\\n                    Ge.b<List<Te.l<String, Class<?>>>> bVar = Xa.h.h;\\r\\n                    Xa.h hVarA = Xa.h.a.a(\\\"/ui/firmware_upgrade\\\");\\r\\n                    hVarA.f(\\\"device_mac_info\\\", a3.getId());\\r\\n                    hVarA.f(\\\"product_id\\\", a3.getProductId());\\r\\n                    hVarA.f(\\\"device_name\\\", a3.getName());\\r\\n                    hVarA.f(\\\"product_color\\\", String.valueOf(a3.getProductColorId()));\\r\\n                    hVarA.f(\\\"auto_firmware_update\\\", Boolean.toString(true));\\r\\n                    DiscoveryDialogActivity discoveryDialogActivity = y10.f21806b;\\r\\n                    hVarA.b(discoveryDialogActivity);\\r\\n                    discoveryDialogActivity.R();\\r\\n                    break;\\r\\n                }\\r\\n                break;\\r\\n            case 3:\\r\\n                com.heytap.headset.component.mydevicelist.a aVar = (com.heytap.headset.component.mydevicelist.a) obj3;\\r\\n                f4.a aVar2 = (f4.a) obj2;\\r\\n                if (!aVar.f20002f) {\\r\\n                    com.heytap.headset.component.mydevicelist.a.c cVar2 = aVar.f20001e;\\r\\n                    if (cVar2 != null) {\\r\\n                        cVar2.a(aVar2);\\r\\n                    }\\r\\n                } else {\\r\\n                    String address = aVar2.getAddress();\\r\\n                    androidx.collection.b<String> bVar2 = aVar.f19999c;\\r\\n                    com.heytap.headset.component.mydevicelist.a.b bVar3 = (com.heytap.headset.component.mydevicelist.a.b) obj;\\r\\n                    if (He.r.t(bVar2, address)) {\\r\\n                        kotlin.jvm.internal.m.a(bVar2).remove(aVar2.getAddress());\\r\\n                        bVar3.f20008a.setState(0);\\r\\n                    } else if (!TextUtils.isEmpty(aVar2.getAddress())) {\\r\\n                        String address2 = aVar2.getAddress();\\r\\n                        kotlin.jvm.internal.i.c(address2);\\r\\n                        bVar2.add(address2);\\r\\n                        bVar3.f20008a.setState(2);\\r\\n                    }\\r\\n                    bVar3.f20008a.c();\\r\\n                }\\r\\n                break;\\r\\n            default:\\r\\n                vb.j.a aVar3 = (vb.j.a) obj3;\\r\\n                aVar3.f33531t.toggle();\\r\\n                ((vb.j) obj2).f33522c.invoke((vb.n) obj, Boolean.valueOf(aVar3.f33531t.isChecked()));\\r\\n                break;\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Ab.M",
+    "method": {
+      "name": "onClick",
+      "reported_signature": "onClick(android.view.View): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/view/View;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // android.view.View.OnClickListener\r\n    public final void onClick(View view) {\r\n        Object obj = this.f232p;\r\n        Object obj2 = this.f231c;\r\n        Object obj3 = this.f230b;\r\n        switch (this.f229a) {\r\n            case 0:\r\n                Z z10 = (Z) obj3;\r\n                if (z10.C(\"importEqPreview confirm\") != null) {\r\n                    if (z10.E()) {\r\n                        androidx.fragment.app.f fVarC = z10.C(\"importEqInfo limit\");\r\n                        if (fVarC != null) {\r\n                            X1.a.H(fVarC, fVarC.getString(R.string.melody_ui_import_eq_limit));\r\n                        }\r\n                    } else {\r\n                        ta.c.e().i(1, z10.f278T, (ta.b) obj2);\r\n                        if (z10.E()) {\r\n                            z10.f265F.setVisible(false);\r\n                            if (z10.f307w0 && z10.D() == 1) {\r\n                                z10.f264E.m(z10.getString(R.string.melody_ui_import_eq));\r\n                            }\r\n                        }\r\n                    }\r\n                    ((androidx.appcompat.app.g) obj).dismiss();\r\n                    break;\r\n                }\r\n                break;\r\n            case 1:\r\n                com.coui.appcompat.card.c.b this$0 = (com.coui.appcompat.card.c.b) obj3;\r\n                kotlin.jvm.internal.i.f(this$0, \"this$0\");\r\n                com.coui.appcompat.card.c cVar = (com.coui.appcompat.card.c) obj;\r\n                int iIndexOf = this$0.f15585b.indexOf((com.coui.appcompat.card.c.a) obj2);\r\n                if (iIndexOf != cVar.f15580c) {\r\n                    cVar.f15580c = iIndexOf;\r\n                }\r\n                this$0.b(iIndexOf);\r\n                break;\r\n            case 2:\r\n                Y0 y10 = (Y0) obj3;\r\n                if (TextUtils.equals(y10.f21910F, y10.f21809e.getText())) {\r\n                    com.oplus.melody.app.discovery.A0 a3 = (com.oplus.melody.app.discovery.A0) obj2;\r\n                    String productId = a3.getProductId();\r\n                    String id2 = a3.getId();\r\n                    String softwareVersion = a3.getSoftwareVersion();\r\n                    Ra.B.j(AppConstant$FunctionType.FIRMWARE_UPGRADE_GUIDE.getFunType(), productId, id2, softwareVersion, \"4\" + ((String) obj));\r\n                    Wa.a.u().getClass();\r\n                    Ge.b<List<Te.l<String, Class<?>>>> bVar = Xa.h.h;\r\n                    Xa.h hVarA = Xa.h.a.a(\"/ui/firmware_upgrade\");\r\n                    hVarA.f(\"device_mac_info\", a3.getId());\r\n                    hVarA.f(\"product_id\", a3.getProductId());\r\n                    hVarA.f(\"device_name\", a3.getName());\r\n                    hVarA.f(\"product_color\", String.valueOf(a3.getProductColorId()));\r\n                    hVarA.f(\"auto_firmware_update\", Boolean.toString(true));\r\n                    DiscoveryDialogActivity discoveryDialogActivity = y10.f21806b;\r\n                    hVarA.b(discoveryDialogActivity);\r\n                    discoveryDialogActivity.R();\r\n                    break;\r\n                }\r\n                break;\r\n            case 3:\r\n                com.heytap.headset.component.mydevicelist.a aVar = (com.heytap.headset.component.mydevicelist.a) obj3;\r\n                f4.a aVar2 = (f4.a) obj2;\r\n                if (!aVar.f20002f) {\r\n                    com.heytap.headset.component.mydevicelist.a.c cVar2 = aVar.f20001e;\r\n                    if (cVar2 != null) {\r\n                        cVar2.a(aVar2);\r\n                    }\r\n                } else {\r\n                    String address = aVar2.getAddress();\r\n                    androidx.collection.b<String> bVar2 = aVar.f19999c;\r\n                    com.heytap.headset.component.mydevicelist.a.b bVar3 = (com.heytap.headset.component.mydevicelist.a.b) obj;\r\n                    if (He.r.t(bVar2, address)) {\r\n                        kotlin.jvm.internal.m.a(bVar2).remove(aVar2.getAddress());\r\n                        bVar3.f20008a.setState(0);\r\n                    } else if (!TextUtils.isEmpty(aVar2.getAddress())) {\r\n                        String address2 = aVar2.getAddress();\r\n                        kotlin.jvm.internal.i.c(address2);\r\n                        bVar2.add(address2);\r\n                        bVar3.f20008a.setState(2);\r\n                    }\r\n                    bVar3.f20008a.c();\r\n                }\r\n                break;\r\n            default:\r\n                vb.j.a aVar3 = (vb.j.a) obj3;\r\n                aVar3.f33531t.toggle();\r\n                ((vb.j) obj2).f33522c.invoke((vb.n) obj, Boolean.valueOf(aVar3.f33531t.isChecked()));\r\n                break;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

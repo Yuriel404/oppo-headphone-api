@@ -1,0 +1,570 @@
+{
+  "dex": "classes3.dex",
+  "class": "com.oplus.melody.btsdk.protocol.commands.m",
+  "method": "v",
+  "descriptor": "(Ljava/lang/String;)V",
+  "method_index": 14921,
+  "code": 2346752,
+  "access": 17,
+  "instructions": [
+    {
+      "offset": 0,
+      "opcode": "0x12",
+      "const": 2,
+      "raw": [
+        "0x2012"
+      ]
+    },
+    {
+      "offset": 1,
+      "opcode": "0x54",
+      "field": {
+        "class": "com.oplus.melody.btsdk.protocol.commands.m",
+        "field": "c",
+        "type": "Ls8/c;"
+      },
+      "raw": [
+        "0x5154",
+        "0x1f1e"
+      ]
+    },
+    {
+      "offset": 3,
+      "opcode": "0x13",
+      "const": 268,
+      "raw": [
+        "0x213",
+        "0x10c"
+      ]
+    },
+    {
+      "offset": 5,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "s8.c",
+        "method": "c",
+        "descriptor": "(ILjava/lang/String;)Z",
+        "method_index": 41320
+      },
+      "raw": [
+        "0x306e",
+        "0xa168",
+        "0x621"
+      ]
+    },
+    {
+      "offset": 8,
+      "opcode": "0xa",
+      "raw": [
+        "0x10a"
+      ]
+    },
+    {
+      "offset": 9,
+      "opcode": "0x1a",
+      "string_index": 20886,
+      "string": "PollCommandManager",
+      "raw": [
+        "0x31a",
+        "0x5196"
+      ]
+    },
+    {
+      "offset": 11,
+      "opcode": "0x39",
+      "raw": [
+        "0x139",
+        "0xd"
+      ]
+    },
+    {
+      "offset": 13,
+      "opcode": "0x22",
+      "raw": [
+        "0x22",
+        "0x259"
+      ]
+    },
+    {
+      "offset": 15,
+      "opcode": "0x13",
+      "const": 22,
+      "raw": [
+        "0x113",
+        "0x16"
+      ]
+    },
+    {
+      "offset": 17,
+      "opcode": "0x70",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "F8.d",
+        "method": "<init>",
+        "descriptor": "(I)V",
+        "method_index": 2287
+      },
+      "raw": [
+        "0x2070",
+        "0x8ef",
+        "0x10"
+      ]
+    },
+    {
+      "offset": 20,
+      "opcode": "0x71",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "Q8.a",
+        "method": "d",
+        "descriptor": "(Ljava/lang/String;Ljava/util/function/Supplier;Ljava/lang/String;)V",
+        "method_index": 5454
+      },
+      "raw": [
+        "0x3071",
+        "0x154e",
+        "0x603"
+      ]
+    },
+    {
+      "offset": 23,
+      "opcode": "0xe",
+      "raw": [
+        "0xe"
+      ]
+    },
+    {
+      "offset": 24,
+      "opcode": "0x62",
+      "field": {
+        "class": "p8.a$a",
+        "field": "a",
+        "type": "Lp8/a;"
+      },
+      "raw": [
+        "0x162",
+        "0x5065"
+      ]
+    },
+    {
+      "offset": 26,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "p8.a",
+        "method": "a",
+        "descriptor": "(Ljava/lang/String;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;",
+        "method_index": 40609
+      },
+      "raw": [
+        "0x206e",
+        "0x9ea1",
+        "0x61"
+      ]
+    },
+    {
+      "offset": 29,
+      "opcode": "0xc",
+      "raw": [
+        "0x10c"
+      ]
+    },
+    {
+      "offset": 30,
+      "opcode": "0x38",
+      "raw": [
+        "0x138",
+        "0x11"
+      ]
+    },
+    {
+      "offset": 32,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "com.oplus.melody.common.data.WhitelistConfigDTO",
+        "method": "getFunction",
+        "descriptor": "()Lcom/oplus/melody/common/data/WhitelistConfigDTO$Function;",
+        "method_index": 16052
+      },
+      "raw": [
+        "0x106e",
+        "0x3eb4",
+        "0x1"
+      ]
+    },
+    {
+      "offset": 35,
+      "opcode": "0xc",
+      "raw": [
+        "0x40c"
+      ]
+    },
+    {
+      "offset": 36,
+      "opcode": "0x38",
+      "raw": [
+        "0x438",
+        "0xb"
+      ]
+    },
+    {
+      "offset": 38,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "com.oplus.melody.common.data.WhitelistConfigDTO",
+        "method": "getFunction",
+        "descriptor": "()Lcom/oplus/melody/common/data/WhitelistConfigDTO$Function;",
+        "method_index": 16052
+      },
+      "raw": [
+        "0x106e",
+        "0x3eb4",
+        "0x1"
+      ]
+    },
+    {
+      "offset": 41,
+      "opcode": "0xc",
+      "raw": [
+        "0x10c"
+      ]
+    },
+    {
+      "offset": 42,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "com.oplus.melody.common.data.WhitelistConfigDTO$Function",
+        "method": "getLongPressType",
+        "descriptor": "()I",
+        "method_index": 15671
+      },
+      "raw": [
+        "0x106e",
+        "0x3d37",
+        "0x1"
+      ]
+    },
+    {
+      "offset": 45,
+      "opcode": "0xa",
+      "raw": [
+        "0x10a"
+      ]
+    },
+    {
+      "offset": 46,
+      "opcode": "0x28",
+      "raw": [
+        "0x728"
+      ]
+    },
+    {
+      "offset": 47,
+      "opcode": "0x1a",
+      "string_index": 40912,
+      "string": "onRecvPacket config or funtion is null!",
+      "raw": [
+        "0x11a",
+        "0x9fd0"
+      ]
+    },
+    {
+      "offset": 49,
+      "opcode": "0x71",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "com.oplus.melody.common.util.y",
+        "method": "h",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+        "method_index": 16617
+      },
+      "raw": [
+        "0x2071",
+        "0x40e9",
+        "0x13"
+      ]
+    },
+    {
+      "offset": 52,
+      "opcode": "0x12",
+      "const": 0,
+      "raw": [
+        "0x112"
+      ]
+    },
+    {
+      "offset": 53,
+      "opcode": "0x54",
+      "field": {
+        "class": "com.oplus.melody.btsdk.protocol.commands.m",
+        "field": "a",
+        "type": "Lcom/oplus/melody/btsdk/multidevice/HeadsetCoreService;"
+      },
+      "raw": [
+        "0x5354",
+        "0x1f1c"
+      ]
+    },
+    {
+      "offset": 55,
+      "opcode": "0x54",
+      "field": {
+        "class": "com.oplus.melody.btsdk.protocol.commands.m",
+        "field": "b",
+        "type": "Lw8/b;"
+      },
+      "raw": [
+        "0x5454",
+        "0x1f1d"
+      ]
+    },
+    {
+      "offset": 57,
+      "opcode": "0x38",
+      "raw": [
+        "0x138",
+        "0x1b"
+      ]
+    },
+    {
+      "offset": 59,
+      "opcode": "0x23",
+      "raw": [
+        "0x123",
+        "0x2404"
+      ]
+    },
+    {
+      "offset": 61,
+      "opcode": "0x26",
+      "raw": [
+        "0x126",
+        "0x25",
+        "0x0"
+      ]
+    },
+    {
+      "offset": 64,
+      "opcode": "0x23",
+      "raw": [
+        "0x23",
+        "0x2404"
+      ]
+    },
+    {
+      "offset": 66,
+      "opcode": "0x26",
+      "raw": [
+        "0x26",
+        "0x26",
+        "0x0"
+      ]
+    },
+    {
+      "offset": 69,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "w8.b",
+        "method": "a",
+        "descriptor": "(Ljava/lang/String;I[B)Lw8/a;",
+        "method_index": 42048
+      },
+      "raw": [
+        "0x406e",
+        "0xa440",
+        "0x1264"
+      ]
+    },
+    {
+      "offset": 72,
+      "opcode": "0xc",
+      "raw": [
+        "0x10c"
+      ]
+    },
+    {
+      "offset": 73,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "w8.b",
+        "method": "a",
+        "descriptor": "(Ljava/lang/String;I[B)Lw8/a;",
+        "method_index": 42048
+      },
+      "raw": [
+        "0x406e",
+        "0xa440",
+        "0x264"
+      ]
+    },
+    {
+      "offset": 76,
+      "opcode": "0xc",
+      "raw": [
+        "0xc"
+      ]
+    },
+    {
+      "offset": 77,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "com.oplus.melody.btsdk.multidevice.HeadsetCoreService",
+        "method": "z0",
+        "descriptor": "(Ljava/lang/String;Lw8/a;)Z",
+        "method_index": 14763
+      },
+      "raw": [
+        "0x306e",
+        "0x39ab",
+        "0x163"
+      ]
+    },
+    {
+      "offset": 80,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "com.oplus.melody.btsdk.multidevice.HeadsetCoreService",
+        "method": "z0",
+        "descriptor": "(Ljava/lang/String;Lw8/a;)Z",
+        "method_index": 14763
+      },
+      "raw": [
+        "0x306e",
+        "0x39ab",
+        "0x63"
+      ]
+    },
+    {
+      "offset": 83,
+      "opcode": "0xe",
+      "raw": [
+        "0xe"
+      ]
+    },
+    {
+      "offset": 84,
+      "opcode": "0x23",
+      "raw": [
+        "0x23",
+        "0x2404"
+      ]
+    },
+    {
+      "offset": 86,
+      "opcode": "0x26",
+      "raw": [
+        "0x26",
+        "0x18",
+        "0x0"
+      ]
+    },
+    {
+      "offset": 89,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "w8.b",
+        "method": "a",
+        "descriptor": "(Ljava/lang/String;I[B)Lw8/a;",
+        "method_index": 42048
+      },
+      "raw": [
+        "0x406e",
+        "0xa440",
+        "0x264"
+      ]
+    },
+    {
+      "offset": 92,
+      "opcode": "0xc",
+      "raw": [
+        "0xc"
+      ]
+    },
+    {
+      "offset": 93,
+      "opcode": "0x6e",
+      "invoke": {
+        "dex": "classes3.dex",
+        "class": "com.oplus.melody.btsdk.multidevice.HeadsetCoreService",
+        "method": "z0",
+        "descriptor": "(Ljava/lang/String;Lw8/a;)Z",
+        "method_index": 14763
+      },
+      "raw": [
+        "0x306e",
+        "0x39ab",
+        "0x63"
+      ]
+    },
+    {
+      "offset": 96,
+      "opcode": "0xe",
+      "raw": [
+        "0xe"
+      ]
+    },
+    {
+      "offset": 97,
+      "opcode": "0x0",
+      "raw": [
+        "0x0"
+      ]
+    },
+    {
+      "offset": 98,
+      "opcode": "0x0",
+      "raw": [
+        "0x300",
+        "0x1",
+        "0x2",
+        "0x0",
+        "0x302"
+      ]
+    },
+    {
+      "offset": 103,
+      "opcode": "0x0",
+      "raw": [
+        "0x0"
+      ]
+    },
+    {
+      "offset": 104,
+      "opcode": "0x0",
+      "raw": [
+        "0x300",
+        "0x1",
+        "0x2",
+        "0x0",
+        "0x402"
+      ]
+    },
+    {
+      "offset": 109,
+      "opcode": "0x0",
+      "raw": [
+        "0x0"
+      ]
+    },
+    {
+      "offset": 110,
+      "opcode": "0x0",
+      "raw": [
+        "0x300",
+        "0x1",
+        "0x2",
+        "0x0",
+        "0x102"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_2f478a686bf9d2000fc1a15dc4bc411b29bc3736e6855dc7946227cb3ca6a3ae",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.ui.component.control.a",
+    "method_name": "y"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.ui.component.control.a"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"name\":\"a\",\"field_count\":46,\"full_name\":\"com.oplus.melody.ui.component.control.a\",\"method_count\":16,\"raw_name\":\"com.oplus.melody.ui.component.control.a\",\"fields\":[{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"H\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24809A\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24810B\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24811C\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24812D\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24813E\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24814F\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24815G\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24816I\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24817J\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24818K\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.CustomMultiSelectPreference\",\"def_pos\":0,\"name\":\"f24819L\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24820M\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24821N\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24822O\"},{\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\",\"def_pos\":0,\"name\":\"f24823P\"},{\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\",\"def_pos\":0,\"name\":\"f24824Q\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.MelodyTipsPreference\",\"def_pos\":0,\"name\":\"f24825R\"},{\"type\":\"com.coui.appcompat.preference.COUIJumpPreference\",\"def_pos\":0,\"name\":\"f24826S\"},{\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\",\"def_pos\":0,\"name\":\"f24827T\"},{\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\",\"def_pos\":0,\"name\":\"f24828U\"},{\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\",\"def_pos\":0,\"name\":\"f24829V\"},{\"type\":\"com.coui.appcompat.preference.COUIJumpPreference\",\"def_pos\":0,\"name\":\"f24830W\"},{\"type\":\"com.coui.appcompat.preference.COUIJumpPreference\",\"def_pos\":0,\"name\":\"f24831X\"},{\"type\":\"com.coui.appcompat.preference.COUIJumpPreference\",\"def_pos\":0,\"name\":\"f24832Y\"},{\"type\":\"com.coui.appcompat.preference.COUIJumpPreference\",\"def_pos\":0,\"name\":\"f24833Z\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f24834a0\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f24835b0\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f24836c0\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f24837d0\"},{\"type\":\"java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>\",\"def_pos\":0,\"name\":\"f24838e0\"},{\"type\":\"androidx.appcompat.app.g\",\"def_pos\":0,\"name\":\"f24839f0\"},{\"type\":\"androidx.appcompat.app.g\",\"def_pos\":0,\"name\":\"f24840g0\"},{\"type\":\"android.os.Handler\",\"def_pos\":0,\"name\":\"f24841h0\"},{\"type\":\"androidx.lifecycle.t\",\"def_pos\":0,\"name\":\"f24842i0\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f24843j0\"},{\"type\":\"java.lang.String[]\",\"def_pos\":0,\"name\":\"f24844k0\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f24845l0\"},{\"type\":\"android.graphics.drawable.Drawable\",\"def_pos\":0,\"name\":\"f24846m0\"},{\"type\":\"com.oplus.melody.common.data.WhitelistConfigDTO$Function\",\"def_pos\":0,\"name\":\"f24847n0\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f24848o0\"},{\"type\":\"Fa.i\",\"def_pos\":0,\"name\":\"f24849p0\"},{\"type\":\"com.oplus.melody.ui.component.control.EarControlViewModel\",\"def_pos\":0,\"name\":\"f24850w\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24851x\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24852y\"},{\"type\":\"com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference\",\"def_pos\":0,\"name\":\"f24853z\"}],\"methods\":[{\"signature\":\"<init>(): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"signature\":\"A(): void\",\"def_pos\":0,\"name\":\"A\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"B(): void\",\"def_pos\":0,\"name\":\"B\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"h(androidx.preference.Preference, java.lang.Object): boolean\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/Preference;Ljava/lang/Object;)Z\"},{\"signature\":\"k(androidx.preference.Preference): boolean\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/Preference;)Z\"},{\"signature\":\"n(androidx.preference.DialogPreference): void\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/DialogPreference;)V\"},{\"signature\":\"onActivityCreated(android.os.Bundle): void\",\"def_pos\":0,\"name\":\"onActivityCreated\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Bundle;)V\"},{\"signature\":\"onCreate(android.os.Bundle): void\",\"def_pos\":0,\"name\":\"onCreate\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Bundle;)V\"},{\"signature\":\"onDestroy(): void\",\"def_pos\":0,\"name\":\"onDestroy\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"onViewCreated(android.view.View, android.os.Bundle): void\",\"def_pos\":0,\"name\":\"onViewCreated\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/view/View;Landroid/os/Bundle;)V\"},{\"signature\":\"r(): void\",\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"v(androidx.preference.Preference, java.util.List<java.lang.String>): void\",\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/Preference;Ljava/util/List;)V\"},{\"signature\":\"w(): int\",\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"x(com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference, java.lang.String, java.lang.String): void\",\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/control/preference/ColorSingleSelectPreference;Ljava/lang/String;Ljava/lang/String;)V\"},{\"signature\":\"y(androidx.preference.Preference, java.lang.String): void\",\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/Preference;Ljava/lang/String;)V\"},{\"signature\":\"z(com.oplus.melody.ui.component.control.preference.ColorSingleSelectPreference, java.lang.String): void\",\"def_pos\":0,\"name\":\"z\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/control/preference/ColorSingleSelectPreference;Ljava/lang/String;)V\"}],\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.ui.component.control.a",
+          "method_name": "y",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.ui.component.control.a.y\",\"overload_index\":0,\"method_name\":\"y\",\"overload_count\":1,\"dex_descriptor\":\"(Landroidx/preference/Preference;Ljava/lang/String;)V\",\"class_name\":\"com.oplus.melody.ui.component.control.a\",\"mode\":\"java\",\"body\":\"    /* JADX WARN: Multi-variable type inference failed */\\r\\n    public final void y(Preference preference, String str) {\\r\\n        int i10;\\r\\n        b.a aVar;\\r\\n        d dVar = (d) preference;\\r\\n        b.a aVar2 = (b.a) dVar.getTag();\\r\\n        if (aVar2 == null) {\\r\\n            y.b(\\\"BaseEarControlFragment\\\", \\\"sendKeyFunctionInfo control is null\\\");\\r\\n            return;\\r\\n        }\\r\\n        int i11 = 2;\\r\\n        int iW = aVar2.getShowEar() == 1 ? 2 : w();\\r\\n        if (iW == 0) {\\r\\n            i11 = 1;\\r\\n        } else if (iW != 1) {\\r\\n            i11 = iW != 2 ? 255 : 4;\\r\\n        }\\r\\n        int iC = db.a.c(getContext(), str, this.f24836c0);\\r\\n        int action = aVar2.getAction();\\r\\n        Pattern pattern = com.oplus.melody.model.repository.earphone.Q.f24312a;\\r\\n        int action2 = 0;\\r\\n        switch (action) {\\r\\n            case 1:\\r\\n            case 2:\\r\\n            case 3:\\r\\n            case 4:\\r\\n            case 5:\\r\\n            case 6:\\r\\n            case 7:\\r\\n            case 8:\\r\\n            case 9:\\r\\n            case 10:\\r\\n            case 11:\\r\\n            case 12:\\r\\n            case 13:\\r\\n            case 14:\\r\\n            case 15:\\r\\n            case 16:\\r\\n            case 17:\\r\\n            case 18:\\r\\n            case 19:\\r\\n            case 20:\\r\\n            case 22:\\r\\n            case 23:\\r\\n            case 25:\\r\\n            case 26:\\r\\n            case 27:\\r\\n                i10 = 1;\\r\\n                break;\\r\\n            case 21:\\r\\n            case 24:\\r\\n            default:\\r\\n                i10 = 0;\\r\\n                break;\\r\\n            case 28:\\r\\n            case 29:\\r\\n            case 30:\\r\\n            case 31:\\r\\n            case 32:\\r\\n            case 33:\\r\\n            case 34:\\r\\n            case 35:\\r\\n            case 36:\\r\\n            case 37:\\r\\n                i10 = 6;\\r\\n                break;\\r\\n        }\\r\\n        KeyFunctionInfoDTO keyFunctionInfoDTO = new KeyFunctionInfoDTO(i10 != 6 ? i11 : 4, i10, com.oplus.melody.model.repository.earphone.Q.d(aVar2.getAction()), iC);\\r\\n        ArrayList arrayList = new ArrayList(1);\\r\\n        arrayList.add(keyFunctionInfoDTO);\\r\\n        y.c(\\\"BaseEarControlFragment\\\", new h(keyFunctionInfoDTO, 17));\\r\\n        EarControlViewModel earControlViewModel = this.f24850w;\\r\\n        Context context = getContext();\\r\\n        String str2 = this.f24835b0;\\r\\n        earControlViewModel.getClass();\\r\\n        com.oplus.melody.model.repository.earphone.b.G().x0(str2, context, arrayList, 1025);\\r\\n        Context context2 = getContext();\\r\\n        String str3 = this.f24836c0;\\r\\n        int iA = (context2 == null || TextUtils.isEmpty(str)) ? -1 : db.a.a(db.a.c(context2, str, str3), str3);\\r\\n        String str4 = this.f24834a0;\\r\\n        String str5 = this.f24835b0;\\r\\n        String strX = com.oplus.melody.model.repository.earphone.Q.x(this.f24850w.f(str5));\\r\\n        int iW2 = w() + 1;\\r\\n        if ((preference instanceof d) && (aVar = (b.a) dVar.getTag()) != null) {\\r\\n            action2 = aVar.getAction();\\r\\n        }\\r\\n        B.k(str4, str5, iW2, action2, strX, Integer.toString(iA));\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.ui.component.control.a",
+    "method": {
+      "name": "y",
+      "reported_signature": "y(androidx.preference.Preference, java.lang.String): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroidx/preference/Preference;Ljava/lang/String;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Multi-variable type inference failed */\r\n    public final void y(Preference preference, String str) {\r\n        int i10;\r\n        b.a aVar;\r\n        d dVar = (d) preference;\r\n        b.a aVar2 = (b.a) dVar.getTag();\r\n        if (aVar2 == null) {\r\n            y.b(\"BaseEarControlFragment\", \"sendKeyFunctionInfo control is null\");\r\n            return;\r\n        }\r\n        int i11 = 2;\r\n        int iW = aVar2.getShowEar() == 1 ? 2 : w();\r\n        if (iW == 0) {\r\n            i11 = 1;\r\n        } else if (iW != 1) {\r\n            i11 = iW != 2 ? 255 : 4;\r\n        }\r\n        int iC = db.a.c(getContext(), str, this.f24836c0);\r\n        int action = aVar2.getAction();\r\n        Pattern pattern = com.oplus.melody.model.repository.earphone.Q.f24312a;\r\n        int action2 = 0;\r\n        switch (action) {\r\n            case 1:\r\n            case 2:\r\n            case 3:\r\n            case 4:\r\n            case 5:\r\n            case 6:\r\n            case 7:\r\n            case 8:\r\n            case 9:\r\n            case 10:\r\n            case 11:\r\n            case 12:\r\n            case 13:\r\n            case 14:\r\n            case 15:\r\n            case 16:\r\n            case 17:\r\n            case 18:\r\n            case 19:\r\n            case 20:\r\n            case 22:\r\n            case 23:\r\n            case 25:\r\n            case 26:\r\n            case 27:\r\n                i10 = 1;\r\n                break;\r\n            case 21:\r\n            case 24:\r\n            default:\r\n                i10 = 0;\r\n                break;\r\n            case 28:\r\n            case 29:\r\n            case 30:\r\n            case 31:\r\n            case 32:\r\n            case 33:\r\n            case 34:\r\n            case 35:\r\n            case 36:\r\n            case 37:\r\n                i10 = 6;\r\n                break;\r\n        }\r\n        KeyFunctionInfoDTO keyFunctionInfoDTO = new KeyFunctionInfoDTO(i10 != 6 ? i11 : 4, i10, com.oplus.melody.model.repository.earphone.Q.d(aVar2.getAction()), iC);\r\n        ArrayList arrayList = new ArrayList(1);\r\n        arrayList.add(keyFunctionInfoDTO);\r\n        y.c(\"BaseEarControlFragment\", new h(keyFunctionInfoDTO, 17));\r\n        EarControlViewModel earControlViewModel = this.f24850w;\r\n        Context context = getContext();\r\n        String str2 = this.f24835b0;\r\n        earControlViewModel.getClass();\r\n        com.oplus.melody.model.repository.earphone.b.G().x0(str2, context, arrayList, 1025);\r\n        Context context2 = getContext();\r\n        String str3 = this.f24836c0;\r\n        int iA = (context2 == null || TextUtils.isEmpty(str)) ? -1 : db.a.a(db.a.c(context2, str, str3), str3);\r\n        String str4 = this.f24834a0;\r\n        String str5 = this.f24835b0;\r\n        String strX = com.oplus.melody.model.repository.earphone.Q.x(this.f24850w.f(str5));\r\n        int iW2 = w() + 1;\r\n        if ((preference instanceof d) && (aVar = (b.a) dVar.getTag()) != null) {\r\n            action2 = aVar.getAction();\r\n        }\r\n        B.k(str4, str5, iW2, action2, strX, Integer.toString(iA));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

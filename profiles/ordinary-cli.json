@@ -1,0 +1,172 @@
+{
+  "id": "068C10",
+  "name": "OPPO Enco Free4",
+  "brand": "oppo",
+  "type": "T1",
+  "supportSpp": true,
+  "uuid": "0000079A-D102-11E1-9B23-00025B00A5A5",
+  "minVersion": 15003002,
+  "function": {
+    "support3DModel": 1,
+    "batteryInfo": 1,
+    "equalizer": 4,
+    "fitDetection": 1,
+    "autoFirmwareUpdate": 1,
+    "hearingEnhancement": 1,
+    "hearingJudgeDb": 1,
+    "earScan": 1,
+    "fastDiscovery": 1,
+    "multiDevicesConnect": 1,
+    "highToneQuality": 1,
+    "headSetSoundRecord": 0,
+    "gameMode": 1,
+    "controlGuideSupport": 1,
+    "controlAutoVolumeSupport": 1,
+    "related": 1,
+    "customEqualizer": 1,
+    "spatialTypes": [
+      0,
+      1
+    ],
+    "spatialDescriptionType": 2,
+    "wearDetection": 1,
+    "customDress": 1,
+    "heyFindDevice": 1,
+    "spatialHiResMutex": 1,
+    "dialogTags": [
+      2
+    ],
+    "strongNoiseReductionRealTime": 1,
+    "promptVolume": 1,
+    "functionIntroductionGuide": 1,
+    "cleanGuide": 1,
+    "feedback": 1,
+    "earphoneIdentity": 1,
+    "control": [
+      {
+        "ear": 2,
+        "support": 516,
+        "showEar": 0,
+        "action": 1
+      },
+      {
+        "ear": 2,
+        "support": 8805,
+        "showEar": 0,
+        "action": 2
+      },
+      {
+        "ear": 2,
+        "support": 8801,
+        "showEar": 0,
+        "action": 3
+      },
+      {
+        "ear": 2,
+        "showEar": 0,
+        "action": 27,
+        "minSelectCount": 1
+      },
+      {
+        "ear": 2,
+        "support": 3584,
+        "showEar": 0,
+        "action": 5
+      }
+    ],
+    "callControl": [
+      {
+        "ear": 2,
+        "support": 524800,
+        "showEar": 0,
+        "defaultFunction": 524288,
+        "action": 29
+      },
+      {
+        "ear": 2,
+        "support": 131584,
+        "showEar": 0,
+        "action": 30
+      },
+      {
+        "ear": 2,
+        "support": 262656,
+        "showEar": 0,
+        "defaultFunction": 262144,
+        "action": 31
+      }
+    ],
+    "noiseReductionUIVersion": 2,
+    "noiseReductionMode": [
+      {
+        "protocolIndex": 1,
+        "modeType": 5,
+        "childrenMode": [
+          {
+            "protocolIndex": 4,
+            "modeType": 4
+          },
+          {
+            "protocolIndex": 5,
+            "modeType": 8
+          },
+          {
+            "protocolIndex": 6,
+            "modeType": 3
+          },
+          {
+            "protocolIndex": 7,
+            "modeType": 7
+          }
+        ]
+      },
+      {
+        "protocolIndex": 11,
+        "modeType": 10
+      },
+      {
+        "protocolIndex": 2,
+        "modeType": 2,
+        "childrenMode": [
+          {
+            "protocolIndex": 8,
+            "modeType": 2
+          }
+        ]
+      },
+      {
+        "protocolIndex": 0,
+        "modeType": 1,
+        "childrenMode": [
+          {
+            "protocolIndex": 3,
+            "modeType": 1
+          }
+        ]
+      }
+    ],
+    "equalizerMode": [
+      {
+        "protocolIndex": 0,
+        "modeType": 26
+      },
+      {
+        "protocolIndex": 1,
+        "modeType": 28
+      },
+      {
+        "protocolIndex": 2,
+        "modeType": 29
+      }
+    ],
+    "equalizerModeCompat": [
+      {
+        "protocolIndex": 7,
+        "modeType": 34,
+        "minFirmVersion": 118,
+        "order": 4,
+        "tag": 0
+      }
+    ]
+  }
+}

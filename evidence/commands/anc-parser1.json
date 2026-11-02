@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_5e55aa9ccd96dd2be5fdbb777e16379ad75f12163921b2e90dc1e5d959fbf9b2",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO",
+    "method_name": "<init>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"type\":\"android.os.Parcelable$Creator<com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO>\",\"def_pos\":0},{\"name\":\"Companion\",\"type\":\"com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO$a\",\"def_pos\":0},{\"name\":\"TAG\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"action\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"type\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"value\",\"type\":\"int\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"<clinit>(): void\",\"def_pos\":0,\"name\":\"<clinit>\"},{\"is_constructor\":true,\"dex_descriptor\":\"(III)V\",\"signature\":\"<init>(int, int, int): void\",\"def_pos\":0,\"name\":\"<init>\"},{\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/api/data/NoiseReductionInfo;)V\",\"signature\":\"<init>(com.oplus.melody.btsdk.api.data.NoiseReductionInfo): void\",\"def_pos\":0,\"name\":\"<init>\"},{\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component1(): int\",\"def_pos\":0,\"name\":\"component1\"},{\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component2(): int\",\"def_pos\":0,\"name\":\"component2\"},{\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component3(): int\",\"def_pos\":0,\"name\":\"component3\"},{\"is_constructor\":false,\"dex_descriptor\":\"(III)Lcom/oplus/melody/model/repository/earphone/NoiseReductionInfoDTO;\",\"signature\":\"copy(int, int, int): com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO\",\"def_pos\":0,\"name\":\"copy\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/model/repository/earphone/NoiseReductionInfoDTO;IIIILjava/lang/Object;)Lcom/oplus/melody/model/repository/earphone/NoiseReductionInfoDTO;\",\"signature\":\"copy$default(com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO, int, int, int, int, java.lang.Object): com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO\",\"def_pos\":0,\"name\":\"copy$default\"},{\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"describeContents(): int\",\"def_pos\":0,\"name\":\"describeContents\"},{\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getAction(): int\",\"def_pos\":0,\"name\":\"getAction\"},{\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getType(): int\",\"def_pos\":0,\"name\":\"getType\"},{\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getValue(): int\",\"def_pos\":0,\"name\":\"getValue\"},{\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"isNoiseReductionModeInfo(): boolean\",\"def_pos\":0,\"name\":\"isNoiseReductionModeInfo\"},{\"is_constructor\":false,\"dex_descriptor\":\"(I)Z\",\"signature\":\"isSupportNoiseReductionModeValue(int): boolean\",\"def_pos\":0,\"name\":\"isSupportNoiseReductionModeValue\"},{\"is_constructor\":false,\"dex_descriptor\":\"(IZ)V\",\"signature\":\"setSupportNoiseReductionModeValue(int, boolean): void\",\"def_pos\":0,\"name\":\"setSupportNoiseReductionModeValue\"},{\"is_constructor\":false,\"dex_descriptor\":\"(I)V\",\"signature\":\"setValue(int): void\",\"def_pos\":0,\"name\":\"setValue\"},{\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/oplus/melody/btsdk/api/data/NoiseReductionInfo;\",\"signature\":\"toNoiseReductionInfo(): com.oplus.melody.btsdk.api.data.NoiseReductionInfo\",\"def_pos\":0,\"name\":\"toNoiseReductionInfo\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Parcel;I)V\",\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"def_pos\":0,\"name\":\"writeToParcel\"}],\"inner_classes\":[\"com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO.a\",\"com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO.b\"],\"inner_class_count\":2,\"name\":\"NoiseReductionInfoDTO\",\"field_count\":6,\"full_name\":\"com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO\",\"method_count\":18,\"raw_name\":\"com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"class_name\":\"com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO\",\"mode\":\"java\",\"body\":\"    public NoiseReductionInfoDTO(int i10, int i11, int i12) {\\r\\n        this.action = i10;\\r\\n        this.type = i11;\\r\\n        this.value = i12;\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO.<init>\",\"overload_index\":0,\"method_name\":\"<init>\",\"overload_count\":2,\"dex_descriptor\":\"(III)V\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(int, int, int): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "(III)V"
+    },
+    "overload_count": 2,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public NoiseReductionInfoDTO(int i10, int i11, int i12) {\r\n        this.action = i10;\r\n        this.type = i11;\r\n        this.value = i12;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

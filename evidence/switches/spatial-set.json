@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_08fb927b17d10e1fa49ea3d7e8165b963bdc927e236711d065558a9358712d10",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.ui.component.detail.spatialaudio.HeadSetSpatialAudioVM",
+    "method_name": "h",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.ui.component.detail.spatialaudio.HeadSetSpatialAudioVM"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"com.oplus.melody.ui.component.detail.spatialaudio.HeadSetSpatialAudioVM\",\"method_count\":4,\"raw_name\":\"com.oplus.melody.ui.component.detail.spatialaudio.HeadSetSpatialAudioVM\",\"fields\":[],\"methods\":[{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"()V\",\"signature\":\"<init>(): void\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Landroidx/lifecycle/u;\",\"signature\":\"e(java.lang.String): androidx.lifecycle.u\"},{\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;)Ljava/util/concurrent/CompletableFuture;\",\"signature\":\"h(int, java.lang.String): java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>\"},{\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"i(): void\"}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"HeadSetSpatialAudioVM\",\"field_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.ui.component.detail.spatialaudio.HeadSetSpatialAudioVM",
+          "method_name": "h",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.ui.component.detail.spatialaudio.HeadSetSpatialAudioVM.h\",\"overload_index\":0,\"method_name\":\"h\",\"overload_count\":1,\"dex_descriptor\":\"(ILjava/lang/String;)Ljava/util/concurrent/CompletableFuture;\",\"class_name\":\"com.oplus.melody.ui.component.detail.spatialaudio.HeadSetSpatialAudioVM\",\"mode\":\"java\",\"body\":\"    @Override // com.oplus.melody.ui.component.detail.spatialaudio.BaseSpatialAudioVM\\r\\n    public final CompletableFuture<SetCommandStateDTO> h(int i10, String address) {\\r\\n        CompletableFuture completableFutureThenApply;\\r\\n        CompletableFuture completableFutureThenApply2;\\r\\n        i.f(address, \\\"address\\\");\\r\\n        y.c(\\\"HeadSetSpatialAudioVM\\\", new o(i10, 18));\\r\\n        Integer numD = this.f25773d.d();\\r\\n        if (i10 == 0) {\\r\\n            f.k(this.f25773d, 0);\\r\\n            String str = this.f25771b;\\r\\n            if (str == null) {\\r\\n                i.j(\\\"mAddress\\\");\\r\\n                throw null;\\r\\n            }\\r\\n            CompletableFuture completableFutureH0 = com.oplus.melody.model.repository.earphone.b.G().H0(27, false, str);\\r\\n            if (completableFutureH0 != null && (completableFutureThenApply = completableFutureH0.thenApply((Function) new db.b(new g(19, this, numD), 6))) != null) {\\r\\n                return completableFutureThenApply.exceptionally((Function) new F(4, this, numD));\\r\\n            }\\r\\n        } else if (i10 == 1) {\\r\\n            f.k(this.f25773d, 1);\\r\\n            String str2 = this.f25771b;\\r\\n            if (str2 == null) {\\r\\n                i.j(\\\"mAddress\\\");\\r\\n                throw null;\\r\\n            }\\r\\n            CompletableFuture completableFutureH1 = com.oplus.melody.model.repository.earphone.b.G().H0(27, true, str2);\\r\\n            if (completableFutureH1 != null && (completableFutureThenApply2 = completableFutureH1.thenApply((Function) new k0(new U8.c(14, this, numD), 28))) != null) {\\r\\n                return completableFutureThenApply2.exceptionally((Function) new W(5, this, numD));\\r\\n            }\\r\\n        }\\r\\n        return null;\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.ui.component.detail.spatialaudio.HeadSetSpatialAudioVM",
+    "method": {
+      "name": "h",
+      "reported_signature": "h(int, java.lang.String): java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(ILjava/lang/String;)Ljava/util/concurrent/CompletableFuture;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.oplus.melody.ui.component.detail.spatialaudio.BaseSpatialAudioVM\r\n    public final CompletableFuture<SetCommandStateDTO> h(int i10, String address) {\r\n        CompletableFuture completableFutureThenApply;\r\n        CompletableFuture completableFutureThenApply2;\r\n        i.f(address, \"address\");\r\n        y.c(\"HeadSetSpatialAudioVM\", new o(i10, 18));\r\n        Integer numD = this.f25773d.d();\r\n        if (i10 == 0) {\r\n            f.k(this.f25773d, 0);\r\n            String str = this.f25771b;\r\n            if (str == null) {\r\n                i.j(\"mAddress\");\r\n                throw null;\r\n            }\r\n            CompletableFuture completableFutureH0 = com.oplus.melody.model.repository.earphone.b.G().H0(27, false, str);\r\n            if (completableFutureH0 != null && (completableFutureThenApply = completableFutureH0.thenApply((Function) new db.b(new g(19, this, numD), 6))) != null) {\r\n                return completableFutureThenApply.exceptionally((Function) new F(4, this, numD));\r\n            }\r\n        } else if (i10 == 1) {\r\n            f.k(this.f25773d, 1);\r\n            String str2 = this.f25771b;\r\n            if (str2 == null) {\r\n                i.j(\"mAddress\");\r\n                throw null;\r\n            }\r\n            CompletableFuture completableFutureH1 = com.oplus.melody.model.repository.earphone.b.G().H0(27, true, str2);\r\n            if (completableFutureH1 != null && (completableFutureThenApply2 = completableFutureH1.thenApply((Function) new k0(new U8.c(14, this, numD), 28))) != null) {\r\n                return completableFutureThenApply2.exceptionally((Function) new W(5, this, numD));\r\n            }\r\n        }\r\n        return null;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

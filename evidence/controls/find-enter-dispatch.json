@@ -1,0 +1,147 @@
+{
+  "evidence_id": "ev_e6a2ff861033965e899886d4e15f0546059dc6cf8c7b7ed1b9661e9eeaeaa48c",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Fc.d$f",
+    "method_name": "O"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":5728,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Fc.d$f"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[\"Fc.d.f.a\"],\"methods\":[{\"dex_descriptor\":\"(LFc/d;)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(Fc.d): void\"},{\"dex_descriptor\":\"(Landroid/os/Message;)Z\",\"is_constructor\":false,\"name\":\"J\",\"def_pos\":0,\"signature\":\"J(android.os.Message): boolean\"},{\"dex_descriptor\":\"(ZZ)V\",\"is_constructor\":false,\"name\":\"N\",\"def_pos\":0,\"signature\":\"N(boolean, boolean): void\"},{\"dex_descriptor\":\"(Z)V\",\"is_constructor\":false,\"name\":\"O\",\"def_pos\":0,\"signature\":\"O(boolean): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(): void\"},{\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(): java.lang.String\"}],\"fields\":[{\"name\":\"f2045i\",\"def_pos\":0,\"type\":\"Fc.d$f$a\"},{\"name\":\"f2046j\",\"def_pos\":0,\"type\":\"Fc.j\"},{\"name\":\"f2047k\",\"def_pos\":0,\"type\":\"java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>\"},{\"name\":\"f2048l\",\"def_pos\":0,\"type\":\"android.telephony.TelephonyManager\"},{\"name\":\"f2049m\",\"def_pos\":0,\"type\":\"Fc.d\"}],\"raw_name\":\"Fc.d$f\",\"method_count\":7,\"full_name\":\"Fc.d.f\",\"field_count\":5,\"name\":\"f\",\"inner_class_count\":1}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Fc.d$f",
+          "method_name": "O",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"        public final void O(boolean z10) {\\r\\n            y.c(\\\"PlayToneStateMachine\\\", new x0(this, z10, 2));\\r\\n            d dVar = d.this;\\r\\n            if (dVar.f2030o == null) {\\r\\n                return;\\r\\n            }\\r\\n            CompletableFuture<SetCommandStateDTO> completableFuture = this.f2047k;\\r\\n            if (completableFuture != null) {\\r\\n                completableFuture.cancel(true);\\r\\n            }\\r\\n            FindDeviceViewModel findDeviceViewModel = dVar.f2030o;\\r\\n            String str = dVar.f2033r;\\r\\n            findDeviceViewModel.getClass();\\r\\n            CompletableFuture<SetCommandStateDTO> completableFutureO0 = com.oplus.melody.model.repository.earphone.b.G().o0(str, z10);\\r\\n            this.f2047k = completableFutureO0;\\r\\n            if (completableFutureO0 != null) {\\r\\n                completableFutureO0.thenAccept((Consumer<? super SetCommandStateDTO>) new Fa.i(this, 1)).exceptionally((Function<Throwable, ? extends Void>) new l(this, z10, 0));\\r\\n            } else {\\r\\n                y.h(\\\"PlayToneStateMachine\\\", \\\"EnterFindModeState setFindMode mSetCommandFuture is null!\\\");\\r\\n            }\\r\\n        }\",\"mode\":\"java\",\"class_name\":\"Fc.d.f\",\"dex_descriptor\":\"(Z)V\",\"overload_count\":1,\"method_name\":\"O\",\"overload_index\":0,\"full_name\":\"Fc.d.f.O\",\"fell_back\":false,\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Fc.d.f",
+    "method": {
+      "name": "O",
+      "reported_signature": "O(boolean): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Z)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "        public final void O(boolean z10) {\r\n            y.c(\"PlayToneStateMachine\", new x0(this, z10, 2));\r\n            d dVar = d.this;\r\n            if (dVar.f2030o == null) {\r\n                return;\r\n            }\r\n            CompletableFuture<SetCommandStateDTO> completableFuture = this.f2047k;\r\n            if (completableFuture != null) {\r\n                completableFuture.cancel(true);\r\n            }\r\n            FindDeviceViewModel findDeviceViewModel = dVar.f2030o;\r\n            String str = dVar.f2033r;\r\n            findDeviceViewModel.getClass();\r\n            CompletableFuture<SetCommandStateDTO> completableFutureO0 = com.oplus.melody.model.repository.earphone.b.G().o0(str, z10);\r\n            this.f2047k = completableFutureO0;\r\n            if (completableFutureO0 != null) {\r\n                completableFutureO0.thenAccept((Consumer<? super SetCommandStateDTO>) new Fa.i(this, 1)).exceptionally((Function<Throwable, ? extends Void>) new l(this, z10, 0));\r\n            } else {\r\n                y.h(\"PlayToneStateMachine\", \"EnterFindModeState setFindMode mSetCommandFuture is null!\");\r\n            }\r\n        }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

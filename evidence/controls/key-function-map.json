@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_895557486d80215a8602735f79fe0006b3bf72d3e56ffee78f89e607b7af3222",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "db.a",
+    "method_name": "c"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":16}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "db.a"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"db.a\",\"method_count\":9,\"full_name\":\"db.a\",\"field_count\":2,\"name\":\"a\",\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"def_pos\":0,\"signature\":\"<clinit>(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"<clinit>\"},{\"def_pos\":0,\"signature\":\"a(int, java.lang.String): int\",\"dex_descriptor\":\"(ILjava/lang/String;)I\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$EntryStrModify>): int\",\"dex_descriptor\":\"(Ljava/util/List;)I\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"c(android.content.Context, java.lang.String, java.lang.String): int\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I\",\"is_constructor\":false,\"name\":\"c\"},{\"def_pos\":0,\"signature\":\"d(android.content.Context, com.oplus.melody.ui.component.control.b$a, int, boolean): java.lang.String\",\"dex_descriptor\":\"(Landroid/content/Context;Lcom/oplus/melody/ui/component/control/b$a;IZ)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"d\"},{\"def_pos\":0,\"signature\":\"e(android.content.Context, int, int, int): java.lang.String\",\"dex_descriptor\":\"(Landroid/content/Context;III)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"e\"},{\"def_pos\":0,\"signature\":\"f(android.content.Context, int, java.lang.String): java.lang.String\",\"dex_descriptor\":\"(Landroid/content/Context;ILjava/lang/String;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"f\"},{\"def_pos\":0,\"signature\":\"g(android.content.Context, java.lang.CharSequence, int, boolean, boolean): java.lang.String\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/CharSequence;IZZ)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"g\"},{\"def_pos\":0,\"signature\":\"h(android.content.Context, db.d, int, int, int): void\",\"dex_descriptor\":\"(Landroid/content/Context;Ldb/d;III)V\",\"is_constructor\":false,\"name\":\"h\"}],\"fields\":[{\"type\":\"int[]\",\"name\":\"f27021a\",\"def_pos\":0},{\"type\":\"int[]\",\"name\":\"f27022b\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "db.a",
+          "method_name": "c",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"full_name\":\"db.a.c\",\"fell_back\":false,\"markers\":[],\"body\":\"    public static int c(Context context, String str, String str2) {\\r\\n        if (context != null && !TextUtils.isEmpty(str)) {\\r\\n            try {\\r\\n                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_none))) {\\r\\n                    return 0;\\r\\n                }\\r\\n                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_listening_music))) {\\r\\n                    return 2;\\r\\n                }\\r\\n                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_play_pause))) {\\r\\n                    return 1;\\r\\n                }\\r\\n                if (!TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_listening_breeno)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_google_assisant)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_guide_voice_assistant_title))) {\\r\\n                    if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_last_song))) {\\r\\n                        return f.G(str2) ? 4 : 5;\\r\\n                    }\\r\\n                    if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_next_song))) {\\r\\n                        return f.G(str2) ? 5 : 6;\\r\\n                    }\\r\\n                    if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_adjust_volume))) {\\r\\n                        return 7;\\r\\n                    }\\r\\n                    if (!TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_sound_noise_switch)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_common_detail_main_set_noise_reduction))) {\\r\\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_play_collection_music))) {\\r\\n                            return 9;\\r\\n                        }\\r\\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_switch_song))) {\\r\\n                            return 10;\\r\\n                        }\\r\\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_increace_volume))) {\\r\\n                            return 11;\\r\\n                        }\\r\\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_decreace_volume))) {\\r\\n                            return 12;\\r\\n                        }\\r\\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_switch_device))) {\\r\\n                            return 13;\\r\\n                        }\\r\\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_game_mode))) {\\r\\n                            return 17;\\r\\n                        }\\r\\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_common_earphone_function_control_collect_music))) {\\r\\n                            return 22;\\r\\n                        }\\r\\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_zen_mode_title))) {\\r\\n                            return 18;\\r\\n                        }\\r\\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_ai_summary_title))) {\\r\\n                            return 25;\\r\\n                        }\\r\\n                        if (!TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_guide_reject_the_call)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_guide_reject_the_call_v2))) {\\r\\n                            if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_guide_answer_hang_up_the_phone))) {\\r\\n                                return 29;\\r\\n                            }\\r\\n                            if (!TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_ai_translation_application)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_ai_translation_application_v2))) {\\r\\n                                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_ai_translation_real_time_title))) {\\r\\n                                    return 27;\\r\\n                                }\\r\\n                                if (TextUtils.equals(str, context.getResources().getString(com.oplus.melody.spy.R.string.melody_spy_tap_title))) {\\r\\n                                    return 32;\\r\\n                                }\\r\\n                                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_gmn_control_play_pause_stop_gmn))) {\\r\\n                                    return 34;\\r\\n                                }\\r\\n                                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_gmn_control_trigger_gmn))) {\\r\\n                                    return 35;\\r\\n                                }\\r\\n                            }\\r\\n                            return 26;\\r\\n                        }\\r\\n                        return 28;\\r\\n                    }\\r\\n                    return 8;\\r\\n                }\\r\\n                return 3;\\r\\n            } catch (Throwable th) {\\r\\n                y.h(\\\"DeviceControlPreferenceUtils\\\", \\\"getFunctionCommand, error=\\\" + th);\\r\\n            }\\r\\n        }\\r\\n        return -1;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"db.a\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I\",\"overload_count\":1,\"method_name\":\"c\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "db.a",
+    "method": {
+      "name": "c",
+      "reported_signature": "c(android.content.Context, java.lang.String, java.lang.String): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static int c(Context context, String str, String str2) {\r\n        if (context != null && !TextUtils.isEmpty(str)) {\r\n            try {\r\n                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_none))) {\r\n                    return 0;\r\n                }\r\n                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_listening_music))) {\r\n                    return 2;\r\n                }\r\n                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_play_pause))) {\r\n                    return 1;\r\n                }\r\n                if (!TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_listening_breeno)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_google_assisant)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_guide_voice_assistant_title))) {\r\n                    if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_last_song))) {\r\n                        return f.G(str2) ? 4 : 5;\r\n                    }\r\n                    if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_next_song))) {\r\n                        return f.G(str2) ? 5 : 6;\r\n                    }\r\n                    if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_adjust_volume))) {\r\n                        return 7;\r\n                    }\r\n                    if (!TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_sound_noise_switch)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_common_detail_main_set_noise_reduction))) {\r\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_play_collection_music))) {\r\n                            return 9;\r\n                        }\r\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_switch_song))) {\r\n                            return 10;\r\n                        }\r\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_increace_volume))) {\r\n                            return 11;\r\n                        }\r\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_decreace_volume))) {\r\n                            return 12;\r\n                        }\r\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_switch_device))) {\r\n                            return 13;\r\n                        }\r\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_earphone_function_control_game_mode))) {\r\n                            return 17;\r\n                        }\r\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_common_earphone_function_control_collect_music))) {\r\n                            return 22;\r\n                        }\r\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_zen_mode_title))) {\r\n                            return 18;\r\n                        }\r\n                        if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_ai_summary_title))) {\r\n                            return 25;\r\n                        }\r\n                        if (!TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_guide_reject_the_call)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_guide_reject_the_call_v2))) {\r\n                            if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_guide_answer_hang_up_the_phone))) {\r\n                                return 29;\r\n                            }\r\n                            if (!TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_ai_translation_application)) && !TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_ai_translation_application_v2))) {\r\n                                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_ai_translation_real_time_title))) {\r\n                                    return 27;\r\n                                }\r\n                                if (TextUtils.equals(str, context.getResources().getString(com.oplus.melody.spy.R.string.melody_spy_tap_title))) {\r\n                                    return 32;\r\n                                }\r\n                                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_gmn_control_play_pause_stop_gmn))) {\r\n                                    return 34;\r\n                                }\r\n                                if (TextUtils.equals(str, context.getResources().getString(R.string.melody_ui_gmn_control_trigger_gmn))) {\r\n                                    return 35;\r\n                                }\r\n                            }\r\n                            return 26;\r\n                        }\r\n                        return 28;\r\n                    }\r\n                    return 8;\r\n                }\r\n                return 3;\r\n            } catch (Throwable th) {\r\n                y.h(\"DeviceControlPreferenceUtils\", \"getFunctionCommand, error=\" + th);\r\n            }\r\n        }\r\n        return -1;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

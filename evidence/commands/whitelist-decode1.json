@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_70ecf8426097663cc3c5ad3d0900f0345b1a6b0d41ae50b2ae46bf53d6a7d949",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.model.repository.whitelist.a",
+    "method_name": "n"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.model.repository.whitelist.a"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"field_count\":14,\"full_name\":\"com.oplus.melody.model.repository.whitelist.a\",\"method_count\":23,\"raw_name\":\"com.oplus.melody.model.repository.whitelist.a\",\"fields\":[{\"type\":\"long\",\"def_pos\":0,\"name\":\"f24538A\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"f24539B\"},{\"type\":\"com.oplus.melody.model.repository.whitelist.WhitelistOutsideSnapshot\",\"def_pos\":0,\"name\":\"f24540C\"},{\"type\":\"java.util.List<java.lang.String>\",\"def_pos\":0,\"name\":\"f24541z\"},{\"type\":\"java.util.List<com.oplus.melody.common.data.DiagnosisConfigDTO>\",\"def_pos\":0,\"name\":\"f24542p\"},{\"type\":\"Ge.b\",\"def_pos\":0,\"name\":\"f24543q\"},{\"type\":\"Ge.b\",\"def_pos\":0,\"name\":\"f24544r\"},{\"type\":\"ha.k<com.oplus.melody.common.data.WhitelistContentDO>\",\"def_pos\":0,\"name\":\"f24545s\"},{\"type\":\"Ge.b\",\"def_pos\":0,\"name\":\"f24546t\"},{\"type\":\"Ab.k\",\"def_pos\":0,\"name\":\"f24547u\"},{\"type\":\"java.util.concurrent.CompletableFuture<?>\",\"def_pos\":0,\"name\":\"f24548v\"},{\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"def_pos\":0,\"name\":\"f24549w\"},{\"type\":\"java.util.concurrent.CompletableFuture<?>\",\"def_pos\":0,\"name\":\"f24550x\"},{\"type\":\"com.oplus.melody.model.repository.whitelist.WhitelistOutsideSnapshot\",\"def_pos\":0,\"name\":\"f24551y\"}],\"methods\":[{\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"<clinit>(): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"()V\",\"signature\":\"<init>(): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;\",\"signature\":\"a(java.lang.String): com.oplus.melody.common.data.WhitelistConfigDTO\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;\",\"signature\":\"c(java.lang.String, java.lang.String): com.oplus.melody.common.data.WhitelistConfigDTO\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"e(): java.util.List<com.oplus.melody.common.data.DiagnosisConfigDTO>\"},{\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"g(): java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO>\"},{\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/oplus/melody/common/data/WhitelistContentDO;\",\"signature\":\"h(): com.oplus.melody.common.data.WhitelistContentDO\"},{\"def_pos\":0,\"name\":\"handleMessage\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Message;)Z\",\"signature\":\"handleMessage(android.os.Message): boolean\"},{\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/oplus/melody/common/data/WhitelistContentDO;\",\"signature\":\"i(): com.oplus.melody.common.data.WhitelistContentDO\"},{\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"dex_descriptor\":\"()Landroidx/lifecycle/s;\",\"signature\":\"j(): androidx.lifecycle.s<com.oplus.melody.common.data.WhitelistContentDO>\"},{\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/oplus/melody/model/repository/whitelist/WhitelistOutsideSnapshot;\",\"signature\":\"k(): com.oplus.melody.model.repository.whitelist.WhitelistOutsideSnapshot\"},{\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"l(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/model/db/L;Lcom/oplus/melody/common/data/WhitelistConfigDTO$Rssi;I)Lcom/oplus/melody/common/data/WhitelistConfigDTO;\",\"signature\":\"m(com.oplus.melody.model.db.L, com.oplus.melody.common.data.WhitelistConfigDTO$Rssi, int): com.oplus.melody.common.data.WhitelistConfigDTO\"},{\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/io/InputStream;[B)Ljava/lang/Object;\",\"signature\":\"n(java.io.InputStream, byte[]): java.lang.Object\"},{\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/io/FileOutputStream;[BLjava/io/File;)V\",\"signature\":\"o(java.io.FileOutputStream, byte[], java.io.File): void\"},{\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/io/File;\",\"signature\":\"p(java.lang.String): java.io.File\"},{\"def_pos\":0,\"name\":\"q\",\"is_constructor\":false,\"dex_descriptor\":\"()[B\",\"signature\":\"q(): byte[]\"},{\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO;)Ljava/lang/String;\",\"signature\":\"r(com.oplus.melody.common.data.WhitelistConfigDTO): java.lang.String\"},{\"def_pos\":0,\"name\":\"s\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistContentDO;Ljava/util/List;)Lcom/oplus/melody/common/data/WhitelistContentDO;\",\"signature\":\"s(com.oplus.melody.common.data.WhitelistContentDO, java.util.List): com.oplus.melody.common.data.WhitelistContentDO\"},{\"def_pos\":0,\"name\":\"t\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/io/File;[B)Lcom/oplus/melody/common/data/WhitelistContentDO;\",\"signature\":\"t(java.io.File, byte[]): com.oplus.melody.common.data.WhitelistContentDO\"},{\"def_pos\":0,\"name\":\"u\",\"is_constructor\":false,\"dex_descriptor\":\"(JLjava/lang/String;Z)V\",\"signature\":\"u(long, java.lang.String, boolean): void\"},{\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistContentDO;)V\",\"signature\":\"v(com.oplus.melody.common.data.WhitelistContentDO): void\"},{\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/io/File;[B)Z\",\"signature\":\"w(java.io.File, byte[]): boolean\"}],\"inner_classes\":[\"com.oplus.melody.model.repository.whitelist.a.C0249a\"],\"inner_class_count\":1,\"name\":\"a\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.model.repository.whitelist.a",
+          "method_name": "n",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.model.repository.whitelist.a.n\",\"overload_index\":0,\"method_name\":\"n\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/io/InputStream;[B)Ljava/lang/Object;\",\"class_name\":\"com.oplus.melody.model.repository.whitelist.a\",\"mode\":\"java\",\"body\":\"    public static Object n(InputStream inputStream, byte[] bArr) throws NoSuchPaddingException, NoSuchAlgorithmException, IOException, InvalidKeyException, InvalidAlgorithmParameterException {\\r\\n        byte[] bArr2 = new byte[12];\\r\\n        inputStream.read(bArr2);\\r\\n        GCMParameterSpec gCMParameterSpec = new GCMParameterSpec(DeviceInfo.FEATURE_SUPPORT_IN_EAR_DETECTION_MUSIC_MUTE, bArr2);\\r\\n        SecretKeySpec secretKeySpec = new SecretKeySpec(bArr, \\\"AES\\\");\\r\\n        Cipher cipher = Cipher.getInstance(\\\"AES/GCM/NoPadding\\\");\\r\\n        cipher.init(2, secretKeySpec, gCMParameterSpec);\\r\\n        CipherInputStream cipherInputStream = new CipherInputStream(inputStream, cipher);\\r\\n        try {\\r\\n            GZIPInputStream gZIPInputStream = new GZIPInputStream(cipherInputStream);\\r\\n            try {\\r\\n                Object objF = JsonUtils.f(gZIPInputStream, WhitelistContentDO.class);\\r\\n                gZIPInputStream.close();\\r\\n                cipherInputStream.close();\\r\\n                return objF;\\r\\n            } catch (Throwable th) {\\r\\n                try {\\r\\n                    throw th;\\r\\n                } catch (Throwable th2) {\\r\\n                    Ae.a.q(gZIPInputStream, th);\\r\\n                    throw th2;\\r\\n                }\\r\\n            }\\r\\n        } catch (Throwable th3) {\\r\\n            try {\\r\\n                throw th3;\\r\\n            } catch (Throwable th4) {\\r\\n                Ae.a.q(cipherInputStream, th3);\\r\\n                throw th4;\\r\\n            }\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.model.repository.whitelist.a",
+    "method": {
+      "name": "n",
+      "reported_signature": "n(java.io.InputStream, byte[]): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/io/InputStream;[B)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static Object n(InputStream inputStream, byte[] bArr) throws NoSuchPaddingException, NoSuchAlgorithmException, IOException, InvalidKeyException, InvalidAlgorithmParameterException {\r\n        byte[] bArr2 = new byte[12];\r\n        inputStream.read(bArr2);\r\n        GCMParameterSpec gCMParameterSpec = new GCMParameterSpec(DeviceInfo.FEATURE_SUPPORT_IN_EAR_DETECTION_MUSIC_MUTE, bArr2);\r\n        SecretKeySpec secretKeySpec = new SecretKeySpec(bArr, \"AES\");\r\n        Cipher cipher = Cipher.getInstance(\"AES/GCM/NoPadding\");\r\n        cipher.init(2, secretKeySpec, gCMParameterSpec);\r\n        CipherInputStream cipherInputStream = new CipherInputStream(inputStream, cipher);\r\n        try {\r\n            GZIPInputStream gZIPInputStream = new GZIPInputStream(cipherInputStream);\r\n            try {\r\n                Object objF = JsonUtils.f(gZIPInputStream, WhitelistContentDO.class);\r\n                gZIPInputStream.close();\r\n                cipherInputStream.close();\r\n                return objF;\r\n            } catch (Throwable th) {\r\n                try {\r\n                    throw th;\r\n                } catch (Throwable th2) {\r\n                    Ae.a.q(gZIPInputStream, th);\r\n                    throw th2;\r\n                }\r\n            }\r\n        } catch (Throwable th3) {\r\n            try {\r\n                throw th3;\r\n            } catch (Throwable th4) {\r\n                Ae.a.q(cipherInputStream, th3);\r\n                throw th4;\r\n            }\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

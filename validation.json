@@ -1,0 +1,105 @@
+{
+  "analysis_date": "2026-10-26",
+  "sdk_version": "0.1.1",
+  "python_version": "3.14.6",
+  "python_executable": "<local>/python.exe",
+  "tests": {
+    "runner": "python -m unittest discover -s tests -v",
+    "passed": 38,
+    "exit_code": 0,
+    "log": "test-results.txt",
+    "source": "Offline vectors and fake transport, not hardware traffic"
+  },
+  "compileall": {
+    "exit_code": 0
+  },
+  "evidence_json": {
+    "records": 202,
+    "parse_failures": []
+  },
+  "profile_resource_matches": true,
+  "bleak_installed": true,
+  "cli_checked": [
+    "--help",
+    "profile"
+  ],
+  "performed_live": {
+    "bluetooth_scan": false,
+    "rfcomm_connect": true,
+    "gatt_connect": false,
+    "headset_write": true,
+    "find_tone": false,
+    "apk_execution": false
+  },
+  "hardware_cases": [
+    {
+      "case": "before-fix",
+      "date": "2026-10-26T10:49:18.043560+00:00",
+      "result": "diagnostics/game-mode-before-fix.json",
+      "result_sha256": "6c343999bd870d53bce95c1b45a18c01cffbc033b83baae1a7c6fb01bf13971c",
+      "trace": "diagnostics/game-mode-before-fix.jsonl",
+      "trace_sha256": "95e5455f6d8b47d6008a7763e6921ba7220ece6e92f6099779ca57933b69a9a8",
+      "feature_id": 6,
+      "write_payloads": [
+        "0601",
+        "0600"
+      ],
+      "setting_not_resent": true,
+      "feature_queries": 15,
+      "on_off_verified_by_sdk": false,
+      "original_state_restored": true,
+      "final_state": 0,
+      "original_result_sha256": "85ef324cfe7f7796a36bd30f343608512e1782b88e993830d3190c67bdf5fc9f",
+      "original_trace_sha256": "5a92404531e0fbd2493946f3c2eb415ccd5014530ab930c1dc13fb79a932bab6"
+    },
+    {
+      "case": "after-fix",
+      "date": "2026-10-26T10:51:51.415473+00:00",
+      "result": "diagnostics/game-mode-after-fix.json",
+      "result_sha256": "7d1626f3ace8b8d7bdbb8539af5f38a0b909a9ab16e5cee990e62c3966a2e7fd",
+      "trace": "diagnostics/game-mode-after-fix.jsonl",
+      "trace_sha256": "9a202e5d72cfcab01d026647951bb7e6dede9d8bdda46761e5bce4f3122853ee",
+      "feature_id": 6,
+      "write_payloads": [
+        "0601",
+        "0600"
+      ],
+      "setting_not_resent": true,
+      "feature_queries": 17,
+      "on_off_verified_by_sdk": true,
+      "original_state_restored": true,
+      "final_state": 0,
+      "original_result_sha256": "510c1ae33bc8289e981a5dd6324672fa8aec91a0bdfbccfb6efbb9cea7cdeefd",
+      "original_trace_sha256": "4e30433a820cc8a7d5446443e9338c130c2d9fe11242cd7270fd091e17e958ff"
+    }
+  ],
+  "hardware_scope": "One user-specified Free4: RFCOMM/SDP, 0100 and 010D, game-mode feature 6 on/off; no audio latency or persistence validation",
+  "pending_hardware_checks": [
+    "Other Free4 variants/firmware SDP service UUID/channel and handshake",
+    "BLE service discovery, ATT chunking and notify behavior",
+    "Firmware-dependent handshake/authentication",
+    "Noise mode family normalization",
+    "Actual effects, multipoint behavior and key ear-side identity",
+    "Custom EQ selected state and limits",
+    "High-quality/spatial mutual exclusion",
+    "Actual game-mode audio latency",
+    "Find sound, stop behavior and loss-of-connection handling",
+    "State persistence after reconnection or power cycle"
+  ],
+  "document_relative_links": "passed",
+  "publication": {
+    "date": "2026-11-02",
+    "local_paths_redacted": true,
+    "trace_scope": "Selected complete capability/feature/game-mode frames only; not complete sessions",
+    "trace_rows_omitted": 7
+  },
+  "repository_validation": {
+    "date": "2026-11-02",
+    "tests_passed": 38,
+    "test_exit_code": 0,
+    "log": "test-results.txt",
+    "hardware_operations": false,
+    "json_parse": "passed",
+    "relative_links": "passed"
+  }
+}

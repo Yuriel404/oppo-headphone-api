@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_ea5a35ad7edf618196cb4ad0d443c5b77d5d921f3081ece810157fb34df3c294",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo",
+    "method_name": "<init>",
+    "overload_index": 1
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"name\":\"CurrentNoiseModeInfo\",\"field_count\":9,\"full_name\":\"com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo\",\"method_count\":20,\"raw_name\":\"com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo\",\"fields\":[{\"type\":\"android.os.Parcelable$Creator<com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo>\",\"def_pos\":0,\"name\":\"CREATOR\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"INIT_BYTE_LENGTH\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"NOISE_REDUCTION_DSP_LENGTH\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"OFFSET_TYPE\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"OFFSET_VALUE\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"mLevel\"},{\"type\":\"byte[]\",\"def_pos\":0,\"name\":\"mMode\"},{\"type\":\"boolean[]\",\"def_pos\":0,\"name\":\"mOpenNoiseReductionMode\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"mType\"}],\"methods\":[{\"signature\":\"<clinit>(): void\",\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"<init>(): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"signature\":\"<init>(int, byte[]): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(I[B)V\"},{\"signature\":\"<init>(android.os.Parcel): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(Landroid/os/Parcel;)V\"},{\"signature\":\"describeContents(): int\",\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getCurrentNoiseReductionModeIndex(): int\",\"def_pos\":0,\"name\":\"getCurrentNoiseReductionModeIndex\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getData(): byte[]\",\"def_pos\":0,\"name\":\"getData\",\"is_constructor\":false,\"dex_descriptor\":\"()[B\"},{\"signature\":\"getLevel(): int\",\"def_pos\":0,\"name\":\"getLevel\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getMode(): byte[]\",\"def_pos\":0,\"name\":\"getMode\",\"is_constructor\":false,\"dex_descriptor\":\"()[B\"},{\"signature\":\"getType(): int\",\"def_pos\":0,\"name\":\"getType\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"growArray(int): void\",\"def_pos\":0,\"name\":\"growArray\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"isModeBitmaskType(int): boolean\",\"def_pos\":0,\"name\":\"isModeBitmaskType\",\"is_constructor\":false,\"dex_descriptor\":\"(I)Z\"},{\"signature\":\"isNoiseReductionModeInfo(): boolean\",\"def_pos\":0,\"name\":\"isNoiseReductionModeInfo\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"isNoiseReductionModeOpened(int): boolean\",\"def_pos\":0,\"name\":\"isNoiseReductionModeOpened\",\"is_constructor\":false,\"dex_descriptor\":\"(I)Z\"},{\"signature\":\"readFromParcel(android.os.Parcel): void\",\"def_pos\":0,\"name\":\"readFromParcel\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Parcel;)V\"},{\"signature\":\"setCurrentNoiseReductionModeValue(int, boolean): void\",\"def_pos\":0,\"name\":\"setCurrentNoiseReductionModeValue\",\"is_constructor\":false,\"dex_descriptor\":\"(IZ)V\"},{\"signature\":\"setLevel(int): void\",\"def_pos\":0,\"name\":\"setLevel\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setMode(byte[]): void\",\"def_pos\":0,\"name\":\"setMode\",\"is_constructor\":false,\"dex_descriptor\":\"([B)V\"},{\"signature\":\"setType(int): void\",\"def_pos\":0,\"name\":\"setType\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Parcel;I)V\"}],\"inner_classes\":[\"com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo.a\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo",
+          "method_name": "<init>",
+          "overload_index": 1,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo.<init>\",\"overload_index\":1,\"method_name\":\"<init>\",\"overload_count\":3,\"dex_descriptor\":\"(I[B)V\",\"class_name\":\"com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo\",\"mode\":\"java\",\"body\":\"    public CurrentNoiseModeInfo(int i10, byte[] bArr) {\\r\\n        this.mOpenNoiseReductionMode = new boolean[8];\\r\\n        byte b10 = bArr[i10];\\r\\n        this.mType = b10;\\r\\n        if (!isModeBitmaskType(b10)) {\\r\\n            if (this.mType == 2) {\\r\\n                this.mLevel = bArr[i10 + 1];\\r\\n                return;\\r\\n            }\\r\\n            return;\\r\\n        }\\r\\n        int length = (bArr.length - i10) - 1;\\r\\n        int i11 = length * 8;\\r\\n        this.mOpenNoiseReductionMode = new boolean[i11];\\r\\n        int i12 = i10 + 1;\\r\\n        byte b11 = bArr[i12];\\r\\n        int i13 = 0;\\r\\n        int i14 = 0;\\r\\n        for (int i15 = 0; i15 < i11; i15++) {\\r\\n            this.mOpenNoiseReductionMode[i15] = ((1 << i13) & b11) != 0;\\r\\n            i13++;\\r\\n            if (i13 == 8) {\\r\\n                i14++;\\r\\n                b11 = i14 < length ? bArr[i12 + i14] : b11;\\r\\n                i13 = 0;\\r\\n            }\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.btsdk.api.data.CurrentNoiseModeInfo",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(int, byte[]): void",
+      "overload_index": 1,
+      "is_constructor": true,
+      "dex_descriptor": "(I[B)V"
+    },
+    "overload_count": 3,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public CurrentNoiseModeInfo(int i10, byte[] bArr) {\r\n        this.mOpenNoiseReductionMode = new boolean[8];\r\n        byte b10 = bArr[i10];\r\n        this.mType = b10;\r\n        if (!isModeBitmaskType(b10)) {\r\n            if (this.mType == 2) {\r\n                this.mLevel = bArr[i10 + 1];\r\n                return;\r\n            }\r\n            return;\r\n        }\r\n        int length = (bArr.length - i10) - 1;\r\n        int i11 = length * 8;\r\n        this.mOpenNoiseReductionMode = new boolean[i11];\r\n        int i12 = i10 + 1;\r\n        byte b11 = bArr[i12];\r\n        int i13 = 0;\r\n        int i14 = 0;\r\n        for (int i15 = 0; i15 < i11; i15++) {\r\n            this.mOpenNoiseReductionMode[i15] = ((1 << i13) & b11) != 0;\r\n            i13++;\r\n            if (i13 == 8) {\r\n                i14++;\r\n                b11 = i14 < length ? bArr[i12 + i14] : b11;\r\n                i13 = 0;\r\n            }\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

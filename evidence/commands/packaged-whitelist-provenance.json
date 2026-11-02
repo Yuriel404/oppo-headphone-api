@@ -1,0 +1,20 @@
+{
+  "source": "static decode using AES-GCM / gzip path observed in whitelist.a.n, raw cert SHA256 candidate; GCM authentication passed",
+  "input": "<local>/heymelody_app_whitelist.json",
+  "input_sha256": "3acaa7285b85b01ab45906282642b1a27d26b049a6fc368fdd6b1a439c697ba4",
+  "certificate_sha256": "49bd5f8f3f687aa3c71e79d570034455d68945c3ec45bb5f186169b8503c8e3e",
+  "output_sha256": "0ef07d3361d4ae3e4bf1e5f6aea5a07ca010af57b6630588fc1f532ae13cc8b9",
+  "bytes": 120294,
+  "root_keys": [
+    "//from",
+    "//transferEncoding",
+    "compatCaseNumSite",
+    "txMusicCollectUrl",
+    "compatAppMarket",
+    "heyTranslationLanguage",
+    "compatWhiteList",
+    "versionCode",
+    "mail",
+    "whiteList"
+  ]
+}

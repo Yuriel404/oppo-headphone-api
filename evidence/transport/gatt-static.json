@@ -1,0 +1,132 @@
+{
+  "evidence_id": "ev_d7d38678ac2b4628fb76d0edee8d9f2b77c35702b0cb2696b35ae82443fe6c54",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "F8.m",
+    "method_name": "<clinit>"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "F8.m"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"dex_descriptor\":\"()V\",\"signature\":\"<clinit>(): void\",\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false},{\"dex_descriptor\":\"(Landroid/content/Context;Lcom/oplus/melody/btsdk/api/data/DeviceInfo;)V\",\"signature\":\"<init>(android.content.Context, com.oplus.melody.btsdk.api.data.DeviceInfo): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true},{\"dex_descriptor\":\"()V\",\"signature\":\"b(): void\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false},{\"dex_descriptor\":\"()V\",\"signature\":\"c(): void\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false},{\"dex_descriptor\":\"()I\",\"signature\":\"d(): int\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false},{\"dex_descriptor\":\"()V\",\"signature\":\"f(): void\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false},{\"dex_descriptor\":\"()Z\",\"signature\":\"g(): boolean\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false},{\"dex_descriptor\":\"()V\",\"signature\":\"i(): void\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false},{\"dex_descriptor\":\"([BLM8/b$a;)I\",\"signature\":\"k(byte[], M8.b$a): int\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false},{\"dex_descriptor\":\"(LF8/m;)Z\",\"signature\":\"l(F8.m): boolean\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false},{\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"toString(): java.lang.String\",\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false}],\"inner_classes\":[\"F8.m.a\"],\"inner_class_count\":1,\"name\":\"m\",\"field_count\":10,\"full_name\":\"F8.m\",\"method_count\":11,\"raw_name\":\"F8.m\",\"fields\":[{\"type\":\"java.util.UUID\",\"def_pos\":0,\"name\":\"H\"},{\"type\":\"java.util.UUID\",\"def_pos\":0,\"name\":\"f1898F\"},{\"type\":\"java.util.UUID\",\"def_pos\":0,\"name\":\"f1899G\"},{\"type\":\"java.util.UUID\",\"def_pos\":0,\"name\":\"f1900I\"},{\"type\":\"F8.j\",\"def_pos\":0,\"name\":\"f1901A\"},{\"type\":\"F8.j\",\"def_pos\":0,\"name\":\"f1902B\"},{\"type\":\"android.bluetooth.BluetoothDevice\",\"def_pos\":0,\"name\":\"f1903C\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f1904D\"},{\"type\":\"F8.m$a\",\"def_pos\":0,\"name\":\"f1905E\"},{\"type\":\"java.util.UUID\",\"def_pos\":0,\"name\":\"f1906z\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "F8.m",
+          "method_name": "<clinit>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"mode\":\"smali\",\"body\":\".method static constructor <clinit>()V\\n    .registers 1\\n\\n    .line 1\\n    const-string v0, \\\"0000079A-D102-11E1-9B23-00025B00A5A5\\\"\\n\\n    .line 2\\n    .line 3\\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\\n\\n    .line 4\\n    .line 5\\n    .line 6\\n    move-result-object v0\\n\\n    .line 7\\n    sput-object v0, LF8/m;->F:Ljava/util/UUID;\\n\\n    .line 8\\n    .line 9\\n    const-string v0, \\\"0100079A-D102-11E1-9B23-00025B00A5A5\\\"\\n\\n    .line 10\\n    .line 11\\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\\n\\n    .line 12\\n    .line 13\\n    .line 14\\n    move-result-object v0\\n\\n    .line 15\\n    sput-object v0, LF8/m;->G:Ljava/util/UUID;\\n\\n    .line 16\\n    .line 17\\n    const-string v0, \\\"0200079A-D102-11E1-9B23-00025B00A5A5\\\"\\n\\n    .line 18\\n    .line 19\\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\\n\\n    .line 20\\n    .line 21\\n    .line 22\\n    move-result-object v0\\n\\n    .line 23\\n    sput-object v0, LF8/m;->H:Ljava/util/UUID;\\n\\n    .line 24\\n    .line 25\\n    const-string v0, \\\"0000180f-0000-1000-8000-00805f9b34fb\\\"\\n\\n    .line 26\\n    .line 27\\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\\n\\n    .line 28\\n    .line 29\\n    .line 30\\n    const-string v0, \\\"00002a19-0000-1000-8000-00805f9b34fb\\\"\\n\\n    .line 31\\n    .line 32\\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\\n\\n    .line 33\\n    .line 34\\n    .line 35\\n    const-string v0, \\\"00002902-0000-1000-8000-00805f9b34fb\\\"\\n\\n    .line 36\\n    .line 37\\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\\n\\n    .line 38\\n    .line 39\\n    .line 40\\n    move-result-object v0\\n\\n    .line 41\\n    sput-object v0, LF8/m;->I:Ljava/util/UUID;\\n\\n    .line 42\\n    .line 43\\n    return-void\\n.end method\",\"markers\":[\"static_initializer_disassembly\"],\"fell_back\":true,\"full_name\":\"F8.m.<clinit>\",\"overload_index\":0,\"method_name\":\"<clinit>\",\"overload_count\":1,\"dex_descriptor\":\"()V\",\"class_name\":\"F8.m\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "F8.m",
+    "method": {
+      "name": "<clinit>",
+      "reported_signature": "<clinit>(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "smali",
+    "body_status": "available",
+    "fell_back": true,
+    "markers": [
+      "static_initializer_disassembly"
+    ],
+    "source": {
+      "status": "complete",
+      "text": ".method static constructor <clinit>()V\n    .registers 1\n\n    .line 1\n    const-string v0, \"0000079A-D102-11E1-9B23-00025B00A5A5\"\n\n    .line 2\n    .line 3\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\n\n    .line 4\n    .line 5\n    .line 6\n    move-result-object v0\n\n    .line 7\n    sput-object v0, LF8/m;->F:Ljava/util/UUID;\n\n    .line 8\n    .line 9\n    const-string v0, \"0100079A-D102-11E1-9B23-00025B00A5A5\"\n\n    .line 10\n    .line 11\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\n\n    .line 12\n    .line 13\n    .line 14\n    move-result-object v0\n\n    .line 15\n    sput-object v0, LF8/m;->G:Ljava/util/UUID;\n\n    .line 16\n    .line 17\n    const-string v0, \"0200079A-D102-11E1-9B23-00025B00A5A5\"\n\n    .line 18\n    .line 19\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\n\n    .line 20\n    .line 21\n    .line 22\n    move-result-object v0\n\n    .line 23\n    sput-object v0, LF8/m;->H:Ljava/util/UUID;\n\n    .line 24\n    .line 25\n    const-string v0, \"0000180f-0000-1000-8000-00805f9b34fb\"\n\n    .line 26\n    .line 27\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\n\n    .line 28\n    .line 29\n    .line 30\n    const-string v0, \"00002a19-0000-1000-8000-00805f9b34fb\"\n\n    .line 31\n    .line 32\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\n\n    .line 33\n    .line 34\n    .line 35\n    const-string v0, \"00002902-0000-1000-8000-00805f9b34fb\"\n\n    .line 36\n    .line 37\n    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;\n\n    .line 38\n    .line 39\n    .line 40\n    move-result-object v0\n\n    .line 41\n    sput-object v0, LF8/m;->I:Ljava/util/UUID;\n\n    .line 42\n    .line 43\n    return-void\n.end method",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

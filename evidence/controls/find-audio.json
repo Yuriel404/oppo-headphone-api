@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_ab60b6668affc55bb2f5ec4e401602a8df4fa2cad28b3694f65e13dbb2c94dba",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Fc.d$c",
+    "method_name": "l"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Fc.d$c"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"name\":\"c\",\"field_count\":3,\"full_name\":\"Fc.d.c\",\"method_count\":5,\"raw_name\":\"Fc.d$c\",\"fields\":[{\"type\":\"Fc.f\",\"def_pos\":0,\"name\":\"f2040i\"},{\"type\":\"Fc.g\",\"def_pos\":0,\"name\":\"f2041j\"},{\"type\":\"Fc.d\",\"def_pos\":0,\"name\":\"f2042k\"}],\"methods\":[{\"signature\":\"<init>(Fc.d): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(LFc/d;)V\"},{\"signature\":\"J(android.os.Message): boolean\",\"def_pos\":0,\"name\":\"J\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Message;)Z\"},{\"signature\":\"l(): void\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"n(): void\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"t(): java.lang.String\",\"def_pos\":0,\"name\":\"t\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"}],\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Fc.d$c",
+          "method_name": "l",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"fell_back\":false,\"full_name\":\"Fc.d.c.l\",\"overload_index\":0,\"method_name\":\"l\",\"overload_count\":1,\"dex_descriptor\":\"()V\",\"class_name\":\"Fc.d.c\",\"mode\":\"java\",\"body\":\"        @Override // Z4.e\\r\\n        public final void l() {\\r\\n            d dVar = d.this;\\r\\n            int i10 = dVar.f2034s;\\r\\n            if (i10 == 2 && dVar.f2035t) {\\r\\n                dVar.h(dVar.f2022f);\\r\\n                y.b(\\\"PlayToneStateMachine\\\", \\\"CheckConnectedState enter connected and capability is ok to check in ear\\\");\\r\\n                return;\\r\\n            }\\r\\n            if (i10 == 2) {\\r\\n                dVar.g(101);\\r\\n                d dVar2 = d.this;\\r\\n                if (dVar2.f2030o != null) {\\r\\n                    d.b(dVar2, this.f2041j);\\r\\n                    return;\\r\\n                }\\r\\n                return;\\r\\n            }\\r\\n            y.c(\\\"PlayToneStateMachine\\\", new A9.d(this, 8));\\r\\n            d dVar3 = d.this;\\r\\n            n.c cVar = dVar3.f2070b;\\r\\n            if (!(cVar == null ? false : cVar.hasMessages(110))) {\\r\\n                dVar3.a(110, AcBaseConstants.TIMEOUT_REQ);\\r\\n            }\\r\\n            d.this.g(101);\\r\\n            d.this.g(3);\\r\\n            d dVar4 = d.this;\\r\\n            if (dVar4.f2030o != null) {\\r\\n                Fc.f fVar = this.f2040i;\\r\\n                if (fVar != null) {\\r\\n                    synchronized (dVar4.f2024i) {\\r\\n                        try {\\r\\n                            if (!dVar4.f2024i.contains(fVar)) {\\r\\n                                dVar4.f2024i.add(fVar);\\r\\n                            }\\r\\n                        } catch (Throwable th) {\\r\\n                            throw th;\\r\\n                        }\\r\\n                    }\\r\\n                }\\r\\n                d.b(d.this, this.f2041j);\\r\\n            }\\r\\n        }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Fc.d.c",
+    "method": {
+      "name": "l",
+      "reported_signature": "l(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "        @Override // Z4.e\r\n        public final void l() {\r\n            d dVar = d.this;\r\n            int i10 = dVar.f2034s;\r\n            if (i10 == 2 && dVar.f2035t) {\r\n                dVar.h(dVar.f2022f);\r\n                y.b(\"PlayToneStateMachine\", \"CheckConnectedState enter connected and capability is ok to check in ear\");\r\n                return;\r\n            }\r\n            if (i10 == 2) {\r\n                dVar.g(101);\r\n                d dVar2 = d.this;\r\n                if (dVar2.f2030o != null) {\r\n                    d.b(dVar2, this.f2041j);\r\n                    return;\r\n                }\r\n                return;\r\n            }\r\n            y.c(\"PlayToneStateMachine\", new A9.d(this, 8));\r\n            d dVar3 = d.this;\r\n            n.c cVar = dVar3.f2070b;\r\n            if (!(cVar == null ? false : cVar.hasMessages(110))) {\r\n                dVar3.a(110, AcBaseConstants.TIMEOUT_REQ);\r\n            }\r\n            d.this.g(101);\r\n            d.this.g(3);\r\n            d dVar4 = d.this;\r\n            if (dVar4.f2030o != null) {\r\n                Fc.f fVar = this.f2040i;\r\n                if (fVar != null) {\r\n                    synchronized (dVar4.f2024i) {\r\n                        try {\r\n                            if (!dVar4.f2024i.contains(fVar)) {\r\n                                dVar4.f2024i.add(fVar);\r\n                            }\r\n                        } catch (Throwable th) {\r\n                            throw th;\r\n                        }\r\n                    }\r\n                }\r\n                d.b(d.this, this.f2041j);\r\n            }\r\n        }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

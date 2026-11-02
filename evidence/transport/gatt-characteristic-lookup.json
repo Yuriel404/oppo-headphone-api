@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_ffeb3d779642dbe43aa137fc8702098ad6824e4abb06d2e38fa82c237e3fd2f4",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "F8.j",
+    "method_name": "f"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "F8.j"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"name\":\"j\",\"field_count\":18,\"full_name\":\"F8.j\",\"method_count\":16,\"raw_name\":\"F8.j\",\"fields\":[{\"type\":\"android.content.Context\",\"def_pos\":0,\"name\":\"f1876a\"},{\"type\":\"android.bluetooth.BluetoothDevice\",\"def_pos\":0,\"name\":\"f1877b\"},{\"type\":\"F8.m$a\",\"def_pos\":0,\"name\":\"f1878c\"},{\"type\":\"java.util.concurrent.LinkedBlockingQueue\",\"def_pos\":0,\"name\":\"f1879d\"},{\"type\":\"android.os.Handler\",\"def_pos\":0,\"name\":\"f1880e\"},{\"type\":\"Ab.n0\",\"def_pos\":0,\"name\":\"f1881f\"},{\"type\":\"Ab.k\",\"def_pos\":0,\"name\":\"f1882g\"},{\"type\":\"Ab.E\",\"def_pos\":0,\"name\":\"f1883i\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f1884j\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f1885k\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f1886l\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f1887m\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"f1888n\"},{\"type\":\"F8.a\",\"def_pos\":0,\"name\":\"f1889o\"},{\"type\":\"android.bluetooth.BluetoothGatt\",\"def_pos\":0,\"name\":\"f1890p\"},{\"type\":\"com.oplus.melody.btsdk.spp.internal.connect.ble.GattConnectionAttempt\",\"def_pos\":0,\"name\":\"f1891q\"},{\"type\":\"F8.j$a\",\"def_pos\":0,\"name\":\"f1892r\"},{\"type\":\"Ab.l0\",\"def_pos\":0,\"name\":\"h\"}],\"methods\":[{\"signature\":\"<init>(android.content.Context, android.bluetooth.BluetoothDevice, F8.m$a): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(Landroid/content/Context;Landroid/bluetooth/BluetoothDevice;LF8/m$a;)V\"},{\"signature\":\"a(): void\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"b(int): void\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"c(): void\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"d(): void\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"e(): void\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"f(java.util.UUID, java.util.UUID): android.bluetooth.BluetoothGattCharacteristic\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/UUID;Ljava/util/UUID;)Landroid/bluetooth/BluetoothGattCharacteristic;\"},{\"signature\":\"g(): int\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"h(): boolean\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"i(): boolean\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"j(): void\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"k(): void\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"l(java.util.UUID, java.util.UUID): void\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/UUID;Ljava/util/UUID;)V\"},{\"signature\":\"m(): void\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"n(java.util.UUID, java.util.UUID, byte[], M8.b$a): void\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/UUID;Ljava/util/UUID;[BLM8/b$a;)V\"},{\"signature\":\"toString(): java.lang.String\",\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"}],\"inner_classes\":[\"F8.j.a\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "F8.j",
+          "method_name": "f",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"F8.j.f\",\"overload_index\":0,\"method_name\":\"f\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/util/UUID;Ljava/util/UUID;)Landroid/bluetooth/BluetoothGattCharacteristic;\",\"class_name\":\"F8.j\",\"mode\":\"java\",\"body\":\"    public final BluetoothGattCharacteristic f(UUID uuid, UUID uuid2) {\\r\\n        BluetoothGatt bluetoothGatt = this.f1890p;\\r\\n        BluetoothGattService service = bluetoothGatt != null ? bluetoothGatt.getService(uuid) : null;\\r\\n        if (service == null) {\\r\\n            Q8.a.e(\\\"m_bt_le.GattConnection\\\", \\\"Service not found: \\\" + uuid);\\r\\n            return null;\\r\\n        }\\r\\n        BluetoothGattCharacteristic characteristic = service.getCharacteristic(uuid2);\\r\\n        if (characteristic == null) {\\r\\n            Q8.a.e(\\\"m_bt_le.GattConnection\\\", \\\"Characteristic not found: \\\" + uuid2);\\r\\n        }\\r\\n        return characteristic;\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "F8.j",
+    "method": {
+      "name": "f",
+      "reported_signature": "f(java.util.UUID, java.util.UUID): android.bluetooth.BluetoothGattCharacteristic",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/util/UUID;Ljava/util/UUID;)Landroid/bluetooth/BluetoothGattCharacteristic;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final BluetoothGattCharacteristic f(UUID uuid, UUID uuid2) {\r\n        BluetoothGatt bluetoothGatt = this.f1890p;\r\n        BluetoothGattService service = bluetoothGatt != null ? bluetoothGatt.getService(uuid) : null;\r\n        if (service == null) {\r\n            Q8.a.e(\"m_bt_le.GattConnection\", \"Service not found: \" + uuid);\r\n            return null;\r\n        }\r\n        BluetoothGattCharacteristic characteristic = service.getCharacteristic(uuid2);\r\n        if (characteristic == null) {\r\n            Q8.a.e(\"m_bt_le.GattConnection\", \"Characteristic not found: \" + uuid2);\r\n        }\r\n        return characteristic;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

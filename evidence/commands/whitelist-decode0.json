@@ -1,0 +1,147 @@
+{
+  "evidence_id": "ev_fb38cfe61390728567c16fd71dfbaf745cd646b2bcad5ea4c5643e0a8b64946f",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.common.util.T",
+    "method_name": "b"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":7480,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.common.util.T"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"field_count\":1,\"full_name\":\"com.oplus.melody.common.util.T\",\"method_count\":8,\"raw_name\":\"com.oplus.melody.common.util.T\",\"fields\":[{\"type\":\"byte[]\",\"def_pos\":0,\"name\":\"f22386a\"}],\"methods\":[{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"()V\",\"signature\":\"<init>(): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"([B)[B\",\"signature\":\"a(byte[]): byte[]\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;)[B\",\"signature\":\"b(android.content.Context): byte[]\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;)[B\",\"signature\":\"c(android.content.Context): byte[]\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;)[B\",\"signature\":\"d(android.content.Context): byte[]\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;)Z\",\"signature\":\"e(android.content.Context): boolean\"},{\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"signature\":\"f(java.lang.String): boolean\"},{\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/io/File;)[B\",\"signature\":\"g(java.io.File): byte[]\"}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"T\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.common.util.T",
+          "method_name": "b",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.common.util.T.b\",\"overload_index\":0,\"method_name\":\"b\",\"overload_count\":1,\"dex_descriptor\":\"(Landroid/content/Context;)[B\",\"class_name\":\"com.oplus.melody.common.util.T\",\"mode\":\"java\",\"body\":\"    public static byte[] b(Context context) {\\r\\n        byte[] bArr = f22386a;\\r\\n        if (bArr != null && bArr.length > 0) {\\r\\n            return bArr;\\r\\n        }\\r\\n        synchronized (T.class) {\\r\\n            try {\\r\\n                if (f22386a == null || f22386a.length == 0) {\\r\\n                    byte[] bArrD = null;\\r\\n                    if (context == null) {\\r\\n                        y.h(\\\"RepackagingDetector\\\", \\\"Context is null in getCurrentSignatureHash\\\");\\r\\n                    } else {\\r\\n                        try {\\r\\n                            if (e(context)) {\\r\\n                                y.h(\\\"RepackagingDetector\\\", \\\"LSPatch detected in assets directory!\\\");\\r\\n                            } else {\\r\\n                                byte[] bArrC = c(context);\\r\\n                                if (bArrC == null || bArrC.length <= 0) {\\r\\n                                    y.y(\\\"RepackagingDetector\\\", \\\"Failed to read signature from APK file, fallback to PackageManager\\\");\\r\\n                                    bArrD = d(context);\\r\\n                                } else {\\r\\n                                    bArrD = bArrC;\\r\\n                                }\\r\\n                            }\\r\\n                        } catch (Throwable th) {\\r\\n                            y.i(\\\"RepackagingDetector\\\", \\\"Error getting signature hash\\\", th);\\r\\n                        }\\r\\n                    }\\r\\n                    f22386a = bArrD;\\r\\n                }\\r\\n            } catch (Throwable th2) {\\r\\n                throw th2;\\r\\n            }\\r\\n        }\\r\\n        return f22386a;\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.common.util.T",
+    "method": {
+      "name": "b",
+      "reported_signature": "b(android.content.Context): byte[]",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/content/Context;)[B"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static byte[] b(Context context) {\r\n        byte[] bArr = f22386a;\r\n        if (bArr != null && bArr.length > 0) {\r\n            return bArr;\r\n        }\r\n        synchronized (T.class) {\r\n            try {\r\n                if (f22386a == null || f22386a.length == 0) {\r\n                    byte[] bArrD = null;\r\n                    if (context == null) {\r\n                        y.h(\"RepackagingDetector\", \"Context is null in getCurrentSignatureHash\");\r\n                    } else {\r\n                        try {\r\n                            if (e(context)) {\r\n                                y.h(\"RepackagingDetector\", \"LSPatch detected in assets directory!\");\r\n                            } else {\r\n                                byte[] bArrC = c(context);\r\n                                if (bArrC == null || bArrC.length <= 0) {\r\n                                    y.y(\"RepackagingDetector\", \"Failed to read signature from APK file, fallback to PackageManager\");\r\n                                    bArrD = d(context);\r\n                                } else {\r\n                                    bArrD = bArrC;\r\n                                }\r\n                            }\r\n                        } catch (Throwable th) {\r\n                            y.i(\"RepackagingDetector\", \"Error getting signature hash\", th);\r\n                        }\r\n                    }\r\n                    f22386a = bArrD;\r\n                }\r\n            } catch (Throwable th2) {\r\n                throw th2;\r\n            }\r\n        }\r\n        return f22386a;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

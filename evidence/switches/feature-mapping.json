@@ -1,0 +1,108 @@
+{
+  "artifact": "example.apk",
+  "package": "com.heytap.headset",
+  "version": "17.6.5",
+  "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4",
+  "provenance": "Static APK observations and DEX/JADX cross-checks; no OPPO Enco Free4 runtime verification.",
+  "refresh_evidence": "ev_140dda3cf7f674e376a8f827904af7db32a51c566e3d335b49eae7f98d9f33e3",
+  "query": {
+    "command": 269,
+    "command_hex": "0x010D",
+    "payload": "[count u8, featureIds u8...]",
+    "response": "0x810D [status u8, count u8, (featureId u8, state u8)*count]",
+    "query_hex_for_list": "08 06 11 18 1B 1D 21 27 28"
+  },
+  "set": {
+    "command": 1027,
+    "command_hex": "0x0403",
+    "payload": "[featureId u8, state u8:0|1]",
+    "response": "0x8403",
+    "wrapper_evidence": [
+      "ev_1b401dad0b42c74232abcbfabe7ec8dde3ab4e8ce9b4d0b15f6aaa7d90aeb288",
+      "ev_943bf20499f18aa07b2475ee5dee09707a5883a1a9eab44e7811a867cf629ed0"
+    ]
+  },
+  "features": [
+    {
+      "id": 6,
+      "id_hex": "0x06",
+      "api_name": "game_mode",
+      "chinese": "游戏低延迟",
+      "status_property": "gameModeStatus",
+      "ui_evidence": "ev_d9a5451471d093fbb8f2e237d02df33504d83e99ecfbf45398381ca54deb9635"
+    },
+    {
+      "id": 17,
+      "id_hex": "0x11",
+      "api_name": "multipoint",
+      "chinese": "设备双连",
+      "status_property": "multiConnectStatus",
+      "ui_evidence": "ev_8428209e2da7dc90da2ac3cc14d34cfd802f7db165ebd7355995835735896a0b"
+    },
+    {
+      "id": 24,
+      "id_hex": "0x18",
+      "api_name": "hi_quality_audio",
+      "chinese": "高音质音频",
+      "status_property": "hiQualityAudioStatus",
+      "ui_evidence": "ev_46284646d71f509e1f2ad3369b7456e9bb19a27aa6e4ef7f688d421a107dadbe"
+    },
+    {
+      "id": 27,
+      "id_hex": "0x1B",
+      "api_name": "spatial_sound",
+      "chinese": "耳机空间音效开关",
+      "status_property": "spatialSoundStatus",
+      "ui_evidence": "ev_08fb927b17d10e1fa49ea3d7e8165b963bdc927e236711d065558a9358712d10"
+    },
+    {
+      "id": 29,
+      "id_hex": "0x1D",
+      "api_name": "bass_engine",
+      "chinese": "低音引擎",
+      "status_property": "bassEngineStatus",
+      "ui_evidence": null
+    },
+    {
+      "id": 33,
+      "id_hex": "0x21",
+      "api_name": "game_equalizer",
+      "chinese": "游戏 EQ 开关",
+      "status_property": "gameEqualizerStatus",
+      "ui_evidence": null
+    },
+    {
+      "id": 39,
+      "id_hex": "0x27",
+      "api_name": "game_sound",
+      "chinese": "游戏音效开关",
+      "status_property": "gameSoundStatus",
+      "ui_evidence": null
+    },
+    {
+      "id": 40,
+      "id_hex": "0x28",
+      "api_name": "game_mode_main",
+      "chinese": "游戏主开关",
+      "status_property": "gameModeMainStatus",
+      "ui_evidence": "ev_64a2dd570bf1aab9f6a34004b4044fb4e6f517fce7d8f65a8c9fa1afcefb2b81"
+    }
+  ],
+  "new_spatial_type": {
+    "capability_bit": 47,
+    "set_command": 1058,
+    "set_command_hex": "0x0422",
+    "set_payload": "[type u8]",
+    "query_command": 298,
+    "query_command_hex": "0x012A",
+    "query_payload": "empty",
+    "query_response": "0x812A [status u8, type u8]",
+    "type_labels": "Not established by the retained UI evidence; preserve as an opaque integer.",
+    "evidence": [
+      "ev_1dbb9093d68963dd3164d2229470043f851e09b58da7d62fbb7e01710ffcb6d9",
+      "ev_33efa919318f3df4b4035a34ab848f0a3245fc439f08873b09494c7b45d41060",
+      "ev_dae183c1d7673d35aa4edaa4a73818c70827cae957bce23bb6ee7ab45e700173",
+      "ev_085cfab5d58a906cf76431b0269881dd3794a3a316364fd90de43a2271c3489a"
+    ]
+  }
+}

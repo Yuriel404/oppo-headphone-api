@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "source": "APK packaged heymelody_app_whitelist.json, authenticated AES-GCM and gzip decoded",
+  "apk_sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4",
+  "decoded_resource_sha256": "0ef07d3361d4ae3e4bf1e5f6aea5a07ca010af57b6630588fc1f532ae13cc8b9",
+  "source_collection": "compatWhiteList",
+  "uuid_semantics": "Whitelist field is copied to SupportDeviceConfig and used by the SPP socket; GATT also consumes this configurable service UUID. Static transport path confirmed; Windows SDP discovery is still needed on the actual device.",
+  "uuid_evidence_files": [
+    "evidence/transport/support-config-map.json",
+    "evidence/transport/support-config-init0.json",
+    "evidence/transport/support-config-uuid.json",
+    "evidence/transport/spp-device-init.json",
+    "evidence/transport/spp-create-connection.json"
+  ],
+  "runtime_status": "Static APK configuration, not a claim that a paired device or firmware supports every listed item",
+  "profiles": [
+    {
+      "id": "068C10",
+      "name": "OPPO Enco Free4",
+      "brand": "oppo",
+      "type": "T1",
+      "supportSpp": true,
+      "uuid": "0000079A-D102-11E1-9B23-00025B00A5A5",
+      "minVersion": 15003002,
+      "function": {
+        "support3DModel": 1,
+        "batteryInfo": 1,
+        "equalizer": 4,
+        "fitDetection": 1,
+        "autoFirmwareUpdate": 1,
+        "hearingEnhancement": 1,
+        "hearingJudgeDb": 1,
+        "earScan": 1,
+        "fastDiscovery": 1,
+        "multiDevicesConnect": 1,
+        "highToneQuality": 1,
+        "headSetSoundRecord": 0,
+        "gameMode": 1,
+        "controlGuideSupport": 1,
+        "controlAutoVolumeSupport": 1,
+        "related": 1,
+        "customEqualizer": 1,
+        "spatialTypes": [
+          0,
+          1
+        ],
+        "spatialDescriptionType": 2,
+        "wearDetection": 1,
+        "customDress": 1,
+        "heyFindDevice": 1,
+        "spatialHiResMutex": 1,
+        "dialogTags": [
+          2
+        ],
+        "strongNoiseReductionRealTime": 1,
+        "promptVolume": 1,
+        "functionIntroductionGuide": 1,
+        "cleanGuide": 1,
+        "feedback": 1,
+        "earphoneIdentity": 1,
+        "control": [
+          {
+            "ear": 2,
+            "support": 516,
+            "showEar": 0,
+            "action": 1
+          },
+          {
+            "ear": 2,
+            "support": 8805,
+            "showEar": 0,
+            "action": 2
+          },
+          {
+            "ear": 2,
+            "support": 8801,
+            "showEar": 0,
+            "action": 3
+          },
+          {
+            "ear": 2,
+            "showEar": 0,
+            "action": 27,
+            "minSelectCount": 1
+          },
+          {
+            "ear": 2,
+            "support": 3584,
+            "showEar": 0,
+            "action": 5
+          }
+        ],
+        "callControl": [
+          {
+            "ear": 2,
+            "support": 524800,
+            "showEar": 0,
+            "defaultFunction": 524288,
+            "action": 29
+          },
+          {
+            "ear": 2,
+            "support": 131584,
+            "showEar": 0,
+            "action": 30
+          },
+          {
+            "ear": 2,
+            "support": 262656,
+            "showEar": 0,
+            "defaultFunction": 262144,
+            "action": 31
+          }
+        ],
+        "noiseReductionUIVersion": 2,
+        "noiseReductionMode": [
+          {
+            "protocolIndex": 1,
+            "modeType": 5,
+            "childrenMode": [
+              {
+                "protocolIndex": 4,
+                "modeType": 4
+              },
+              {
+                "protocolIndex": 5,
+                "modeType": 8
+              },
+              {
+                "protocolIndex": 6,
+                "modeType": 3
+              },
+              {
+                "protocolIndex": 7,
+                "modeType": 7
+              }
+            ]
+          },
+          {
+            "protocolIndex": 11,
+            "modeType": 10
+          },
+          {
+            "protocolIndex": 2,
+            "modeType": 2,
+            "childrenMode": [
+              {
+                "protocolIndex": 8,
+                "modeType": 2
+              }
+            ]
+          },
+          {
+            "protocolIndex": 0,
+            "modeType": 1,
+            "childrenMode": [
+              {
+                "protocolIndex": 3,
+                "modeType": 1
+              }
+            ]
+          }
+        ],
+        "equalizerMode": [
+          {
+            "protocolIndex": 0,
+            "modeType": 26
+          },
+          {
+            "protocolIndex": 1,
+            "modeType": 28
+          },
+          {
+            "protocolIndex": 2,
+            "modeType": 29
+          }
+        ],
+        "equalizerModeCompat": [
+          {
+            "protocolIndex": 7,
+            "modeType": 34,
+            "minFirmVersion": 118,
+            "order": 4,
+            "tag": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "06C010",
+      "name": "OPPO Enco Free4（丹拿版）",
+      "brand": "oppo",
+      "type": "T1",
+      "supportSpp": true,
+      "uuid": "0000079A-D102-11E1-9B23-00025B00A5A5",
+      "minVersion": 15003002,
+      "function": {
+        "support3DModel": 1,
+        "batteryInfo": 1,
+        "equalizer": 4,
+        "fitDetection": 1,
+        "autoFirmwareUpdate": 1,
+        "hearingEnhancement": 1,
+        "hearingJudgeDb": 1,
+        "earScan": 1,
+        "fastDiscovery": 1,
+        "multiDevicesConnect": 1,
+        "highToneQuality": 1,
+        "headSetSoundRecord": 0,
+        "gameMode": 1,
+        "controlGuideSupport": 1,
+        "controlAutoVolumeSupport": 1,
+        "related": 1,
+        "customEqualizer": 1,
+        "spatialTypes": [
+          0,
+          1
+        ],
+        "spatialDescriptionType": 2,
+        "wearDetection": 1,
+        "customDress": 1,
+        "heyFindDevice": 1,
+        "spatialHiResMutex": 1,
+        "dialogTags": [
+          2
+        ],
+        "strongNoiseReductionRealTime": 1,
+        "promptVolume": 1,
+        "functionIntroductionGuide": 1,
+        "cleanGuide": 1,
+        "feedback": 1,
+        "earphoneIdentity": 1,
+        "control": [
+          {
+            "ear": 2,
+            "support": 516,
+            "showEar": 0,
+            "action": 1
+          },
+          {
+            "ear": 2,
+            "support": 8805,
+            "showEar": 0,
+            "action": 2
+          },
+          {
+            "ear": 2,
+            "support": 8801,
+            "showEar": 0,
+            "action": 3
+          },
+          {
+            "ear": 2,
+            "showEar": 0,
+            "action": 27,
+            "minSelectCount": 1
+          },
+          {
+            "ear": 2,
+            "support": 3584,
+            "showEar": 0,
+            "action": 5
+          }
+        ],
+        "callControl": [
+          {
+            "ear": 2,
+            "support": 524800,
+            "showEar": 0,
+            "defaultFunction": 524288,
+            "action": 29
+          },
+          {
+            "ear": 2,
+            "support": 131584,
+            "showEar": 0,
+            "action": 30
+          },
+          {
+            "ear": 2,
+            "support": 262656,
+            "showEar": 0,
+            "defaultFunction": 262144,
+            "action": 31
+          }
+        ],
+        "noiseReductionUIVersion": 2,
+        "noiseReductionMode": [
+          {
+            "protocolIndex": 1,
+            "modeType": 5,
+            "childrenMode": [
+              {
+                "protocolIndex": 4,
+                "modeType": 4
+              },
+              {
+                "protocolIndex": 5,
+                "modeType": 8
+              },
+              {
+                "protocolIndex": 6,
+                "modeType": 3
+              },
+              {
+                "protocolIndex": 7,
+                "modeType": 7
+              }
+            ]
+          },
+          {
+            "protocolIndex": 11,
+            "modeType": 10
+          },
+          {
+            "protocolIndex": 2,
+            "modeType": 2,
+            "childrenMode": [
+              {
+                "protocolIndex": 8,
+                "modeType": 2
+              }
+            ]
+          },
+          {
+            "protocolIndex": 0,
+            "modeType": 1,
+            "childrenMode": [
+              {
+                "protocolIndex": 3,
+                "modeType": 1
+              }
+            ]
+          }
+        ],
+        "equalizerMode": [
+          {
+            "protocolIndex": 0,
+            "modeType": 26,
+            "order": 1
+          },
+          {
+            "protocolIndex": 1,
+            "modeType": 28,
+            "order": 2
+          },
+          {
+            "protocolIndex": 2,
+            "modeType": 29,
+            "order": 3
+          },
+          {
+            "protocolIndex": 3,
+            "modeType": 30,
+            "tag": 3,
+            "order": 5
+          }
+        ],
+        "equalizerModeCompat": [
+          {
+            "protocolIndex": 7,
+            "modeType": 34,
+            "minFirmVersion": 118,
+            "order": 4,
+            "tag": 0
+          }
+        ],
+        "equalizerModeByVersion": [
+          {
+            "protocolIndex": 8,
+            "modeType": 40,
+            "minFirmVersion": 136,
+            "minAppVersion": 15011000,
+            "order": 6,
+            "tag": 3
+          }
+        ]
+      }
+    }
+  ],
+  "resolved_noise_modes": [
+    {
+      "protocol_index": 0,
+      "mode_type": 1,
+      "name": "off",
+      "label_zh": "关闭",
+      "role": "parent"
+    },
+    {
+      "protocol_index": 1,
+      "mode_type": 5,
+      "name": "anc",
+      "label_zh": "降噪",
+      "role": "parent"
+    },
+    {
+      "protocol_index": 2,
+      "mode_type": 2,
+      "name": "transparency",
+      "label_zh": "通透",
+      "role": "parent"
+    },
+    {
+      "protocol_index": 3,
+      "mode_type": 1,
+      "name": "off_child",
+      "label_zh": "关闭",
+      "role": "child",
+      "parent_index": 0
+    },
+    {
+      "protocol_index": 4,
+      "mode_type": 4,
+      "name": "anc_deep",
+      "label_zh": "深度降噪",
+      "role": "child",
+      "parent_index": 1
+    },
+    {
+      "protocol_index": 5,
+      "mode_type": 8,
+      "name": "anc_moderate",
+      "label_zh": "中度降噪",
+      "role": "child",
+      "parent_index": 1
+    },
+    {
+      "protocol_index": 6,
+      "mode_type": 3,
+      "name": "anc_mild",
+      "label_zh": "轻度降噪",
+      "role": "child",
+      "parent_index": 1
+    },
+    {
+      "protocol_index": 7,
+      "mode_type": 7,
+      "name": "anc_smart",
+      "label_zh": "智能切换",
+      "role": "child",
+      "parent_index": 1
+    },
+    {
+      "protocol_index": 8,
+      "mode_type": 2,
+      "name": "transparency_child",
+      "label_zh": "通透",
+      "role": "child",
+      "parent_index": 2
+    },
+    {
+      "protocol_index": 11,
+      "mode_type": 10,
+      "name": "adaptive",
+      "label_zh": "自适应",
+      "role": "standalone"
+    }
+  ],
+  "noise_setting_semantics": "The ordinary APK UI selects exactly one protocol_index. It creates a fresh type=1 bitmap containing that single bit, rather than combining parent and child bits. Parent selections may normalize to a child in a firmware response; validate with readback."
+}

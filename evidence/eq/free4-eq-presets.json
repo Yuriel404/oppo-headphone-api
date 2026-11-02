@@ -1,0 +1,188 @@
+{
+  "authority": "shipped-artifact / analyst-derived extraction",
+  "artifact_sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4",
+  "whitelist_path": "<local>/packaged-whitelist.json",
+  "whitelist_sha256": "0ef07d3361d4ae3e4bf1e5f6aea5a07ca010af57b6630588fc1f532ae13cc8b9",
+  "name_mapping_evidence": "ev_041d0371901683e861562fcc67f71599352933f614184c5a6e39639d82a4093d",
+  "resource_sources": [
+    {
+      "path": "<local>/strings.xml",
+      "sha256": "9c7dd9c5a862a8a54dd4f4dd2ddd32b323f37a9378625a56c55eb4d26acb8c8e",
+      "selected_strings": {
+        "melody_ui_equalizer_ultimate_sound": "至臻原音",
+        "melody_ui_equalizer_pure_vocals": "纯享人声",
+        "melody_ui_equalizer_powerful_bass": "澎湃低音",
+        "melody_ui_equalizer_dynaudio_special": "丹拿特调",
+        "melody_ui_equalizer_vitality": "活力动感",
+        "melody_ui_equalizer_dynaudio_vocals": "丹拿人声"
+      }
+    },
+    {
+      "path": "<local>/strings.xml",
+      "sha256": "6b98f6dc91c1ed422f8e76408314e79ec93d967a67f6413730d9326e47816b5f",
+      "selected_strings": {
+        "melody_ui_equalizer_ultimate_sound": "Ultimate sound",
+        "melody_ui_equalizer_pure_vocals": "Pure vocals",
+        "melody_ui_equalizer_powerful_bass": "Thundering bass",
+        "melody_ui_equalizer_dynaudio_special": "Dynaudio featured",
+        "melody_ui_equalizer_vitality": "Vibrant",
+        "melody_ui_equalizer_dynaudio_vocals": "Dynaudio vocal"
+      }
+    }
+  ],
+  "devices": [
+    {
+      "product_id": "068C10",
+      "name": "OPPO Enco Free4",
+      "whitelist_pointer": "/compatWhiteList/8",
+      "equalizer": 4,
+      "customEqualizer": 1,
+      "presets": [
+        {
+          "mode_id": 0,
+          "mode_type": 26,
+          "name_zh_CN": "至臻原音",
+          "name_default": "Ultimate sound",
+          "resource_name": "melody_ui_equalizer_ultimate_sound",
+          "source_key": "equalizerMode",
+          "raw_whitelist_entry": {
+            "protocolIndex": 0,
+            "modeType": 26
+          }
+        },
+        {
+          "mode_id": 1,
+          "mode_type": 28,
+          "name_zh_CN": "纯享人声",
+          "name_default": "Pure vocals",
+          "resource_name": "melody_ui_equalizer_pure_vocals",
+          "source_key": "equalizerMode",
+          "raw_whitelist_entry": {
+            "protocolIndex": 1,
+            "modeType": 28
+          }
+        },
+        {
+          "mode_id": 2,
+          "mode_type": 29,
+          "name_zh_CN": "澎湃低音",
+          "name_default": "Thundering bass",
+          "resource_name": "melody_ui_equalizer_powerful_bass",
+          "source_key": "equalizerMode",
+          "raw_whitelist_entry": {
+            "protocolIndex": 2,
+            "modeType": 29
+          }
+        },
+        {
+          "mode_id": 7,
+          "mode_type": 34,
+          "name_zh_CN": "活力动感",
+          "name_default": "Vibrant",
+          "resource_name": "melody_ui_equalizer_vitality",
+          "source_key": "equalizerModeCompat",
+          "raw_whitelist_entry": {
+            "protocolIndex": 7,
+            "modeType": 34,
+            "minFirmVersion": 118,
+            "order": 4,
+            "tag": 0
+          }
+        }
+      ]
+    },
+    {
+      "product_id": "06C010",
+      "name": "OPPO Enco Free4（丹拿版）",
+      "whitelist_pointer": "/compatWhiteList/9",
+      "equalizer": 4,
+      "customEqualizer": 1,
+      "presets": [
+        {
+          "mode_id": 0,
+          "mode_type": 26,
+          "name_zh_CN": "至臻原音",
+          "name_default": "Ultimate sound",
+          "resource_name": "melody_ui_equalizer_ultimate_sound",
+          "source_key": "equalizerMode",
+          "raw_whitelist_entry": {
+            "protocolIndex": 0,
+            "modeType": 26,
+            "order": 1
+          }
+        },
+        {
+          "mode_id": 1,
+          "mode_type": 28,
+          "name_zh_CN": "纯享人声",
+          "name_default": "Pure vocals",
+          "resource_name": "melody_ui_equalizer_pure_vocals",
+          "source_key": "equalizerMode",
+          "raw_whitelist_entry": {
+            "protocolIndex": 1,
+            "modeType": 28,
+            "order": 2
+          }
+        },
+        {
+          "mode_id": 2,
+          "mode_type": 29,
+          "name_zh_CN": "澎湃低音",
+          "name_default": "Thundering bass",
+          "resource_name": "melody_ui_equalizer_powerful_bass",
+          "source_key": "equalizerMode",
+          "raw_whitelist_entry": {
+            "protocolIndex": 2,
+            "modeType": 29,
+            "order": 3
+          }
+        },
+        {
+          "mode_id": 3,
+          "mode_type": 30,
+          "name_zh_CN": "丹拿特调",
+          "name_default": "Dynaudio featured",
+          "resource_name": "melody_ui_equalizer_dynaudio_special",
+          "source_key": "equalizerMode",
+          "raw_whitelist_entry": {
+            "protocolIndex": 3,
+            "modeType": 30,
+            "tag": 3,
+            "order": 5
+          }
+        },
+        {
+          "mode_id": 7,
+          "mode_type": 34,
+          "name_zh_CN": "活力动感",
+          "name_default": "Vibrant",
+          "resource_name": "melody_ui_equalizer_vitality",
+          "source_key": "equalizerModeCompat",
+          "raw_whitelist_entry": {
+            "protocolIndex": 7,
+            "modeType": 34,
+            "minFirmVersion": 118,
+            "order": 4,
+            "tag": 0
+          }
+        },
+        {
+          "mode_id": 8,
+          "mode_type": 40,
+          "name_zh_CN": "丹拿人声",
+          "name_default": "Dynaudio vocal",
+          "resource_name": "melody_ui_equalizer_dynaudio_vocals",
+          "source_key": "equalizerModeByVersion",
+          "raw_whitelist_entry": {
+            "protocolIndex": 8,
+            "modeType": 40,
+            "minFirmVersion": 136,
+            "minAppVersion": 15011000,
+            "order": 6,
+            "tag": 3
+          }
+        }
+      ]
+    }
+  ]
+}

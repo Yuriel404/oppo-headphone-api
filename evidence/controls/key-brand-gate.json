@@ -1,0 +1,147 @@
+{
+  "evidence_id": "ev_515efc1668e01393724eb1861698e532812eaca217fc42b19c01913c83943b5a",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Z4.f",
+    "method_name": "G"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":5608,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Z4.f"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"A(android.content.Context, java.lang.String): java.lang.String\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"A\",\"def_pos\":0},{\"signature\":\"B(java.lang.String, java.lang.String, boolean): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Z)Z\",\"is_constructor\":false,\"name\":\"B\",\"def_pos\":0},{\"signature\":\"C(int, java.lang.String): boolean\",\"dex_descriptor\":\"(ILjava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"C\",\"def_pos\":0},{\"signature\":\"D(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"D\",\"def_pos\":0},{\"signature\":\"E(int): boolean\",\"dex_descriptor\":\"(I)Z\",\"is_constructor\":false,\"name\":\"E\",\"def_pos\":0},{\"signature\":\"F(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"F\",\"def_pos\":0},{\"signature\":\"G(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"G\",\"def_pos\":0},{\"signature\":\"H(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"H\",\"def_pos\":0},{\"signature\":\"I(int): boolean\",\"dex_descriptor\":\"(I)Z\",\"is_constructor\":false,\"name\":\"I\",\"def_pos\":0},{\"signature\":\"J(float, int, int): int\",\"dex_descriptor\":\"(FII)I\",\"is_constructor\":false,\"name\":\"J\",\"def_pos\":0},{\"signature\":\"K(java.util.Map): org.json.JSONObject\",\"dex_descriptor\":\"(Ljava/util/Map;)Lorg/json/JSONObject;\",\"is_constructor\":false,\"name\":\"K\",\"def_pos\":0},{\"signature\":\"L(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"L\",\"def_pos\":0},{\"signature\":\"M(android.content.Context, java.lang.String): com.oplus.accountsdk.base.common.net.data.AcSdkNetResponse\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;)Lcom/oplus/accountsdk/base/common/net/data/AcSdkNetResponse;\",\"is_constructor\":false,\"name\":\"M\",\"def_pos\":0},{\"signature\":\"N(int): int\",\"dex_descriptor\":\"(I)I\",\"is_constructor\":false,\"name\":\"N\",\"def_pos\":0},{\"signature\":\"O(float, float, float, float, float, float, boolean, boolean): android.graphics.Path\",\"dex_descriptor\":\"(FFFFFFZZ)Landroid/graphics/Path;\",\"is_constructor\":false,\"name\":\"O\",\"def_pos\":0},{\"signature\":\"P(java.util.List, com.google.common.base.g, int, int): void\",\"dex_descriptor\":\"(Ljava/util/List;Lcom/google/common/base/g;II)V\",\"is_constructor\":false,\"name\":\"P\",\"def_pos\":0},{\"signature\":\"Q(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"Q\",\"def_pos\":0},{\"signature\":\"a(int, java.lang.Object[]): void\",\"dex_descriptor\":\"(I[Ljava/lang/Object;)V\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"c(int, int): int\",\"dex_descriptor\":\"(II)I\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0},{\"signature\":\"d(long, kotlin.time.DurationUnit, kotlin.time.DurationUnit): long\",\"dex_descriptor\":\"(JLkotlin/time/DurationUnit;Lkotlin/time/DurationUnit;)J\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0},{\"signature\":\"e(long, kotlin.time.DurationUnit, kotlin.time.DurationUnit): long\",\"dex_descriptor\":\"(JLkotlin/time/DurationUnit;Lkotlin/time/DurationUnit;)J\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0},{\"signature\":\"f(com.oplus.mydevices.sdk.device.DeviceInfo): java.lang.String\",\"dex_descriptor\":\"(Lcom/oplus/mydevices/sdk/device/DeviceInfo;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0},{\"signature\":\"g(android.content.Context, float): int\",\"dex_descriptor\":\"(Landroid/content/Context;F)I\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0},{\"signature\":\"h(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0},{\"signature\":\"i(java.lang.String): java.lang.String\",\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0},{\"signature\":\"j(java.lang.String): java.lang.String\",\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0},{\"signature\":\"k(java.lang.String, java.lang.String): java.util.Map\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"k\",\"def_pos\":0},{\"signature\":\"l(java.lang.String, java.lang.String, java.lang.String): java.util.Map\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0},{\"signature\":\"m(java.lang.String, boolean): java.lang.String\",\"dex_descriptor\":\"(Ljava/lang/String;Z)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"m\",\"def_pos\":0},{\"signature\":\"n(int, java.lang.String): void\",\"dex_descriptor\":\"(ILjava/lang/String;)V\",\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0},{\"signature\":\"o(java.lang.String): k6.b\",\"dex_descriptor\":\"(Ljava/lang/String;)Lk6/b;\",\"is_constructor\":false,\"name\":\"o\",\"def_pos\":0},{\"signature\":\"p(int, android.view.View): int\",\"dex_descriptor\":\"(ILandroid/view/View;)I\",\"is_constructor\":false,\"name\":\"p\",\"def_pos\":0},{\"signature\":\"q(android.content.Context, int, int): int\",\"dex_descriptor\":\"(Landroid/content/Context;II)I\",\"is_constructor\":false,\"name\":\"q\",\"def_pos\":0},{\"signature\":\"r(java.lang.String): com.oplus.mydevices.sdk.device.DeviceInfo\",\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/oplus/mydevices/sdk/device/DeviceInfo;\",\"is_constructor\":false,\"name\":\"r\",\"def_pos\":0},{\"signature\":\"s(java.util.AbstractCollection, java.lang.String): java.lang.Object\",\"dex_descriptor\":\"(Ljava/util/AbstractCollection;Ljava/lang/String;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"s\",\"def_pos\":0},{\"signature\":\"t(java.lang.Iterable): java.lang.Object\",\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0},{\"signature\":\"u(s1.a): long\",\"dex_descriptor\":\"(Ls1/a;)J\",\"is_constructor\":false,\"name\":\"u\",\"def_pos\":0},{\"signature\":\"v(java.lang.String): int\",\"dex_descriptor\":\"(Ljava/lang/String;)I\",\"is_constructor\":false,\"name\":\"v\",\"def_pos\":0},{\"signature\":\"w(android.os.Bundle, java.lang.String): android.os.Bundle\",\"dex_descriptor\":\"(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/Bundle;\",\"is_constructor\":false,\"name\":\"w\",\"def_pos\":0},{\"signature\":\"x(android.content.Context): g6.b\",\"dex_descriptor\":\"(Landroid/content/Context;)Lg6/b;\",\"is_constructor\":false,\"name\":\"x\",\"def_pos\":0},{\"signature\":\"y(s1.a): int\",\"dex_descriptor\":\"(Ls1/a;)I\",\"is_constructor\":false,\"name\":\"y\",\"def_pos\":0},{\"signature\":\"z(android.content.Context, java.lang.String): int\",\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;)I\",\"is_constructor\":false,\"name\":\"z\",\"def_pos\":0}],\"fields\":[{\"name\":\"f7673a\",\"def_pos\":0,\"type\":\"boolean\"}],\"raw_name\":\"Z4.f\",\"method_count\":43,\"full_name\":\"Z4.f\",\"field_count\":1,\"name\":\"f\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Z4.f",
+          "method_name": "G",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public static boolean G(String str) {\\r\\n        return \\\"OnePlus Buds\\\".equals(str) || \\\"OnePlus Buds Z\\\".equals(str);\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"Z4.f\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"overload_count\":1,\"method_name\":\"G\",\"overload_index\":0,\"full_name\":\"Z4.f.G\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Z4.f",
+    "method": {
+      "name": "G",
+      "reported_signature": "G(java.lang.String): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;)Z"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static boolean G(String str) {\r\n        return \"OnePlus Buds\".equals(str) || \"OnePlus Buds Z\".equals(str);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

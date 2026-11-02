@@ -1,0 +1,148 @@
+{
+  "evidence_id": "ev_f6dacb0d7e48e38deb747b896f1c396ae9a3ca440284eaae3b89a30fe9a309c0",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Ab.d",
+    "method_name": "onCreate",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":5479,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Ab.d"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"methods\":[{\"dex_descriptor\":\"(Landroidx/fragment/app/f;Ljava/lang/String;[I[ILAb/e;)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(androidx.fragment.app.f, java.lang.String, int[], int[], Ab.e): void\"},{\"dex_descriptor\":\"(Landroid/os/Bundle;)V\",\"is_constructor\":false,\"name\":\"onCreate\",\"def_pos\":0,\"signature\":\"onCreate(android.os.Bundle): void\"}],\"fields\":[{\"name\":\"f341a\",\"def_pos\":0,\"type\":\"androidx.fragment.app.f\"},{\"name\":\"f342b\",\"def_pos\":0,\"type\":\"Ab.E0[]\"},{\"name\":\"f343c\",\"def_pos\":0,\"type\":\"com.oplus.melody.ui.component.detail.equalizer.FrequencyView\"},{\"name\":\"f344p\",\"def_pos\":0,\"type\":\"android.view.View\"},{\"name\":\"f345q\",\"def_pos\":0,\"type\":\"android.widget.LinearLayout\"},{\"name\":\"f346r\",\"def_pos\":0,\"type\":\"Ab.e\"},{\"name\":\"f347s\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f348t\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f349u\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f350v\",\"def_pos\":0,\"type\":\"int[]\"},{\"name\":\"f351w\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f352x\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"f353y\",\"def_pos\":0,\"type\":\"int[]\"}],\"raw_name\":\"Ab.d\",\"method_count\":2,\"full_name\":\"Ab.d\",\"field_count\":13,\"name\":\"d\",\"inner_class_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Ab.d",
+          "method_name": "onCreate",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"    @Override // com.coui.appcompat.panel.COUIBottomSheetDialog, com.google.android.material.bottomsheet.a, androidx.appcompat.app.p, b.l, android.app.Dialog\\r\\n    public final void onCreate(Bundle bundle) {\\r\\n        View view = this.f344p;\\r\\n        setContentView(view);\\r\\n        super.onCreate(bundle);\\r\\n        boolean z10 = false;\\r\\n        getBehavior().setDraggable(false);\\r\\n        getDragableLinearLayout().getDragView().setVisibility(8);\\r\\n        int[] iArr = this.f350v;\\r\\n        this.f342b = new E0[iArr.length];\\r\\n        FrequencyView frequencyView = (FrequencyView) findViewById(R.id.view_frequency);\\r\\n        this.f343c = frequencyView;\\r\\n        frequencyView.setFrequencyNum(iArr.length);\\r\\n        TextView textView = (TextView) findViewById(R.id.tv_max_value);\\r\\n        int i10 = this.f348t;\\r\\n        Object[] objArr = {String.valueOf(i10)};\\r\\n        androidx.fragment.app.f fVar = this.f341a;\\r\\n        textView.setText(fVar.getString(R.string.melody_ui_custom_eq_positive_db, objArr));\\r\\n        TextView textView2 = (TextView) findViewById(R.id.tv_mid_value);\\r\\n        int i11 = this.f349u;\\r\\n        textView2.setText(fVar.getString(R.string.melody_ui_custom_eq_db, String.valueOf((i10 + i11) / 2)));\\r\\n        ((TextView) findViewById(R.id.tv_min_value)).setText(fVar.getString(R.string.melody_ui_custom_eq_db, String.valueOf(i11)));\\r\\n        this.f345q = (LinearLayout) findViewById(R.id.container_seekbars);\\r\\n        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.container_seekbars_mark);\\r\\n        LinearLayout linearLayout2 = (LinearLayout) findViewById(R.id.container_seekbars_describe);\\r\\n        this.f347s = i10 - i11;\\r\\n        int i12 = 0;\\r\\n        while (i12 < iArr.length) {\\r\\n            E0 e3 = new E0(getContext(), null, R.attr.couiSectionSeekBarStyle);\\r\\n            e3.f194a = 3;\\r\\n            e3.f199r = z10;\\r\\n            e3.f201t = -1;\\r\\n            e3.f203v = -1.0f;\\r\\n            AnimatorSet animatorSet = new AnimatorSet();\\r\\n            e3.f183C = animatorSet;\\r\\n            e3.f189J = z10;\\r\\n            e3.f190K = z10;\\r\\n            i2.a.d(e3, z10);\\r\\n            int dimensionPixelOffset = e3.getResources().getDimensionPixelOffset(R.dimen.melody_ui_custom_eq_touch_thumb_radius);\\r\\n            e3.f184D = dimensionPixelOffset;\\r\\n            e3.f192M = e3.getResources().getDimensionPixelOffset(R.dimen.coui_seekbar_view_max_width);\\r\\n            e3.f195b = ViewConfiguration.get(e3.getContext()).getScaledTouchSlop();\\r\\n            E0.e eVar = e3.new e(e3);\\r\\n            androidx.core.view.M.q(e3, eVar);\\r\\n            e3.setImportantForAccessibility(1);\\r\\n            eVar.h();\\r\\n            animatorSet.setInterpolator(new PathInterpolator(0.3f, 0.0f, 0.1f, 1.0f));\\r\\n            ValueAnimator valueAnimatorOfInt = ValueAnimator.ofInt(0, dimensionPixelOffset);\\r\\n            valueAnimatorOfInt.setDuration(202L);\\r\\n            valueAnimatorOfInt.addUpdateListener(new D0(e3));\\r\\n            animatorSet.play(valueAnimatorOfInt);\\r\\n            e3.setIdentity(i12);\\r\\n            e3.setNumber(this.f347s);\\r\\n            int[] iArr2 = this.f353y;\\r\\n            if (iArr2 == null) {\\r\\n                e3.setThumbIndex(this.f347s / 2);\\r\\n            } else if (i12 < iArr2.length) {\\r\\n                e3.setThumbIndex(i10 - iArr2[i12]);\\r\\n                this.f343c.f25477A[i12] = iArr2[i12];\\r\\n            }\\r\\n            e3.setOnSectionSeekBarChangeListener(this);\\r\\n            e3.setLayoutParams(new LinearLayout.LayoutParams(0, -1, 1.0f));\\r\\n            this.f345q.addView(e3);\\r\\n            this.f342b[i12] = e3;\\r\\n            TextView textView3 = (TextView) LayoutInflater.from(fVar).inflate(R.layout.melody_ui_custom_eq_seekbar_mark, (ViewGroup) null);\\r\\n            textView3.setLayoutParams(new LinearLayout.LayoutParams(0, -2, 1.0f));\\r\\n            int i13 = iArr[i12];\\r\\n            textView3.setText(i13 < 1000 ? String.valueOf(i13) : fVar.getString(R.string.melody_ui_custom_eq_frequency, String.valueOf(i13 / 1000)));\\r\\n            linearLayout.addView(textView3);\\r\\n            TextView textView4 = (TextView) LayoutInflater.from(fVar).inflate(R.layout.melody_ui_custom_eq_seekbar_describe, (ViewGroup) null);\\r\\n            textView4.setLayoutParams(new LinearLayout.LayoutParams(0, -2, 1.0f));\\r\\n            if (i12 == 0) {\\r\\n                textView4.setText(getContext().getString(R.string.melody_ui_hearing_enhancement_low_frequency));\\r\\n            } else if (i12 == iArr.length - 1) {\\r\\n                textView4.setText(getContext().getString(R.string.melody_ui_hearing_enhancement_high_frequency));\\r\\n            }\\r\\n            linearLayout2.addView(textView4);\\r\\n            i12++;\\r\\n            z10 = false;\\r\\n        }\\r\\n        int[] iArr3 = new int[this.f342b.length];\\r\\n        int i14 = 0;\\r\\n        while (true) {\\r\\n            E0[] e0Arr = this.f342b;\\r\\n            if (i14 >= e0Arr.length) {\\r\\n                break;\\r\\n            }\\r\\n            iArr3[i14] = i10 - e0Arr[i14].getThumbIndex();\\r\\n            i14++;\\r\\n        }\\r\\n        String str = this.f352x;\\r\\n        e eVar2 = this.f346r;\\r\\n        if (eVar2 != null) {\\r\\n            eVar2.a(str, iArr3);\\r\\n        }\\r\\n        COUIToolbar cOUIToolbar = (COUIToolbar) view.findViewById(R.id.dialog_toolbar);\\r\\n        cOUIToolbar.setVisibility(0);\\r\\n        cOUIToolbar.setIsTitleCenterStyle(true);\\r\\n        cOUIToolbar.setTitle(str);\\r\\n        cOUIToolbar.inflateMenu(R.menu.melody_ui_custom_eq_adjust_dialog_menu);\\r\\n        cOUIToolbar.getMenu().findItem(R.id.custom_eq_adjust_cancel).setOnMenuItemClickListener(new b(this, 0));\\r\\n        cOUIToolbar.getMenu().findItem(R.id.custom_eq_adjust_confirm).setOnMenuItemClickListener(new c(this, 0));\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"Ab.d\",\"dex_descriptor\":\"(Landroid/os/Bundle;)V\",\"overload_count\":1,\"method_name\":\"onCreate\",\"overload_index\":0,\"full_name\":\"Ab.d.onCreate\",\"fell_back\":false,\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Ab.d",
+    "method": {
+      "name": "onCreate",
+      "reported_signature": "onCreate(android.os.Bundle): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/os/Bundle;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.coui.appcompat.panel.COUIBottomSheetDialog, com.google.android.material.bottomsheet.a, androidx.appcompat.app.p, b.l, android.app.Dialog\r\n    public final void onCreate(Bundle bundle) {\r\n        View view = this.f344p;\r\n        setContentView(view);\r\n        super.onCreate(bundle);\r\n        boolean z10 = false;\r\n        getBehavior().setDraggable(false);\r\n        getDragableLinearLayout().getDragView().setVisibility(8);\r\n        int[] iArr = this.f350v;\r\n        this.f342b = new E0[iArr.length];\r\n        FrequencyView frequencyView = (FrequencyView) findViewById(R.id.view_frequency);\r\n        this.f343c = frequencyView;\r\n        frequencyView.setFrequencyNum(iArr.length);\r\n        TextView textView = (TextView) findViewById(R.id.tv_max_value);\r\n        int i10 = this.f348t;\r\n        Object[] objArr = {String.valueOf(i10)};\r\n        androidx.fragment.app.f fVar = this.f341a;\r\n        textView.setText(fVar.getString(R.string.melody_ui_custom_eq_positive_db, objArr));\r\n        TextView textView2 = (TextView) findViewById(R.id.tv_mid_value);\r\n        int i11 = this.f349u;\r\n        textView2.setText(fVar.getString(R.string.melody_ui_custom_eq_db, String.valueOf((i10 + i11) / 2)));\r\n        ((TextView) findViewById(R.id.tv_min_value)).setText(fVar.getString(R.string.melody_ui_custom_eq_db, String.valueOf(i11)));\r\n        this.f345q = (LinearLayout) findViewById(R.id.container_seekbars);\r\n        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.container_seekbars_mark);\r\n        LinearLayout linearLayout2 = (LinearLayout) findViewById(R.id.container_seekbars_describe);\r\n        this.f347s = i10 - i11;\r\n        int i12 = 0;\r\n        while (i12 < iArr.length) {\r\n            E0 e3 = new E0(getContext(), null, R.attr.couiSectionSeekBarStyle);\r\n            e3.f194a = 3;\r\n            e3.f199r = z10;\r\n            e3.f201t = -1;\r\n            e3.f203v = -1.0f;\r\n            AnimatorSet animatorSet = new AnimatorSet();\r\n            e3.f183C = animatorSet;\r\n            e3.f189J = z10;\r\n            e3.f190K = z10;\r\n            i2.a.d(e3, z10);\r\n            int dimensionPixelOffset = e3.getResources().getDimensionPixelOffset(R.dimen.melody_ui_custom_eq_touch_thumb_radius);\r\n            e3.f184D = dimensionPixelOffset;\r\n            e3.f192M = e3.getResources().getDimensionPixelOffset(R.dimen.coui_seekbar_view_max_width);\r\n            e3.f195b = ViewConfiguration.get(e3.getContext()).getScaledTouchSlop();\r\n            E0.e eVar = e3.new e(e3);\r\n            androidx.core.view.M.q(e3, eVar);\r\n            e3.setImportantForAccessibility(1);\r\n            eVar.h();\r\n            animatorSet.setInterpolator(new PathInterpolator(0.3f, 0.0f, 0.1f, 1.0f));\r\n            ValueAnimator valueAnimatorOfInt = ValueAnimator.ofInt(0, dimensionPixelOffset);\r\n            valueAnimatorOfInt.setDuration(202L);\r\n            valueAnimatorOfInt.addUpdateListener(new D0(e3));\r\n            animatorSet.play(valueAnimatorOfInt);\r\n            e3.setIdentity(i12);\r\n            e3.setNumber(this.f347s);\r\n            int[] iArr2 = this.f353y;\r\n            if (iArr2 == null) {\r\n                e3.setThumbIndex(this.f347s / 2);\r\n            } else if (i12 < iArr2.length) {\r\n                e3.setThumbIndex(i10 - iArr2[i12]);\r\n                this.f343c.f25477A[i12] = iArr2[i12];\r\n            }\r\n            e3.setOnSectionSeekBarChangeListener(this);\r\n            e3.setLayoutParams(new LinearLayout.LayoutParams(0, -1, 1.0f));\r\n            this.f345q.addView(e3);\r\n            this.f342b[i12] = e3;\r\n            TextView textView3 = (TextView) LayoutInflater.from(fVar).inflate(R.layout.melody_ui_custom_eq_seekbar_mark, (ViewGroup) null);\r\n            textView3.setLayoutParams(new LinearLayout.LayoutParams(0, -2, 1.0f));\r\n            int i13 = iArr[i12];\r\n            textView3.setText(i13 < 1000 ? String.valueOf(i13) : fVar.getString(R.string.melody_ui_custom_eq_frequency, String.valueOf(i13 / 1000)));\r\n            linearLayout.addView(textView3);\r\n            TextView textView4 = (TextView) LayoutInflater.from(fVar).inflate(R.layout.melody_ui_custom_eq_seekbar_describe, (ViewGroup) null);\r\n            textView4.setLayoutParams(new LinearLayout.LayoutParams(0, -2, 1.0f));\r\n            if (i12 == 0) {\r\n                textView4.setText(getContext().getString(R.string.melody_ui_hearing_enhancement_low_frequency));\r\n            } else if (i12 == iArr.length - 1) {\r\n                textView4.setText(getContext().getString(R.string.melody_ui_hearing_enhancement_high_frequency));\r\n            }\r\n            linearLayout2.addView(textView4);\r\n            i12++;\r\n            z10 = false;\r\n        }\r\n        int[] iArr3 = new int[this.f342b.length];\r\n        int i14 = 0;\r\n        while (true) {\r\n            E0[] e0Arr = this.f342b;\r\n            if (i14 >= e0Arr.length) {\r\n                break;\r\n            }\r\n            iArr3[i14] = i10 - e0Arr[i14].getThumbIndex();\r\n            i14++;\r\n        }\r\n        String str = this.f352x;\r\n        e eVar2 = this.f346r;\r\n        if (eVar2 != null) {\r\n            eVar2.a(str, iArr3);\r\n        }\r\n        COUIToolbar cOUIToolbar = (COUIToolbar) view.findViewById(R.id.dialog_toolbar);\r\n        cOUIToolbar.setVisibility(0);\r\n        cOUIToolbar.setIsTitleCenterStyle(true);\r\n        cOUIToolbar.setTitle(str);\r\n        cOUIToolbar.inflateMenu(R.menu.melody_ui_custom_eq_adjust_dialog_menu);\r\n        cOUIToolbar.getMenu().findItem(R.id.custom_eq_adjust_cancel).setOnMenuItemClickListener(new b(this, 0));\r\n        cOUIToolbar.getMenu().findItem(R.id.custom_eq_adjust_confirm).setOnMenuItemClickListener(new c(this, 0));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

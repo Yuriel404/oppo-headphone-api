@@ -1,0 +1,70 @@
+{
+  "artifact_sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4",
+  "query": {
+    "command": 290,
+    "command_hex": "0x0122",
+    "payload": "empty",
+    "response": "0x8122",
+    "response_fields": [
+      "status:u8",
+      "count:u8",
+      "entries[count]"
+    ],
+    "entry_fields": [
+      "selected:u8",
+      "min_gain:i8",
+      "max_gain:i8",
+      "eq_id:u8",
+      "name_length:u8",
+      "name_utf8:bytes[name_length]",
+      "band_count:u8",
+      "bands[band_count]:(frequency:LEu16,gain:i8)"
+    ]
+  },
+  "set": {
+    "command": 1048,
+    "command_hex": "0x0418",
+    "response": "0x8418",
+    "fields": [
+      "action:u8",
+      "min_gain:i8",
+      "max_gain:i8",
+      "eq_id:u8",
+      "name_length:u8",
+      "name_utf8:bytes[name_length]",
+      "band_count:u8",
+      "bands[band_count]:(frequency:LEu16,gain:i8)"
+    ],
+    "payload_length": "6 + len(name_utf8) + 3 * band_count",
+    "actions": {
+      "none": 0,
+      "create": 1,
+      "update_and_or_select": 2,
+      "delete": 3
+    },
+    "postcondition": "After success re-query 0x0122; do not infer final assigned ID from create input or undocumented response byte."
+  },
+  "factory_preset": {
+    "set_command_hex": "0x0406",
+    "set_payload": "[mode_id u8]",
+    "query_command_hex": "0x010F",
+    "query_payload": "empty",
+    "id_namespace": "Factory mode_id is distinct from custom eq_id."
+  },
+  "gains": {
+    "wire_type": "signed i8 integer",
+    "observed_display_scale_db_per_unit": 1,
+    "scope": "Ab.d editor path confirmed; Free4 editor branch selection not fully traced.",
+    "limits": "Use returned min_gain/max_gain; observed create UI uses -6..+6."
+  },
+  "evidence": {
+    "list_parser": "ev_78c30a1d2d7f15a7be186c52b6d3fe3f02bfb9198e9d6b8d6773a613959dc1c4",
+    "integer_decoder": "ev_7468ac7a023834e45eee5782b46d269c3e2d638766403f68f13facd489a81a4c",
+    "create": "ev_a454354b13a88d547010acd67d39be065d8b9ab87ebe81a13bc30bdc573d5ff5",
+    "select": "ev_c4ead9dfc756eb1242c4d108b98a37b6b2589956b2aa0a3eaf946f8fbfac1374",
+    "rename": "ev_5fadcbedce444343bcbdbab06c8ae9bec2cca59ecdc688260bdd205e767cc2a4",
+    "delete": "ev_94abd371a98fa9a6a41b6b5e7422c4d56168b557a0f5c6c692a389b9678d7fb6",
+    "db_display": "ev_f6dacb0d7e48e38deb747b896f1c396ae9a3ca440284eaae3b89a30fe9a309c0",
+    "preset_name_mapping": "ev_041d0371901683e861562fcc67f71599352933f614184c5a6e39639d82a4093d"
+  }
+}

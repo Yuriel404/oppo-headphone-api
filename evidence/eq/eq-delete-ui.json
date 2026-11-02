@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_94abd371a98fa9a6a41b6b5e7422c4d56168b557a0f5c6c692a389b9678d7fb6",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Ab.s",
+    "method_name": "onClick",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Ab.s"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"name\":\"s\",\"field_count\":3,\"full_name\":\"Ab.s\",\"method_count\":2,\"raw_name\":\"Ab.s\",\"fields\":[{\"type\":\"int\",\"def_pos\":0,\"name\":\"f414a\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"f415b\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"f416c\"}],\"methods\":[{\"signature\":\"<init>(int, java.lang.Object, java.lang.Object): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(ILjava/lang/Object;Ljava/lang/Object;)V\"},{\"signature\":\"onClick(android.content.DialogInterface, int): void\",\"def_pos\":0,\"name\":\"onClick\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/DialogInterface;I)V\"}],\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Ab.s",
+          "method_name": "onClick",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"Ab.s.onClick\",\"overload_index\":0,\"method_name\":\"onClick\",\"overload_count\":1,\"dex_descriptor\":\"(Landroid/content/DialogInterface;I)V\",\"class_name\":\"Ab.s\",\"mode\":\"java\",\"body\":\"    @Override // android.content.DialogInterface.OnClickListener\\r\\n    public final void onClick(DialogInterface dialogInterface, int i10) {\\r\\n        int i11 = 0;\\r\\n        int i12 = 1;\\r\\n        switch (this.f414a) {\\r\\n            case 0:\\r\\n                Z z10 = (Z) this.f415b;\\r\\n                ArrayList arrayList = (ArrayList) this.f416c;\\r\\n                int size = arrayList.size();\\r\\n                int i13 = 0;\\r\\n                while (i13 < size) {\\r\\n                    Object obj = arrayList.get(i13);\\r\\n                    i13++;\\r\\n                    CustomEqPreference customEqPreference = (CustomEqPreference) obj;\\r\\n                    z10.f264E.j(customEqPreference);\\r\\n                    ta.b bVar = customEqPreference.f25469s;\\r\\n                    if (bVar != null) {\\r\\n                        if (z10.f292h0 == bVar.getEqId()) {\\r\\n                            z10.f292h0 = -1;\\r\\n                        }\\r\\n                        ta.c.e().i(3, z10.f278T, bVar);\\r\\n                        z10.f289e0.add(bVar);\\r\\n                    }\\r\\n                }\\r\\n                MenuItem menuItem = z10.f271M;\\r\\n                if (menuItem != null) {\\r\\n                    menuItem.setEnabled(false);\\r\\n                }\\r\\n                MenuItem menuItem2 = z10.f273O;\\r\\n                if (menuItem2 != null) {\\r\\n                    menuItem2.setTitle(com.oplus.melody.common.util.k.f22410a.getString(R.string.melody_ui_common_select_all));\\r\\n                }\\r\\n                MenuItem menuItem3 = z10.f272N;\\r\\n                if (menuItem3 != null) {\\r\\n                    menuItem3.setEnabled(false);\\r\\n                }\\r\\n                z10.K();\\r\\n                U8.Q.b.f6060a.schedule(new E(z10, i11), 1L, TimeUnit.SECONDS);\\r\\n                break;\\r\\n            case 1:\\r\\n                float[] fArr = Ic.p0.f3205P0;\\r\\n                ForkJoinPool.commonPool().execute(new O(8, (Ic.p0) this.f415b, (EarphoneDTO) this.f416c));\\r\\n                break;\\r\\n            case 2:\\r\\n                Mc.r rVar = (Mc.r) this.f415b;\\r\\n                MultiDevicesConnectViewModel multiDevicesConnectViewModel = rVar.f4279L;\\r\\n                String str = rVar.f4271C;\\r\\n                multiDevicesConnectViewModel.getClass();\\r\\n                com.oplus.melody.model.repository.multidevicesconnect.a aVarA = com.oplus.melody.model.repository.multidevicesconnect.a.a();\\r\\n                String str2 = (String) this.f416c;\\r\\n                CompletableFuture completableFutureE = aVarA.e(str, 3, str2, false);\\r\\n                if (completableFutureE != null) {\\r\\n                    completableFutureE.thenAccept((Consumer) new Bc.e(i12, rVar, str2)).exceptionally((Function<Throwable, ? extends Void>) new A8.a(10));\\r\\n                } else {\\r\\n                    com.oplus.melody.common.util.y.h(\\\"MultipleDevicesConnectionFragmentV2\\\", \\\"unpairHandheldDevice future is null!\\\");\\r\\n                }\\r\\n                break;\\r\\n            case 3:\\r\\n                Ma.x.D(true);\\r\\n                Xa.a aVar = (Xa.a) this.f415b;\\r\\n                List<String> list = com.oplus.melody.common.util.S.f22375a;\\r\\n                if (BuildConfig.APPLICATION_ID.equals(aVar.getPackageName())) {\\r\\n                    Ma.x.G();\\r\\n                }\\r\\n                ((Runnable) this.f416c).run();\\r\\n                dialogInterface.dismiss();\\r\\n                break;\\r\\n            default:\\r\\n                dialogInterface.dismiss();\\r\\n                Iterator it = ((List) this.f415b).iterator();\\r\\n                while (it.hasNext()) {\\r\\n                    ((CarouselDressListFragment) this.f416c).v(((CarouselDressDTO) it.next()).getCarouselId());\\r\\n                }\\r\\n                break;\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Ab.s",
+    "method": {
+      "name": "onClick",
+      "reported_signature": "onClick(android.content.DialogInterface, int): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/content/DialogInterface;I)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // android.content.DialogInterface.OnClickListener\r\n    public final void onClick(DialogInterface dialogInterface, int i10) {\r\n        int i11 = 0;\r\n        int i12 = 1;\r\n        switch (this.f414a) {\r\n            case 0:\r\n                Z z10 = (Z) this.f415b;\r\n                ArrayList arrayList = (ArrayList) this.f416c;\r\n                int size = arrayList.size();\r\n                int i13 = 0;\r\n                while (i13 < size) {\r\n                    Object obj = arrayList.get(i13);\r\n                    i13++;\r\n                    CustomEqPreference customEqPreference = (CustomEqPreference) obj;\r\n                    z10.f264E.j(customEqPreference);\r\n                    ta.b bVar = customEqPreference.f25469s;\r\n                    if (bVar != null) {\r\n                        if (z10.f292h0 == bVar.getEqId()) {\r\n                            z10.f292h0 = -1;\r\n                        }\r\n                        ta.c.e().i(3, z10.f278T, bVar);\r\n                        z10.f289e0.add(bVar);\r\n                    }\r\n                }\r\n                MenuItem menuItem = z10.f271M;\r\n                if (menuItem != null) {\r\n                    menuItem.setEnabled(false);\r\n                }\r\n                MenuItem menuItem2 = z10.f273O;\r\n                if (menuItem2 != null) {\r\n                    menuItem2.setTitle(com.oplus.melody.common.util.k.f22410a.getString(R.string.melody_ui_common_select_all));\r\n                }\r\n                MenuItem menuItem3 = z10.f272N;\r\n                if (menuItem3 != null) {\r\n                    menuItem3.setEnabled(false);\r\n                }\r\n                z10.K();\r\n                U8.Q.b.f6060a.schedule(new E(z10, i11), 1L, TimeUnit.SECONDS);\r\n                break;\r\n            case 1:\r\n                float[] fArr = Ic.p0.f3205P0;\r\n                ForkJoinPool.commonPool().execute(new O(8, (Ic.p0) this.f415b, (EarphoneDTO) this.f416c));\r\n                break;\r\n            case 2:\r\n                Mc.r rVar = (Mc.r) this.f415b;\r\n                MultiDevicesConnectViewModel multiDevicesConnectViewModel = rVar.f4279L;\r\n                String str = rVar.f4271C;\r\n                multiDevicesConnectViewModel.getClass();\r\n                com.oplus.melody.model.repository.multidevicesconnect.a aVarA = com.oplus.melody.model.repository.multidevicesconnect.a.a();\r\n                String str2 = (String) this.f416c;\r\n                CompletableFuture completableFutureE = aVarA.e(str, 3, str2, false);\r\n                if (completableFutureE != null) {\r\n                    completableFutureE.thenAccept((Consumer) new Bc.e(i12, rVar, str2)).exceptionally((Function<Throwable, ? extends Void>) new A8.a(10));\r\n                } else {\r\n                    com.oplus.melody.common.util.y.h(\"MultipleDevicesConnectionFragmentV2\", \"unpairHandheldDevice future is null!\");\r\n                }\r\n                break;\r\n            case 3:\r\n                Ma.x.D(true);\r\n                Xa.a aVar = (Xa.a) this.f415b;\r\n                List<String> list = com.oplus.melody.common.util.S.f22375a;\r\n                if (BuildConfig.APPLICATION_ID.equals(aVar.getPackageName())) {\r\n                    Ma.x.G();\r\n                }\r\n                ((Runnable) this.f416c).run();\r\n                dialogInterface.dismiss();\r\n                break;\r\n            default:\r\n                dialogInterface.dismiss();\r\n                Iterator it = ((List) this.f415b).iterator();\r\n                while (it.hasNext()) {\r\n                    ((CarouselDressListFragment) this.f416c).v(((CarouselDressDTO) it.next()).getCarouselId());\r\n                }\r\n                break;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

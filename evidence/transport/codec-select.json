@@ -1,0 +1,147 @@
+{
+  "evidence_id": "ev_5b2632668de668b12cf0c04a47a6199f39b488ac7e947ac54cd579a41d43690a",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "D8.c",
+    "method_name": "c"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":6823,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "D8.c"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"D8.c\",\"method_count\":4,\"full_name\":\"D8.c\",\"field_count\":7,\"name\":\"c\",\"inner_class_count\":4,\"inner_classes\":[\"D8.c.a\",\"D8.c.b\",\"D8.c.C0015c\",\"D8.c.d\"],\"methods\":[{\"def_pos\":0,\"signature\":\"<init>(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"a(com.oplus.melody.btsdk.api.data.DeviceInfo): void\",\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/api/data/DeviceInfo;)V\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(com.oplus.melody.btsdk.api.data.DeviceInfo): void\",\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/api/data/DeviceInfo;)V\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"c(com.oplus.melody.btsdk.api.data.DeviceInfo): L8.a\",\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/api/data/DeviceInfo;)LL8/a;\",\"is_constructor\":false,\"name\":\"c\"}],\"fields\":[{\"type\":\"java.util.HashMap\",\"name\":\"f1338a\",\"def_pos\":0},{\"type\":\"java.util.concurrent.CopyOnWriteArraySet<K8.a>\",\"name\":\"f1339b\",\"def_pos\":0},{\"type\":\"java.util.concurrent.CopyOnWriteArraySet<K8.b>\",\"name\":\"f1340c\",\"def_pos\":0},{\"type\":\"D8.c$a\",\"name\":\"f1341d\",\"def_pos\":0},{\"type\":\"D8.c$b\",\"name\":\"f1342e\",\"def_pos\":0},{\"type\":\"D8.c$c\",\"name\":\"f1343f\",\"def_pos\":0},{\"type\":\"E8.g\",\"name\":\"f1344g\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "D8.c",
+          "method_name": "c",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_count\":1,\"method_name\":\"c\",\"overload_index\":0,\"full_name\":\"D8.c.c\",\"fell_back\":false,\"markers\":[],\"body\":\"    public final L8.a c(DeviceInfo deviceInfo) {\\r\\n        N8.b bVar;\\r\\n        if (deviceInfo != null && this.f1344g != null) {\\r\\n            HashMap map = this.f1338a;\\r\\n            L8.a aVar = (L8.a) map.get(deviceInfo.getDeviceAddress());\\r\\n            if (aVar != null) {\\r\\n                return aVar;\\r\\n            }\\r\\n            int productType = deviceInfo.getProductType();\\r\\n            if (productType == 101 || productType == 102) {\\r\\n                bVar = new N8.b();\\r\\n                int mtu = deviceInfo.getMTU();\\r\\n                if (mtu < 0) {\\r\\n                    bVar.f4509u = 512;\\r\\n                    bVar.f4506r = 512;\\r\\n                } else {\\r\\n                    bVar.f4509u = mtu;\\r\\n                    bVar.f4506r = mtu;\\r\\n                }\\r\\n                bVar.f4508t = 0;\\r\\n            } else {\\r\\n                bVar = null;\\r\\n            }\\r\\n            if (bVar != null) {\\r\\n                g gVar = this.f1344g;\\r\\n                int productType2 = deviceInfo.getProductType();\\r\\n                M8.a aVar2 = (productType2 == 101 || productType2 == 102) ? new M8.a(deviceInfo, gVar, bVar) : null;\\r\\n                if (aVar2 != null) {\\r\\n                    map.put(deviceInfo.getDeviceAddress(), aVar2);\\r\\n                    aVar2.f4135e = this.f1342e;\\r\\n                }\\r\\n                return aVar2;\\r\\n            }\\r\\n        }\\r\\n        return null;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"D8.c\",\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/api/data/DeviceInfo;)LL8/a;\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "D8.c",
+    "method": {
+      "name": "c",
+      "reported_signature": "c(com.oplus.melody.btsdk.api.data.DeviceInfo): L8.a",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/oplus/melody/btsdk/api/data/DeviceInfo;)LL8/a;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final L8.a c(DeviceInfo deviceInfo) {\r\n        N8.b bVar;\r\n        if (deviceInfo != null && this.f1344g != null) {\r\n            HashMap map = this.f1338a;\r\n            L8.a aVar = (L8.a) map.get(deviceInfo.getDeviceAddress());\r\n            if (aVar != null) {\r\n                return aVar;\r\n            }\r\n            int productType = deviceInfo.getProductType();\r\n            if (productType == 101 || productType == 102) {\r\n                bVar = new N8.b();\r\n                int mtu = deviceInfo.getMTU();\r\n                if (mtu < 0) {\r\n                    bVar.f4509u = 512;\r\n                    bVar.f4506r = 512;\r\n                } else {\r\n                    bVar.f4509u = mtu;\r\n                    bVar.f4506r = mtu;\r\n                }\r\n                bVar.f4508t = 0;\r\n            } else {\r\n                bVar = null;\r\n            }\r\n            if (bVar != null) {\r\n                g gVar = this.f1344g;\r\n                int productType2 = deviceInfo.getProductType();\r\n                M8.a aVar2 = (productType2 == 101 || productType2 == 102) ? new M8.a(deviceInfo, gVar, bVar) : null;\r\n                if (aVar2 != null) {\r\n                    map.put(deviceInfo.getDeviceAddress(), aVar2);\r\n                    aVar2.f4135e = this.f1342e;\r\n                }\r\n                return aVar2;\r\n            }\r\n        }\r\n        return null;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

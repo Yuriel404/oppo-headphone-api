@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_e56b6358b6d522f17ba5679abfbd2cd6cc68e098b76274c36da4e69db128767a",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Fa.i",
+    "method_name": "accept"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Fa.i"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"Fa.i\",\"field_count\":2,\"name\":\"i\",\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"<init>(java.lang.Object, int): void\",\"dex_descriptor\":\"(Ljava/lang/Object;I)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0},{\"signature\":\"accept(java.lang.Object): void\",\"dex_descriptor\":\"(Ljava/lang/Object;)V\",\"is_constructor\":false,\"name\":\"accept\",\"def_pos\":0}],\"fields\":[{\"name\":\"f1956a\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f1957b\",\"def_pos\":0,\"type\":\"java.lang.Object\"}],\"raw_name\":\"Fa.i\",\"method_count\":2}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Fa.i",
+          "method_name": "accept",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    /* JADX WARN: Multi-variable type inference failed */\\r\\n    @Override // java.util.function.Consumer\\r\\n    public final void accept(Object obj) throws Exception {\\r\\n        char c2 = 1;\\r\\n        Object obj2 = this.f1957b;\\r\\n        switch (this.f1956a) {\\r\\n            case 0:\\r\\n                ((Db.d) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 1:\\r\\n                SetCommandStateDTO setCommandStateDTO = (SetCommandStateDTO) obj;\\r\\n                Fc.d.f fVar = (Fc.d.f) obj2;\\r\\n                Fc.d dVar = fVar.f2049m;\\r\\n                if (dVar.f2028m == null || setCommandStateDTO == null || TextUtils.isEmpty(setCommandStateDTO.getAddress()) || !setCommandStateDTO.getAddress().equals(dVar.f2033r)) {\\r\\n                    return;\\r\\n                }\\r\\n                int setCommandStatus = setCommandStateDTO.getSetCommandStatus();\\r\\n                com.oplus.melody.common.util.y.c(\\\"PlayToneStateMachine\\\", new S(setCommandStatus, 10));\\r\\n                fVar.N(setCommandStatus == 0, false);\\r\\n                return;\\r\\n            case 2:\\r\\n                ((c0) obj2).d((Integer) obj);\\r\\n                return;\\r\\n            case 3:\\r\\n                int i10 = HearingEnhancementActivity.f26116K;\\r\\n                ((HearingEnhancementActivity) obj2).V(null, false);\\r\\n                return;\\r\\n            case 4:\\r\\n                ((Kb.e) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 5:\\r\\n                ((Kb.e) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 6:\\r\\n                ((Ga.d) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 7:\\r\\n                ((Nb.d) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 8:\\r\\n                ((Ga.r) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 9:\\r\\n                ((Nb.d) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 10:\\r\\n                ((c) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 11:\\r\\n                ((Ga.d) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 12:\\r\\n                AtomicInteger atomicInteger = MelodyAliveProvider.f21690b;\\r\\n                ((MatrixCursor) obj2).newRow().add(\\\"content\\\", JsonUtils.h((WhitelistConfigDTO) obj));\\r\\n                return;\\r\\n            case 13:\\r\\n                ((Xa.c) obj2).t(((Integer) ((ga.a) obj).f5811a).intValue());\\r\\n                return;\\r\\n            case 14:\\r\\n                Za.c cVar = (Za.c) obj;\\r\\n                com.oplus.melody.ui.component.control.a aVar = (com.oplus.melody.ui.component.control.a) obj2;\\r\\n                List<String> list = (List) cVar.f5811a;\\r\\n                com.oplus.melody.common.util.y.c(\\\"BaseEarControlFragment\\\", new Gc.f(list, c2 == true ? 1 : 0));\\r\\n                Pair<Integer, String> pair = cVar.f7752b;\\r\\n                if (pair == null) {\\r\\n                    aVar.v(aVar.f24819L, list);\\r\\n                    return;\\r\\n                }\\r\\n                int iIntValue = pair.e().intValue();\\r\\n                if (aVar.w() != iIntValue) {\\r\\n                    return;\\r\\n                }\\r\\n                com.oplus.melody.common.util.y.c(\\\"BaseEarControlFragment\\\", new S(iIntValue, 19));\\r\\n                String strF = pair.f();\\r\\n                if (aVar.f24819L != null) {\\r\\n                    if (TextUtils.equals(strF, aVar.getString(R.string.melody_common_detail_main_set_noise_reduction))) {\\r\\n                        aVar.v(aVar.f24819L, list);\\r\\n                    } else {\\r\\n                        aVar.f24819L.h(strF);\\r\\n                        aVar.f24819L.g(strF);\\r\\n                    }\\r\\n                }\\r\\n                aVar.y(aVar.f24819L, strF);\\r\\n                return;\\r\\n            case 15:\\r\\n                ((Zb.e) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 16:\\r\\n                WindowFeature windowFeature = (WindowFeature) obj;\\r\\n                ResponsiveUIFeature.Companion companion = ResponsiveUIFeature.Companion;\\r\\n                kotlin.jvm.internal.i.f(windowFeature, \\\"windowFeature\\\");\\r\\n                androidx.lifecycle.u<WindowFeature> uVar = ((ResponsiveUIFeature) obj2).f17859b;\\r\\n                if (Looper.getMainLooper().getThread() == Thread.currentThread()) {\\r\\n                    uVar.l(windowFeature);\\r\\n                    return;\\r\\n                } else {\\r\\n                    uVar.i(windowFeature);\\r\\n                    return;\\r\\n                }\\r\\n            case 17:\\r\\n                ((a8.k) obj2).getAddress();\\r\\n                ((Ka.c) obj).getClass();\\r\\n                V8.a.a();\\r\\n                return;\\r\\n            case 18:\\r\\n                ((c) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 19:\\r\\n                Boolean aBoolean = (Boolean) obj;\\r\\n                kotlin.jvm.internal.i.f(aBoolean, \\\"aBoolean\\\");\\r\\n                if (aBoolean.booleanValue()) {\\r\\n                    DeviceDetailFragment deviceDetailFragment = (DeviceDetailFragment) obj2;\\r\\n                    DetailMainViewModel detailMainViewModel = deviceDetailFragment.f19908p;\\r\\n                    if (detailMainViewModel == null) {\\r\\n                        kotlin.jvm.internal.i.j(\\\"mViewModel\\\");\\r\\n                        throw null;\\r\\n                    }\\r\\n                    com.oplus.melody.model.repository.earphone.b.G().f(detailMainViewModel.f24786b);\\r\\n                    deviceDetailFragment.u(true);\\r\\n                    return;\\r\\n                }\\r\\n                return;\\r\\n            case 20:\\r\\n                ((com.oplus.melody.health.module.f) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 21:\\r\\n                com.oplus.melody.model.db.l lVar = (com.oplus.melody.model.db.l) obj;\\r\\n                ((List) ((androidx.collection.a) obj2).computeIfAbsent(lVar.getMacAddress(), new com.oplus.melody.model.db.k())).add(lVar);\\r\\n                return;\\r\\n            case 22:\\r\\n                ((PersonalNoiseItem) obj2).lambda$onRetry$22((SetCommandStateDTO) obj);\\r\\n                return;\\r\\n            case 23:\\r\\n                ((Nb.d) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 24:\\r\\n                eb.r rVar = (eb.r) obj2;\\r\\n                if (((Boolean) obj).booleanValue()) {\\r\\n                    com.oplus.melody.model.repository.earphone.b.G().f(rVar.f27817p.f24786b);\\r\\n                    rVar.A(true);\\r\\n                    return;\\r\\n                }\\r\\n                return;\\r\\n            case 25:\\r\\n                int i11 = ControlAutoVolumeActivity.f25152w;\\r\\n                ((Nb.d) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 26:\\r\\n                ((mc.a) obj2).invoke(obj);\\r\\n                return;\\r\\n            case 27:\\r\\n                ((lc.e) obj2).invoke(obj);\\r\\n                return;\\r\\n            default:\\r\\n                ((Nb.d) obj2).invoke(obj);\\r\\n                return;\\r\\n        }\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"Fa.i\",\"dex_descriptor\":\"(Ljava/lang/Object;)V\",\"overload_count\":1,\"method_name\":\"accept\",\"overload_index\":0,\"full_name\":\"Fa.i.accept\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Fa.i",
+    "method": {
+      "name": "accept",
+      "reported_signature": "accept(java.lang.Object): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Multi-variable type inference failed */\r\n    @Override // java.util.function.Consumer\r\n    public final void accept(Object obj) throws Exception {\r\n        char c2 = 1;\r\n        Object obj2 = this.f1957b;\r\n        switch (this.f1956a) {\r\n            case 0:\r\n                ((Db.d) obj2).invoke(obj);\r\n                return;\r\n            case 1:\r\n                SetCommandStateDTO setCommandStateDTO = (SetCommandStateDTO) obj;\r\n                Fc.d.f fVar = (Fc.d.f) obj2;\r\n                Fc.d dVar = fVar.f2049m;\r\n                if (dVar.f2028m == null || setCommandStateDTO == null || TextUtils.isEmpty(setCommandStateDTO.getAddress()) || !setCommandStateDTO.getAddress().equals(dVar.f2033r)) {\r\n                    return;\r\n                }\r\n                int setCommandStatus = setCommandStateDTO.getSetCommandStatus();\r\n                com.oplus.melody.common.util.y.c(\"PlayToneStateMachine\", new S(setCommandStatus, 10));\r\n                fVar.N(setCommandStatus == 0, false);\r\n                return;\r\n            case 2:\r\n                ((c0) obj2).d((Integer) obj);\r\n                return;\r\n            case 3:\r\n                int i10 = HearingEnhancementActivity.f26116K;\r\n                ((HearingEnhancementActivity) obj2).V(null, false);\r\n                return;\r\n            case 4:\r\n                ((Kb.e) obj2).invoke(obj);\r\n                return;\r\n            case 5:\r\n                ((Kb.e) obj2).invoke(obj);\r\n                return;\r\n            case 6:\r\n                ((Ga.d) obj2).invoke(obj);\r\n                return;\r\n            case 7:\r\n                ((Nb.d) obj2).invoke(obj);\r\n                return;\r\n            case 8:\r\n                ((Ga.r) obj2).invoke(obj);\r\n                return;\r\n            case 9:\r\n                ((Nb.d) obj2).invoke(obj);\r\n                return;\r\n            case 10:\r\n                ((c) obj2).invoke(obj);\r\n                return;\r\n            case 11:\r\n                ((Ga.d) obj2).invoke(obj);\r\n                return;\r\n            case 12:\r\n                AtomicInteger atomicInteger = MelodyAliveProvider.f21690b;\r\n                ((MatrixCursor) obj2).newRow().add(\"content\", JsonUtils.h((WhitelistConfigDTO) obj));\r\n                return;\r\n            case 13:\r\n                ((Xa.c) obj2).t(((Integer) ((ga.a) obj).f5811a).intValue());\r\n                return;\r\n            case 14:\r\n                Za.c cVar = (Za.c) obj;\r\n                com.oplus.melody.ui.component.control.a aVar = (com.oplus.melody.ui.component.control.a) obj2;\r\n                List<String> list = (List) cVar.f5811a;\r\n                com.oplus.melody.common.util.y.c(\"BaseEarControlFragment\", new Gc.f(list, c2 == true ? 1 : 0));\r\n                Pair<Integer, String> pair = cVar.f7752b;\r\n                if (pair == null) {\r\n                    aVar.v(aVar.f24819L, list);\r\n                    return;\r\n                }\r\n                int iIntValue = pair.e().intValue();\r\n                if (aVar.w() != iIntValue) {\r\n                    return;\r\n                }\r\n                com.oplus.melody.common.util.y.c(\"BaseEarControlFragment\", new S(iIntValue, 19));\r\n                String strF = pair.f();\r\n                if (aVar.f24819L != null) {\r\n                    if (TextUtils.equals(strF, aVar.getString(R.string.melody_common_detail_main_set_noise_reduction))) {\r\n                        aVar.v(aVar.f24819L, list);\r\n                    } else {\r\n                        aVar.f24819L.h(strF);\r\n                        aVar.f24819L.g(strF);\r\n                    }\r\n                }\r\n                aVar.y(aVar.f24819L, strF);\r\n                return;\r\n            case 15:\r\n                ((Zb.e) obj2).invoke(obj);\r\n                return;\r\n            case 16:\r\n                WindowFeature windowFeature = (WindowFeature) obj;\r\n                ResponsiveUIFeature.Companion companion = ResponsiveUIFeature.Companion;\r\n                kotlin.jvm.internal.i.f(windowFeature, \"windowFeature\");\r\n                androidx.lifecycle.u<WindowFeature> uVar = ((ResponsiveUIFeature) obj2).f17859b;\r\n                if (Looper.getMainLooper().getThread() == Thread.currentThread()) {\r\n                    uVar.l(windowFeature);\r\n                    return;\r\n                } else {\r\n                    uVar.i(windowFeature);\r\n                    return;\r\n                }\r\n            case 17:\r\n                ((a8.k) obj2).getAddress();\r\n                ((Ka.c) obj).getClass();\r\n                V8.a.a();\r\n                return;\r\n            case 18:\r\n                ((c) obj2).invoke(obj);\r\n                return;\r\n            case 19:\r\n                Boolean aBoolean = (Boolean) obj;\r\n                kotlin.jvm.internal.i.f(aBoolean, \"aBoolean\");\r\n                if (aBoolean.booleanValue()) {\r\n                    DeviceDetailFragment deviceDetailFragment = (DeviceDetailFragment) obj2;\r\n                    DetailMainViewModel detailMainViewModel = deviceDetailFragment.f19908p;\r\n                    if (detailMainViewModel == null) {\r\n                        kotlin.jvm.internal.i.j(\"mViewModel\");\r\n                        throw null;\r\n                    }\r\n                    com.oplus.melody.model.repository.earphone.b.G().f(detailMainViewModel.f24786b);\r\n                    deviceDetailFragment.u(true);\r\n                    return;\r\n                }\r\n                return;\r\n            case 20:\r\n                ((com.oplus.melody.health.module.f) obj2).invoke(obj);\r\n                return;\r\n            case 21:\r\n                com.oplus.melody.model.db.l lVar = (com.oplus.melody.model.db.l) obj;\r\n                ((List) ((androidx.collection.a) obj2).computeIfAbsent(lVar.getMacAddress(), new com.oplus.melody.model.db.k())).add(lVar);\r\n                return;\r\n            case 22:\r\n                ((PersonalNoiseItem) obj2).lambda$onRetry$22((SetCommandStateDTO) obj);\r\n                return;\r\n            case 23:\r\n                ((Nb.d) obj2).invoke(obj);\r\n                return;\r\n            case 24:\r\n                eb.r rVar = (eb.r) obj2;\r\n                if (((Boolean) obj).booleanValue()) {\r\n                    com.oplus.melody.model.repository.earphone.b.G().f(rVar.f27817p.f24786b);\r\n                    rVar.A(true);\r\n                    return;\r\n                }\r\n                return;\r\n            case 25:\r\n                int i11 = ControlAutoVolumeActivity.f25152w;\r\n                ((Nb.d) obj2).invoke(obj);\r\n                return;\r\n            case 26:\r\n                ((mc.a) obj2).invoke(obj);\r\n                return;\r\n            case 27:\r\n                ((lc.e) obj2).invoke(obj);\r\n                return;\r\n            default:\r\n                ((Nb.d) obj2).invoke(obj);\r\n                return;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

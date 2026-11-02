@@ -1,0 +1,319 @@
+{
+  "evidence_id": "ev_3b362084785c1b17920f9fd56d9bc92aec66f83a316b50d0c6921849861faee7",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":16,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"def_pos\":0,\"name\":\"CREATOR\",\"type\":\"android.os.Parcelable$Creator<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>\"},{\"def_pos\":0,\"name\":\"childrenMode\",\"type\":\"java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>\"},{\"def_pos\":0,\"name\":\"decideByEarDevice\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"intellectNoiseReductionSummary\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"modeType\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"protocolIndex\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"weakNoiseReductionSummary\",\"type\":\"int\"}],\"methods\":[{\"name\":\"<clinit>\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"<clinit>(): void\",\"def_pos\":0},{\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"()V\",\"signature\":\"<init>(): void\",\"def_pos\":0},{\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(IILjava/util/List;ZII)V\",\"signature\":\"<init>(int, int, java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>, boolean, int, int): void\",\"def_pos\":0},{\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(IILjava/util/List;ZIIILkotlin/jvm/internal/e;)V\",\"signature\":\"<init>(int, int, java.util.List, boolean, int, int, int, kotlin.jvm.internal.e): void\",\"def_pos\":0},{\"name\":\"component1\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component1(): int\",\"def_pos\":0},{\"name\":\"component2\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component2(): int\",\"def_pos\":0},{\"name\":\"component3\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"component3(): java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>\",\"def_pos\":0},{\"name\":\"component4\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component4(): boolean\",\"def_pos\":0},{\"name\":\"component5\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component5(): int\",\"def_pos\":0},{\"name\":\"component6\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component6(): int\",\"def_pos\":0},{\"name\":\"copy\",\"is_constructor\":false,\"dex_descriptor\":\"(IILjava/util/List;ZII)Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;\",\"signature\":\"copy(int, int, java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>, boolean, int, int): com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode\",\"def_pos\":0},{\"name\":\"copy$default\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;IILjava/util/List;ZIIILjava/lang/Object;)Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;\",\"signature\":\"copy$default(com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode, int, int, java.util.List, boolean, int, int, int, java.lang.Object): com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode\",\"def_pos\":0},{\"name\":\"describeContents\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"describeContents(): int\",\"def_pos\":0},{\"name\":\"getChildrenMode\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"getChildrenMode(): java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>\",\"def_pos\":0},{\"name\":\"getDecideByEarDevice\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"getDecideByEarDevice(): boolean\",\"def_pos\":0},{\"name\":\"getIntellectNoiseReductionSummary\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getIntellectNoiseReductionSummary(): int\",\"def_pos\":0},{\"name\":\"getModeType\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getModeType(): int\",\"def_pos\":0},{\"name\":\"getProtocolIndex\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getProtocolIndex(): int\",\"def_pos\":0},{\"name\":\"getWeakNoiseReductionSummary\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getWeakNoiseReductionSummary(): int\",\"def_pos\":0},{\"name\":\"setChildrenMode\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)V\",\"signature\":\"setChildrenMode(java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>): void\",\"def_pos\":0},{\"name\":\"setDecideByEarDevice\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\",\"signature\":\"setDecideByEarDevice(boolean): void\",\"def_pos\":0},{\"name\":\"setIntellectNoiseReductionSummary\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\",\"signature\":\"setIntellectNoiseReductionSummary(int): void\",\"def_pos\":0},{\"name\":\"setModeType\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\",\"signature\":\"setModeType(int): void\",\"def_pos\":0},{\"name\":\"setProtocolIndex\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\",\"signature\":\"setProtocolIndex(int): void\",\"def_pos\":0},{\"name\":\"setWeakNoiseReductionSummary\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\",\"signature\":\"setWeakNoiseReductionSummary(int): void\",\"def_pos\":0},{\"name\":\"writeToParcel\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Parcel;I)V\",\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"def_pos\":0}],\"inner_classes\":[\"com.oplus.melody.common.data.WhitelistConfigDTO.NoiseReductionMode.a\"],\"inner_class_count\":1,\"name\":\"NoiseReductionMode\",\"field_count\":7,\"full_name\":\"com.oplus.melody.common.data.WhitelistConfigDTO.NoiseReductionMode\",\"method_count\":26,\"raw_name\":\"com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.common.data.WhitelistConfigDTO.NoiseReductionMode",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(int, int, java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>, boolean, int, int): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": "(IILjava/util/List;ZII)V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(int, int, java.util.List, boolean, int, int, int, kotlin.jvm.internal.e): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": "(IILjava/util/List;ZIIILkotlin/jvm/internal/e;)V"
+      },
+      {
+        "name": "component1",
+        "reported_signature": "component1(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "component2",
+        "reported_signature": "component2(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "component3",
+        "reported_signature": "component3(): java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "component4",
+        "reported_signature": "component4(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "component5",
+        "reported_signature": "component5(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "component6",
+        "reported_signature": "component6(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "copy",
+        "reported_signature": "copy(int, int, java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>, boolean, int, int): com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(IILjava/util/List;ZII)Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;"
+      },
+      {
+        "name": "copy$default",
+        "reported_signature": "copy$default(com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode, int, int, java.util.List, boolean, int, int, int, java.lang.Object): com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;IILjava/util/List;ZIIILjava/lang/Object;)Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;"
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "getChildrenMode",
+        "reported_signature": "getChildrenMode(): java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "getDecideByEarDevice",
+        "reported_signature": "getDecideByEarDevice(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "getIntellectNoiseReductionSummary",
+        "reported_signature": "getIntellectNoiseReductionSummary(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "getModeType",
+        "reported_signature": "getModeType(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "getProtocolIndex",
+        "reported_signature": "getProtocolIndex(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "getWeakNoiseReductionSummary",
+        "reported_signature": "getWeakNoiseReductionSummary(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "setChildrenMode",
+        "reported_signature": "setChildrenMode(java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/List;)V"
+      },
+      {
+        "name": "setDecideByEarDevice",
+        "reported_signature": "setDecideByEarDevice(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)V"
+      },
+      {
+        "name": "setIntellectNoiseReductionSummary",
+        "reported_signature": "setIntellectNoiseReductionSummary(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)V"
+      },
+      {
+        "name": "setModeType",
+        "reported_signature": "setModeType(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)V"
+      },
+      {
+        "name": "setProtocolIndex",
+        "reported_signature": "setProtocolIndex(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)V"
+      },
+      {
+        "name": "setWeakNoiseReductionSummary",
+        "reported_signature": "setWeakNoiseReductionSummary(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)V"
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/os/Parcel;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>",
+        "dex_static_value": null
+      },
+      {
+        "name": "childrenMode",
+        "reported_type": "java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>",
+        "dex_static_value": null
+      },
+      {
+        "name": "decideByEarDevice",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "intellectNoiseReductionSummary",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "modeType",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "protocolIndex",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "weakNoiseReductionSummary",
+        "reported_type": "int",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": [
+      "com.oplus.melody.common.data.WhitelistConfigDTO.NoiseReductionMode.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

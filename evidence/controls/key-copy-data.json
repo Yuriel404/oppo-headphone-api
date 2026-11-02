@@ -1,0 +1,147 @@
+{
+  "evidence_id": "ev_522827275e296a4d68533d4d65db338e2e23fb42142cbb46c29f1be7933df036",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.btsdk.api.data.KeyFunctionInfo",
+    "method_name": "copyIntoData"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":5822,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.api.data.KeyFunctionInfo"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"name\":\"KeyFunctionInfo\",\"field_count\":11,\"full_name\":\"com.oplus.melody.btsdk.api.data.KeyFunctionInfo\",\"method_count\":13,\"raw_name\":\"com.oplus.melody.btsdk.api.data.KeyFunctionInfo\",\"fields\":[{\"type\":\"android.os.Parcelable$Creator<com.oplus.melody.btsdk.api.data.KeyFunctionInfo>\",\"def_pos\":0,\"name\":\"CREATOR\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"LENGTH_KEY_FUNCTION_ITEM\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"OFFSET_BUTTON\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"OFFSET_BUTTON_ACTION\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"OFFSET_DEVICE_TYPE\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"OFFSET_FUNCTION\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"TAG\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"mButton\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"mButtonAction\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"mDeviceType\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"mFunction\"}],\"methods\":[{\"signature\":\"<clinit>(): void\",\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"<init>(int, int, int, int): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(IIII)V\"},{\"signature\":\"<init>(int, byte[]): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(I[B)V\"},{\"signature\":\"<init>(android.os.Parcel): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(Landroid/os/Parcel;)V\"},{\"signature\":\"convertToData(): byte[]\",\"def_pos\":0,\"name\":\"convertToData\",\"is_constructor\":false,\"dex_descriptor\":\"()[B\"},{\"signature\":\"copyIntoData(byte[], int): boolean\",\"def_pos\":0,\"name\":\"copyIntoData\",\"is_constructor\":false,\"dex_descriptor\":\"([BI)Z\"},{\"signature\":\"describeContents(): int\",\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getButtonAction(): int\",\"def_pos\":0,\"name\":\"getButtonAction\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getDeviceButton(): int\",\"def_pos\":0,\"name\":\"getDeviceButton\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getDeviceType(): int\",\"def_pos\":0,\"name\":\"getDeviceType\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getFunction(): int\",\"def_pos\":0,\"name\":\"getFunction\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"setFunction(int): void\",\"def_pos\":0,\"name\":\"setFunction\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Parcel;I)V\"}],\"inner_classes\":[\"com.oplus.melody.btsdk.api.data.KeyFunctionInfo.a\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.api.data.KeyFunctionInfo",
+          "method_name": "copyIntoData",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.btsdk.api.data.KeyFunctionInfo.copyIntoData\",\"overload_index\":0,\"method_name\":\"copyIntoData\",\"overload_count\":1,\"dex_descriptor\":\"([BI)Z\",\"class_name\":\"com.oplus.melody.btsdk.api.data.KeyFunctionInfo\",\"mode\":\"java\",\"body\":\"    public boolean copyIntoData(byte[] bArr, int i10) {\\r\\n        if (i10 + 4 > bArr.length) {\\r\\n            c.d(A0.k(i10, \\\"The length of data is not valid. offset = \\\", \\\", len = \\\"), bArr.length, TAG);\\r\\n            return false;\\r\\n        }\\r\\n        bArr[i10] = (byte) this.mDeviceType;\\r\\n        bArr[i10 + 1] = (byte) this.mButton;\\r\\n        bArr[i10 + 2] = (byte) this.mButtonAction;\\r\\n        bArr[i10 + 3] = (byte) this.mFunction;\\r\\n        return true;\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.btsdk.api.data.KeyFunctionInfo",
+    "method": {
+      "name": "copyIntoData",
+      "reported_signature": "copyIntoData(byte[], int): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "([BI)Z"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public boolean copyIntoData(byte[] bArr, int i10) {\r\n        if (i10 + 4 > bArr.length) {\r\n            c.d(A0.k(i10, \"The length of data is not valid. offset = \", \", len = \"), bArr.length, TAG);\r\n            return false;\r\n        }\r\n        bArr[i10] = (byte) this.mDeviceType;\r\n        bArr[i10 + 1] = (byte) this.mButton;\r\n        bArr[i10 + 2] = (byte) this.mButtonAction;\r\n        bArr[i10 + 3] = (byte) this.mFunction;\r\n        return true;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

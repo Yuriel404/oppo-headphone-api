@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_364f88e6ea017247a707e3f8f1d2b505b4cca5ab44772ea5497bc66225c1494d",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "H8.a$b",
+    "method_name": "handleMessage"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "H8.a$b"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"b\",\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"<init>(H8.a): void\",\"dex_descriptor\":\"(LH8/a;)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0},{\"signature\":\"handleMessage(android.os.Message): boolean\",\"dex_descriptor\":\"(Landroid/os/Message;)Z\",\"is_constructor\":false,\"name\":\"handleMessage\",\"def_pos\":0}],\"fields\":[{\"name\":\"f2656a\",\"def_pos\":0,\"type\":\"H8.a\"}],\"raw_name\":\"H8.a$b\",\"method_count\":2,\"full_name\":\"H8.a.b\",\"field_count\":1}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "H8.a$b",
+          "method_name": "handleMessage",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"        /* JADX WARN: Code duplicated, block: B:82:0x01f1  */\\r\\n        /* JADX WARN: Instruction removed from duplicated block: B:82:0x01f1, please report this as an issue */\\r\\n        /* JADX WARN: Type inference fix 'apply assigned field type' failed\\r\\n        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg\\r\\n        \\tat jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)\\r\\n        \\tat jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)\\r\\n        \\tat jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)\\r\\n        \\tat jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)\\r\\n        \\tat jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)\\r\\n        \\tat jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)\\r\\n        \\tat jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)\\r\\n         */\\r\\n        @Override // android.os.Handler.Callback\\r\\n        public final boolean handleMessage(Message message) {\\r\\n            boolean zCompareAndSet;\\r\\n            if (message.what == 1) {\\r\\n                G8.b bVar = (G8.b) a.this;\\r\\n                boolean z10 = false;\\r\\n                if (bVar.h == null) {\\r\\n                    Q8.a.f(bVar.f2632c, \\\"handleConnectSocket: mBluetoothDevice is null\\\");\\r\\n                    bVar.f2651w = false;\\r\\n                    bVar.k(3);\\r\\n                    bVar.h(DataTypeConstants.USER_ACTION, bVar);\\r\\n                } else {\\r\\n                    BluetoothDevice bluetoothDevice = bVar.h;\\r\\n                    if (bVar.f2639k != null) {\\r\\n                        Q8.a.c(bVar.f2632c, new B8.a(2));\\r\\n                    } else {\\r\\n                        try {\\r\\n                            bVar.f2639k = bluetoothDevice.createRfcommSocketToServiceRecord(bVar.f2633d);\\r\\n                            Q8.a.c(bVar.f2632c, new G8.a(0));\\r\\n                        } catch (Exception e3) {\\r\\n                            Q8.a.h(bVar.f2632c, \\\"m_spp_le.createSocket.createRfcommSocketToServiceRecord failed : \\\", e3);\\r\\n                            bVar.k(3);\\r\\n                            bVar.h(3009, bVar);\\r\\n                            Q8.a.a(bVar.f2632c, \\\"handleSocketCreate(), createSocket fail\\\");\\r\\n                            bVar.f2651w = false;\\r\\n                        }\\r\\n                    }\\r\\n                    bVar.f2651w = false;\\r\\n                    if (bVar.f2634e == 2) {\\r\\n                        Q8.a.c(bVar.f2632c, new g(3));\\r\\n                    } else if (bVar.f2227A.get()) {\\r\\n                        BluetoothSocket bluetoothSocket = bVar.f2639k;\\r\\n                        try {\\r\\n                            if (bluetoothSocket == null) {\\r\\n                                Q8.a.i(bVar.f2632c, \\\"m_spp_le.startSocketConnect: socket is null, device=\\\" + Q8.a.l(bVar.h));\\r\\n                                bVar.f2228B.set(-1);\\r\\n                                bVar.o(-1);\\r\\n                            } else {\\r\\n                                try {\\r\\n                                    Q8.a.i(bVar.f2632c, \\\"m_spp_le.startSocketConnect: start device=\\\" + Q8.a.l(bVar.h));\\r\\n                                    bVar.f2228B.set(0);\\r\\n                                    bVar.l();\\r\\n                                    bVar.f2230D = Q.b.f6060a.schedule(bVar.f2229C, 10L, TimeUnit.SECONDS);\\r\\n                                    m.f6120d.getClass();\\r\\n                                    R8.a.f5420a.getClass();\\r\\n                                    if (!R8.a.a()) {\\r\\n                                        throw new IOException(\\\"socketConnect disabled by privacy\\\");\\r\\n                                    }\\r\\n                                    bluetoothSocket.connect();\\r\\n                                    zCompareAndSet = bVar.f2228B.compareAndSet(0, 1);\\r\\n                                    try {\\r\\n                                        Q8.a.i(bVar.f2632c, \\\"m_spp_le.startSocketConnect: end success=\\\" + zCompareAndSet + \\\" device=\\\" + Q8.a.l(bVar.h));\\r\\n                                    } catch (Exception e10) {\\r\\n                                        e = e10;\\r\\n                                        Q8.a.h(bVar.f2632c, \\\"m_spp_le.startSocketConnect: err device=\\\" + Q8.a.l(bVar.h), e);\\r\\n                                        bVar.f2228B.compareAndSet(0, 3);\\r\\n                                    }\\r\\n                                    bVar.l();\\r\\n                                    if (!zCompareAndSet) {\\r\\n                                        bVar.o(bVar.f2228B.get());\\r\\n                                    } else if (bVar.f2228B.get() == 1 && bVar.f2639k == bluetoothSocket) {\\r\\n                                        BluetoothDevice bluetoothDevice2 = bVar.h;\\r\\n                                        BluetoothSocket bluetoothSocket2 = bVar.f2639k;\\r\\n                                        if (bluetoothDevice2 == null || bluetoothSocket2 == null) {\\r\\n                                            String str = bVar.f2632c;\\r\\n                                            StringBuilder sb2 = new StringBuilder(\\\"notifyConnectionConnected: device/socket null, skip deviceNull=\\\");\\r\\n                                            sb2.append(bluetoothDevice2 == null);\\r\\n                                            sb2.append(\\\" socketNull=\\\");\\r\\n                                            sb2.append(bluetoothSocket2 == null);\\r\\n                                            Q8.a.f(str, sb2.toString());\\r\\n                                        } else {\\r\\n                                            bVar.k(2);\\r\\n                                            H8.b.a aVar = bVar.f2635f;\\r\\n                                            if (aVar != null) {\\r\\n                                                G8.d dVar = aVar.f2661a;\\r\\n                                                int i10 = dVar.f2234B.f2634e;\\r\\n                                                Q8.a.c(\\\"BRClientDevice\\\", new r0(i10, 6));\\r\\n                                                if (i10 == 2) {\\r\\n                                                    dVar.h(bVar, bluetoothDevice2);\\r\\n                                                }\\r\\n                                            }\\r\\n                                            z10 = true;\\r\\n                                        }\\r\\n                                        if (z10) {\\r\\n                                            Q8.a.a(bVar.f2632c, \\\"initReadAndWrite\\\");\\r\\n                                            bVar.f2647s.sendEmptyMessage(1);\\r\\n                                            bVar.f2649u.sendEmptyMessage(1);\\r\\n                                        } else {\\r\\n                                            Q8.a.m(bVar.f2632c, \\\"m_spp_le.startSocketConnect: aborted after connect success, treat as fail device=\\\" + Q8.a.l(bVar.h));\\r\\n                                            bVar.f2228B.compareAndSet(1, 3);\\r\\n                                            bVar.o(bVar.f2228B.get());\\r\\n                                        }\\r\\n                                    } else {\\r\\n                                        Q8.a.m(bVar.f2632c, \\\"m_spp_le.startSocketConnect: aborted after connect success, treat as fail device=\\\" + Q8.a.l(bVar.h));\\r\\n                                        bVar.f2228B.compareAndSet(1, 3);\\r\\n                                        bVar.o(bVar.f2228B.get());\\r\\n                                    }\\r\\n                                } catch (Exception e11) {\\r\\n                                    e = e11;\\r\\n                                    zCompareAndSet = false;\\r\\n                                }\\r\\n                            }\\r\\n                        } catch (Throwable th) {\\r\\n                            bVar.l();\\r\\n                            throw th;\\r\\n                        }\\r\\n                    } else {\\r\\n                        Q8.a.c(bVar.f2632c, new F8.d(1));\\r\\n                        Q8.a.a(bVar.f2632c, \\\"abortToConnect()\\\");\\r\\n                        bVar.l();\\r\\n                        bVar.f2228B.set(3);\\r\\n                        bVar.b();\\r\\n                        bVar.k(3);\\r\\n                        H8.b.a aVar2 = bVar.f2635f;\\r\\n                        if (aVar2 != null) {\\r\\n                            G8.d dVar2 = aVar2.f2661a;\\r\\n                            synchronized (dVar2.f1574b) {\\r\\n                                try {\\r\\n                                    if (dVar2.f1577q != 3) {\\r\\n                                        synchronized (dVar2.f1574b) {\\r\\n                                            Q8.a.c(\\\"Device\\\", new E8.a(dVar2, 0));\\r\\n                                            dVar2.f1577q = 3;\\r\\n                                        }\\r\\n                                        Message messageObtain = Message.obtain();\\r\\n                                        messageObtain.what = DeviceInfo.FEATURE_SUPPORT_IN_EAR_DETECTION_MUSIC_MUTE;\\r\\n                                        messageObtain.obj = bVar;\\r\\n                                        dVar2.f1584x.sendMessage(messageObtain);\\r\\n                                    }\\r\\n                                } catch (Throwable th2) {\\r\\n                                    throw th2;\\r\\n                                }\\r\\n                            }\\r\\n                        }\\r\\n                    }\\r\\n                }\\r\\n            }\\r\\n            return true;\\r\\n        }\",\"mode\":\"java\",\"class_name\":\"H8.a.b\",\"dex_descriptor\":\"(Landroid/os/Message;)Z\",\"overload_count\":1,\"method_name\":\"handleMessage\",\"overload_index\":0,\"full_name\":\"H8.a.b.handleMessage\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "H8.a.b",
+    "method": {
+      "name": "handleMessage",
+      "reported_signature": "handleMessage(android.os.Message): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/os/Message;)Z"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "        /* JADX WARN: Code duplicated, block: B:82:0x01f1  */\r\n        /* JADX WARN: Instruction removed from duplicated block: B:82:0x01f1, please report this as an issue */\r\n        /* JADX WARN: Type inference fix 'apply assigned field type' failed\r\n        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg\r\n        \tat jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)\r\n        \tat jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)\r\n        \tat jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)\r\n        \tat jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)\r\n        \tat jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)\r\n        \tat jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)\r\n        \tat jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)\r\n         */\r\n        @Override // android.os.Handler.Callback\r\n        public final boolean handleMessage(Message message) {\r\n            boolean zCompareAndSet;\r\n            if (message.what == 1) {\r\n                G8.b bVar = (G8.b) a.this;\r\n                boolean z10 = false;\r\n                if (bVar.h == null) {\r\n                    Q8.a.f(bVar.f2632c, \"handleConnectSocket: mBluetoothDevice is null\");\r\n                    bVar.f2651w = false;\r\n                    bVar.k(3);\r\n                    bVar.h(DataTypeConstants.USER_ACTION, bVar);\r\n                } else {\r\n                    BluetoothDevice bluetoothDevice = bVar.h;\r\n                    if (bVar.f2639k != null) {\r\n                        Q8.a.c(bVar.f2632c, new B8.a(2));\r\n                    } else {\r\n                        try {\r\n                            bVar.f2639k = bluetoothDevice.createRfcommSocketToServiceRecord(bVar.f2633d);\r\n                            Q8.a.c(bVar.f2632c, new G8.a(0));\r\n                        } catch (Exception e3) {\r\n                            Q8.a.h(bVar.f2632c, \"m_spp_le.createSocket.createRfcommSocketToServiceRecord failed : \", e3);\r\n                            bVar.k(3);\r\n                            bVar.h(3009, bVar);\r\n                            Q8.a.a(bVar.f2632c, \"handleSocketCreate(), createSocket fail\");\r\n                            bVar.f2651w = false;\r\n                        }\r\n                    }\r\n                    bVar.f2651w = false;\r\n                    if (bVar.f2634e == 2) {\r\n                        Q8.a.c(bVar.f2632c, new g(3));\r\n                    } else if (bVar.f2227A.get()) {\r\n                        BluetoothSocket bluetoothSocket = bVar.f2639k;\r\n                        try {\r\n                            if (bluetoothSocket == null) {\r\n                                Q8.a.i(bVar.f2632c, \"m_spp_le.startSocketConnect: socket is null, device=\" + Q8.a.l(bVar.h));\r\n                                bVar.f2228B.set(-1);\r\n                                bVar.o(-1);\r\n                            } else {\r\n                                try {\r\n                                    Q8.a.i(bVar.f2632c, \"m_spp_le.startSocketConnect: start device=\" + Q8.a.l(bVar.h));\r\n                                    bVar.f2228B.set(0);\r\n                                    bVar.l();\r\n                                    bVar.f2230D = Q.b.f6060a.schedule(bVar.f2229C, 10L, TimeUnit.SECONDS);\r\n                                    m.f6120d.getClass();\r\n                                    R8.a.f5420a.getClass();\r\n                                    if (!R8.a.a()) {\r\n                                        throw new IOException(\"socketConnect disabled by privacy\");\r\n                                    }\r\n                                    bluetoothSocket.connect();\r\n                                    zCompareAndSet = bVar.f2228B.compareAndSet(0, 1);\r\n                                    try {\r\n                                        Q8.a.i(bVar.f2632c, \"m_spp_le.startSocketConnect: end success=\" + zCompareAndSet + \" device=\" + Q8.a.l(bVar.h));\r\n                                    } catch (Exception e10) {\r\n                                        e = e10;\r\n                                        Q8.a.h(bVar.f2632c, \"m_spp_le.startSocketConnect: err device=\" + Q8.a.l(bVar.h), e);\r\n                                        bVar.f2228B.compareAndSet(0, 3);\r\n                                    }\r\n                                    bVar.l();\r\n                                    if (!zCompareAndSet) {\r\n                                        bVar.o(bVar.f2228B.get());\r\n                                    } else if (bVar.f2228B.get() == 1 && bVar.f2639k == bluetoothSocket) {\r\n                                        BluetoothDevice bluetoothDevice2 = bVar.h;\r\n                                        BluetoothSocket bluetoothSocket2 = bVar.f2639k;\r\n                                        if (bluetoothDevice2 == null || bluetoothSocket2 == null) {\r\n                                            String str = bVar.f2632c;\r\n                                            StringBuilder sb2 = new StringBuilder(\"notifyConnectionConnected: device/socket null, skip deviceNull=\");\r\n                                            sb2.append(bluetoothDevice2 == null);\r\n                                            sb2.append(\" socketNull=\");\r\n                                            sb2.append(bluetoothSocket2 == null);\r\n                                            Q8.a.f(str, sb2.toString());\r\n                                        } else {\r\n                                            bVar.k(2);\r\n                                            H8.b.a aVar = bVar.f2635f;\r\n                                            if (aVar != null) {\r\n                                                G8.d dVar = aVar.f2661a;\r\n                                                int i10 = dVar.f2234B.f2634e;\r\n                                                Q8.a.c(\"BRClientDevice\", new r0(i10, 6));\r\n                                                if (i10 == 2) {\r\n                                                    dVar.h(bVar, bluetoothDevice2);\r\n                                                }\r\n                                            }\r\n                                            z10 = true;\r\n                                        }\r\n                                        if (z10) {\r\n                                            Q8.a.a(bVar.f2632c, \"initReadAndWrite\");\r\n                                            bVar.f2647s.sendEmptyMessage(1);\r\n                                            bVar.f2649u.sendEmptyMessage(1);\r\n                                        } else {\r\n                                            Q8.a.m(bVar.f2632c, \"m_spp_le.startSocketConnect: aborted after connect success, treat as fail device=\" + Q8.a.l(bVar.h));\r\n                                            bVar.f2228B.compareAndSet(1, 3);\r\n                                            bVar.o(bVar.f2228B.get());\r\n                                        }\r\n                                    } else {\r\n                                        Q8.a.m(bVar.f2632c, \"m_spp_le.startSocketConnect: aborted after connect success, treat as fail device=\" + Q8.a.l(bVar.h));\r\n                                        bVar.f2228B.compareAndSet(1, 3);\r\n                                        bVar.o(bVar.f2228B.get());\r\n                                    }\r\n                                } catch (Exception e11) {\r\n                                    e = e11;\r\n                                    zCompareAndSet = false;\r\n                                }\r\n                            }\r\n                        } catch (Throwable th) {\r\n                            bVar.l();\r\n                            throw th;\r\n                        }\r\n                    } else {\r\n                        Q8.a.c(bVar.f2632c, new F8.d(1));\r\n                        Q8.a.a(bVar.f2632c, \"abortToConnect()\");\r\n                        bVar.l();\r\n                        bVar.f2228B.set(3);\r\n                        bVar.b();\r\n                        bVar.k(3);\r\n                        H8.b.a aVar2 = bVar.f2635f;\r\n                        if (aVar2 != null) {\r\n                            G8.d dVar2 = aVar2.f2661a;\r\n                            synchronized (dVar2.f1574b) {\r\n                                try {\r\n                                    if (dVar2.f1577q != 3) {\r\n                                        synchronized (dVar2.f1574b) {\r\n                                            Q8.a.c(\"Device\", new E8.a(dVar2, 0));\r\n                                            dVar2.f1577q = 3;\r\n                                        }\r\n                                        Message messageObtain = Message.obtain();\r\n                                        messageObtain.what = DeviceInfo.FEATURE_SUPPORT_IN_EAR_DETECTION_MUSIC_MUTE;\r\n                                        messageObtain.obj = bVar;\r\n                                        dVar2.f1584x.sendMessage(messageObtain);\r\n                                    }\r\n                                } catch (Throwable th2) {\r\n                                    throw th2;\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            return true;\r\n        }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

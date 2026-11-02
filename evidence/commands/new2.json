@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_b0de09326831049329fc594baef0b5ec5efe82f2b97c68071a96f3a23d550f1b",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.btsdk.protocol.commands.u",
+    "method_name": "get"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.protocol.commands.u"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"name\":\"u\",\"field_count\":1,\"full_name\":\"com.oplus.melody.btsdk.protocol.commands.u\",\"method_count\":2,\"raw_name\":\"com.oplus.melody.btsdk.protocol.commands.u\",\"fields\":[{\"type\":\"int\",\"def_pos\":0,\"name\":\"f22258a\"}],\"methods\":[{\"signature\":\"<init>(int): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"get(): java.lang.Object\",\"def_pos\":0,\"name\":\"get\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/Object;\"}],\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.protocol.commands.u",
+          "method_name": "get",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.btsdk.protocol.commands.u.get\",\"overload_index\":0,\"method_name\":\"get\",\"overload_count\":1,\"dex_descriptor\":\"()Ljava/lang/Object;\",\"class_name\":\"com.oplus.melody.btsdk.protocol.commands.u\",\"mode\":\"java\",\"body\":\"    @Override // java.util.function.Supplier\\r\\n    public final Object get() {\\r\\n        boolean z10 = true;\\r\\n        switch (this.f22258a) {\\r\\n            case 0:\\r\\n                return A0.h(1044, new StringBuilder(\\\"setFreeDialogRecoveryTime UNSUPPORTED cmd=0x\\\"));\\r\\n            case 1:\\r\\n                return A0.h(1048, new StringBuilder(\\\"setEqInfo UNSUPPORTED cmd=0x\\\"));\\r\\n            case 2:\\r\\n                return A0.h(1027, new StringBuilder(\\\"setSwitchFeature UNSUPPORTED cmd=0x\\\"));\\r\\n            case 3:\\r\\n                return A0.h(1070, new StringBuilder(\\\"setVoiceMultiConversationStatus UNSUPPORTED cmd=0x\\\"));\\r\\n            case 4:\\r\\n                return MelodyBluetoothAdapter.registerOplusBluetoothRssiDetectCallback$lambda$1$0();\\r\\n            case 5:\\r\\n                return A9.i.i(\\\"init remoteApi, isExp=\\\", U8.b.e());\\r\\n            case 6:\\r\\n                return \\\"Cloud sync tips hidden by user\\\";\\r\\n            case 7:\\r\\n                int i10 = com.oplus.melody.model.repository.zenmode.s.H;\\r\\n                return \\\"maybeAutoSwitchToNoiseReduction: earphone null or not support noise reduction\\\";\\r\\n            case 8:\\r\\n                return \\\"create cancelable=false\\\";\\r\\n            case 9:\\r\\n                int i11 = StartupActivity.f20086y;\\r\\n                return Boolean.valueOf(p4.f.h());\\r\\n            case 10:\\r\\n                return \\\"stopObserveActiveEarphone\\\";\\r\\n            case 11:\\r\\n                return \\\"syncHeadPhoneStatus: not support wear detection\\\";\\r\\n            case 12:\\r\\n                return \\\"restoreUpgradingFirmwareInfo: wait device version\\\";\\r\\n            case 13:\\r\\n                return \\\"m_bt_le.isLeOnlyDevice = true, from BluetoothDevice.uuids \\\";\\r\\n            case 14:\\r\\n                return Integer.valueOf(D.b(null, true));\\r\\n            case 15:\\r\\n                return androidx.appcompat.widget.a.g(I.a.f22347a.f22346b, \\\"playPreviewAudio, MediaPlayer start, playState = \\\");\\r\\n            case 16:\\r\\n                return \\\"m_spp_le.tone onUpgradeStart: \\\";\\r\\n            case 17:\\r\\n                int i12 = HeadsetCoreService.e.f22188d;\\r\\n                return \\\"m_spp_le.MSG_DIRECT_CONNECT_TO_SPP, not melody app or le close\\\";\\r\\n            case 18:\\r\\n                return A0.h(3843, new StringBuilder(\\\"sendDiagnosticCommand UNSUPPORTED cmd=0x\\\"));\\r\\n            case 19:\\r\\n                w8.b bVar = v8.a.f33433a;\\r\\n                return \\\"doMultiSppCmdInfo.getMultiSppCmdInfo\\\";\\r\\n            case 20:\\r\\n                return g0.e.i(\\\"sendMultiSppCmdInfo UNSUPPORTED cmd=0x\\\", Integer.toHexString(303));\\r\\n            case 21:\\r\\n                return \\\"requestPermissions mNotificationPreShouldShowRationale = \\\" + w4.a.f33743z + \\\", mNotificationPostShouldShowRationale = \\\" + w4.a.f33735A;\\r\\n            case 22:\\r\\n                int i13 = CustomDressActivity.f25364r0;\\r\\n                int i14 = Build.VERSION.SDK_INT;\\r\\n                if (i14 < 33 && (i14 < 30 || SdkExtensions.getExtensionVersion(30) < 2)) {\\r\\n                    z10 = false;\\r\\n                }\\r\\n                return A9.i.i(\\\"isPhotoPickerAvailable:\\\", z10);\\r\\n            default:\\r\\n                return androidx.appcompat.widget.a.g(I.a.f22347a.f22346b, \\\"onPause, playState = \\\");\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.btsdk.protocol.commands.u",
+    "method": {
+      "name": "get",
+      "reported_signature": "get(): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // java.util.function.Supplier\r\n    public final Object get() {\r\n        boolean z10 = true;\r\n        switch (this.f22258a) {\r\n            case 0:\r\n                return A0.h(1044, new StringBuilder(\"setFreeDialogRecoveryTime UNSUPPORTED cmd=0x\"));\r\n            case 1:\r\n                return A0.h(1048, new StringBuilder(\"setEqInfo UNSUPPORTED cmd=0x\"));\r\n            case 2:\r\n                return A0.h(1027, new StringBuilder(\"setSwitchFeature UNSUPPORTED cmd=0x\"));\r\n            case 3:\r\n                return A0.h(1070, new StringBuilder(\"setVoiceMultiConversationStatus UNSUPPORTED cmd=0x\"));\r\n            case 4:\r\n                return MelodyBluetoothAdapter.registerOplusBluetoothRssiDetectCallback$lambda$1$0();\r\n            case 5:\r\n                return A9.i.i(\"init remoteApi, isExp=\", U8.b.e());\r\n            case 6:\r\n                return \"Cloud sync tips hidden by user\";\r\n            case 7:\r\n                int i10 = com.oplus.melody.model.repository.zenmode.s.H;\r\n                return \"maybeAutoSwitchToNoiseReduction: earphone null or not support noise reduction\";\r\n            case 8:\r\n                return \"create cancelable=false\";\r\n            case 9:\r\n                int i11 = StartupActivity.f20086y;\r\n                return Boolean.valueOf(p4.f.h());\r\n            case 10:\r\n                return \"stopObserveActiveEarphone\";\r\n            case 11:\r\n                return \"syncHeadPhoneStatus: not support wear detection\";\r\n            case 12:\r\n                return \"restoreUpgradingFirmwareInfo: wait device version\";\r\n            case 13:\r\n                return \"m_bt_le.isLeOnlyDevice = true, from BluetoothDevice.uuids \";\r\n            case 14:\r\n                return Integer.valueOf(D.b(null, true));\r\n            case 15:\r\n                return androidx.appcompat.widget.a.g(I.a.f22347a.f22346b, \"playPreviewAudio, MediaPlayer start, playState = \");\r\n            case 16:\r\n                return \"m_spp_le.tone onUpgradeStart: \";\r\n            case 17:\r\n                int i12 = HeadsetCoreService.e.f22188d;\r\n                return \"m_spp_le.MSG_DIRECT_CONNECT_TO_SPP, not melody app or le close\";\r\n            case 18:\r\n                return A0.h(3843, new StringBuilder(\"sendDiagnosticCommand UNSUPPORTED cmd=0x\"));\r\n            case 19:\r\n                w8.b bVar = v8.a.f33433a;\r\n                return \"doMultiSppCmdInfo.getMultiSppCmdInfo\";\r\n            case 20:\r\n                return g0.e.i(\"sendMultiSppCmdInfo UNSUPPORTED cmd=0x\", Integer.toHexString(303));\r\n            case 21:\r\n                return \"requestPermissions mNotificationPreShouldShowRationale = \" + w4.a.f33743z + \", mNotificationPostShouldShowRationale = \" + w4.a.f33735A;\r\n            case 22:\r\n                int i13 = CustomDressActivity.f25364r0;\r\n                int i14 = Build.VERSION.SDK_INT;\r\n                if (i14 < 33 && (i14 < 30 || SdkExtensions.getExtensionVersion(30) < 2)) {\r\n                    z10 = false;\r\n                }\r\n                return A9.i.i(\"isPhotoPickerAvailable:\", z10);\r\n            default:\r\n                return androidx.appcompat.widget.a.g(I.a.f22347a.f22346b, \"onPause, playState = \");\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

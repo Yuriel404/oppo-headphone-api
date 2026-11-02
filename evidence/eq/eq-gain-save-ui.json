@@ -1,0 +1,148 @@
+{
+  "evidence_id": "ev_8538ca7a247fa1c779d8a6d8b8adecdd0a4cf9560c12f4fb65f1ff1aa4097b57",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Ab.i",
+    "method_name": "onClick",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":16}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":5715,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Ab.i"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":2,\"full_name\":\"Ab.i\",\"field_count\":4,\"name\":\"i\",\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"def_pos\":0,\"signature\":\"<init>(java.lang.Object, java.lang.Object, java.lang.Object, int): void\",\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"onClick(android.view.View): void\",\"dex_descriptor\":\"(Landroid/view/View;)V\",\"is_constructor\":false,\"name\":\"onClick\"}],\"fields\":[{\"type\":\"int\",\"name\":\"f373a\",\"def_pos\":0},{\"type\":\"java.lang.Object\",\"name\":\"f374b\",\"def_pos\":0},{\"type\":\"java.lang.Object\",\"name\":\"f375c\",\"def_pos\":0},{\"type\":\"java.lang.Object\",\"name\":\"f376p\",\"def_pos\":0}],\"raw_name\":\"Ab.i\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Ab.i",
+          "method_name": "onClick",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"full_name\":\"Ab.i.onClick\",\"fell_back\":false,\"markers\":[],\"body\":\"    /* JADX WARN: Code duplicated, block: B:68:0x0170  */\\r\\n    /* JADX WARN: Code duplicated, block: B:69:0x017c  */\\r\\n    @Override // android.view.View.OnClickListener\\r\\n    public final void onClick(View view) {\\r\\n        COUIEditText cOUIEditText;\\r\\n        int i10;\\r\\n        int[] iArr;\\r\\n        WhitelistConfigDTO.Function function;\\r\\n        final ta.b bVar = null;\\r\\n        Object obj = this.f375c;\\r\\n        Object obj2 = this.f376p;\\r\\n        Object obj3 = this.f374b;\\r\\n        boolean z10 = true;\\r\\n        switch (this.f373a) {\\r\\n            case 0:\\r\\n                final Z z11 = (Z) obj3;\\r\\n                COUIEditText cOUIEditText2 = (COUIEditText) obj;\\r\\n                Editable text = cOUIEditText2 != null ? cOUIEditText2.getText() : null;\\r\\n                String string = text != null ? text.toString() : \\\"\\\";\\r\\n                androidx.fragment.app.f fVarC = z11.C(\\\"parseImportedEqFromShareCode\\\");\\r\\n                if (fVarC == null) {\\r\\n                    cOUIEditText = cOUIEditText2;\\r\\n                } else {\\r\\n                    int length = z11.f305u0.length;\\r\\n                    BigInteger bigInteger = B0.f168a;\\r\\n                    if (string == null || bf.n.g0(string) || length <= 0) {\\r\\n                        cOUIEditText = cOUIEditText2;\\r\\n                        i10 = -6;\\r\\n                    } else {\\r\\n                        StringBuilder sb2 = new StringBuilder(string.length());\\r\\n                        int length2 = string.length();\\r\\n                        int i11 = 0;\\r\\n                        while (true) {\\r\\n                            if (i11 < length2) {\\r\\n                                char cCharAt = string.charAt(i11);\\r\\n                                if (!Wa.a.G(cCharAt)) {\\r\\n                                    Character chB = B0.b(cCharAt);\\r\\n                                    if (chB != null) {\\r\\n                                        sb2.append(chB.charValue());\\r\\n                                    }\\r\\n                                }\\r\\n                                i11++;\\r\\n                            } else {\\r\\n                                String string2 = sb2.toString();\\r\\n                                if (string2.length() == (length <= 0 ? 0 : B0.c(length) + 1)) {\\r\\n                                    String strSubstring = string2.substring(0, string2.length() - 1);\\r\\n                                    kotlin.jvm.internal.i.e(strSubstring, \\\"substring(...)\\\");\\r\\n                                    char cS0 = bf.o.s0(string2);\\r\\n                                    BigInteger bigIntegerAdd = BigInteger.ZERO;\\r\\n                                    int length3 = strSubstring.length();\\r\\n                                    int i12 = 0;\\r\\n                                    while (true) {\\r\\n                                        if (i12 < length3) {\\r\\n                                            boolean z12 = z10;\\r\\n                                            i10 = -6;\\r\\n                                            int iD0 = bf.n.d0(\\\"0123456789ABCDEFGHJKMNPQRSTVWXYZ\\\", strSubstring.charAt(i12), 0, 6);\\r\\n                                            if (iD0 < 0) {\\r\\n                                                cOUIEditText = cOUIEditText2;\\r\\n                                            } else {\\r\\n                                                bigIntegerAdd = bigIntegerAdd.multiply(B0.f168a).add(BigInteger.valueOf(iD0));\\r\\n                                                i12++;\\r\\n                                                z10 = z12;\\r\\n                                                cOUIEditText2 = cOUIEditText2;\\r\\n                                            }\\r\\n                                        } else {\\r\\n                                            cOUIEditText = cOUIEditText2;\\r\\n                                            boolean z13 = z10;\\r\\n                                            i10 = -6;\\r\\n                                            if (cS0 == B0.a(strSubstring)) {\\r\\n                                                BigInteger bigInteger2 = B0.f169b;\\r\\n                                                if (bigIntegerAdd.compareTo(bigInteger2.pow(length)) < 0) {\\r\\n                                                    iArr = new int[length];\\r\\n                                                    for (int i13 = length - 1; -1 < i13; i13--) {\\r\\n                                                        BigInteger[] bigIntegerArrDivideAndRemainder = bigIntegerAdd.divideAndRemainder(bigInteger2);\\r\\n                                                        iArr[i13] = bigIntegerArrDivideAndRemainder[z13 ? 1 : 0].intValue() - 6;\\r\\n                                                        bigIntegerAdd = bigIntegerArrDivideAndRemainder[0];\\r\\n                                                    }\\r\\n                                                }\\r\\n                                            }\\r\\n                                        }\\r\\n                                    }\\r\\n                                }\\r\\n                            }\\r\\n                            cOUIEditText = cOUIEditText2;\\r\\n                            iArr = null;\\r\\n                            i10 = -6;\\r\\n                        }\\r\\n                        if (iArr == null) {\\r\\n                            X1.a.H(fVarC, fVarC.getString(R.string.melody_ui_eq_share_code_invalid));\\r\\n                            bVar = null;\\r\\n                        } else {\\r\\n                            String strA = z11.A();\\r\\n                            ta.b bVar2 = new ta.b();\\r\\n                            bVar2.setName(strA);\\r\\n                            bVar2.setNameLength(strA.getBytes(StandardCharsets.UTF_8).length);\\r\\n                            bVar2.setMinValue(i10);\\r\\n                            bVar2.setMaxValue(6);\\r\\n                            int[] iArr2 = z11.f305u0;\\r\\n                            bVar2.setFrequency(Arrays.copyOf(iArr2, iArr2.length));\\r\\n                            bVar2.setDbValue(Arrays.copyOf(iArr, iArr.length));\\r\\n                            bVar = bVar2;\\r\\n                        }\\r\\n                    }\\r\\n                    iArr = null;\\r\\n                    if (iArr == null) {\\r\\n                        X1.a.H(fVarC, fVarC.getString(R.string.melody_ui_eq_share_code_invalid));\\r\\n                        bVar = null;\\r\\n                    } else {\\r\\n                        String strA2 = z11.A();\\r\\n                        ta.b bVar3 = new ta.b();\\r\\n                        bVar3.setName(strA2);\\r\\n                        bVar3.setNameLength(strA2.getBytes(StandardCharsets.UTF_8).length);\\r\\n                        bVar3.setMinValue(i10);\\r\\n                        bVar3.setMaxValue(6);\\r\\n                        int[] iArr3 = z11.f305u0;\\r\\n                        bVar3.setFrequency(Arrays.copyOf(iArr3, iArr3.length));\\r\\n                        bVar3.setDbValue(Arrays.copyOf(iArr, iArr.length));\\r\\n                        bVar = bVar3;\\r\\n                    }\\r\\n                }\\r\\n                if (bVar != null) {\\r\\n                    if (cOUIEditText != null) {\\r\\n                        InputMethodManager inputMethodManager = (InputMethodManager) cOUIEditText.getContext().getSystemService(\\\"input_method\\\");\\r\\n                        if (inputMethodManager != null) {\\r\\n                            inputMethodManager.hideSoftInputFromWindow(cOUIEditText.getWindowToken(), 0);\\r\\n                        }\\r\\n                        cOUIEditText.clearFocus();\\r\\n                    }\\r\\n                    androidx.appcompat.app.g gVar = (androidx.appcompat.app.g) obj2;\\r\\n                    gVar.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: Ab.y\\r\\n                        @Override // android.content.DialogInterface.OnDismissListener\\r\\n                        public final void onDismiss(DialogInterface dialogInterface) {\\r\\n                            Z z14 = z11;\\r\\n                            androidx.fragment.app.f fVarC2 = z14.C(\\\"showImportEqPreviewDialog\\\");\\r\\n                            if (fVarC2 == null) {\\r\\n                                return;\\r\\n                            }\\r\\n                            if (z14.E()) {\\r\\n                                X1.a.H(fVarC2, fVarC2.getString(R.string.melody_ui_import_eq_limit));\\r\\n                                return;\\r\\n                            }\\r\\n                            X8.b bVar4 = new X8.b(fVarC2, R.style.MelodyUiTheme_ShareCustomEq);\\r\\n                            bVar4.i(R.string.melody_ui_common_cancel, new L(0));\\r\\n                            bVar4.o(R.string.melody_ui_import_eq_confirm, null);\\r\\n                            androidx.appcompat.app.g gVarShow = bVar4.show();\\r\\n                            ta.b bVar5 = bVar;\\r\\n                            z14.x(gVarShow, bVar5);\\r\\n                            Button buttonD = gVarShow.d(-1);\\r\\n                            if (buttonD != null) {\\r\\n                                buttonD.setOnClickListener(new M(z14, bVar5, gVarShow, 0));\\r\\n                            }\\r\\n                        }\\r\\n                    });\\r\\n                    gVar.dismiss();\\r\\n                    break;\\r\\n                }\\r\\n                break;\\r\\n            case 1:\\r\\n                GuideEntranceFragment.c cVar = (GuideEntranceFragment.c) obj3;\\r\\n                if (cVar != null) {\\r\\n                    cVar.a();\\r\\n                }\\r\\n                GuideEntranceFragment.a aVar = (GuideEntranceFragment.a) obj;\\r\\n                Ma.x.E(aVar.getAddress(), true);\\r\\n                X1.a.G((Context) obj2, R.string.melody_common_control_guide_exit_toast);\\r\\n                Ra.B.d(aVar.getProductId(), 0, -1, aVar.getAddress());\\r\\n                break;\\r\\n            default:\\r\\n                Intent intent = (Intent) obj3;\\r\\n                intent.addFlags(SQLiteDatabase.CREATE_IF_NECESSARY);\\r\\n                intent.addFlags(67108864);\\r\\n                SpatialAudioContentFragment spatialAudioContentFragment = (SpatialAudioContentFragment) obj2;\\r\\n                WhitelistConfigDTO whitelistConfigDTO = (WhitelistConfigDTO) obj;\\r\\n                if (whitelistConfigDTO != null && (function = whitelistConfigDTO.getFunction()) != null && function.getSpatialVip() == 1) {\\r\\n                    com.oplus.melody.common.util.y.b(\\\"SpatialAudioContentFragment\\\", \\\"add params\\\");\\r\\n                    intent.putExtra(\\\"deviceAddress\\\", spatialAudioContentFragment.f25789E);\\r\\n                    intent.putExtra(\\\"deviceName\\\", spatialAudioContentFragment.f25790F);\\r\\n                }\\r\\n                androidx.fragment.app.f fVarRequireActivity = spatialAudioContentFragment.requireActivity();\\r\\n                kotlin.jvm.internal.i.e(fVarRequireActivity, \\\"requireActivity(...)\\\");\\r\\n                com.oplus.melody.common.util.j.j(fVarRequireActivity, intent, null);\\r\\n                break;\\r\\n        }\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"Ab.i\",\"dex_descriptor\":\"(Landroid/view/View;)V\",\"overload_count\":1,\"method_name\":\"onClick\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Ab.i",
+    "method": {
+      "name": "onClick",
+      "reported_signature": "onClick(android.view.View): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/view/View;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:68:0x0170  */\r\n    /* JADX WARN: Code duplicated, block: B:69:0x017c  */\r\n    @Override // android.view.View.OnClickListener\r\n    public final void onClick(View view) {\r\n        COUIEditText cOUIEditText;\r\n        int i10;\r\n        int[] iArr;\r\n        WhitelistConfigDTO.Function function;\r\n        final ta.b bVar = null;\r\n        Object obj = this.f375c;\r\n        Object obj2 = this.f376p;\r\n        Object obj3 = this.f374b;\r\n        boolean z10 = true;\r\n        switch (this.f373a) {\r\n            case 0:\r\n                final Z z11 = (Z) obj3;\r\n                COUIEditText cOUIEditText2 = (COUIEditText) obj;\r\n                Editable text = cOUIEditText2 != null ? cOUIEditText2.getText() : null;\r\n                String string = text != null ? text.toString() : \"\";\r\n                androidx.fragment.app.f fVarC = z11.C(\"parseImportedEqFromShareCode\");\r\n                if (fVarC == null) {\r\n                    cOUIEditText = cOUIEditText2;\r\n                } else {\r\n                    int length = z11.f305u0.length;\r\n                    BigInteger bigInteger = B0.f168a;\r\n                    if (string == null || bf.n.g0(string) || length <= 0) {\r\n                        cOUIEditText = cOUIEditText2;\r\n                        i10 = -6;\r\n                    } else {\r\n                        StringBuilder sb2 = new StringBuilder(string.length());\r\n                        int length2 = string.length();\r\n                        int i11 = 0;\r\n                        while (true) {\r\n                            if (i11 < length2) {\r\n                                char cCharAt = string.charAt(i11);\r\n                                if (!Wa.a.G(cCharAt)) {\r\n                                    Character chB = B0.b(cCharAt);\r\n                                    if (chB != null) {\r\n                                        sb2.append(chB.charValue());\r\n                                    }\r\n                                }\r\n                                i11++;\r\n                            } else {\r\n                                String string2 = sb2.toString();\r\n                                if (string2.length() == (length <= 0 ? 0 : B0.c(length) + 1)) {\r\n                                    String strSubstring = string2.substring(0, string2.length() - 1);\r\n                                    kotlin.jvm.internal.i.e(strSubstring, \"substring(...)\");\r\n                                    char cS0 = bf.o.s0(string2);\r\n                                    BigInteger bigIntegerAdd = BigInteger.ZERO;\r\n                                    int length3 = strSubstring.length();\r\n                                    int i12 = 0;\r\n                                    while (true) {\r\n                                        if (i12 < length3) {\r\n                                            boolean z12 = z10;\r\n                                            i10 = -6;\r\n                                            int iD0 = bf.n.d0(\"0123456789ABCDEFGHJKMNPQRSTVWXYZ\", strSubstring.charAt(i12), 0, 6);\r\n                                            if (iD0 < 0) {\r\n                                                cOUIEditText = cOUIEditText2;\r\n                                            } else {\r\n                                                bigIntegerAdd = bigIntegerAdd.multiply(B0.f168a).add(BigInteger.valueOf(iD0));\r\n                                                i12++;\r\n                                                z10 = z12;\r\n                                                cOUIEditText2 = cOUIEditText2;\r\n                                            }\r\n                                        } else {\r\n                                            cOUIEditText = cOUIEditText2;\r\n                                            boolean z13 = z10;\r\n                                            i10 = -6;\r\n                                            if (cS0 == B0.a(strSubstring)) {\r\n                                                BigInteger bigInteger2 = B0.f169b;\r\n                                                if (bigIntegerAdd.compareTo(bigInteger2.pow(length)) < 0) {\r\n                                                    iArr = new int[length];\r\n                                                    for (int i13 = length - 1; -1 < i13; i13--) {\r\n                                                        BigInteger[] bigIntegerArrDivideAndRemainder = bigIntegerAdd.divideAndRemainder(bigInteger2);\r\n                                                        iArr[i13] = bigIntegerArrDivideAndRemainder[z13 ? 1 : 0].intValue() - 6;\r\n                                                        bigIntegerAdd = bigIntegerArrDivideAndRemainder[0];\r\n                                                    }\r\n                                                }\r\n                                            }\r\n                                        }\r\n                                    }\r\n                                }\r\n                            }\r\n                            cOUIEditText = cOUIEditText2;\r\n                            iArr = null;\r\n                            i10 = -6;\r\n                        }\r\n                        if (iArr == null) {\r\n                            X1.a.H(fVarC, fVarC.getString(R.string.melody_ui_eq_share_code_invalid));\r\n                            bVar = null;\r\n                        } else {\r\n                            String strA = z11.A();\r\n                            ta.b bVar2 = new ta.b();\r\n                            bVar2.setName(strA);\r\n                            bVar2.setNameLength(strA.getBytes(StandardCharsets.UTF_8).length);\r\n                            bVar2.setMinValue(i10);\r\n                            bVar2.setMaxValue(6);\r\n                            int[] iArr2 = z11.f305u0;\r\n                            bVar2.setFrequency(Arrays.copyOf(iArr2, iArr2.length));\r\n                            bVar2.setDbValue(Arrays.copyOf(iArr, iArr.length));\r\n                            bVar = bVar2;\r\n                        }\r\n                    }\r\n                    iArr = null;\r\n                    if (iArr == null) {\r\n                        X1.a.H(fVarC, fVarC.getString(R.string.melody_ui_eq_share_code_invalid));\r\n                        bVar = null;\r\n                    } else {\r\n                        String strA2 = z11.A();\r\n                        ta.b bVar3 = new ta.b();\r\n                        bVar3.setName(strA2);\r\n                        bVar3.setNameLength(strA2.getBytes(StandardCharsets.UTF_8).length);\r\n                        bVar3.setMinValue(i10);\r\n                        bVar3.setMaxValue(6);\r\n                        int[] iArr3 = z11.f305u0;\r\n                        bVar3.setFrequency(Arrays.copyOf(iArr3, iArr3.length));\r\n                        bVar3.setDbValue(Arrays.copyOf(iArr, iArr.length));\r\n                        bVar = bVar3;\r\n                    }\r\n                }\r\n                if (bVar != null) {\r\n                    if (cOUIEditText != null) {\r\n                        InputMethodManager inputMethodManager = (InputMethodManager) cOUIEditText.getContext().getSystemService(\"input_method\");\r\n                        if (inputMethodManager != null) {\r\n                            inputMethodManager.hideSoftInputFromWindow(cOUIEditText.getWindowToken(), 0);\r\n                        }\r\n                        cOUIEditText.clearFocus();\r\n                    }\r\n                    androidx.appcompat.app.g gVar = (androidx.appcompat.app.g) obj2;\r\n                    gVar.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: Ab.y\r\n                        @Override // android.content.DialogInterface.OnDismissListener\r\n                        public final void onDismiss(DialogInterface dialogInterface) {\r\n                            Z z14 = z11;\r\n                            androidx.fragment.app.f fVarC2 = z14.C(\"showImportEqPreviewDialog\");\r\n                            if (fVarC2 == null) {\r\n                                return;\r\n                            }\r\n                            if (z14.E()) {\r\n                                X1.a.H(fVarC2, fVarC2.getString(R.string.melody_ui_import_eq_limit));\r\n                                return;\r\n                            }\r\n                            X8.b bVar4 = new X8.b(fVarC2, R.style.MelodyUiTheme_ShareCustomEq);\r\n                            bVar4.i(R.string.melody_ui_common_cancel, new L(0));\r\n                            bVar4.o(R.string.melody_ui_import_eq_confirm, null);\r\n                            androidx.appcompat.app.g gVarShow = bVar4.show();\r\n                            ta.b bVar5 = bVar;\r\n                            z14.x(gVarShow, bVar5);\r\n                            Button buttonD = gVarShow.d(-1);\r\n                            if (buttonD != null) {\r\n                                buttonD.setOnClickListener(new M(z14, bVar5, gVarShow, 0));\r\n                            }\r\n                        }\r\n                    });\r\n                    gVar.dismiss();\r\n                    break;\r\n                }\r\n                break;\r\n            case 1:\r\n                GuideEntranceFragment.c cVar = (GuideEntranceFragment.c) obj3;\r\n                if (cVar != null) {\r\n                    cVar.a();\r\n                }\r\n                GuideEntranceFragment.a aVar = (GuideEntranceFragment.a) obj;\r\n                Ma.x.E(aVar.getAddress(), true);\r\n                X1.a.G((Context) obj2, R.string.melody_common_control_guide_exit_toast);\r\n                Ra.B.d(aVar.getProductId(), 0, -1, aVar.getAddress());\r\n                break;\r\n            default:\r\n                Intent intent = (Intent) obj3;\r\n                intent.addFlags(SQLiteDatabase.CREATE_IF_NECESSARY);\r\n                intent.addFlags(67108864);\r\n                SpatialAudioContentFragment spatialAudioContentFragment = (SpatialAudioContentFragment) obj2;\r\n                WhitelistConfigDTO whitelistConfigDTO = (WhitelistConfigDTO) obj;\r\n                if (whitelistConfigDTO != null && (function = whitelistConfigDTO.getFunction()) != null && function.getSpatialVip() == 1) {\r\n                    com.oplus.melody.common.util.y.b(\"SpatialAudioContentFragment\", \"add params\");\r\n                    intent.putExtra(\"deviceAddress\", spatialAudioContentFragment.f25789E);\r\n                    intent.putExtra(\"deviceName\", spatialAudioContentFragment.f25790F);\r\n                }\r\n                androidx.fragment.app.f fVarRequireActivity = spatialAudioContentFragment.requireActivity();\r\n                kotlin.jvm.internal.i.e(fVarRequireActivity, \"requireActivity(...)\");\r\n                com.oplus.melody.common.util.j.j(fVarRequireActivity, intent, null);\r\n                break;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

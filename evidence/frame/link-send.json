@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_03f63ed394c3c7d19a84abdb645eab8fa37055bb03323a95a46648b574da2319",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "M8.b",
+    "method_name": "c"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "M8.b"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"M8.b\",\"method_count\":4,\"full_name\":\"M8.b\",\"field_count\":14,\"name\":\"b\",\"inner_class_count\":2,\"inner_classes\":[\"M8.b.a\",\"M8.b.HandlerC0041b\"],\"methods\":[{\"def_pos\":0,\"signature\":\"<init>(com.oplus.melody.btsdk.api.data.DeviceInfo, M8.a$b, N8.b): void\",\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/api/data/DeviceInfo;LM8/a$b;LN8/b;)V\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"a(byte[]): void\",\"dex_descriptor\":\"([B)V\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(byte[]): void\",\"dex_descriptor\":\"([B)V\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"c(w8.a, byte[]): void\",\"dex_descriptor\":\"(Lw8/a;[B)V\",\"is_constructor\":false,\"name\":\"c\"}],\"fields\":[{\"type\":\"M8.a$b\",\"name\":\"f4139a\",\"def_pos\":0},{\"type\":\"java.lang.Object\",\"name\":\"f4140b\",\"def_pos\":0},{\"type\":\"java.lang.Object\",\"name\":\"f4141c\",\"def_pos\":0},{\"type\":\"com.oplus.melody.btsdk.api.data.DeviceInfo\",\"name\":\"f4142d\",\"def_pos\":0},{\"type\":\"N8.b\",\"name\":\"f4143e\",\"def_pos\":0},{\"type\":\"M8.b$b\",\"name\":\"f4144f\",\"def_pos\":0},{\"type\":\"M8.b$b\",\"name\":\"f4145g\",\"def_pos\":0},{\"type\":\"J8.a\",\"name\":\"f4146i\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f4147j\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f4148k\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f4149l\",\"def_pos\":0},{\"type\":\"M8.a$c\",\"name\":\"f4150m\",\"def_pos\":0},{\"type\":\"M8.b$a\",\"name\":\"f4151n\",\"def_pos\":0},{\"type\":\"java.util.ArrayList\",\"name\":\"h\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "M8.b",
+          "method_name": "c",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_count\":1,\"method_name\":\"c\",\"overload_index\":0,\"full_name\":\"M8.b.c\",\"fell_back\":false,\"markers\":[],\"body\":\"    public final void c(w8.a aVar, byte[] bArr) {\\r\\n        long jCurrentTimeMillis;\\r\\n        boolean z10;\\r\\n        int length = bArr.length;\\r\\n        ArrayList arrayList = new ArrayList();\\r\\n        int i10 = this.f4147j;\\r\\n        if (length <= i10) {\\r\\n            arrayList.add(bArr);\\r\\n        } else {\\r\\n            int i11 = length % i10 > 0 ? (length / i10) + 1 : length / i10;\\r\\n            int i12 = 0;\\r\\n            while (i12 < i11) {\\r\\n                int i13 = this.f4147j;\\r\\n                int i14 = i12 == i11 + (-1) ? length - (i13 * i12) : i13;\\r\\n                int i15 = i13 * i12;\\r\\n                arrayList.add(Arrays.copyOfRange(bArr, i15, i14 + i15));\\r\\n                i12++;\\r\\n            }\\r\\n        }\\r\\n        int size = arrayList.size();\\r\\n        for (int i16 = 0; i16 < size; i16++) {\\r\\n            byte[] bArr2 = (byte[]) arrayList.get(i16);\\r\\n            y.a aVar2 = Q8.a.f5077a;\\r\\n            if (y.l()) {\\r\\n                Q8.a.a(\\\"TLVDataProcessor\\\", \\\"sendLinkPackageCommand: 0x\\\" + Integer.toHexString(aVar.a()) + \\\" index=\\\" + i16 + '/' + size + \\\" dataLength=\\\" + bArr2.length + \\\", productType=\\\" + aVar.f33775e);\\r\\n            }\\r\\n            try {\\r\\n                synchronized (this.f4140b) {\\r\\n                    this.f4149l = true;\\r\\n                }\\r\\n                M8.a.b bVar = this.f4139a;\\r\\n                a aVar3 = this.f4151n;\\r\\n                M8.a aVar4 = M8.a.this;\\r\\n                int iF = this == aVar4.f4134d ? aVar4.f4131a.f(this.f4142d, aVar, bArr2, aVar3) : -11;\\r\\n                if (iF == 10) {\\r\\n                    synchronized (this.f4140b) {\\r\\n                        try {\\r\\n                            if (this.f4149l) {\\r\\n                                jCurrentTimeMillis = System.currentTimeMillis();\\r\\n                                this.f4140b.wait(5000L);\\r\\n                                z10 = this.f4149l;\\r\\n                            } else {\\r\\n                                jCurrentTimeMillis = 0;\\r\\n                                z10 = false;\\r\\n                            }\\r\\n                            this.f4149l = false;\\r\\n                        } catch (Throwable th) {\\r\\n                            throw th;\\r\\n                        }\\r\\n                    }\\r\\n                    if (z10) {\\r\\n                        Q8.a.m(\\\"TLVDataProcessor\\\", \\\"sendLinkPackageCommand wait timeout: 0x\\\" + Integer.toHexString(aVar.a()) + \\\" index=\\\" + i16 + '/' + size + \\\" waitCostMs=\\\" + (System.currentTimeMillis() - jCurrentTimeMillis) + \\\", productType=\\\" + aVar.f33775e);\\r\\n                    }\\r\\n                } else {\\r\\n                    synchronized (this.f4140b) {\\r\\n                        this.f4149l = false;\\r\\n                    }\\r\\n                    Q8.a.m(\\\"TLVDataProcessor\\\", \\\"sendLinkPackageCommand: 0x\\\" + Integer.toHexString(aVar.a()) + \\\" error=\\\" + iF + \\\" index=\\\" + i16 + '/' + size + \\\", productType=\\\" + aVar.f33775e);\\r\\n                }\\r\\n                int i17 = this.f4148k;\\r\\n                if (i17 > 0) {\\r\\n                    Thread.sleep(i17);\\r\\n                }\\r\\n            } catch (InterruptedException e3) {\\r\\n                Q8.a.h(\\\"TLVDataProcessor\\\", \\\"sendLinkPackageCommand: 0x\\\" + Integer.toHexString(aVar.a()) + \\\" index=\\\" + i16 + '/' + size + \\\", productType=\\\" + aVar.f33775e, e3);\\r\\n            }\\r\\n        }\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"M8.b\",\"dex_descriptor\":\"(Lw8/a;[B)V\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "M8.b",
+    "method": {
+      "name": "c",
+      "reported_signature": "c(w8.a, byte[]): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lw8/a;[B)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void c(w8.a aVar, byte[] bArr) {\r\n        long jCurrentTimeMillis;\r\n        boolean z10;\r\n        int length = bArr.length;\r\n        ArrayList arrayList = new ArrayList();\r\n        int i10 = this.f4147j;\r\n        if (length <= i10) {\r\n            arrayList.add(bArr);\r\n        } else {\r\n            int i11 = length % i10 > 0 ? (length / i10) + 1 : length / i10;\r\n            int i12 = 0;\r\n            while (i12 < i11) {\r\n                int i13 = this.f4147j;\r\n                int i14 = i12 == i11 + (-1) ? length - (i13 * i12) : i13;\r\n                int i15 = i13 * i12;\r\n                arrayList.add(Arrays.copyOfRange(bArr, i15, i14 + i15));\r\n                i12++;\r\n            }\r\n        }\r\n        int size = arrayList.size();\r\n        for (int i16 = 0; i16 < size; i16++) {\r\n            byte[] bArr2 = (byte[]) arrayList.get(i16);\r\n            y.a aVar2 = Q8.a.f5077a;\r\n            if (y.l()) {\r\n                Q8.a.a(\"TLVDataProcessor\", \"sendLinkPackageCommand: 0x\" + Integer.toHexString(aVar.a()) + \" index=\" + i16 + '/' + size + \" dataLength=\" + bArr2.length + \", productType=\" + aVar.f33775e);\r\n            }\r\n            try {\r\n                synchronized (this.f4140b) {\r\n                    this.f4149l = true;\r\n                }\r\n                M8.a.b bVar = this.f4139a;\r\n                a aVar3 = this.f4151n;\r\n                M8.a aVar4 = M8.a.this;\r\n                int iF = this == aVar4.f4134d ? aVar4.f4131a.f(this.f4142d, aVar, bArr2, aVar3) : -11;\r\n                if (iF == 10) {\r\n                    synchronized (this.f4140b) {\r\n                        try {\r\n                            if (this.f4149l) {\r\n                                jCurrentTimeMillis = System.currentTimeMillis();\r\n                                this.f4140b.wait(5000L);\r\n                                z10 = this.f4149l;\r\n                            } else {\r\n                                jCurrentTimeMillis = 0;\r\n                                z10 = false;\r\n                            }\r\n                            this.f4149l = false;\r\n                        } catch (Throwable th) {\r\n                            throw th;\r\n                        }\r\n                    }\r\n                    if (z10) {\r\n                        Q8.a.m(\"TLVDataProcessor\", \"sendLinkPackageCommand wait timeout: 0x\" + Integer.toHexString(aVar.a()) + \" index=\" + i16 + '/' + size + \" waitCostMs=\" + (System.currentTimeMillis() - jCurrentTimeMillis) + \", productType=\" + aVar.f33775e);\r\n                    }\r\n                } else {\r\n                    synchronized (this.f4140b) {\r\n                        this.f4149l = false;\r\n                    }\r\n                    Q8.a.m(\"TLVDataProcessor\", \"sendLinkPackageCommand: 0x\" + Integer.toHexString(aVar.a()) + \" error=\" + iF + \" index=\" + i16 + '/' + size + \", productType=\" + aVar.f33775e);\r\n                }\r\n                int i17 = this.f4148k;\r\n                if (i17 > 0) {\r\n                    Thread.sleep(i17);\r\n                }\r\n            } catch (InterruptedException e3) {\r\n                Q8.a.h(\"TLVDataProcessor\", \"sendLinkPackageCommand: 0x\" + Integer.toHexString(aVar.a()) + \" index=\" + i16 + '/' + size + \", productType=\" + aVar.f33775e, e3);\r\n            }\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

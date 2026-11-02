@@ -1,0 +1,148 @@
+{
+  "evidence_id": "ev_d9a5451471d093fbb8f2e237d02df33504d83e99ecfbf45398381ca54deb9635",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.ui.component.detail.gamemode.a",
+    "method_name": "D",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":8205,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.ui.component.detail.gamemode.a"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"com.oplus.melody.ui.component.detail.gamemode.GameSetFragment\",\"method_count\":17,\"raw_name\":\"com.oplus.melody.ui.component.detail.gamemode.a\",\"fields\":[{\"def_pos\":0,\"name\":\"H\",\"type\":\"com.coui.appcompat.preference.COUISwitchPreference\"},{\"def_pos\":0,\"name\":\"f25531C\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"f25532D\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"f25533E\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"f25534F\",\"type\":\"com.oplus.melody.ui.component.detail.gamemode.GameSetViewModel\"},{\"def_pos\":0,\"name\":\"f25535G\",\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\"},{\"def_pos\":0,\"name\":\"f25536I\",\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\"},{\"def_pos\":0,\"name\":\"f25537J\",\"type\":\"com.coui.appcompat.preference.COUISwitchPreference\"},{\"def_pos\":0,\"name\":\"f25538K\",\"type\":\"com.coui.appcompat.preference.COUIPreference\"},{\"def_pos\":0,\"name\":\"f25539L\",\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\"},{\"def_pos\":0,\"name\":\"f25540M\",\"type\":\"com.coui.appcompat.preference.COUISwitchPreference\"},{\"def_pos\":0,\"name\":\"f25541N\",\"type\":\"java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>\"},{\"def_pos\":0,\"name\":\"f25542O\",\"type\":\"java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>\"},{\"def_pos\":0,\"name\":\"f25543P\",\"type\":\"java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>\"},{\"def_pos\":0,\"name\":\"f25544Q\",\"type\":\"java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$GameSound>\"},{\"def_pos\":0,\"name\":\"f25545R\",\"type\":\"com.oplus.melody.btsdk.api.data.GameSoundInfo\"},{\"def_pos\":0,\"name\":\"f25546S\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f25547T\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f25548U\",\"type\":\"androidx.appcompat.app.g\"},{\"def_pos\":0,\"name\":\"f25549V\",\"type\":\"android.net.Uri\"},{\"def_pos\":0,\"name\":\"f25550W\",\"type\":\"Ge.b\"},{\"def_pos\":0,\"name\":\"f25551X\",\"type\":\"Kb.d\"}],\"methods\":[{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"()V\",\"signature\":\"<init>(): void\"},{\"def_pos\":0,\"name\":\"A\",\"is_constructor\":false,\"dex_descriptor\":\"(I)Ljava/lang/String;\",\"signature\":\"A(int): java.lang.String\"},{\"def_pos\":0,\"name\":\"B\",\"is_constructor\":false,\"dex_descriptor\":\"([I)Ljava/util/ArrayList;\",\"signature\":\"B(int[]): java.util.ArrayList\"},{\"def_pos\":0,\"name\":\"C\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/api/data/GameSoundInfo;)V\",\"signature\":\"C(com.oplus.melody.btsdk.api.data.GameSoundInfo): void\"},{\"def_pos\":0,\"name\":\"D\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Z)V\",\"signature\":\"D(java.lang.String, java.lang.String, boolean): void\"},{\"def_pos\":0,\"name\":\"E\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/concurrent/CompletableFuture;\",\"signature\":\"E(java.lang.String, java.lang.String, boolean): java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>\"},{\"def_pos\":0,\"name\":\"onCreate\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Bundle;)V\",\"signature\":\"onCreate(android.os.Bundle): void\"},{\"def_pos\":0,\"name\":\"onDestroy\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"onDestroy(): void\"},{\"def_pos\":0,\"name\":\"onDestroyView\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"onDestroyView(): void\"},{\"def_pos\":0,\"name\":\"onOptionsItemSelected\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/view/MenuItem;)Z\",\"signature\":\"onOptionsItemSelected(android.view.MenuItem): boolean\"},{\"def_pos\":0,\"name\":\"onViewCreated\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/view/View;Landroid/os/Bundle;)V\",\"signature\":\"onViewCreated(android.view.View, android.os.Bundle): void\"},{\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"r(): void\"},{\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false,\"dex_descriptor\":\"(ZZ)V\",\"signature\":\"v(boolean, boolean): void\"},{\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false,\"dex_descriptor\":\"(I)Landroid/graphics/drawable/Drawable;\",\"signature\":\"w(int): android.graphics.drawable.Drawable\"},{\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false,\"dex_descriptor\":\"(I)Lcom/coui/appcompat/preference/COUIPreference;\",\"signature\":\"x(int): com.coui.appcompat.preference.COUIPreference\"},{\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false,\"dex_descriptor\":\"(I)Lcom/oplus/melody/ui/widget/MelodyRadioPreference;\",\"signature\":\"y(int): com.oplus.melody.ui.widget.MelodyRadioPreference\"},{\"def_pos\":0,\"name\":\"z\",\"is_constructor\":false,\"dex_descriptor\":\"(I)Ljava/lang/String;\",\"signature\":\"z(int): java.lang.String\"}],\"inner_classes\":[\"com.oplus.melody.ui.component.detail.gamemode.GameSetFragment.a\",\"com.oplus.melody.ui.component.detail.gamemode.GameSetFragment.b\"],\"inner_class_count\":2,\"name\":\"GameSetFragment\",\"field_count\":22}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.ui.component.detail.gamemode.a",
+          "method_name": "D",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.ui.component.detail.gamemode.a.D\",\"overload_index\":0,\"method_name\":\"D\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Z)V\",\"class_name\":\"com.oplus.melody.ui.component.detail.gamemode.GameSetFragment\",\"mode\":\"java\",\"body\":\"    public final void D(String address, String str, final boolean z10) {\\r\\n        int[] supportTypes;\\r\\n        y.c(\\\"GameSetFragment\\\", new p(z10, this, 3));\\r\\n        if (z10 || !this.f25546S) {\\r\\n            CompletableFuture<SetCommandStateDTO> completableFuture = this.f25543P;\\r\\n            if (completableFuture != null) {\\r\\n                completableFuture.cancel(true);\\r\\n            }\\r\\n            if (this.f25534F == null) {\\r\\n                i.j(\\\"mGameSetVM\\\");\\r\\n                throw null;\\r\\n            }\\r\\n            i.f(address, \\\"address\\\");\\r\\n            CompletableFuture<SetCommandStateDTO> completableFutureH0 = com.oplus.melody.model.repository.earphone.b.G().H0(6, z10, address);\\r\\n            i.e(completableFutureH0, \\\"setGameModeStatus(...)\\\");\\r\\n            this.f25543P = completableFutureH0;\\r\\n            CompletableFuture<Void> completableFutureThenAccept = completableFutureH0.thenAccept((Consumer<? super SetCommandStateDTO>) new Fa.i(new e(str, address, this, z10), 5));\\r\\n            if (completableFutureThenAccept != null) {\\r\\n                completableFutureThenAccept.exceptionally(new Function() { // from class: Kb.f\\r\\n                    @Override // java.util.function.Function\\r\\n                    public final Object apply(Object obj) {\\r\\n                        com.oplus.melody.common.util.y.i(\\\"GameSetFragment\\\", \\\"setGameModeEnable enable:\\\" + z10, (Throwable) obj);\\r\\n                        return null;\\r\\n                    }\\r\\n                });\\r\\n                return;\\r\\n            }\\r\\n            return;\\r\\n        }\\r\\n        E(address, str, false);\\r\\n        GameSoundInfo gameSoundInfo = this.f25545R;\\r\\n        ArrayList arrayListB = B(gameSoundInfo != null ? gameSoundInfo.getSupportTypes() : null);\\r\\n        GameSoundInfo gameSoundInfo2 = this.f25545R;\\r\\n        Objects.toString((gameSoundInfo2 == null || (supportTypes = gameSoundInfo2.getSupportTypes()) == null) ? null : He.k.s0(supportTypes));\\r\\n        arrayListB.toString();\\r\\n        if (!arrayListB.isEmpty() && ((WhitelistConfigDTO.GameSound) arrayListB.get(0)).getType() != 0) {\\r\\n            GameSetViewModel gameSetViewModel = this.f25534F;\\r\\n            if (gameSetViewModel == null) {\\r\\n                i.j(\\\"mGameSetVM\\\");\\r\\n                throw null;\\r\\n            }\\r\\n            String str2 = this.f25531C;\\r\\n            if (str2 == null) {\\r\\n                i.j(\\\"mAddress\\\");\\r\\n                throw null;\\r\\n            }\\r\\n            gameSetViewModel.i(((WhitelistConfigDTO.GameSound) arrayListB.get(0)).getType(), str2);\\r\\n        }\\r\\n        COUISwitchPreference cOUISwitchPreference = this.f25537J;\\r\\n        if (cOUISwitchPreference != null) {\\r\\n            cOUISwitchPreference.setChecked(true);\\r\\n        } else {\\r\\n            i.j(\\\"mGameLowLatencySwitchPreference\\\");\\r\\n            throw null;\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.ui.component.detail.gamemode.GameSetFragment",
+    "method": {
+      "name": "D",
+      "reported_signature": "D(java.lang.String, java.lang.String, boolean): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Z)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void D(String address, String str, final boolean z10) {\r\n        int[] supportTypes;\r\n        y.c(\"GameSetFragment\", new p(z10, this, 3));\r\n        if (z10 || !this.f25546S) {\r\n            CompletableFuture<SetCommandStateDTO> completableFuture = this.f25543P;\r\n            if (completableFuture != null) {\r\n                completableFuture.cancel(true);\r\n            }\r\n            if (this.f25534F == null) {\r\n                i.j(\"mGameSetVM\");\r\n                throw null;\r\n            }\r\n            i.f(address, \"address\");\r\n            CompletableFuture<SetCommandStateDTO> completableFutureH0 = com.oplus.melody.model.repository.earphone.b.G().H0(6, z10, address);\r\n            i.e(completableFutureH0, \"setGameModeStatus(...)\");\r\n            this.f25543P = completableFutureH0;\r\n            CompletableFuture<Void> completableFutureThenAccept = completableFutureH0.thenAccept((Consumer<? super SetCommandStateDTO>) new Fa.i(new e(str, address, this, z10), 5));\r\n            if (completableFutureThenAccept != null) {\r\n                completableFutureThenAccept.exceptionally(new Function() { // from class: Kb.f\r\n                    @Override // java.util.function.Function\r\n                    public final Object apply(Object obj) {\r\n                        com.oplus.melody.common.util.y.i(\"GameSetFragment\", \"setGameModeEnable enable:\" + z10, (Throwable) obj);\r\n                        return null;\r\n                    }\r\n                });\r\n                return;\r\n            }\r\n            return;\r\n        }\r\n        E(address, str, false);\r\n        GameSoundInfo gameSoundInfo = this.f25545R;\r\n        ArrayList arrayListB = B(gameSoundInfo != null ? gameSoundInfo.getSupportTypes() : null);\r\n        GameSoundInfo gameSoundInfo2 = this.f25545R;\r\n        Objects.toString((gameSoundInfo2 == null || (supportTypes = gameSoundInfo2.getSupportTypes()) == null) ? null : He.k.s0(supportTypes));\r\n        arrayListB.toString();\r\n        if (!arrayListB.isEmpty() && ((WhitelistConfigDTO.GameSound) arrayListB.get(0)).getType() != 0) {\r\n            GameSetViewModel gameSetViewModel = this.f25534F;\r\n            if (gameSetViewModel == null) {\r\n                i.j(\"mGameSetVM\");\r\n                throw null;\r\n            }\r\n            String str2 = this.f25531C;\r\n            if (str2 == null) {\r\n                i.j(\"mAddress\");\r\n                throw null;\r\n            }\r\n            gameSetViewModel.i(((WhitelistConfigDTO.GameSound) arrayListB.get(0)).getType(), str2);\r\n        }\r\n        COUISwitchPreference cOUISwitchPreference = this.f25537J;\r\n        if (cOUISwitchPreference != null) {\r\n            cOUISwitchPreference.setChecked(true);\r\n        } else {\r\n            i.j(\"mGameLowLatencySwitchPreference\");\r\n            throw null;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

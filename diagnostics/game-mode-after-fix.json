@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-26T10:51:51.415473+00:00",
+  "label": "after-fix",
+  "scope": "Live RFCOMM, capability query and feature 6 only; original game state restored",
+  "initial": 0,
+  "target": 1,
+  "samples": [
+    {
+      "after_set_started": 0.633691,
+      "state": 1
+    },
+    {
+      "after_set_started": 0.719785,
+      "state": 1
+    },
+    {
+      "after_set_started": 0.914889,
+      "state": 1
+    },
+    {
+      "after_set_started": 1.222468,
+      "state": 1
+    },
+    {
+      "after_set_started": 1.619883,
+      "state": 1
+    },
+    {
+      "after_set_started": 2.67887,
+      "state": 1
+    }
+  ],
+  "write": {
+    "command": 1027,
+    "sequence": 3,
+    "acknowledged": true,
+    "verified": true,
+    "readback": {
+      "6": 1
+    }
+  },
+  "restore": {
+    "command": 1027,
+    "sequence": 14,
+    "acknowledged": true,
+    "verified": true,
+    "readback": {
+      "6": 0
+    }
+  },
+  "final": 0,
+  "restored": true
+}

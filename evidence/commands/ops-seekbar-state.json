@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_fbbf1013af64c14c00d8292d68aad25679a9cd9a4face6338de865161531d0f6",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.ui.component.detail.opsreduction.buttonseekbar.NoiseReductionButtonSeekBarView",
+    "method_name": "h"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.ui.component.detail.opsreduction.buttonseekbar.NoiseReductionButtonSeekBarView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"field_count\":18,\"full_name\":\"com.oplus.melody.ui.component.detail.opsreduction.buttonseekbar.NoiseReductionButtonSeekBarView\",\"method_count\":10,\"raw_name\":\"com.oplus.melody.ui.component.detail.opsreduction.buttonseekbar.NoiseReductionButtonSeekBarView\",\"fields\":[{\"type\":\"int\",\"def_pos\":0,\"name\":\"f25660D\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f25661A\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f25662B\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f25663C\"},{\"type\":\"ac.c\",\"def_pos\":0,\"name\":\"f25664a\"},{\"type\":\"com.oplus.melody.ui.component.detail.DetailMainViewModel\",\"def_pos\":0,\"name\":\"f25665b\"},{\"type\":\"com.oplus.melody.ui.widget.MelodyCompatSectionSeekBar\",\"def_pos\":0,\"name\":\"f25666c\"},{\"type\":\"com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget\",\"def_pos\":0,\"name\":\"f25667p\"},{\"type\":\"java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>\",\"def_pos\":0,\"name\":\"f25668q\"},{\"type\":\"com.oplus.melody.ui.component.detail.opsreduction.buttonseekbar.NoiseReductionInfoBus\",\"def_pos\":0,\"name\":\"f25669r\"},{\"type\":\"com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO\",\"def_pos\":0,\"name\":\"f25670s\"},{\"type\":\"com.oplus.melody.model.repository.earphone.a\",\"def_pos\":0,\"name\":\"f25671t\"},{\"type\":\"android.os.Handler\",\"def_pos\":0,\"name\":\"f25672u\"},{\"type\":\"ac.a\",\"def_pos\":0,\"name\":\"f25673v\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"f25674w\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f25675x\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f25676y\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f25677z\"}],\"methods\":[{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(Landroid/content/Context;Landroid/util/AttributeSet;)V\",\"signature\":\"<init>(android.content.Context, android.util.AttributeSet): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/iotui/model/ModeItem;)V\",\"signature\":\"a(com.oplus.iotui.model.ModeItem): void\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/iotui/model/ModeItem;Z)V\",\"signature\":\"c(com.oplus.iotui.model.ModeItem, boolean): void\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"d(): void\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"e(): void\"},{\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;ILandroid/graphics/drawable/Drawable;Ljava/lang/String;Z)Lcom/oplus/iotui/model/ModeItem;\",\"signature\":\"f(android.content.Context, int, android.graphics.drawable.Drawable, java.lang.String, boolean): com.oplus.iotui.model.ModeItem\"},{\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\",\"signature\":\"g(int): void\"},{\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"h(): void\"},{\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"i(): void\"},{\"def_pos\":0,\"name\":\"setDisabled\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\",\"signature\":\"setDisabled(boolean): void\"}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"NoiseReductionButtonSeekBarView\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.ui.component.detail.opsreduction.buttonseekbar.NoiseReductionButtonSeekBarView",
+          "method_name": "h",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.ui.component.detail.opsreduction.buttonseekbar.NoiseReductionButtonSeekBarView.h\",\"overload_index\":0,\"method_name\":\"h\",\"overload_count\":1,\"dex_descriptor\":\"()V\",\"class_name\":\"com.oplus.melody.ui.component.detail.opsreduction.buttonseekbar.NoiseReductionButtonSeekBarView\",\"mode\":\"java\",\"body\":\"    /* JADX WARN: Code duplicated, block: B:30:0x0085  */\\r\\n    /* JADX WARN: Code duplicated, block: B:32:0x0099  */\\r\\n    /* JADX WARN: Code duplicated, block: B:33:0x009f  */\\r\\n    /* JADX WARN: Code duplicated, block: B:35:0x00a3  */\\r\\n    /* JADX WARN: Code duplicated, block: B:36:0x00a9 A[DONT_INVERT] */\\r\\n    /* JADX WARN: Code duplicated, block: B:37:0x00ab  */\\r\\n    public final void h() {\\r\\n        int i10;\\r\\n        long jElapsedRealtime = SystemClock.elapsedRealtime() - this.f25674w;\\r\\n        if (jElapsedRealtime < 1000) {\\r\\n            y.y(\\\"NoiseReductionButtonSeekBarView\\\", \\\"switchToCurrentMode interval too short, return! duration=\\\" + jElapsedRealtime);\\r\\n            return;\\r\\n        }\\r\\n        CurrentNoiseModeDTO currentNoiseModeDTO = this.f25671t;\\r\\n        if (currentNoiseModeDTO == null) {\\r\\n            y.h(\\\"NoiseReductionButtonSeekBarView\\\", \\\"switchToCurrentMode mCurrentNoiseReductionInfo is null, return!\\\");\\r\\n            return;\\r\\n        }\\r\\n        if (currentNoiseModeDTO.isNoiseReductionModeOpened(2)) {\\r\\n            this.f25666c.setThumbIndex(0);\\r\\n        } else if (this.f25671t.isNoiseReductionModeOpened(3)) {\\r\\n            this.f25666c.setThumbIndex(2);\\r\\n        } else if (this.f25671t.isNoiseReductionModeOpened(4)) {\\r\\n            this.f25666c.setThumbIndex(1);\\r\\n        } else {\\r\\n            NoiseReductionInfoDTO noiseReductionInfoDTO = this.f25670s;\\r\\n            if (noiseReductionInfoDTO == null) {\\r\\n                Type type = MelodyAlivePreferencesHelper.f22321a;\\r\\n                i10 = MelodyAlivePreferencesHelper.d(getContext()).getInt(\\\"key_last_noise_reduction_mode\\\", 16);\\r\\n                if (i10 == 4) {\\r\\n                    this.f25666c.setThumbIndex(0);\\r\\n                } else if (i10 == 8) {\\r\\n                    this.f25666c.setThumbIndex(2);\\r\\n                } else if (i10 == 16) {\\r\\n                    this.f25666c.setThumbIndex(1);\\r\\n                }\\r\\n            } else if (noiseReductionInfoDTO.isSupportNoiseReductionModeValue(2)) {\\r\\n                this.f25666c.setThumbIndex(0);\\r\\n            } else if (this.f25670s.isSupportNoiseReductionModeValue(3)) {\\r\\n                this.f25666c.setThumbIndex(2);\\r\\n            } else if (this.f25670s.isSupportNoiseReductionModeValue(4)) {\\r\\n                this.f25666c.setThumbIndex(1);\\r\\n            } else {\\r\\n                Type type2 = MelodyAlivePreferencesHelper.f22321a;\\r\\n                i10 = MelodyAlivePreferencesHelper.d(getContext()).getInt(\\\"key_last_noise_reduction_mode\\\", 16);\\r\\n                if (i10 == 4) {\\r\\n                    this.f25666c.setThumbIndex(0);\\r\\n                } else if (i10 == 8) {\\r\\n                    this.f25666c.setThumbIndex(2);\\r\\n                } else if (i10 == 16) {\\r\\n                    this.f25666c.setThumbIndex(1);\\r\\n                }\\r\\n            }\\r\\n        }\\r\\n        if (this.f25671t.isNoiseReductionModeOpened(0)) {\\r\\n            g(1);\\r\\n            return;\\r\\n        }\\r\\n        if (this.f25671t.isNoiseReductionModeOpened(1)) {\\r\\n            g(2);\\r\\n            return;\\r\\n        }\\r\\n        g(0);\\r\\n        boolean zIsNoiseReductionModeOpened = this.f25671t.isNoiseReductionModeOpened(2);\\r\\n        c cVar = this.f25664a;\\r\\n        if (zIsNoiseReductionModeOpened) {\\r\\n            cVar.a(0);\\r\\n        } else if (this.f25671t.isNoiseReductionModeOpened(4)) {\\r\\n            cVar.a(1);\\r\\n        } else if (this.f25671t.isNoiseReductionModeOpened(3)) {\\r\\n            cVar.a(2);\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.ui.component.detail.opsreduction.buttonseekbar.NoiseReductionButtonSeekBarView",
+    "method": {
+      "name": "h",
+      "reported_signature": "h(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:30:0x0085  */\r\n    /* JADX WARN: Code duplicated, block: B:32:0x0099  */\r\n    /* JADX WARN: Code duplicated, block: B:33:0x009f  */\r\n    /* JADX WARN: Code duplicated, block: B:35:0x00a3  */\r\n    /* JADX WARN: Code duplicated, block: B:36:0x00a9 A[DONT_INVERT] */\r\n    /* JADX WARN: Code duplicated, block: B:37:0x00ab  */\r\n    public final void h() {\r\n        int i10;\r\n        long jElapsedRealtime = SystemClock.elapsedRealtime() - this.f25674w;\r\n        if (jElapsedRealtime < 1000) {\r\n            y.y(\"NoiseReductionButtonSeekBarView\", \"switchToCurrentMode interval too short, return! duration=\" + jElapsedRealtime);\r\n            return;\r\n        }\r\n        CurrentNoiseModeDTO currentNoiseModeDTO = this.f25671t;\r\n        if (currentNoiseModeDTO == null) {\r\n            y.h(\"NoiseReductionButtonSeekBarView\", \"switchToCurrentMode mCurrentNoiseReductionInfo is null, return!\");\r\n            return;\r\n        }\r\n        if (currentNoiseModeDTO.isNoiseReductionModeOpened(2)) {\r\n            this.f25666c.setThumbIndex(0);\r\n        } else if (this.f25671t.isNoiseReductionModeOpened(3)) {\r\n            this.f25666c.setThumbIndex(2);\r\n        } else if (this.f25671t.isNoiseReductionModeOpened(4)) {\r\n            this.f25666c.setThumbIndex(1);\r\n        } else {\r\n            NoiseReductionInfoDTO noiseReductionInfoDTO = this.f25670s;\r\n            if (noiseReductionInfoDTO == null) {\r\n                Type type = MelodyAlivePreferencesHelper.f22321a;\r\n                i10 = MelodyAlivePreferencesHelper.d(getContext()).getInt(\"key_last_noise_reduction_mode\", 16);\r\n                if (i10 == 4) {\r\n                    this.f25666c.setThumbIndex(0);\r\n                } else if (i10 == 8) {\r\n                    this.f25666c.setThumbIndex(2);\r\n                } else if (i10 == 16) {\r\n                    this.f25666c.setThumbIndex(1);\r\n                }\r\n            } else if (noiseReductionInfoDTO.isSupportNoiseReductionModeValue(2)) {\r\n                this.f25666c.setThumbIndex(0);\r\n            } else if (this.f25670s.isSupportNoiseReductionModeValue(3)) {\r\n                this.f25666c.setThumbIndex(2);\r\n            } else if (this.f25670s.isSupportNoiseReductionModeValue(4)) {\r\n                this.f25666c.setThumbIndex(1);\r\n            } else {\r\n                Type type2 = MelodyAlivePreferencesHelper.f22321a;\r\n                i10 = MelodyAlivePreferencesHelper.d(getContext()).getInt(\"key_last_noise_reduction_mode\", 16);\r\n                if (i10 == 4) {\r\n                    this.f25666c.setThumbIndex(0);\r\n                } else if (i10 == 8) {\r\n                    this.f25666c.setThumbIndex(2);\r\n                } else if (i10 == 16) {\r\n                    this.f25666c.setThumbIndex(1);\r\n                }\r\n            }\r\n        }\r\n        if (this.f25671t.isNoiseReductionModeOpened(0)) {\r\n            g(1);\r\n            return;\r\n        }\r\n        if (this.f25671t.isNoiseReductionModeOpened(1)) {\r\n            g(2);\r\n            return;\r\n        }\r\n        g(0);\r\n        boolean zIsNoiseReductionModeOpened = this.f25671t.isNoiseReductionModeOpened(2);\r\n        c cVar = this.f25664a;\r\n        if (zIsNoiseReductionModeOpened) {\r\n            cVar.a(0);\r\n        } else if (this.f25671t.isNoiseReductionModeOpened(4)) {\r\n            cVar.a(1);\r\n        } else if (this.f25671t.isNoiseReductionModeOpened(3)) {\r\n            cVar.a(2);\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

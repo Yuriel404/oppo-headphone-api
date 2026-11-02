@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_041d0371901683e861562fcc67f71599352933f614184c5a6e39639d82a4093d",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Ab.h0",
+    "method_name": "d",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Ab.h0"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"name\":\"h0\",\"field_count\":0,\"full_name\":\"Ab.h0\",\"method_count\":7,\"raw_name\":\"Ab.h0\",\"fields\":[],\"methods\":[{\"signature\":\"a(android.content.Context, java.lang.String, java.lang.String): java.lang.String\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;\"},{\"signature\":\"b(android.content.Context, int): java.lang.String\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;I)Ljava/lang/String;\"},{\"signature\":\"c(android.content.Context, java.lang.String, java.lang.String, java.util.List): int\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)I\"},{\"signature\":\"d(android.content.Context, int, java.lang.String): java.lang.String\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;ILjava/lang/String;)Ljava/lang/String;\"},{\"signature\":\"e(int, java.util.List): int\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/util/List;)I\"},{\"signature\":\"f(java.lang.String): int\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)I\"},{\"signature\":\"g(android.content.Context, int): int\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;I)I\"}],\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Ab.h0",
+          "method_name": "d",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"Ab.h0.d\",\"overload_index\":0,\"method_name\":\"d\",\"overload_count\":1,\"dex_descriptor\":\"(Landroid/content/Context;ILjava/lang/String;)Ljava/lang/String;\",\"class_name\":\"Ab.h0\",\"mode\":\"java\",\"body\":\"    public static String d(Context context, int i10, String str) {\\r\\n        if (context == null) {\\r\\n            return null;\\r\\n        }\\r\\n        switch (i10) {\\r\\n            case 1:\\r\\n                return (\\\"OPPO Enco R\\\".equals(str) || \\\"OPPO Enco Air2\\\".equals(str) || f(str) == 2) ? context.getString(R.string.melody_ui_equalizer_original) : context.getString(R.string.melody_ui_equalizer_classic);\\r\\n            case 2:\\r\\n                return (\\\"OPPO Enco R\\\".equals(str) || \\\"OPPO Enco Air2\\\".equals(str) || f(str) == 2) ? context.getString(R.string.melody_ui_equalizer_pulse_bass) : context.getString(R.string.melody_ui_equalizer_sub_woofer);\\r\\n            case 3:\\r\\n                return (\\\"OPPO Enco R\\\".equals(str) || \\\"OPPO Enco Air2\\\".equals(str) || f(str) == 2) ? context.getString(R.string.melody_ui_equalizer_melodious_voice) : context.getString(R.string.melody_ui_equalizer_clear_voice);\\r\\n            case 4:\\r\\n                return \\\"OPPO Enco R\\\".equals(str) ? context.getString(R.string.melody_ui_equalizer_soft_voice) : context.getString(R.string.melody_ui_equalizer_bright_transparent);\\r\\n            case 5:\\r\\n            case 35:\\r\\n                return context.getString(R.string.melody_ui_equalizer_default);\\r\\n            case 6:\\r\\n            case 36:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_simple_and_leisurely);\\r\\n            case 7:\\r\\n            case 37:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_warm_and_gentle);\\r\\n            case 8:\\r\\n            case 38:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_surging_and_hearty);\\r\\n            case 9:\\r\\n            case 39:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_original);\\r\\n            case 10:\\r\\n                return context.getString(R.string.melody_ui_equalizer_jiu_shi_rang_new);\\r\\n            case 11:\\r\\n                return context.getString(R.string.melody_ui_equalizer_balanced);\\r\\n            case 12:\\r\\n                return context.getString(R.string.melody_ui_equalizer_bass_plus);\\r\\n            case 13:\\r\\n                return context.getString(R.string.melody_ui_equalizer_treble_plus);\\r\\n            case 14:\\r\\n                return context.getString(R.string.melody_ui_equalizer_pure_voice);\\r\\n            case 15:\\r\\n                return context.getString(R.string.melody_ui_equalizer_soft_voice);\\r\\n            case 16:\\r\\n                return context.getString(R.string.melody_ui_enco_x_classic);\\r\\n            case 17:\\r\\n                return context.getString(R.string.melody_ui_equalizer_balance);\\r\\n            case 18:\\r\\n                return context.getString(R.string.melody_ui_equalizer_reno_dawn);\\r\\n            case 19:\\r\\n                return context.getString(R.string.melody_ui_equalizer_hans);\\r\\n            case 20:\\r\\n                return context.getString(R.string.melody_ui_equalizer_natural_inspiration);\\r\\n            case 21:\\r\\n                return context.getString(R.string.melody_ui_equalizer_reno_sun);\\r\\n            case 22:\\r\\n                return context.getString(R.string.melody_ui_equalizer_original);\\r\\n            case 23:\\r\\n                return context.getString(R.string.melody_ui_equalizer_surging_and_hearty);\\r\\n            case 24:\\r\\n                return context.getString(R.string.melody_ui_equalizer_melodious_open);\\r\\n            case 25:\\r\\n                return context.getString(R.string.melody_ui_equalizer_reno_galaxy);\\r\\n            case 26:\\r\\n                return context.getString(R.string.melody_ui_equalizer_ultimate_sound);\\r\\n            case 27:\\r\\n                return context.getString(R.string.melody_ui_equalizer_hd_analyze);\\r\\n            case 28:\\r\\n                return context.getString(R.string.melody_ui_equalizer_pure_vocals);\\r\\n            case 29:\\r\\n                return context.getString(R.string.melody_ui_equalizer_powerful_bass);\\r\\n            case 30:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_special);\\r\\n            case 31:\\r\\n                return context.getString(R.string.melody_ui_equalizer_pulse_bass);\\r\\n            case 32:\\r\\n                return context.getString(R.string.melody_ui_equalizer_melodious_voice);\\r\\n            case 33:\\r\\n                return context.getString(R.string.melody_ui_equalizer_galaxy_monologue);\\r\\n            case 34:\\r\\n                return context.getString(R.string.melody_ui_equalizer_vitality);\\r\\n            case 40:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_vocals);\\r\\n            case 41:\\r\\n                return context.getString(R.string.melody_ui_equalizer_crisp_transparent);\\r\\n            case 42:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_original_sound);\\r\\n            case 43:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_hd_analyze);\\r\\n            case 44:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_bass);\\r\\n            case 45:\\r\\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_classic);\\r\\n            case 46:\\r\\n                return context.getString(R.string.melody_ui_equalizer_clear_treble);\\r\\n            default:\\r\\n                return null;\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Ab.h0",
+    "method": {
+      "name": "d",
+      "reported_signature": "d(android.content.Context, int, java.lang.String): java.lang.String",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/content/Context;ILjava/lang/String;)Ljava/lang/String;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static String d(Context context, int i10, String str) {\r\n        if (context == null) {\r\n            return null;\r\n        }\r\n        switch (i10) {\r\n            case 1:\r\n                return (\"OPPO Enco R\".equals(str) || \"OPPO Enco Air2\".equals(str) || f(str) == 2) ? context.getString(R.string.melody_ui_equalizer_original) : context.getString(R.string.melody_ui_equalizer_classic);\r\n            case 2:\r\n                return (\"OPPO Enco R\".equals(str) || \"OPPO Enco Air2\".equals(str) || f(str) == 2) ? context.getString(R.string.melody_ui_equalizer_pulse_bass) : context.getString(R.string.melody_ui_equalizer_sub_woofer);\r\n            case 3:\r\n                return (\"OPPO Enco R\".equals(str) || \"OPPO Enco Air2\".equals(str) || f(str) == 2) ? context.getString(R.string.melody_ui_equalizer_melodious_voice) : context.getString(R.string.melody_ui_equalizer_clear_voice);\r\n            case 4:\r\n                return \"OPPO Enco R\".equals(str) ? context.getString(R.string.melody_ui_equalizer_soft_voice) : context.getString(R.string.melody_ui_equalizer_bright_transparent);\r\n            case 5:\r\n            case 35:\r\n                return context.getString(R.string.melody_ui_equalizer_default);\r\n            case 6:\r\n            case 36:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_simple_and_leisurely);\r\n            case 7:\r\n            case 37:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_warm_and_gentle);\r\n            case 8:\r\n            case 38:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_surging_and_hearty);\r\n            case 9:\r\n            case 39:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_original);\r\n            case 10:\r\n                return context.getString(R.string.melody_ui_equalizer_jiu_shi_rang_new);\r\n            case 11:\r\n                return context.getString(R.string.melody_ui_equalizer_balanced);\r\n            case 12:\r\n                return context.getString(R.string.melody_ui_equalizer_bass_plus);\r\n            case 13:\r\n                return context.getString(R.string.melody_ui_equalizer_treble_plus);\r\n            case 14:\r\n                return context.getString(R.string.melody_ui_equalizer_pure_voice);\r\n            case 15:\r\n                return context.getString(R.string.melody_ui_equalizer_soft_voice);\r\n            case 16:\r\n                return context.getString(R.string.melody_ui_enco_x_classic);\r\n            case 17:\r\n                return context.getString(R.string.melody_ui_equalizer_balance);\r\n            case 18:\r\n                return context.getString(R.string.melody_ui_equalizer_reno_dawn);\r\n            case 19:\r\n                return context.getString(R.string.melody_ui_equalizer_hans);\r\n            case 20:\r\n                return context.getString(R.string.melody_ui_equalizer_natural_inspiration);\r\n            case 21:\r\n                return context.getString(R.string.melody_ui_equalizer_reno_sun);\r\n            case 22:\r\n                return context.getString(R.string.melody_ui_equalizer_original);\r\n            case 23:\r\n                return context.getString(R.string.melody_ui_equalizer_surging_and_hearty);\r\n            case 24:\r\n                return context.getString(R.string.melody_ui_equalizer_melodious_open);\r\n            case 25:\r\n                return context.getString(R.string.melody_ui_equalizer_reno_galaxy);\r\n            case 26:\r\n                return context.getString(R.string.melody_ui_equalizer_ultimate_sound);\r\n            case 27:\r\n                return context.getString(R.string.melody_ui_equalizer_hd_analyze);\r\n            case 28:\r\n                return context.getString(R.string.melody_ui_equalizer_pure_vocals);\r\n            case 29:\r\n                return context.getString(R.string.melody_ui_equalizer_powerful_bass);\r\n            case 30:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_special);\r\n            case 31:\r\n                return context.getString(R.string.melody_ui_equalizer_pulse_bass);\r\n            case 32:\r\n                return context.getString(R.string.melody_ui_equalizer_melodious_voice);\r\n            case 33:\r\n                return context.getString(R.string.melody_ui_equalizer_galaxy_monologue);\r\n            case 34:\r\n                return context.getString(R.string.melody_ui_equalizer_vitality);\r\n            case 40:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_vocals);\r\n            case 41:\r\n                return context.getString(R.string.melody_ui_equalizer_crisp_transparent);\r\n            case 42:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_original_sound);\r\n            case 43:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_hd_analyze);\r\n            case 44:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_bass);\r\n            case 45:\r\n                return context.getString(R.string.melody_ui_equalizer_dynaudio_classic);\r\n            case 46:\r\n                return context.getString(R.string.melody_ui_equalizer_clear_treble);\r\n            default:\r\n                return null;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

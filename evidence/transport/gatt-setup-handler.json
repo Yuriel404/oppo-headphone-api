@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_dad277305753f1ca68ae9c39e686933b6e4bb48dab17079e665aa2f09150f7da",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "B8.z",
+    "method_name": "run"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "B8.z"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"z\",\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"<init>(java.lang.Object, int, java.lang.Object, int): void\",\"dex_descriptor\":\"(Ljava/lang/Object;ILjava/lang/Object;I)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0},{\"signature\":\"<init>(java.lang.Object, java.lang.Object, int, int): void\",\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/Object;II)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0},{\"signature\":\"run(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"run\",\"def_pos\":0}],\"fields\":[{\"name\":\"f913a\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f914b\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f915c\",\"def_pos\":0,\"type\":\"java.lang.Object\"},{\"name\":\"f916p\",\"def_pos\":0,\"type\":\"java.lang.Object\"}],\"raw_name\":\"B8.z\",\"method_count\":3,\"full_name\":\"B8.z\",\"field_count\":4}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "B8.z",
+          "method_name": "run",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    /* JADX WARN: Multi-variable type inference failed */\\r\\n    /* JADX WARN: Type inference incomplete: some casts might be missing */\\r\\n    @Override // java.lang.Runnable\\r\\n    public final void run() {\\r\\n        H1 h10;\\r\\n        int i10;\\r\\n        switch (this.f913a) {\\r\\n            case 0:\\r\\n                ((BluetoothProfile.ServiceListener) this.f915c).onServiceConnected(this.f914b, (BluetoothProfile) this.f916p);\\r\\n                return;\\r\\n            case 1:\\r\\n                F8.j.a aVar = (F8.j.a) this.f915c;\\r\\n                Q8.a.c(\\\"m_bt_le.GattConnection\\\", new A9.d((BluetoothGatt) this.f916p, 6));\\r\\n                F8.j jVar = F8.j.this;\\r\\n                jVar.getClass();\\r\\n                if (this.f914b != 0) {\\r\\n                    Q8.a.m(\\\"m_bt_le.GattConnection\\\", \\\"onServicesDiscovered failed\\\");\\r\\n                    synchronized (jVar) {\\r\\n                        jVar.f1886l = 3;\\r\\n                    }\\r\\n                    jVar.f1878c.a(2008);\\r\\n                    return;\\r\\n                }\\r\\n                Q8.a.a(\\\"m_bt_le.GattConnection\\\", \\\"onServicesDiscovered Succeed\\\");\\r\\n                synchronized (jVar) {\\r\\n                    jVar.f1886l = 2;\\r\\n                }\\r\\n                jVar.f1887m = 0;\\r\\n                jVar.l(F8.m.f1898F, F8.m.H);\\r\\n                return;\\r\\n            case 2:\\r\\n                com.google.common.util.concurrent.r rVar = (com.google.common.util.concurrent.r) this.f916p;\\r\\n                int i11 = this.f914b;\\r\\n                b0 b0Var = (b0) this.f915c;\\r\\n                b0Var.getClass();\\r\\n                try {\\r\\n                    h10 = (H1) rVar.get();\\r\\n                    com.google.common.base.f.j(h10, \\\"SessionResult must not be null\\\");\\r\\n                } catch (InterruptedException e3) {\\r\\n                    e = e3;\\r\\n                    b0.o.h(\\\"MCImplBase\\\", \\\"Session operation failed\\\", e);\\r\\n                    h10 = new H1(-1);\\r\\n                } catch (CancellationException e10) {\\r\\n                    b0.o.h(\\\"MCImplBase\\\", \\\"Session operation cancelled\\\", e10);\\r\\n                    h10 = new H1(1);\\r\\n                } catch (ExecutionException e11) {\\r\\n                    e = e11;\\r\\n                    b0.o.h(\\\"MCImplBase\\\", \\\"Session operation failed\\\", e);\\r\\n                    h10 = new H1(-1);\\r\\n                }\\r\\n                IMediaSession iMediaSession = b0Var.f12104D;\\r\\n                if (iMediaSession == null) {\\r\\n                    return;\\r\\n                }\\r\\n                try {\\r\\n                    iMediaSession.onControllerResult(b0Var.f12111c, i11, h10.b());\\r\\n                    return;\\r\\n                } catch (RemoteException unused) {\\r\\n                    b0.o.g(\\\"MCImplBase\\\", \\\"Error in sending\\\");\\r\\n                    return;\\r\\n                }\\r\\n                break;\\r\\n            case 3:\\r\\n                Serializable serializable = ((e.a.C0254a) this.f916p).f27138a;\\r\\n                b.k.f fVar = (b.k.f) this.f915c;\\r\\n                String str = (String) fVar.f26799a.get(Integer.valueOf(this.f914b));\\r\\n                if (str == null) {\\r\\n                    return;\\r\\n                }\\r\\n                d.e.a aVar2 = (d.e.a) fVar.f26803e.get(str);\\r\\n                if ((aVar2 != null ? aVar2.f26806a : null) == null) {\\r\\n                    fVar.f26805g.remove(str);\\r\\n                    fVar.f26804f.put(str, serializable);\\r\\n                    return;\\r\\n                }\\r\\n                d.a<O> aVar3 = aVar2.f26806a;\\r\\n                kotlin.jvm.internal.i.d(aVar3, \\\"null cannot be cast to non-null type androidx.activity.result.ActivityResultCallback<O of androidx.activity.result.ActivityResultRegistry.dispatchResult>\\\");\\r\\n                if (fVar.f26802d.remove(str)) {\\r\\n                    aVar3.b((O) serializable);\\r\\n                    return;\\r\\n                }\\r\\n                return;\\r\\n            case 4:\\r\\n                ((List) this.f915c).forEach(new com.oplus.melody.common.util.w((String) this.f916p, this.f914b));\\r\\n                return;\\r\\n            case 5:\\r\\n                ((k1.a) this.f915c).f30017a.a(this.f914b, (Serializable) this.f916p);\\r\\n                return;\\r\\n            case 6:\\r\\n                SpatialAudioContentFragment spatialAudioContentFragment = (SpatialAudioContentFragment) this.f915c;\\r\\n                boolean zF = spatialAudioContentFragment.w().f(spatialAudioContentFragment.f25789E);\\r\\n                if (!zF && (i10 = this.f914b) < 1) {\\r\\n                    spatialAudioContentFragment.u(i10 + 1);\\r\\n                }\\r\\n                Q.c.f6062b.execute(new Mc.n(spatialAudioContentFragment, (ModeItem) this.f916p, zF));\\r\\n                com.oplus.melody.common.util.y.c(\\\"SpatialAudioContentFragment\\\", new E8.b(zF, spatialAudioContentFragment, 8));\\r\\n                return;\\r\\n            default:\\r\\n                ((com.coui.appcompat.poplist.b.C0188b) this.f915c).f16651a.C(this.f914b, (View) this.f916p);\\r\\n                return;\\r\\n        }\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"B8.z\",\"dex_descriptor\":\"()V\",\"overload_count\":1,\"method_name\":\"run\",\"overload_index\":0,\"full_name\":\"B8.z.run\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "B8.z",
+    "method": {
+      "name": "run",
+      "reported_signature": "run(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Multi-variable type inference failed */\r\n    /* JADX WARN: Type inference incomplete: some casts might be missing */\r\n    @Override // java.lang.Runnable\r\n    public final void run() {\r\n        H1 h10;\r\n        int i10;\r\n        switch (this.f913a) {\r\n            case 0:\r\n                ((BluetoothProfile.ServiceListener) this.f915c).onServiceConnected(this.f914b, (BluetoothProfile) this.f916p);\r\n                return;\r\n            case 1:\r\n                F8.j.a aVar = (F8.j.a) this.f915c;\r\n                Q8.a.c(\"m_bt_le.GattConnection\", new A9.d((BluetoothGatt) this.f916p, 6));\r\n                F8.j jVar = F8.j.this;\r\n                jVar.getClass();\r\n                if (this.f914b != 0) {\r\n                    Q8.a.m(\"m_bt_le.GattConnection\", \"onServicesDiscovered failed\");\r\n                    synchronized (jVar) {\r\n                        jVar.f1886l = 3;\r\n                    }\r\n                    jVar.f1878c.a(2008);\r\n                    return;\r\n                }\r\n                Q8.a.a(\"m_bt_le.GattConnection\", \"onServicesDiscovered Succeed\");\r\n                synchronized (jVar) {\r\n                    jVar.f1886l = 2;\r\n                }\r\n                jVar.f1887m = 0;\r\n                jVar.l(F8.m.f1898F, F8.m.H);\r\n                return;\r\n            case 2:\r\n                com.google.common.util.concurrent.r rVar = (com.google.common.util.concurrent.r) this.f916p;\r\n                int i11 = this.f914b;\r\n                b0 b0Var = (b0) this.f915c;\r\n                b0Var.getClass();\r\n                try {\r\n                    h10 = (H1) rVar.get();\r\n                    com.google.common.base.f.j(h10, \"SessionResult must not be null\");\r\n                } catch (InterruptedException e3) {\r\n                    e = e3;\r\n                    b0.o.h(\"MCImplBase\", \"Session operation failed\", e);\r\n                    h10 = new H1(-1);\r\n                } catch (CancellationException e10) {\r\n                    b0.o.h(\"MCImplBase\", \"Session operation cancelled\", e10);\r\n                    h10 = new H1(1);\r\n                } catch (ExecutionException e11) {\r\n                    e = e11;\r\n                    b0.o.h(\"MCImplBase\", \"Session operation failed\", e);\r\n                    h10 = new H1(-1);\r\n                }\r\n                IMediaSession iMediaSession = b0Var.f12104D;\r\n                if (iMediaSession == null) {\r\n                    return;\r\n                }\r\n                try {\r\n                    iMediaSession.onControllerResult(b0Var.f12111c, i11, h10.b());\r\n                    return;\r\n                } catch (RemoteException unused) {\r\n                    b0.o.g(\"MCImplBase\", \"Error in sending\");\r\n                    return;\r\n                }\r\n                break;\r\n            case 3:\r\n                Serializable serializable = ((e.a.C0254a) this.f916p).f27138a;\r\n                b.k.f fVar = (b.k.f) this.f915c;\r\n                String str = (String) fVar.f26799a.get(Integer.valueOf(this.f914b));\r\n                if (str == null) {\r\n                    return;\r\n                }\r\n                d.e.a aVar2 = (d.e.a) fVar.f26803e.get(str);\r\n                if ((aVar2 != null ? aVar2.f26806a : null) == null) {\r\n                    fVar.f26805g.remove(str);\r\n                    fVar.f26804f.put(str, serializable);\r\n                    return;\r\n                }\r\n                d.a<O> aVar3 = aVar2.f26806a;\r\n                kotlin.jvm.internal.i.d(aVar3, \"null cannot be cast to non-null type androidx.activity.result.ActivityResultCallback<O of androidx.activity.result.ActivityResultRegistry.dispatchResult>\");\r\n                if (fVar.f26802d.remove(str)) {\r\n                    aVar3.b((O) serializable);\r\n                    return;\r\n                }\r\n                return;\r\n            case 4:\r\n                ((List) this.f915c).forEach(new com.oplus.melody.common.util.w((String) this.f916p, this.f914b));\r\n                return;\r\n            case 5:\r\n                ((k1.a) this.f915c).f30017a.a(this.f914b, (Serializable) this.f916p);\r\n                return;\r\n            case 6:\r\n                SpatialAudioContentFragment spatialAudioContentFragment = (SpatialAudioContentFragment) this.f915c;\r\n                boolean zF = spatialAudioContentFragment.w().f(spatialAudioContentFragment.f25789E);\r\n                if (!zF && (i10 = this.f914b) < 1) {\r\n                    spatialAudioContentFragment.u(i10 + 1);\r\n                }\r\n                Q.c.f6062b.execute(new Mc.n(spatialAudioContentFragment, (ModeItem) this.f916p, zF));\r\n                com.oplus.melody.common.util.y.c(\"SpatialAudioContentFragment\", new E8.b(zF, spatialAudioContentFragment, 8));\r\n                return;\r\n            default:\r\n                ((com.coui.appcompat.poplist.b.C0188b) this.f915c).f16651a.C(this.f914b, (View) this.f916p);\r\n                return;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

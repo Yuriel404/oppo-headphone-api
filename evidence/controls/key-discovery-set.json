@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_a9bc350a3e435f79a0bd17a7f4a32f513784fecbbd408e5b37c7ac7110f862fe",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.app.discovery.i1",
+    "method_name": "r"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.app.discovery.i1"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"name\":\"i1\",\"field_count\":14,\"full_name\":\"com.oplus.melody.app.discovery.i1\",\"method_count\":8,\"raw_name\":\"com.oplus.melody.app.discovery.i1\",\"fields\":[{\"type\":\"android.widget.RelativeLayout\",\"def_pos\":0,\"name\":\"f22005m\"},{\"type\":\"com.coui.appcompat.couiswitch.COUISwitch\",\"def_pos\":0,\"name\":\"f22006n\"},{\"type\":\"com.oplus.melody.ui.widget.MelodyVideoAnimationView\",\"def_pos\":0,\"name\":\"f22007o\"},{\"type\":\"android.view.View\",\"def_pos\":0,\"name\":\"f22008p\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f22009q\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f22010r\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f22011s\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f22012t\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f22013u\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f22014v\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f22015w\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f22016x\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f22017y\"},{\"type\":\"androidx.appcompat.app.g\",\"def_pos\":0,\"name\":\"f22018z\"}],\"methods\":[{\"signature\":\"<init>(com.oplus.melody.app.discovery.DiscoveryDialogActivity, int): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/oplus/melody/app/discovery/DiscoveryDialogActivity;I)V\"},{\"signature\":\"a(Na.f): Na.e\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(LNa/f;)LNa/e;\"},{\"signature\":\"f(com.oplus.melody.app.discovery.A0): void\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/app/discovery/A0;)V\"},{\"signature\":\"g(int, com.oplus.melody.app.discovery.y1): java.util.concurrent.CompletableFuture<java.lang.Integer>\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"(ILcom/oplus/melody/app/discovery/y1;)Ljava/util/concurrent/CompletableFuture;\"},{\"signature\":\"h(int): java.util.concurrent.CompletableFuture<java.lang.Integer>\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"(I)Ljava/util/concurrent/CompletableFuture;\"},{\"signature\":\"n(com.oplus.melody.app.discovery.y1, boolean): void\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/app/discovery/y1;Z)V\"},{\"signature\":\"r(): void\",\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"s(): void\",\"def_pos\":0,\"name\":\"s\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"}],\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.app.discovery.i1",
+          "method_name": "r",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.app.discovery.i1.r\",\"overload_index\":0,\"method_name\":\"r\",\"overload_count\":1,\"dex_descriptor\":\"()V\",\"class_name\":\"com.oplus.melody.app.discovery.i1\",\"mode\":\"java\",\"body\":\"    public final void r() {\\r\\n        DiscoveryDialogViewModel discoveryDialogViewModel;\\r\\n        DiscoveryDialogActivity discoveryDialogActivity = this.f21806b;\\r\\n        COUISwitch cOUISwitch = this.f22006n;\\r\\n        if (cOUISwitch != null && cOUISwitch.isChecked()) {\\r\\n            A0 a0S = discoveryDialogActivity.S();\\r\\n            String id2 = a0S != null ? a0S.getId() : null;\\r\\n            if (TextUtils.isEmpty(id2)) {\\r\\n                com.oplus.melody.common.util.y.y(\\\"DiscoveryViewStateFeaturePromoImpl\\\", \\\"sendTriplePinchTranslation skip empty address\\\");\\r\\n            } else {\\r\\n                List listAsList = Arrays.asList(new KeyFunctionInfoDTO(1, 1, 3, 26), new KeyFunctionInfoDTO(2, 1, 3, 26));\\r\\n                com.oplus.melody.common.util.y.c(\\\"DiscoveryViewStateFeaturePromoImpl\\\", new C9.g(9));\\r\\n                com.oplus.melody.model.repository.earphone.b.G().x0(id2, discoveryDialogActivity, listAsList, 1025);\\r\\n            }\\r\\n        }\\r\\n        A0 a0S2 = discoveryDialogActivity.S();\\r\\n        if (a0S2 == null) {\\r\\n            return;\\r\\n        }\\r\\n        String id3 = a0S2.getId();\\r\\n        int i10 = 6;\\r\\n        if (!TextUtils.isEmpty(id3) && (discoveryDialogViewModel = discoveryDialogActivity.f21767y) != null) {\\r\\n            discoveryDialogViewModel.f21784o = true;\\r\\n            discoveryDialogViewModel.p(id3, new r0(i10, id3, 9));\\r\\n        }\\r\\n        discoveryDialogActivity.W(6, 1, a0S2.hashCode());\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.app.discovery.i1",
+    "method": {
+      "name": "r",
+      "reported_signature": "r(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void r() {\r\n        DiscoveryDialogViewModel discoveryDialogViewModel;\r\n        DiscoveryDialogActivity discoveryDialogActivity = this.f21806b;\r\n        COUISwitch cOUISwitch = this.f22006n;\r\n        if (cOUISwitch != null && cOUISwitch.isChecked()) {\r\n            A0 a0S = discoveryDialogActivity.S();\r\n            String id2 = a0S != null ? a0S.getId() : null;\r\n            if (TextUtils.isEmpty(id2)) {\r\n                com.oplus.melody.common.util.y.y(\"DiscoveryViewStateFeaturePromoImpl\", \"sendTriplePinchTranslation skip empty address\");\r\n            } else {\r\n                List listAsList = Arrays.asList(new KeyFunctionInfoDTO(1, 1, 3, 26), new KeyFunctionInfoDTO(2, 1, 3, 26));\r\n                com.oplus.melody.common.util.y.c(\"DiscoveryViewStateFeaturePromoImpl\", new C9.g(9));\r\n                com.oplus.melody.model.repository.earphone.b.G().x0(id2, discoveryDialogActivity, listAsList, 1025);\r\n            }\r\n        }\r\n        A0 a0S2 = discoveryDialogActivity.S();\r\n        if (a0S2 == null) {\r\n            return;\r\n        }\r\n        String id3 = a0S2.getId();\r\n        int i10 = 6;\r\n        if (!TextUtils.isEmpty(id3) && (discoveryDialogViewModel = discoveryDialogActivity.f21767y) != null) {\r\n            discoveryDialogViewModel.f21784o = true;\r\n            discoveryDialogViewModel.p(id3, new r0(i10, id3, 9));\r\n        }\r\n        discoveryDialogActivity.W(6, 1, a0S2.hashCode());\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

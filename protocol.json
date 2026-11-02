@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "title": "Unofficial Enco Free4 control reference",
+  "analysis_date": "2026-10-26",
+  "source": {
+    "apk": "example.apk",
+    "package": "com.heytap.headset",
+    "version_name": "17.6.5",
+    "version_code": 117006005,
+    "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+  },
+  "validation": {
+    "static_analysis": true,
+    "offline_tests": true,
+    "hardware_tested": true,
+    "hardware_tests_complete": false,
+    "hardware_scope": "2026-10-26 Windows RFCOMM SDP, 0100/010D and feature 6 on/off only; see validation.json"
+  },
+  "byte_order": "little",
+  "transport": {
+    "preferred": "rfcomm",
+    "free4_service_uuid": "0000079a-d102-11e1-9b23-00025b00a5a5",
+    "generic_fallback_rfcomm_uuid": "00001107-d102-11e1-9b23-00025b00a5a5",
+    "rfcomm": {
+      "af_bth": 32,
+      "protocol": 3,
+      "sockaddr_bytes": 30,
+      "channel": 0,
+      "channel_semantics": "SDP UUID resolution"
+    },
+    "ble": {
+      "service": "0000079a-d102-11e1-9b23-00025b00a5a5",
+      "write": "0100079a-d102-11e1-9b23-00025b00a5a5",
+      "notify": "0200079a-d102-11e1-9b23-00025b00a5a5",
+      "response": true,
+      "conservative_write_chunk": 20
+    },
+    "hardware_services_confirmed": false,
+    "hardware_rfcomm_service_confirmed": true,
+    "hardware_gatt_service_confirmed": false
+  },
+  "framing": {
+    "sof": 170,
+    "length": "ULEB128, normal reference supports 1 or 2 bytes",
+    "body": "control:u8,reserved:u8=0,[fragmentIndex:u8],application",
+    "length_scope": "body only",
+    "control_low_2_bits": {
+      "0": "single",
+      "1": "first",
+      "2": "middle",
+      "3": "last"
+    },
+    "normal_max_frame_size": 660,
+    "application": "command:LEu16,sequence:u8,payloadLength:LEu16,payload",
+    "sequence_wrap": 256,
+    "reply_opcode": "request | 0x8000",
+    "reply_sequence": "same"
+  },
+  "commands": [
+    {
+      "request": "0x0100",
+      "reply": "0x8100",
+      "name": "capabilities",
+      "payload": "empty",
+      "response": "status:u8,bitmap:bytes",
+      "evidence": "evidence/handshake/capability-bits.json"
+    },
+    {
+      "request": "0x010D",
+      "reply": "0x810D",
+      "name": "feature_query",
+      "payload": "count:u8,featureIds:u8[count]",
+      "response": "status:u8,count:u8,(id:u8,state:u8)[count]"
+    },
+    {
+      "request": "0x0403",
+      "reply": "0x8403",
+      "name": "feature_set",
+      "payload": "featureId:u8,state:u8(0|1)",
+      "readback": "0x010D"
+    },
+    {
+      "request": "0x010C",
+      "reply": "0x810C",
+      "name": "noise_query",
+      "payload_hex": "0101",
+      "response": "status:u8,action:u8=1,type:u8,value:bytes"
+    },
+    {
+      "request": "0x010C",
+      "reply": "0x810C",
+      "name": "noise_support_query",
+      "payload_hex": "0201",
+      "response": "status:u8,action:u8,type:u8,value:bytes",
+      "sdk_decoding": "raw"
+    },
+    {
+      "request": "0x0404",
+      "reply": "0x8404",
+      "name": "noise_set",
+      "payload": "action:u8=1,type:u8=1,one-hot bitmap bytes",
+      "readback": "0x010C payload0101"
+    },
+    {
+      "request": "0x010F",
+      "reply": "0x810F",
+      "name": "eq_mode_query",
+      "payload": "empty",
+      "response": "status:u8,modeId:u8"
+    },
+    {
+      "request": "0x0406",
+      "reply": "0x8406",
+      "name": "eq_mode_set",
+      "payload": "modeId:u8",
+      "readback": "0x010F"
+    },
+    {
+      "request": "0x0122",
+      "reply": "0x8122",
+      "name": "custom_eq_list",
+      "payload": "empty",
+      "response": "status:u8,count:u8,entry[count]",
+      "entry": "selected:u8,min:i8,max:i8,eqId:u8,nameLength:u8,UTF8name,bandCount:u8,(freq:LEu16,gain:i8)[bandCount]"
+    },
+    {
+      "request": "0x0418",
+      "reply": "0x8418",
+      "name": "custom_eq_set",
+      "payload": "action:u8,min:i8,max:i8,eqId:u8,nameLength:u8,UTF8name,bandCount:u8,(freq:LEu16,gain:i8)[bandCount]",
+      "actions": {
+        "1": "create",
+        "2": "write_and_select",
+        "3": "delete"
+      },
+      "sdk_wrapper": "update existing using action2",
+      "readback": "0x0122"
+    },
+    {
+      "request": "0x012A",
+      "reply": "0x812A",
+      "name": "spatial_type_query",
+      "payload": "empty",
+      "response": "status:u8,type:u8"
+    },
+    {
+      "request": "0x0422",
+      "reply": "0x8422",
+      "name": "spatial_type_set",
+      "payload": "type:u8",
+      "readback": "0x012A",
+      "labels_verified": false
+    },
+    {
+      "request": "0x0108",
+      "reply": "0x8108",
+      "name": "key_query",
+      "payload": "count:u8,selectors:u8[count]",
+      "observed_default_payload_hex": "020301",
+      "response": "status:u8,count:u8,(deviceType:u8,button:u8,buttonAction:u8,function:u8)[count]"
+    },
+    {
+      "request": "0x0401",
+      "reply": "0x8401",
+      "name": "key_set",
+      "payload": "count:u8,(deviceType:u8,button:u8,buttonAction:u8,function:u8)[count]",
+      "readback": "0x0108"
+    },
+    {
+      "request": "0x0416",
+      "reply": "0x8416",
+      "name": "key_tutorial",
+      "payload": "same format as 0401",
+      "normal_settings": false
+    },
+    {
+      "request": "0x0400",
+      "reply": "0x8400",
+      "name": "find_mode",
+      "payload": "enabled:u8(0|1)",
+      "readback": null,
+      "per_ear_selector": false,
+      "audible_effect_verified": false
+    },
+    {
+      "request": "0x0200",
+      "reply": "0x8200",
+      "name": "notification_capabilities",
+      "payload": "empty",
+      "response": "status:u8,count:u8,eventIds:u8[count]",
+      "gate": "separate notification protocol"
+    },
+    {
+      "request": "0x0201",
+      "reply": "0x8201",
+      "name": "notification_register",
+      "payload": "eventId:u8",
+      "response": "status:u8,[eventId:u8]"
+    },
+    {
+      "request": "0x0205",
+      "reply": "0x8205",
+      "name": "notification_register_multi",
+      "payload": "count:u8,eventIds:u8[count]",
+      "capability_bit": 22
+    },
+    {
+      "command": "0x0204",
+      "name": "notification",
+      "payload": "eventId:u8,eventData",
+      "safe_sdk_event_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        17
+      ]
+    },
+    {
+      "request": "0x0500",
+      "reply": "0x8500",
+      "direction": "headset_to_host",
+      "name": "host_time",
+      "response": "status:u8=0,UnixSeconds:LEu32"
+    },
+    {
+      "request": "0x051C",
+      "reply": "0x851C",
+      "direction": "headset_to_host",
+      "name": "host_fast_discovery",
+      "response_hex": "000000"
+    }
+  ],
+  "features": [
+    {
+      "id": 6,
+      "name": "game_mode",
+      "free4_profile": true
+    },
+    {
+      "id": 17,
+      "name": "multipoint",
+      "free4_profile": true
+    },
+    {
+      "id": 24,
+      "name": "high_quality_audio",
+      "free4_profile": true
+    },
+    {
+      "id": 27,
+      "name": "spatial_audio",
+      "free4_profile": true
+    },
+    {
+      "id": 29,
+      "name": "bass_engine",
+      "free4_profile": false
+    },
+    {
+      "id": 33,
+      "name": "game_eq",
+      "free4_profile": false
+    },
+    {
+      "id": 39,
+      "name": "game_sound",
+      "free4_profile": false
+    },
+    {
+      "id": 40,
+      "name": "game_master",
+      "free4_profile": false
+    }
+  ],
+  "noise_modes": [
+    {
+      "index": 0,
+      "name": "off",
+      "payload_hex": "010101",
+      "readback_family": [
+        0,
+        3
+      ]
+    },
+    {
+      "index": 1,
+      "name": "anc",
+      "payload_hex": "010102",
+      "readback_family": [
+        1,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "index": 2,
+      "name": "transparency",
+      "payload_hex": "010104",
+      "readback_family": [
+        2,
+        8
+      ]
+    },
+    {
+      "index": 4,
+      "name": "deep",
+      "payload_hex": "010110"
+    },
+    {
+      "index": 5,
+      "name": "moderate",
+      "payload_hex": "010120"
+    },
+    {
+      "index": 6,
+      "name": "mild",
+      "payload_hex": "010140"
+    },
+    {
+      "index": 7,
+      "name": "smart",
+      "payload_hex": "010180"
+    },
+    {
+      "index": 11,
+      "name": "adaptive",
+      "payload_hex": "01010008"
+    }
+  ],
+  "limitations": [
+    "Hardware validation covers one Free4 RFCOMM session and game-mode state on/off; audio effects and other writes remain unverified",
+    "No OTA protocol",
+    "No official vendor support guarantee",
+    "Classic MAC and BLE address must be resolved independently",
+    "Firmware-dependent labels, feature interactions and persistence need live checks",
+    "A write timeout does not prove that the device did not apply the setting"
+  ],
+  "evidence_index": "evidence-index.json"
+}

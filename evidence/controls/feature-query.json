@@ -1,0 +1,147 @@
+{
+  "evidence_id": "ev_aee52426b9f473d4a34a62444f3fb7d67163657ec080d2739f22c355171c2221",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.btsdk.protocol.commands.m",
+    "method_name": "m"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":7079,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.protocol.commands.m"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"name\":\"m\",\"field_count\":4,\"full_name\":\"com.oplus.melody.btsdk.protocol.commands.m\",\"method_count\":42,\"raw_name\":\"com.oplus.melody.btsdk.protocol.commands.m\",\"fields\":[{\"type\":\"com.oplus.melody.btsdk.multidevice.HeadsetCoreService\",\"def_pos\":0,\"name\":\"f22236a\"},{\"type\":\"w8.b\",\"def_pos\":0,\"name\":\"f22237b\"},{\"type\":\"s8.c\",\"def_pos\":0,\"name\":\"f22238c\"},{\"type\":\"android.os.Handler\",\"def_pos\":0,\"name\":\"f22239d\"}],\"methods\":[{\"signature\":\"<init>(com.oplus.melody.btsdk.multidevice.HeadsetCoreService, android.os.Handler): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/multidevice/HeadsetCoreService;Landroid/os/Handler;)V\"},{\"signature\":\"A(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"A\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"B(java.lang.String): void\",\"def_pos\":0,\"name\":\"B\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"C(java.lang.String): void\",\"def_pos\":0,\"name\":\"C\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"D(java.lang.String): void\",\"def_pos\":0,\"name\":\"D\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"E(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"E\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"F(w8.a): void\",\"def_pos\":0,\"name\":\"F\",\"is_constructor\":false,\"dex_descriptor\":\"(Lw8/a;)V\"},{\"signature\":\"G(java.lang.String, w8.a): boolean\",\"def_pos\":0,\"name\":\"G\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lw8/a;)Z\"},{\"signature\":\"H(java.lang.String, w8.a): void\",\"def_pos\":0,\"name\":\"H\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lw8/a;)V\"},{\"signature\":\"I(java.lang.String, w8.a): void\",\"def_pos\":0,\"name\":\"I\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lw8/a;)V\"},{\"signature\":\"J(w8.a): void\",\"def_pos\":0,\"name\":\"J\",\"is_constructor\":false,\"dex_descriptor\":\"(Lw8/a;)V\"},{\"signature\":\"K(java.lang.String, w8.a): void\",\"def_pos\":0,\"name\":\"K\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lw8/a;)V\"},{\"signature\":\"L(java.lang.String, w8.a): void\",\"def_pos\":0,\"name\":\"L\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lw8/a;)V\"},{\"signature\":\"M(java.lang.String, w8.a): void\",\"def_pos\":0,\"name\":\"M\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lw8/a;)V\"},{\"signature\":\"N(byte[]): java.lang.String\",\"def_pos\":0,\"name\":\"N\",\"is_constructor\":false,\"dex_descriptor\":\"([B)Ljava/lang/String;\"},{\"signature\":\"O(java.lang.String): void\",\"def_pos\":0,\"name\":\"O\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"a(com.oplus.melody.btsdk.api.data.EarphoneIdentity, int, byte[]): void\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/api/data/EarphoneIdentity;I[B)V\"},{\"signature\":\"b(java.lang.String): void\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"c(java.lang.String): void\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"d(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"e(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"f(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"g(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"h(java.lang.String): void\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"i(java.lang.String): void\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"j(java.lang.String, byte[]): void\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;[B)V\"},{\"signature\":\"k(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"l(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"m(java.lang.String): void\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"n(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"o(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"p(java.lang.String): void\",\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"q(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"q\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"r(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"s(java.lang.String): void\",\"def_pos\":0,\"name\":\"s\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"t(int, java.lang.String): boolean\",\"def_pos\":0,\"name\":\"t\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;)Z\"},{\"signature\":\"u(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"u\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"signature\":\"v(java.lang.String): void\",\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"w(java.lang.String): void\",\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"x(java.lang.String): void\",\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"y(java.lang.String): void\",\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"z(java.lang.String): void\",\"def_pos\":0,\"name\":\"z\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"}],\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.protocol.commands.m",
+          "method_name": "m",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"com.oplus.melody.btsdk.protocol.commands.m.m\",\"overload_index\":0,\"method_name\":\"m\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"class_name\":\"com.oplus.melody.btsdk.protocol.commands.m\",\"mode\":\"java\",\"body\":\"    public final void m(String str) {\\r\\n        WhitelistConfigDTO.Function function;\\r\\n        IntBuffer intBufferAllocate = IntBuffer.allocate(32);\\r\\n        intBufferAllocate.put(5);\\r\\n        WhitelistConfigDTO whitelistConfigDTOA = p8.a.C0313a.f31524a.a(str);\\r\\n        s8.c cVar = this.f22238c;\\r\\n        if (whitelistConfigDTOA != null && (function = whitelistConfigDTOA.getFunction()) != null) {\\r\\n            if (Y.i(whitelistConfigDTOA)) {\\r\\n                intBufferAllocate.put(4);\\r\\n            }\\r\\n            if (Y.e(function.getHearingEnhancement(), false) || Y.e(function.getHearingEnhancementNew(), false)) {\\r\\n                intBufferAllocate.put(11);\\r\\n            }\\r\\n            if (Y.e(function.getPersonalNoise(), false) || (function.getPersonalNoiseCompat() != null && Y.e(function.getPersonalNoiseCompat().getPersonalNoise(), false))) {\\r\\n                intBufferAllocate.put(12);\\r\\n            }\\r\\n            if (Y.e(function.getClickTakePic(), false) || Y.e(function.getClickTakePicNew(), false)) {\\r\\n                intBufferAllocate.put(13);\\r\\n            }\\r\\n            if (function.getZenMode() > 0) {\\r\\n                intBufferAllocate.put(15);\\r\\n            }\\r\\n            int multiDevicesConnect = function.getMultiDevicesConnect();\\r\\n            if (multiDevicesConnect == 1 || multiDevicesConnect == 2) {\\r\\n                intBufferAllocate.put(17);\\r\\n            }\\r\\n            if (Y.e(function.getVocalEnhance(), false)) {\\r\\n                intBufferAllocate.put(9);\\r\\n            }\\r\\n            if (Y.e(function.getHeadSetSoundRecord(), false)) {\\r\\n                intBufferAllocate.put(19);\\r\\n            }\\r\\n            int highToneQuality = function.getHighToneQuality();\\r\\n            if (highToneQuality == 1 || highToneQuality == 2) {\\r\\n                intBufferAllocate.put(24);\\r\\n            }\\r\\n            if (Y.e(function.getLongPowerMode(), false)) {\\r\\n                intBufferAllocate.put(23);\\r\\n            }\\r\\n            if (Y.e(function.getSmartCall(), false)) {\\r\\n                intBufferAllocate.put(21);\\r\\n            }\\r\\n            if (Y.e(function.getDeviceLostRemind(), false)) {\\r\\n                intBufferAllocate.put(22);\\r\\n            }\\r\\n            int voiceWake = function.getVoiceWake();\\r\\n            if (voiceWake == 1 || voiceWake == 3) {\\r\\n                intBufferAllocate.put(20);\\r\\n            }\\r\\n            int voiceCommand = function.getVoiceCommand();\\r\\n            if (voiceCommand == 1 || voiceCommand == 2) {\\r\\n                intBufferAllocate.put(25);\\r\\n            }\\r\\n            if (Y.e(function.getGameMode(), false) || function.getGameModeList() != null) {\\r\\n                intBufferAllocate.put(6);\\r\\n            }\\r\\n            if (function.getSpatialTypes() != null) {\\r\\n                intBufferAllocate.put(27);\\r\\n            }\\r\\n            if (Y.e(function.getBassEngineSupport(), false)) {\\r\\n                intBufferAllocate.put(29);\\r\\n            }\\r\\n            if (Y.e(function.getControlAutoVolumeSupport(), false)) {\\r\\n                intBufferAllocate.put(28);\\r\\n            }\\r\\n            if (Y.e(function.getCollectLogs(), false)) {\\r\\n                intBufferAllocate.put(30);\\r\\n            }\\r\\n            if (!com.oplus.melody.common.util.e.a(function.getGameEqPkgList())) {\\r\\n                intBufferAllocate.put(33);\\r\\n            }\\r\\n            if (U8.b.f()) {\\r\\n                intBufferAllocate.put(31);\\r\\n            }\\r\\n            int spineHealth = whitelistConfigDTOA.getFunction().getSpineHealth();\\r\\n            if (spineHealth == 1 || spineHealth == 2) {\\r\\n                intBufferAllocate.put(34);\\r\\n                intBufferAllocate.put(35);\\r\\n                intBufferAllocate.put(36);\\r\\n                if (whitelistConfigDTOA.getFunction().getSpineHealth() == 2) {\\r\\n                    intBufferAllocate.put(60);\\r\\n                }\\r\\n            }\\r\\n            if (!com.oplus.melody.common.util.e.a(function.getGameSoundList()) || cVar.c(1059, str)) {\\r\\n                intBufferAllocate.put(39);\\r\\n                intBufferAllocate.put(40);\\r\\n            }\\r\\n            if (Y.e(function.getAdaptiveVolume(), false)) {\\r\\n                intBufferAllocate.put(48);\\r\\n            }\\r\\n            if (Y.e(function.getAdaptiveEar(), false)) {\\r\\n                intBufferAllocate.put(49);\\r\\n            }\\r\\n            if (Y.e(function.getSpeechPerception(), false)) {\\r\\n                intBufferAllocate.put(50);\\r\\n            }\\r\\n            if (Y.e(function.getMeetingAssistant(), false)) {\\r\\n                intBufferAllocate.put(52);\\r\\n            }\\r\\n            if (Y.e(function.getLongPressVolume(), false)) {\\r\\n                intBufferAllocate.put(53);\\r\\n            }\\r\\n            if (Y.e(function.getSwiftPair(), false)) {\\r\\n                intBufferAllocate.put(55);\\r\\n            }\\r\\n            if (Y.e(function.getHearingOptimize(), false)) {\\r\\n                intBufferAllocate.put(56);\\r\\n            }\\r\\n            if (Y.e(function.getIncomingCallControl(), false)) {\\r\\n                intBufferAllocate.put(57);\\r\\n            }\\r\\n            if (Y.e(function.getHeadMotion(), false)) {\\r\\n                intBufferAllocate.put(59);\\r\\n            }\\r\\n            int gmnVoiceAssist = function.getGmnVoiceAssist();\\r\\n            if (gmnVoiceAssist == 1 || gmnVoiceAssist == 2) {\\r\\n                intBufferAllocate.put(61);\\r\\n            }\\r\\n            if (Y.e(function.getSleepDetection(), false)) {\\r\\n                intBufferAllocate.put(58);\\r\\n            }\\r\\n        }\\r\\n        intBufferAllocate.flip();\\r\\n        int iLimit = intBufferAllocate.limit();\\r\\n        int[] iArr = new int[iLimit];\\r\\n        intBufferAllocate.get(iArr);\\r\\n        Q8.a.c(\\\"PollCommandManager\\\", new c0(12, iArr, str));\\r\\n        if (!cVar.c(269, str)) {\\r\\n            Q8.a.d(\\\"PollCommandManager\\\", new G8.a(14), str);\\r\\n            return;\\r\\n        }\\r\\n        if (iLimit == 0) {\\r\\n            Q8.a.b(\\\"PollCommandManager\\\", \\\"request feature is null\\\", str);\\r\\n            return;\\r\\n        }\\r\\n        ByteBuffer byteBufferAllocate = ByteBuffer.allocate(iLimit + 1);\\r\\n        byteBufferAllocate.put((byte) (iLimit & 255));\\r\\n        for (int i10 = 0; i10 < iLimit; i10++) {\\r\\n            byteBufferAllocate.put((byte) (iArr[i10] & 255));\\r\\n        }\\r\\n        this.f22236a.z0(str, this.f22237b.a(str, 269, byteBufferAllocate.array()));\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.btsdk.protocol.commands.m",
+    "method": {
+      "name": "m",
+      "reported_signature": "m(java.lang.String): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void m(String str) {\r\n        WhitelistConfigDTO.Function function;\r\n        IntBuffer intBufferAllocate = IntBuffer.allocate(32);\r\n        intBufferAllocate.put(5);\r\n        WhitelistConfigDTO whitelistConfigDTOA = p8.a.C0313a.f31524a.a(str);\r\n        s8.c cVar = this.f22238c;\r\n        if (whitelistConfigDTOA != null && (function = whitelistConfigDTOA.getFunction()) != null) {\r\n            if (Y.i(whitelistConfigDTOA)) {\r\n                intBufferAllocate.put(4);\r\n            }\r\n            if (Y.e(function.getHearingEnhancement(), false) || Y.e(function.getHearingEnhancementNew(), false)) {\r\n                intBufferAllocate.put(11);\r\n            }\r\n            if (Y.e(function.getPersonalNoise(), false) || (function.getPersonalNoiseCompat() != null && Y.e(function.getPersonalNoiseCompat().getPersonalNoise(), false))) {\r\n                intBufferAllocate.put(12);\r\n            }\r\n            if (Y.e(function.getClickTakePic(), false) || Y.e(function.getClickTakePicNew(), false)) {\r\n                intBufferAllocate.put(13);\r\n            }\r\n            if (function.getZenMode() > 0) {\r\n                intBufferAllocate.put(15);\r\n            }\r\n            int multiDevicesConnect = function.getMultiDevicesConnect();\r\n            if (multiDevicesConnect == 1 || multiDevicesConnect == 2) {\r\n                intBufferAllocate.put(17);\r\n            }\r\n            if (Y.e(function.getVocalEnhance(), false)) {\r\n                intBufferAllocate.put(9);\r\n            }\r\n            if (Y.e(function.getHeadSetSoundRecord(), false)) {\r\n                intBufferAllocate.put(19);\r\n            }\r\n            int highToneQuality = function.getHighToneQuality();\r\n            if (highToneQuality == 1 || highToneQuality == 2) {\r\n                intBufferAllocate.put(24);\r\n            }\r\n            if (Y.e(function.getLongPowerMode(), false)) {\r\n                intBufferAllocate.put(23);\r\n            }\r\n            if (Y.e(function.getSmartCall(), false)) {\r\n                intBufferAllocate.put(21);\r\n            }\r\n            if (Y.e(function.getDeviceLostRemind(), false)) {\r\n                intBufferAllocate.put(22);\r\n            }\r\n            int voiceWake = function.getVoiceWake();\r\n            if (voiceWake == 1 || voiceWake == 3) {\r\n                intBufferAllocate.put(20);\r\n            }\r\n            int voiceCommand = function.getVoiceCommand();\r\n            if (voiceCommand == 1 || voiceCommand == 2) {\r\n                intBufferAllocate.put(25);\r\n            }\r\n            if (Y.e(function.getGameMode(), false) || function.getGameModeList() != null) {\r\n                intBufferAllocate.put(6);\r\n            }\r\n            if (function.getSpatialTypes() != null) {\r\n                intBufferAllocate.put(27);\r\n            }\r\n            if (Y.e(function.getBassEngineSupport(), false)) {\r\n                intBufferAllocate.put(29);\r\n            }\r\n            if (Y.e(function.getControlAutoVolumeSupport(), false)) {\r\n                intBufferAllocate.put(28);\r\n            }\r\n            if (Y.e(function.getCollectLogs(), false)) {\r\n                intBufferAllocate.put(30);\r\n            }\r\n            if (!com.oplus.melody.common.util.e.a(function.getGameEqPkgList())) {\r\n                intBufferAllocate.put(33);\r\n            }\r\n            if (U8.b.f()) {\r\n                intBufferAllocate.put(31);\r\n            }\r\n            int spineHealth = whitelistConfigDTOA.getFunction().getSpineHealth();\r\n            if (spineHealth == 1 || spineHealth == 2) {\r\n                intBufferAllocate.put(34);\r\n                intBufferAllocate.put(35);\r\n                intBufferAllocate.put(36);\r\n                if (whitelistConfigDTOA.getFunction().getSpineHealth() == 2) {\r\n                    intBufferAllocate.put(60);\r\n                }\r\n            }\r\n            if (!com.oplus.melody.common.util.e.a(function.getGameSoundList()) || cVar.c(1059, str)) {\r\n                intBufferAllocate.put(39);\r\n                intBufferAllocate.put(40);\r\n            }\r\n            if (Y.e(function.getAdaptiveVolume(), false)) {\r\n                intBufferAllocate.put(48);\r\n            }\r\n            if (Y.e(function.getAdaptiveEar(), false)) {\r\n                intBufferAllocate.put(49);\r\n            }\r\n            if (Y.e(function.getSpeechPerception(), false)) {\r\n                intBufferAllocate.put(50);\r\n            }\r\n            if (Y.e(function.getMeetingAssistant(), false)) {\r\n                intBufferAllocate.put(52);\r\n            }\r\n            if (Y.e(function.getLongPressVolume(), false)) {\r\n                intBufferAllocate.put(53);\r\n            }\r\n            if (Y.e(function.getSwiftPair(), false)) {\r\n                intBufferAllocate.put(55);\r\n            }\r\n            if (Y.e(function.getHearingOptimize(), false)) {\r\n                intBufferAllocate.put(56);\r\n            }\r\n            if (Y.e(function.getIncomingCallControl(), false)) {\r\n                intBufferAllocate.put(57);\r\n            }\r\n            if (Y.e(function.getHeadMotion(), false)) {\r\n                intBufferAllocate.put(59);\r\n            }\r\n            int gmnVoiceAssist = function.getGmnVoiceAssist();\r\n            if (gmnVoiceAssist == 1 || gmnVoiceAssist == 2) {\r\n                intBufferAllocate.put(61);\r\n            }\r\n            if (Y.e(function.getSleepDetection(), false)) {\r\n                intBufferAllocate.put(58);\r\n            }\r\n        }\r\n        intBufferAllocate.flip();\r\n        int iLimit = intBufferAllocate.limit();\r\n        int[] iArr = new int[iLimit];\r\n        intBufferAllocate.get(iArr);\r\n        Q8.a.c(\"PollCommandManager\", new c0(12, iArr, str));\r\n        if (!cVar.c(269, str)) {\r\n            Q8.a.d(\"PollCommandManager\", new G8.a(14), str);\r\n            return;\r\n        }\r\n        if (iLimit == 0) {\r\n            Q8.a.b(\"PollCommandManager\", \"request feature is null\", str);\r\n            return;\r\n        }\r\n        ByteBuffer byteBufferAllocate = ByteBuffer.allocate(iLimit + 1);\r\n        byteBufferAllocate.put((byte) (iLimit & 255));\r\n        for (int i10 = 0; i10 < iLimit; i10++) {\r\n            byteBufferAllocate.put((byte) (iArr[i10] & 255));\r\n        }\r\n        this.f22236a.z0(str, this.f22237b.a(str, 269, byteBufferAllocate.array()));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

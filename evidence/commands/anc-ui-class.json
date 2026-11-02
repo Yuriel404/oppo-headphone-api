@@ -1,0 +1,490 @@
+{
+  "evidence_id": "ev_56686eb77381bd37357eb18e3ae9a8097c3a8113763b754a3fcb3fbc7977572b",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"ADAPTIVE_NOISE_TIPS_SHOWED\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"adaptive_noise_tips_showed\"}},{\"name\":\"ITEM_NAME\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"NoiseReductionItem\"}},{\"name\":\"hasObserve\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"mActionView\",\"type\":\"com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget\",\"def_pos\":0},{\"name\":\"mCOUIToolTips\",\"type\":\"dd.i\",\"def_pos\":0},{\"name\":\"mChildItemLayout\",\"type\":\"android.widget.LinearLayout\",\"def_pos\":0},{\"name\":\"mChildModeManager\",\"type\":\"Zb.g\",\"def_pos\":0},{\"name\":\"mContext\",\"type\":\"android.content.Context\",\"def_pos\":0},{\"name\":\"mIsAttached\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"mIsInTutorialGuide\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"mIsItemHidden\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"mLifecycleOwner\",\"type\":\"androidx.lifecycle.m\",\"def_pos\":0},{\"name\":\"mNoiseReductionModeList\",\"type\":\"java.util.ArrayList<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>\",\"def_pos\":0},{\"name\":\"mNoiseReductionVO\",\"type\":\"Zb.o\",\"def_pos\":0},{\"name\":\"mOnModeActionClickListener\",\"type\":\"com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget$a\",\"def_pos\":0},{\"name\":\"mSetCommandFuture\",\"type\":\"java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>\",\"def_pos\":0},{\"name\":\"mSupportPersonalNoise\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"mToolTipsRunnable\",\"type\":\"java.lang.Runnable\",\"def_pos\":0},{\"name\":\"mViewModel\",\"type\":\"com.oplus.melody.ui.component.detail.DetailMainViewModel\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":true,\"dex_descriptor\":\"(Landroid/content/Context;Lcom/oplus/melody/ui/component/detail/DetailMainViewModel;Landroidx/lifecycle/m;)V\",\"signature\":\"<init>(android.content.Context, com.oplus.melody.ui.component.detail.DetailMainViewModel, androidx.lifecycle.m): void\",\"def_pos\":0,\"name\":\"<init>\"},{\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"checkAndShowAdaptiveTips(): void\",\"def_pos\":0,\"name\":\"checkAndShowAdaptiveTips\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Context;ILandroid/graphics/drawable/Drawable;Ljava/lang/String;ZZ)Lcom/oplus/iotui/model/ModeItem;\",\"signature\":\"createModeItem(android.content.Context, int, android.graphics.drawable.Drawable, java.lang.String, boolean, boolean): com.oplus.iotui.model.ModeItem\",\"def_pos\":0,\"name\":\"createModeItem\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ljava/lang/String;\",\"signature\":\"e(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): java.lang.String\",\"def_pos\":0,\"name\":\"e\"},{\"is_constructor\":false,\"dex_descriptor\":\"(I)Ljava/lang/String;\",\"signature\":\"g(int): java.lang.String\",\"def_pos\":0,\"name\":\"g\"},{\"is_constructor\":false,\"dex_descriptor\":\"(I)Ljava/lang/String;\",\"signature\":\"getNoiseReductionModeName(int): java.lang.String\",\"def_pos\":0,\"name\":\"getNoiseReductionModeName\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Z)Ljava/lang/String;\",\"signature\":\"h(boolean): java.lang.String\",\"def_pos\":0,\"name\":\"h\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/String;\",\"signature\":\"i(java.util.List): java.lang.String\",\"def_pos\":0,\"name\":\"i\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;Lcom/oplus/melody/model/repository/earphone/NoiseReductionInfoDTO;)Z\",\"signature\":\"isNoiseReductionModeSupported(com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode, com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO): boolean\",\"def_pos\":0,\"name\":\"isNoiseReductionModeSupported\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;)Ljava/lang/String;\",\"signature\":\"j(com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode): java.lang.String\",\"def_pos\":0,\"name\":\"j\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;Landroidx/preference/m;)Ljava/lang/String;\",\"signature\":\"k(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem, androidx.preference.m): java.lang.String\",\"def_pos\":0,\"name\":\"k\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)V\",\"signature\":\"l(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): void\",\"def_pos\":0,\"name\":\"l\"},{\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"lambda$checkAndShowAdaptiveTips$0(): java.lang.String\",\"def_pos\":0,\"name\":\"lambda$checkAndShowAdaptiveTips$0\"},{\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"lambda$checkAndShowAdaptiveTips$1(): void\",\"def_pos\":0,\"name\":\"lambda$checkAndShowAdaptiveTips$1\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;)Ljava/lang/String;\",\"signature\":\"lambda$isNoiseReductionModeSupported$6(com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode): java.lang.String\",\"def_pos\":0,\"name\":\"lambda$isNoiseReductionModeSupported$6\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/m;)Ljava/lang/String;\",\"signature\":\"lambda$onBindViewHolder$2(androidx.preference.m): java.lang.String\",\"def_pos\":0,\"name\":\"lambda$onBindViewHolder$2\"},{\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"lambda$onBindViewHolder$3(): java.lang.String\",\"def_pos\":0,\"name\":\"lambda$onBindViewHolder$3\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Z)Ljava/lang/String;\",\"signature\":\"lambda$onHiddenChanged$7(boolean): java.lang.String\",\"def_pos\":0,\"name\":\"lambda$onHiddenChanged$7\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/String;\",\"signature\":\"lambda$updateActionView$4(java.util.List): java.lang.String\",\"def_pos\":0,\"name\":\"lambda$updateActionView$4\"},{\"is_constructor\":false,\"dex_descriptor\":\"(I)Ljava/lang/String;\",\"signature\":\"lambda$updateActionView$5(int): java.lang.String\",\"def_pos\":0,\"name\":\"lambda$updateActionView$5\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)V\",\"signature\":\"m(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): void\",\"def_pos\":0,\"name\":\"m\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ljava/lang/String;\",\"signature\":\"n(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): java.lang.String\",\"def_pos\":0,\"name\":\"n\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Lcom/oplus/melody/ui/widget/devicecontrol/DeviceControlWidget;\",\"signature\":\"o(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget\",\"def_pos\":0,\"name\":\"o\"},{\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"onAttached(): void\",\"def_pos\":0,\"name\":\"onAttached\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/m;)V\",\"signature\":\"onBindViewHolder(androidx.preference.m): void\",\"def_pos\":0,\"name\":\"onBindViewHolder\"},{\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"onDestroy(): void\",\"def_pos\":0,\"name\":\"onDestroy\"},{\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"onDetached(): void\",\"def_pos\":0,\"name\":\"onDetached\"},{\"is_constructor\":false,\"dex_descriptor\":\"(LZb/o;)V\",\"signature\":\"onEarphoneDataChanged(Zb.o): void\",\"def_pos\":0,\"name\":\"onEarphoneDataChanged\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\",\"signature\":\"onHiddenChanged(boolean): void\",\"def_pos\":0,\"name\":\"onHiddenChanged\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ldd/i;\",\"signature\":\"p(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): dd.i\",\"def_pos\":0,\"name\":\"p\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)LZb/g;\",\"signature\":\"q(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): Zb.g\",\"def_pos\":0,\"name\":\"q\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Z\",\"signature\":\"r(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): boolean\",\"def_pos\":0,\"name\":\"r\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ljava/util/ArrayList;\",\"signature\":\"s(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): java.util.ArrayList\",\"def_pos\":0,\"name\":\"s\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\",\"signature\":\"setContentViewEnable(boolean): void\",\"def_pos\":0,\"name\":\"setContentViewEnable\"},{\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"setIsInTutorialGuide(): void\",\"def_pos\":0,\"name\":\"setIsInTutorialGuide\"},{\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"setItemSoundEffectDisabled(): void\",\"def_pos\":0,\"name\":\"setItemSoundEffectDisabled\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)LZb/o;\",\"signature\":\"t(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): Zb.o\",\"def_pos\":0,\"name\":\"t\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ljava/util/concurrent/CompletableFuture;\",\"signature\":\"u(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): java.util.concurrent.CompletableFuture\",\"def_pos\":0,\"name\":\"u\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/widget/devicecontrol/DeviceControlWidget;LZb/o;I)V\",\"signature\":\"updateActionView(com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget, Zb.o, int): void\",\"def_pos\":0,\"name\":\"updateActionView\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;Ljava/util/concurrent/CompletableFuture;)V\",\"signature\":\"v(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem, java.util.concurrent.CompletableFuture): void\",\"def_pos\":0,\"name\":\"v\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;Lcom/oplus/melody/ui/widget/devicecontrol/DeviceControlWidget;LZb/o;I)V\",\"signature\":\"w(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem, com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget, Zb.o, int): void\",\"def_pos\":0,\"name\":\"w\"}],\"inner_classes\":[\"com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem.a\"],\"inner_class_count\":1,\"name\":\"NoiseReductionItem\",\"field_count\":19,\"full_name\":\"com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem\",\"method_count\":41,\"raw_name\":\"com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, com.oplus.melody.ui.component.detail.DetailMainViewModel, androidx.lifecycle.m): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(Landroid/content/Context;Lcom/oplus/melody/ui/component/detail/DetailMainViewModel;Landroidx/lifecycle/m;)V"
+      },
+      {
+        "name": "checkAndShowAdaptiveTips",
+        "reported_signature": "checkAndShowAdaptiveTips(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "createModeItem",
+        "reported_signature": "createModeItem(android.content.Context, int, android.graphics.drawable.Drawable, java.lang.String, boolean, boolean): com.oplus.iotui.model.ModeItem",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/content/Context;ILandroid/graphics/drawable/Drawable;Ljava/lang/String;ZZ)Lcom/oplus/iotui/model/ModeItem;"
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ljava/lang/String;"
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(int): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Ljava/lang/String;"
+      },
+      {
+        "name": "getNoiseReductionModeName",
+        "reported_signature": "getNoiseReductionModeName(int): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Ljava/lang/String;"
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(boolean): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)Ljava/lang/String;"
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(java.util.List): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/List;)Ljava/lang/String;"
+      },
+      {
+        "name": "isNoiseReductionModeSupported",
+        "reported_signature": "isNoiseReductionModeSupported(com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode, com.oplus.melody.model.repository.earphone.NoiseReductionInfoDTO): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;Lcom/oplus/melody/model/repository/earphone/NoiseReductionInfoDTO;)Z"
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;)Ljava/lang/String;"
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem, androidx.preference.m): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;Landroidx/preference/m;)Ljava/lang/String;"
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)V"
+      },
+      {
+        "name": "lambda$checkAndShowAdaptiveTips$0",
+        "reported_signature": "lambda$checkAndShowAdaptiveTips$0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "lambda$checkAndShowAdaptiveTips$1",
+        "reported_signature": "lambda$checkAndShowAdaptiveTips$1(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "lambda$isNoiseReductionModeSupported$6",
+        "reported_signature": "lambda$isNoiseReductionModeSupported$6(com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/common/data/WhitelistConfigDTO$NoiseReductionMode;)Ljava/lang/String;"
+      },
+      {
+        "name": "lambda$onBindViewHolder$2",
+        "reported_signature": "lambda$onBindViewHolder$2(androidx.preference.m): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroidx/preference/m;)Ljava/lang/String;"
+      },
+      {
+        "name": "lambda$onBindViewHolder$3",
+        "reported_signature": "lambda$onBindViewHolder$3(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "lambda$onHiddenChanged$7",
+        "reported_signature": "lambda$onHiddenChanged$7(boolean): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)Ljava/lang/String;"
+      },
+      {
+        "name": "lambda$updateActionView$4",
+        "reported_signature": "lambda$updateActionView$4(java.util.List): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/List;)Ljava/lang/String;"
+      },
+      {
+        "name": "lambda$updateActionView$5",
+        "reported_signature": "lambda$updateActionView$5(int): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Ljava/lang/String;"
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)V"
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ljava/lang/String;"
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Lcom/oplus/melody/ui/widget/devicecontrol/DeviceControlWidget;"
+      },
+      {
+        "name": "onAttached",
+        "reported_signature": "onAttached(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "onBindViewHolder",
+        "reported_signature": "onBindViewHolder(androidx.preference.m): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroidx/preference/m;)V"
+      },
+      {
+        "name": "onDestroy",
+        "reported_signature": "onDestroy(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "onDetached",
+        "reported_signature": "onDetached(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "onEarphoneDataChanged",
+        "reported_signature": "onEarphoneDataChanged(Zb.o): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LZb/o;)V"
+      },
+      {
+        "name": "onHiddenChanged",
+        "reported_signature": "onHiddenChanged(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)V"
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): dd.i",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ldd/i;"
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): Zb.g",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)LZb/g;"
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Z"
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): java.util.ArrayList",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ljava/util/ArrayList;"
+      },
+      {
+        "name": "setContentViewEnable",
+        "reported_signature": "setContentViewEnable(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)V"
+      },
+      {
+        "name": "setIsInTutorialGuide",
+        "reported_signature": "setIsInTutorialGuide(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "setItemSoundEffectDisabled",
+        "reported_signature": "setItemSoundEffectDisabled(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): Zb.o",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)LZb/o;"
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem): java.util.concurrent.CompletableFuture",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;)Ljava/util/concurrent/CompletableFuture;"
+      },
+      {
+        "name": "updateActionView",
+        "reported_signature": "updateActionView(com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget, Zb.o, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/widget/devicecontrol/DeviceControlWidget;LZb/o;I)V"
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem, java.util.concurrent.CompletableFuture): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;Ljava/util/concurrent/CompletableFuture;)V"
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem, com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget, Zb.o, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/oplus/melody/ui/component/detail/noisereduction/NoiseReductionItem;Lcom/oplus/melody/ui/widget/devicecontrol/DeviceControlWidget;LZb/o;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "ADAPTIVE_NOISE_TIPS_SHOWED",
+        "reported_type": "java.lang.String",
+        "dex_static_value": {
+          "type": "string",
+          "value": "adaptive_noise_tips_showed"
+        }
+      },
+      {
+        "name": "ITEM_NAME",
+        "reported_type": "java.lang.String",
+        "dex_static_value": {
+          "type": "string",
+          "value": "NoiseReductionItem"
+        }
+      },
+      {
+        "name": "hasObserve",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "mActionView",
+        "reported_type": "com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget",
+        "dex_static_value": null
+      },
+      {
+        "name": "mCOUIToolTips",
+        "reported_type": "dd.i",
+        "dex_static_value": null
+      },
+      {
+        "name": "mChildItemLayout",
+        "reported_type": "android.widget.LinearLayout",
+        "dex_static_value": null
+      },
+      {
+        "name": "mChildModeManager",
+        "reported_type": "Zb.g",
+        "dex_static_value": null
+      },
+      {
+        "name": "mContext",
+        "reported_type": "android.content.Context",
+        "dex_static_value": null
+      },
+      {
+        "name": "mIsAttached",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "mIsInTutorialGuide",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "mIsItemHidden",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "mLifecycleOwner",
+        "reported_type": "androidx.lifecycle.m",
+        "dex_static_value": null
+      },
+      {
+        "name": "mNoiseReductionModeList",
+        "reported_type": "java.util.ArrayList<com.oplus.melody.common.data.WhitelistConfigDTO$NoiseReductionMode>",
+        "dex_static_value": null
+      },
+      {
+        "name": "mNoiseReductionVO",
+        "reported_type": "Zb.o",
+        "dex_static_value": null
+      },
+      {
+        "name": "mOnModeActionClickListener",
+        "reported_type": "com.oplus.melody.ui.widget.devicecontrol.DeviceControlWidget$a",
+        "dex_static_value": null
+      },
+      {
+        "name": "mSetCommandFuture",
+        "reported_type": "java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>",
+        "dex_static_value": null
+      },
+      {
+        "name": "mSupportPersonalNoise",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "mToolTipsRunnable",
+        "reported_type": "java.lang.Runnable",
+        "dex_static_value": null
+      },
+      {
+        "name": "mViewModel",
+        "reported_type": "com.oplus.melody.ui.component.detail.DetailMainViewModel",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": [
+      "com.oplus.melody.ui.component.detail.noisereduction.NoiseReductionItem.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

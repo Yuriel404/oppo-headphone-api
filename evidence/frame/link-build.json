@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_7ab8c59d2d7564924e1c5eb4a70671d691921126f3975587a93d5e1ae0832678",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "N8.b",
+    "method_name": "e"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "N8.b"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"dex_descriptor\":\"()V\",\"signature\":\"<init>(): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true},{\"dex_descriptor\":\"([B)I\",\"signature\":\"b(byte[]): int\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false},{\"dex_descriptor\":\"()Ljava/util/ArrayList;\",\"signature\":\"c(): java.util.ArrayList\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false},{\"dex_descriptor\":\"()Ljava/lang/Object;\",\"signature\":\"clone(): java.lang.Object\",\"def_pos\":0,\"name\":\"clone\",\"is_constructor\":false},{\"dex_descriptor\":\"([B)LJ8/a;\",\"signature\":\"d(byte[]): J8.a\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false},{\"dex_descriptor\":\"([B)Ljava/util/List;\",\"signature\":\"e(byte[]): java.util.List<byte[]>\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"b\",\"field_count\":10,\"full_name\":\"N8.b\",\"method_count\":6,\"raw_name\":\"N8.b\",\"fields\":[{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f4501a\"},{\"type\":\"byte[]\",\"def_pos\":0,\"name\":\"f4502b\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f4503c\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f4504p\"},{\"type\":\"java.util.ArrayList\",\"def_pos\":0,\"name\":\"f4505q\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f4506r\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f4507s\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f4508t\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f4509u\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f4510v\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "N8.b",
+          "method_name": "e",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"mode\":\"java\",\"body\":\"    public final List<byte[]> e(byte[] bArr) {\\r\\n        int i10 = 0;\\r\\n        int length = bArr.length;\\r\\n        y.a aVar = Q8.a.f5077a;\\r\\n        if (y.l()) {\\r\\n            StringBuilder sb2 = new StringBuilder(\\\"Enter spliceMTUPackage, leftDataLen = \\\");\\r\\n            sb2.append(this.f4503c);\\r\\n            sb2.append(\\\", totalDataLen = \\\");\\r\\n            sb2.append(this.f4504p);\\r\\n            sb2.append(\\\", dataContentBytes.length = \\\");\\r\\n            byte[] bArr2 = this.f4502b;\\r\\n            sb2.append(bArr2 != null ? Integer.valueOf(bArr2.length) : \\\"null\\\");\\r\\n            sb2.append(\\\", dataLen = \\\");\\r\\n            sb2.append(length);\\r\\n            sb2.append(\\\" data=\\\");\\r\\n            sb2.append(Wa.a.g(bArr));\\r\\n            Q8.a.a(\\\"OPOv1Wrapper\\\", sb2.toString());\\r\\n        }\\r\\n        if (-86 != bArr[0] || this.f4504p != 0) {\\r\\n            Q8.a.c(\\\"OPOv1Wrapper\\\", new c(this, 18));\\r\\n            if (length != this.f4503c && -86 == bArr[0]) {\\r\\n                Q8.a.m(\\\"OPOv1Wrapper\\\", \\\"spliceMTUPackage pre mtu data content invalid, drop it. data=\\\" + Wa.a.g(this.f4502b));\\r\\n                this.f4504p = 0;\\r\\n                this.f4503c = 0;\\r\\n                this.f4502b = null;\\r\\n                return e(bArr);\\r\\n            }\\r\\n            byte[] bArr3 = this.f4502b;\\r\\n            if (bArr3 != null) {\\r\\n                byte[] bArr4 = new byte[bArr3.length + bArr.length];\\r\\n                System.arraycopy(bArr3, 0, bArr4, 0, bArr3.length);\\r\\n                System.arraycopy(bArr, 0, bArr4, bArr3.length, bArr.length);\\r\\n                this.f4502b = bArr4;\\r\\n            }\\r\\n            int i11 = this.f4503c;\\r\\n            if (length >= i11) {\\r\\n                if (length == i11) {\\r\\n                    Q8.a.a(\\\"OPOv1Wrapper\\\", \\\"spliceMTUPackage data content len equal mLeftDataLen.\\\");\\r\\n                    this.f4504p = 0;\\r\\n                    this.f4503c = 0;\\r\\n                    byte[] bArr5 = this.f4502b;\\r\\n                    if (bArr5 != null) {\\r\\n                        this.f4505q.add(bArr5);\\r\\n                    }\\r\\n                    return c();\\r\\n                }\\r\\n                Q8.a.a(\\\"OPOv1Wrapper\\\", \\\"spliceMTUPackage data content len more than mLeftDataLen.\\\");\\r\\n                byte[] bArr6 = this.f4502b;\\r\\n                if (bArr6 != null) {\\r\\n                    this.f4505q.add(Arrays.copyOf(bArr6, this.f4504p));\\r\\n                    byte[] bArr7 = this.f4502b;\\r\\n                    byte[] bArrCopyOfRange = Arrays.copyOfRange(bArr7, this.f4504p, bArr7.length);\\r\\n                    this.f4504p = 0;\\r\\n                    this.f4503c = 0;\\r\\n                    if (-86 == bArrCopyOfRange[0]) {\\r\\n                        return e(bArrCopyOfRange);\\r\\n                    }\\r\\n                }\\r\\n                return c();\\r\\n            }\\r\\n            Q8.a.a(\\\"OPOv1Wrapper\\\", \\\"spliceMTUPackage data content len less than mLeftDataLen.\\\");\\r\\n            this.f4503c -= length;\\r\\n        } else {\\r\\n            if (length < 9) {\\r\\n                Q8.a.m(\\\"OPOv1Wrapper\\\", \\\"spliceMTUPackage strDataContentHex length is invalid with data = \\\" + Wa.a.g(bArr));\\r\\n                return c();\\r\\n            }\\r\\n            int iB = b(bArr);\\r\\n            int i12 = iB + 1 + (iB > 127 ? 2 : 1);\\r\\n            if (i12 == bArr.length) {\\r\\n                this.f4505q.add(bArr);\\r\\n                return c();\\r\\n            }\\r\\n            if (i12 < bArr.length) {\\r\\n                Q8.a.c(\\\"OPOv1Wrapper\\\", new a(i12, i10, bArr));\\r\\n                this.f4505q.add(Arrays.copyOf(bArr, i12));\\r\\n                byte[] bArrCopyOfRange2 = Arrays.copyOfRange(bArr, i12, bArr.length);\\r\\n                this.f4504p = 0;\\r\\n                this.f4503c = 0;\\r\\n                return -86 == bArrCopyOfRange2[0] ? e(bArrCopyOfRange2) : c();\\r\\n            }\\r\\n            StringBuilder sbJ = A0.j(i12, length, \\\"spliceMTUPackage frame incomplete, frameLength > dataContent, frameLength= \\\", \\\", dataLen = \\\", \\\", data=\\\");\\r\\n            sbJ.append(Wa.a.g(bArr));\\r\\n            Q8.a.m(\\\"OPOv1Wrapper\\\", sbJ.toString());\\r\\n            this.f4502b = bArr;\\r\\n            this.f4504p = i12;\\r\\n            this.f4503c = i12 - bArr.length;\\r\\n        }\\r\\n        return c();\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"N8.b.e\",\"overload_index\":0,\"method_name\":\"e\",\"overload_count\":1,\"dex_descriptor\":\"([B)Ljava/util/List;\",\"class_name\":\"N8.b\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "N8.b",
+    "method": {
+      "name": "e",
+      "reported_signature": "e(byte[]): java.util.List<byte[]>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "([B)Ljava/util/List;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final List<byte[]> e(byte[] bArr) {\r\n        int i10 = 0;\r\n        int length = bArr.length;\r\n        y.a aVar = Q8.a.f5077a;\r\n        if (y.l()) {\r\n            StringBuilder sb2 = new StringBuilder(\"Enter spliceMTUPackage, leftDataLen = \");\r\n            sb2.append(this.f4503c);\r\n            sb2.append(\", totalDataLen = \");\r\n            sb2.append(this.f4504p);\r\n            sb2.append(\", dataContentBytes.length = \");\r\n            byte[] bArr2 = this.f4502b;\r\n            sb2.append(bArr2 != null ? Integer.valueOf(bArr2.length) : \"null\");\r\n            sb2.append(\", dataLen = \");\r\n            sb2.append(length);\r\n            sb2.append(\" data=\");\r\n            sb2.append(Wa.a.g(bArr));\r\n            Q8.a.a(\"OPOv1Wrapper\", sb2.toString());\r\n        }\r\n        if (-86 != bArr[0] || this.f4504p != 0) {\r\n            Q8.a.c(\"OPOv1Wrapper\", new c(this, 18));\r\n            if (length != this.f4503c && -86 == bArr[0]) {\r\n                Q8.a.m(\"OPOv1Wrapper\", \"spliceMTUPackage pre mtu data content invalid, drop it. data=\" + Wa.a.g(this.f4502b));\r\n                this.f4504p = 0;\r\n                this.f4503c = 0;\r\n                this.f4502b = null;\r\n                return e(bArr);\r\n            }\r\n            byte[] bArr3 = this.f4502b;\r\n            if (bArr3 != null) {\r\n                byte[] bArr4 = new byte[bArr3.length + bArr.length];\r\n                System.arraycopy(bArr3, 0, bArr4, 0, bArr3.length);\r\n                System.arraycopy(bArr, 0, bArr4, bArr3.length, bArr.length);\r\n                this.f4502b = bArr4;\r\n            }\r\n            int i11 = this.f4503c;\r\n            if (length >= i11) {\r\n                if (length == i11) {\r\n                    Q8.a.a(\"OPOv1Wrapper\", \"spliceMTUPackage data content len equal mLeftDataLen.\");\r\n                    this.f4504p = 0;\r\n                    this.f4503c = 0;\r\n                    byte[] bArr5 = this.f4502b;\r\n                    if (bArr5 != null) {\r\n                        this.f4505q.add(bArr5);\r\n                    }\r\n                    return c();\r\n                }\r\n                Q8.a.a(\"OPOv1Wrapper\", \"spliceMTUPackage data content len more than mLeftDataLen.\");\r\n                byte[] bArr6 = this.f4502b;\r\n                if (bArr6 != null) {\r\n                    this.f4505q.add(Arrays.copyOf(bArr6, this.f4504p));\r\n                    byte[] bArr7 = this.f4502b;\r\n                    byte[] bArrCopyOfRange = Arrays.copyOfRange(bArr7, this.f4504p, bArr7.length);\r\n                    this.f4504p = 0;\r\n                    this.f4503c = 0;\r\n                    if (-86 == bArrCopyOfRange[0]) {\r\n                        return e(bArrCopyOfRange);\r\n                    }\r\n                }\r\n                return c();\r\n            }\r\n            Q8.a.a(\"OPOv1Wrapper\", \"spliceMTUPackage data content len less than mLeftDataLen.\");\r\n            this.f4503c -= length;\r\n        } else {\r\n            if (length < 9) {\r\n                Q8.a.m(\"OPOv1Wrapper\", \"spliceMTUPackage strDataContentHex length is invalid with data = \" + Wa.a.g(bArr));\r\n                return c();\r\n            }\r\n            int iB = b(bArr);\r\n            int i12 = iB + 1 + (iB > 127 ? 2 : 1);\r\n            if (i12 == bArr.length) {\r\n                this.f4505q.add(bArr);\r\n                return c();\r\n            }\r\n            if (i12 < bArr.length) {\r\n                Q8.a.c(\"OPOv1Wrapper\", new a(i12, i10, bArr));\r\n                this.f4505q.add(Arrays.copyOf(bArr, i12));\r\n                byte[] bArrCopyOfRange2 = Arrays.copyOfRange(bArr, i12, bArr.length);\r\n                this.f4504p = 0;\r\n                this.f4503c = 0;\r\n                return -86 == bArrCopyOfRange2[0] ? e(bArrCopyOfRange2) : c();\r\n            }\r\n            StringBuilder sbJ = A0.j(i12, length, \"spliceMTUPackage frame incomplete, frameLength > dataContent, frameLength= \", \", dataLen = \", \", data=\");\r\n            sbJ.append(Wa.a.g(bArr));\r\n            Q8.a.m(\"OPOv1Wrapper\", sbJ.toString());\r\n            this.f4502b = bArr;\r\n            this.f4504p = i12;\r\n            this.f4503c = i12 - bArr.length;\r\n        }\r\n        return c();\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

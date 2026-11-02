@@ -1,0 +1,147 @@
+{
+  "evidence_id": "ev_a8b94d23d66e53e75a4901b66d0046b3ee8a751fc1312936504cd14c79743973",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Bc.c",
+    "method_name": "get"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":9834,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Bc.c"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(boolean, int): void\",\"dex_descriptor\":\"(ZI)V\"},{\"is_constructor\":false,\"name\":\"get\",\"def_pos\":0,\"signature\":\"get(): java.lang.Object\",\"dex_descriptor\":\"()Ljava/lang/Object;\"}],\"fields\":[{\"def_pos\":0,\"type\":\"int\",\"name\":\"f980a\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"f981b\"}],\"raw_name\":\"Bc.c\",\"method_count\":2,\"full_name\":\"Bc.c\",\"field_count\":2,\"name\":\"c\",\"inner_class_count\":0,\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Bc.c",
+          "method_name": "get",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"class_name\":\"Bc.c\",\"dex_descriptor\":\"()Ljava/lang/Object;\",\"overload_count\":1,\"method_name\":\"get\",\"overload_index\":0,\"full_name\":\"Bc.c.get\",\"fell_back\":false,\"markers\":[],\"body\":\"    @Override // java.util.function.Supplier\\r\\n    public final Object get() {\\r\\n        boolean z10 = this.f981b;\\r\\n        switch (this.f980a) {\\r\\n            case 0:\\r\\n                return \\\"triggerZenMode \\\" + z10;\\r\\n            case 1:\\r\\n                ArrayList<String> arrayList = q.f1167U;\\r\\n                return \\\"playOrStopVoiceTone isPlay = \\\" + z10;\\r\\n            case 2:\\r\\n                return \\\"reminderSoundCheck, isChecked: \\\" + z10;\\r\\n            case 3:\\r\\n                return \\\"reminderNotificationCheck, isChecked: \\\" + z10;\\r\\n            case 4:\\r\\n                return \\\"setGameModeEnable enable:\\\" + z10 + \\\" failed \\\";\\r\\n            case 5:\\r\\n                return \\\"setGameModeMainEnable enable:\\\" + z10 + \\\" succeed\\\";\\r\\n            case 6:\\r\\n                return \\\"isNewVersion126 = \\\" + z10;\\r\\n            case 7:\\r\\n                return \\\"getSpeechMultiConversationSwitchFromCache setting result = \\\" + z10;\\r\\n            case 8:\\r\\n                return \\\"supportConnectDisconnectHandheldDevice isFunctionSupport = \\\" + z10;\\r\\n            case 9:\\r\\n                return HearingOptimizeItem.onSwitchChanged$lambda$0(z10);\\r\\n            case 10:\\r\\n                return \\\"getFunctionList isAISummarySupported = \\\" + z10;\\r\\n            case 11:\\r\\n                return \\\"getFunctionList isSpatialAudioSupport = \\\" + z10;\\r\\n            case 12:\\r\\n                return \\\"onPreferenceChange.setLongPressVolumeStatus failed, switchOpened: \\\" + z10;\\r\\n            case 13:\\r\\n                int i10 = AlphaMovieView.f22448K;\\r\\n                return \\\"setMute \\\" + z10;\\r\\n            case 14:\\r\\n                int i11 = AlphaMovieView.f22448K;\\r\\n                return \\\"setAutoCrop \\\" + z10;\\r\\n            case 15:\\r\\n                return MultiDevicesManagerItem.enableItem$lambda$0$0(z10);\\r\\n            case 16:\\r\\n                return \\\"showRevokePrivacyStatementDialog: isPrivacyStatementAccepted=\\\" + z10;\\r\\n            case 17:\\r\\n                return \\\"onEnter notifyEnabled=\\\" + z10;\\r\\n            case 18:\\r\\n                return \\\"accountLoginStateChanged, isLogin=\\\" + z10;\\r\\n            case 19:\\r\\n                return \\\"syncHostIsAutoSwitchLinkOpened isOpened = \\\" + z10;\\r\\n            case 20:\\r\\n                return PersonalNoiseItem.lambda$initItem$0(z10);\\r\\n            case 21:\\r\\n                return \\\"isVoiceWakeOpen, isOpen: \\\" + z10;\\r\\n            case 22:\\r\\n                return \\\"onScrollChange stopped, isFullVisibleRect: \\\" + z10;\\r\\n            case 23:\\r\\n                return \\\"handleSupportMultiDeviceConnectChange supportMultiDeviceConnect = \\\" + z10;\\r\\n            case 24:\\r\\n                return \\\"long press volume:\\\" + z10;\\r\\n            case 25:\\r\\n                return \\\"migrateLicenceSwitch: \\\" + z10;\\r\\n            case 26:\\r\\n                return \\\"onIsPlayingChanged, isPlaying:\\\" + z10;\\r\\n            case 27:\\r\\n                return \\\"isMatchCurrentAccountBykey result = \\\" + z10;\\r\\n            case 28:\\r\\n                return \\\"onSwitchChange checked=\\\" + z10;\\r\\n            default:\\r\\n                return \\\"onHeadTrackerAvailableChanged: \\\" + z10;\\r\\n        }\\r\\n    }\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Bc.c",
+    "method": {
+      "name": "get",
+      "reported_signature": "get(): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // java.util.function.Supplier\r\n    public final Object get() {\r\n        boolean z10 = this.f981b;\r\n        switch (this.f980a) {\r\n            case 0:\r\n                return \"triggerZenMode \" + z10;\r\n            case 1:\r\n                ArrayList<String> arrayList = q.f1167U;\r\n                return \"playOrStopVoiceTone isPlay = \" + z10;\r\n            case 2:\r\n                return \"reminderSoundCheck, isChecked: \" + z10;\r\n            case 3:\r\n                return \"reminderNotificationCheck, isChecked: \" + z10;\r\n            case 4:\r\n                return \"setGameModeEnable enable:\" + z10 + \" failed \";\r\n            case 5:\r\n                return \"setGameModeMainEnable enable:\" + z10 + \" succeed\";\r\n            case 6:\r\n                return \"isNewVersion126 = \" + z10;\r\n            case 7:\r\n                return \"getSpeechMultiConversationSwitchFromCache setting result = \" + z10;\r\n            case 8:\r\n                return \"supportConnectDisconnectHandheldDevice isFunctionSupport = \" + z10;\r\n            case 9:\r\n                return HearingOptimizeItem.onSwitchChanged$lambda$0(z10);\r\n            case 10:\r\n                return \"getFunctionList isAISummarySupported = \" + z10;\r\n            case 11:\r\n                return \"getFunctionList isSpatialAudioSupport = \" + z10;\r\n            case 12:\r\n                return \"onPreferenceChange.setLongPressVolumeStatus failed, switchOpened: \" + z10;\r\n            case 13:\r\n                int i10 = AlphaMovieView.f22448K;\r\n                return \"setMute \" + z10;\r\n            case 14:\r\n                int i11 = AlphaMovieView.f22448K;\r\n                return \"setAutoCrop \" + z10;\r\n            case 15:\r\n                return MultiDevicesManagerItem.enableItem$lambda$0$0(z10);\r\n            case 16:\r\n                return \"showRevokePrivacyStatementDialog: isPrivacyStatementAccepted=\" + z10;\r\n            case 17:\r\n                return \"onEnter notifyEnabled=\" + z10;\r\n            case 18:\r\n                return \"accountLoginStateChanged, isLogin=\" + z10;\r\n            case 19:\r\n                return \"syncHostIsAutoSwitchLinkOpened isOpened = \" + z10;\r\n            case 20:\r\n                return PersonalNoiseItem.lambda$initItem$0(z10);\r\n            case 21:\r\n                return \"isVoiceWakeOpen, isOpen: \" + z10;\r\n            case 22:\r\n                return \"onScrollChange stopped, isFullVisibleRect: \" + z10;\r\n            case 23:\r\n                return \"handleSupportMultiDeviceConnectChange supportMultiDeviceConnect = \" + z10;\r\n            case 24:\r\n                return \"long press volume:\" + z10;\r\n            case 25:\r\n                return \"migrateLicenceSwitch: \" + z10;\r\n            case 26:\r\n                return \"onIsPlayingChanged, isPlaying:\" + z10;\r\n            case 27:\r\n                return \"isMatchCurrentAccountBykey result = \" + z10;\r\n            case 28:\r\n                return \"onSwitchChange checked=\" + z10;\r\n            default:\r\n                return \"onHeadTrackerAvailableChanged: \" + z10;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

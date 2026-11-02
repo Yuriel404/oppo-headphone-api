@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enco-free4-reference"
+version = "0.1.1"
+description = "Unofficial APK-derived Enco Free4 Windows/Python control reference"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+ble = ["bleak>=1.0,<4"]
+
+[project.scripts]
+enco-free4 = "enco_free4.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["enco_free4*"]
+
+[tool.setuptools.package-data]
+enco_free4 = ["data/*.json"]

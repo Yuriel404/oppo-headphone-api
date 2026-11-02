@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_3dad35c8113a356f82bc2b3cbd99f97fcb1e617c3393671d9b2b8ffb8b695c15",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.btsdk.protocol.commands.i",
+    "method_name": "c"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.protocol.commands.i"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f22223a\",\"type\":\"android.os.Handler\",\"def_pos\":0},{\"name\":\"f22224b\",\"type\":\"com.oplus.melody.btsdk.multidevice.HeadsetCoreService\",\"def_pos\":0},{\"name\":\"f22225c\",\"type\":\"w8.b\",\"def_pos\":0},{\"name\":\"f22226d\",\"type\":\"s8.c\",\"def_pos\":0},{\"name\":\"f22227e\",\"type\":\"java.util.concurrent.ConcurrentHashMap<java.lang.String, java.util.Set<java.lang.Integer>>\",\"def_pos\":0},{\"name\":\"f22228f\",\"type\":\"long\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/multidevice/HeadsetCoreService;Landroid/os/Handler;)V\",\"signature\":\"<init>(com.oplus.melody.btsdk.multidevice.HeadsetCoreService, android.os.Handler): void\",\"def_pos\":0,\"name\":\"<init>\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"a(java.lang.String): void\",\"def_pos\":0,\"name\":\"a\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;I[BLw8/a;)V\",\"signature\":\"b(java.lang.String, int, byte[], w8.a): void\",\"def_pos\":0,\"name\":\"b\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lw8/a;)V\",\"signature\":\"c(java.lang.String, w8.a): void\",\"def_pos\":0,\"name\":\"c\"},{\"is_constructor\":false,\"dex_descriptor\":\"(II[BLjava/lang/String;Lw8/a;)V\",\"signature\":\"d(int, int, byte[], java.lang.String, w8.a): void\",\"def_pos\":0,\"name\":\"d\"}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"i\",\"field_count\":6,\"full_name\":\"com.oplus.melody.btsdk.protocol.commands.i\",\"method_count\":5,\"raw_name\":\"com.oplus.melody.btsdk.protocol.commands.i\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.protocol.commands.i",
+          "method_name": "c",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"class_name\":\"com.oplus.melody.btsdk.protocol.commands.i\",\"mode\":\"java\",\"body\":\"    public final void c(String str, w8.a aVar) {\\r\\n        byte b10 = 0;\\r\\n        if (str == null) {\\r\\n            return;\\r\\n        }\\r\\n        com.oplus.melody.common.util.y.a aVar2 = Q8.a.f5077a;\\r\\n        if (com.oplus.melody.common.util.y.l()) {\\r\\n            Q8.a.a(\\\"NotificationCommandManager\\\", \\\"onReceivePacket key=0x\\\" + Integer.toHexString(aVar.a()));\\r\\n        }\\r\\n        int i10 = aVar.f33771a;\\r\\n        byte[] bArr = aVar.f33774d;\\r\\n        if (i10 == 516) {\\r\\n            if (bArr.length == 0) {\\r\\n                Q8.a.f(\\\"NotificationCommandManager\\\", \\\"The length of data is 0 when receive notification event\\\");\\r\\n                return;\\r\\n            } else {\\r\\n                b(str, 0, bArr, aVar);\\r\\n                return;\\r\\n            }\\r\\n        }\\r\\n        if (i10 == 33285) {\\r\\n            Q8.a.n(\\\"NotificationCommandManager\\\", \\\"onReceivePacket.CMD_REGISTER_NOTIFICATION_MULTI_RSP ok, init cost time: \\\" + (System.currentTimeMillis() - this.f22228f), str);\\r\\n            this.f22228f = System.currentTimeMillis();\\r\\n            DeviceInfo deviceInfoF = DeviceInfoManager.a.f22177a.f(str);\\r\\n            if (deviceInfoF == null || !n8.b.j(str)) {\\r\\n                return;\\r\\n            }\\r\\n            deviceInfoF.setInitCmdCompleted(true);\\r\\n            this.f22223a.obtainMessage(76, str).sendToTarget();\\r\\n            return;\\r\\n        }\\r\\n        switch (i10) {\\r\\n            case 33280:\\r\\n                Q8.a.n(\\\"NotificationCommandManager\\\", \\\"onReceivePacket.CMD_GET_NOTIFICATION_CAPABILITY_RSP\\\", str);\\r\\n                int iL = e.l(bArr);\\r\\n                ConcurrentHashMap<String, Set<Integer>> concurrentHashMap = this.f22227e;\\r\\n                if (iL != 0) {\\r\\n                    eb.J.b(iL, \\\"handleReceiveNotificationCapabilities error. status = \\\", \\\"NotificationCommandManager\\\");\\r\\n                } else if (bArr.length <= 1) {\\r\\n                    Q8.a.f(\\\"NotificationCommandManager\\\", \\\"handleReceiveNotificationCapabilities error, the length of data is less than 1\\\");\\r\\n                } else {\\r\\n                    int i11 = bArr[1] & 255;\\r\\n                    if (bArr.length < 2 + i11) {\\r\\n                        Q8.a.f(\\\"NotificationCommandManager\\\", \\\"handleReceiveNotificationCapabilities error, the length of data is less than \\\");\\r\\n                    } else {\\r\\n                        androidx.collection.b bVar = new androidx.collection.b(i11);\\r\\n                        for (int i12 = 0; i12 < i11; i12++) {\\r\\n                            bVar.add(Integer.valueOf(bArr[i12 + 2]));\\r\\n                        }\\r\\n                        concurrentHashMap.put(str, bVar);\\r\\n                        com.oplus.melody.common.util.y.a aVar3 = Q8.a.f5077a;\\r\\n                        if (com.oplus.melody.common.util.y.l()) {\\r\\n                            Q8.a.a(\\\"NotificationCommandManager\\\", \\\"handleReceiveNotificationCapabilities: capability=\\\" + e.a(bVar) + \\\", mac=\\\" + com.oplus.melody.common.util.y.r(str));\\r\\n                        }\\r\\n                    }\\r\\n                }\\r\\n                Set<Integer> set = concurrentHashMap.get(str);\\r\\n                if (set == null) {\\r\\n                    Q8.a.d(\\\"NotificationCommandManager\\\", new F8.d(12), str);\\r\\n                } else {\\r\\n                    Integer.toHexString(i10);\\r\\n                    set.toString();\\r\\n                    s8.c cVar = this.f22226d;\\r\\n                    boolean zC = cVar.c(517, str);\\r\\n                    HeadsetCoreService headsetCoreService = this.f22224b;\\r\\n                    w8.b bVar2 = this.f22225c;\\r\\n                    if (!zC) {\\r\\n                        Iterator<Integer> it = set.iterator();\\r\\n                        while (it.hasNext()) {\\r\\n                            headsetCoreService.z0(str, bVar2.a(str, 513, new byte[]{(byte) it.next().intValue()}));\\r\\n                        }\\r\\n                    } else if (!cVar.c(517, str)) {\\r\\n                        Q8.a.d(\\\"NotificationCommandManager\\\", new G8.a(6), str);\\r\\n                    } else if (set.isEmpty()) {\\r\\n                        Q8.a.g(\\\"NotificationCommandManager\\\", \\\"registerMultiNotification support event set is null, cmd: 0x\\\" + Integer.toHexString(517), str);\\r\\n                    } else {\\r\\n                        int size = set.size();\\r\\n                        ByteBuffer byteBufferAllocate = ByteBuffer.allocate(1 + size);\\r\\n                        byteBufferAllocate.put((byte) size);\\r\\n                        for (Integer num : set) {\\r\\n                            if (num != null) {\\r\\n                                byteBufferAllocate.put((byte) num.intValue());\\r\\n                            }\\r\\n                        }\\r\\n                        Integer.toHexString(517);\\r\\n                        Wa.a.g(byteBufferAllocate.array());\\r\\n                        headsetCoreService.z0(str, bVar2.a(str, 517, byteBufferAllocate.array()));\\r\\n                    }\\r\\n                    if (cVar.c(265, str)) {\\r\\n                        headsetCoreService.z0(str, bVar2.a(str, 265, w8.b.f33776b));\\r\\n                    } else {\\r\\n                        Q8.a.d(\\\"NotificationCommandManager\\\", new B8.a(13), str);\\r\\n                    }\\r\\n                }\\r\\n                break;\\r\\n            case 33281:\\r\\n                int iL2 = e.l(bArr);\\r\\n                if (bArr != null && 1 < bArr.length) {\\r\\n                    b10 = bArr[1];\\r\\n                }\\r\\n                if (iL2 != 0) {\\r\\n                    Q8.a.g(\\\"NotificationCommandManager\\\", g0.c.a(\\\"Failed when receive register notification event response status=\\\", iL2, b10, \\\" event=\\\"), str);\\r\\n                } else if (com.oplus.melody.common.util.y.l()) {\\r\\n                    StringBuilder sbK = A0.k(b10, \\\"handleReceiveRegisterEventRsp SUCCESS event=\\\", \\\", mac=\\\");\\r\\n                    sbK.append(com.oplus.melody.common.util.y.r(str));\\r\\n                    Q8.a.a(\\\"NotificationCommandManager\\\", sbK.toString());\\r\\n                }\\r\\n                break;\\r\\n            case 33282:\\r\\n                int iL3 = e.l(bArr);\\r\\n                if (iL3 != 0) {\\r\\n                    eb.J.b(iL3, \\\"Failed when receive registered notification. \\\", \\\"NotificationCommandManager\\\");\\r\\n                } else {\\r\\n                    b(str, 1, bArr, aVar);\\r\\n                }\\r\\n                break;\\r\\n            case 33283:\\r\\n                int iL4 = e.l(bArr);\\r\\n                if (iL4 != 0) {\\r\\n                    eb.J.b(iL4, \\\"Failed when receive cancel registered notification status = \\\", \\\"NotificationCommandManager\\\");\\r\\n                } else if (bArr.length <= 1) {\\r\\n                    Q8.a.f(\\\"NotificationCommandManager\\\", \\\"Error, the length of canceling registered notification is not valid\\\");\\r\\n                } else {\\r\\n                    Q8.a.c(\\\"NotificationCommandManager\\\", new r0(bArr[1], 26));\\r\\n                }\\r\\n                break;\\r\\n            default:\\r\\n                Q8.a.f(\\\"NotificationCommandManager\\\", \\\"Error, Receive unsupported packet \\\" + Integer.toHexString(i10));\\r\\n                break;\\r\\n        }\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"com.oplus.melody.btsdk.protocol.commands.i.c\",\"overload_index\":0,\"method_name\":\"c\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/String;Lw8/a;)V\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.btsdk.protocol.commands.i",
+    "method": {
+      "name": "c",
+      "reported_signature": "c(java.lang.String, w8.a): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;Lw8/a;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void c(String str, w8.a aVar) {\r\n        byte b10 = 0;\r\n        if (str == null) {\r\n            return;\r\n        }\r\n        com.oplus.melody.common.util.y.a aVar2 = Q8.a.f5077a;\r\n        if (com.oplus.melody.common.util.y.l()) {\r\n            Q8.a.a(\"NotificationCommandManager\", \"onReceivePacket key=0x\" + Integer.toHexString(aVar.a()));\r\n        }\r\n        int i10 = aVar.f33771a;\r\n        byte[] bArr = aVar.f33774d;\r\n        if (i10 == 516) {\r\n            if (bArr.length == 0) {\r\n                Q8.a.f(\"NotificationCommandManager\", \"The length of data is 0 when receive notification event\");\r\n                return;\r\n            } else {\r\n                b(str, 0, bArr, aVar);\r\n                return;\r\n            }\r\n        }\r\n        if (i10 == 33285) {\r\n            Q8.a.n(\"NotificationCommandManager\", \"onReceivePacket.CMD_REGISTER_NOTIFICATION_MULTI_RSP ok, init cost time: \" + (System.currentTimeMillis() - this.f22228f), str);\r\n            this.f22228f = System.currentTimeMillis();\r\n            DeviceInfo deviceInfoF = DeviceInfoManager.a.f22177a.f(str);\r\n            if (deviceInfoF == null || !n8.b.j(str)) {\r\n                return;\r\n            }\r\n            deviceInfoF.setInitCmdCompleted(true);\r\n            this.f22223a.obtainMessage(76, str).sendToTarget();\r\n            return;\r\n        }\r\n        switch (i10) {\r\n            case 33280:\r\n                Q8.a.n(\"NotificationCommandManager\", \"onReceivePacket.CMD_GET_NOTIFICATION_CAPABILITY_RSP\", str);\r\n                int iL = e.l(bArr);\r\n                ConcurrentHashMap<String, Set<Integer>> concurrentHashMap = this.f22227e;\r\n                if (iL != 0) {\r\n                    eb.J.b(iL, \"handleReceiveNotificationCapabilities error. status = \", \"NotificationCommandManager\");\r\n                } else if (bArr.length <= 1) {\r\n                    Q8.a.f(\"NotificationCommandManager\", \"handleReceiveNotificationCapabilities error, the length of data is less than 1\");\r\n                } else {\r\n                    int i11 = bArr[1] & 255;\r\n                    if (bArr.length < 2 + i11) {\r\n                        Q8.a.f(\"NotificationCommandManager\", \"handleReceiveNotificationCapabilities error, the length of data is less than \");\r\n                    } else {\r\n                        androidx.collection.b bVar = new androidx.collection.b(i11);\r\n                        for (int i12 = 0; i12 < i11; i12++) {\r\n                            bVar.add(Integer.valueOf(bArr[i12 + 2]));\r\n                        }\r\n                        concurrentHashMap.put(str, bVar);\r\n                        com.oplus.melody.common.util.y.a aVar3 = Q8.a.f5077a;\r\n                        if (com.oplus.melody.common.util.y.l()) {\r\n                            Q8.a.a(\"NotificationCommandManager\", \"handleReceiveNotificationCapabilities: capability=\" + e.a(bVar) + \", mac=\" + com.oplus.melody.common.util.y.r(str));\r\n                        }\r\n                    }\r\n                }\r\n                Set<Integer> set = concurrentHashMap.get(str);\r\n                if (set == null) {\r\n                    Q8.a.d(\"NotificationCommandManager\", new F8.d(12), str);\r\n                } else {\r\n                    Integer.toHexString(i10);\r\n                    set.toString();\r\n                    s8.c cVar = this.f22226d;\r\n                    boolean zC = cVar.c(517, str);\r\n                    HeadsetCoreService headsetCoreService = this.f22224b;\r\n                    w8.b bVar2 = this.f22225c;\r\n                    if (!zC) {\r\n                        Iterator<Integer> it = set.iterator();\r\n                        while (it.hasNext()) {\r\n                            headsetCoreService.z0(str, bVar2.a(str, 513, new byte[]{(byte) it.next().intValue()}));\r\n                        }\r\n                    } else if (!cVar.c(517, str)) {\r\n                        Q8.a.d(\"NotificationCommandManager\", new G8.a(6), str);\r\n                    } else if (set.isEmpty()) {\r\n                        Q8.a.g(\"NotificationCommandManager\", \"registerMultiNotification support event set is null, cmd: 0x\" + Integer.toHexString(517), str);\r\n                    } else {\r\n                        int size = set.size();\r\n                        ByteBuffer byteBufferAllocate = ByteBuffer.allocate(1 + size);\r\n                        byteBufferAllocate.put((byte) size);\r\n                        for (Integer num : set) {\r\n                            if (num != null) {\r\n                                byteBufferAllocate.put((byte) num.intValue());\r\n                            }\r\n                        }\r\n                        Integer.toHexString(517);\r\n                        Wa.a.g(byteBufferAllocate.array());\r\n                        headsetCoreService.z0(str, bVar2.a(str, 517, byteBufferAllocate.array()));\r\n                    }\r\n                    if (cVar.c(265, str)) {\r\n                        headsetCoreService.z0(str, bVar2.a(str, 265, w8.b.f33776b));\r\n                    } else {\r\n                        Q8.a.d(\"NotificationCommandManager\", new B8.a(13), str);\r\n                    }\r\n                }\r\n                break;\r\n            case 33281:\r\n                int iL2 = e.l(bArr);\r\n                if (bArr != null && 1 < bArr.length) {\r\n                    b10 = bArr[1];\r\n                }\r\n                if (iL2 != 0) {\r\n                    Q8.a.g(\"NotificationCommandManager\", g0.c.a(\"Failed when receive register notification event response status=\", iL2, b10, \" event=\"), str);\r\n                } else if (com.oplus.melody.common.util.y.l()) {\r\n                    StringBuilder sbK = A0.k(b10, \"handleReceiveRegisterEventRsp SUCCESS event=\", \", mac=\");\r\n                    sbK.append(com.oplus.melody.common.util.y.r(str));\r\n                    Q8.a.a(\"NotificationCommandManager\", sbK.toString());\r\n                }\r\n                break;\r\n            case 33282:\r\n                int iL3 = e.l(bArr);\r\n                if (iL3 != 0) {\r\n                    eb.J.b(iL3, \"Failed when receive registered notification. \", \"NotificationCommandManager\");\r\n                } else {\r\n                    b(str, 1, bArr, aVar);\r\n                }\r\n                break;\r\n            case 33283:\r\n                int iL4 = e.l(bArr);\r\n                if (iL4 != 0) {\r\n                    eb.J.b(iL4, \"Failed when receive cancel registered notification status = \", \"NotificationCommandManager\");\r\n                } else if (bArr.length <= 1) {\r\n                    Q8.a.f(\"NotificationCommandManager\", \"Error, the length of canceling registered notification is not valid\");\r\n                } else {\r\n                    Q8.a.c(\"NotificationCommandManager\", new r0(bArr[1], 26));\r\n                }\r\n                break;\r\n            default:\r\n                Q8.a.f(\"NotificationCommandManager\", \"Error, Receive unsupported packet \" + Integer.toHexString(i10));\r\n                break;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

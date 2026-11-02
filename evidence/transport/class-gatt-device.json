@@ -1,0 +1,246 @@
+{
+  "evidence_id": "ev_cebe7083c49ba69753dc14e4617c35089db07f6133371b7e744d6c05aac8a1a5",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "F8.m"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "<local>/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"<local>/target.apk\",\"class_count\":9809,\"raw_class_count\":9809,\"resource_count\":3008,\"load_duration_ms\":5429,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "F8.m",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"F8.m\",\"method_count\":11,\"full_name\":\"F8.m\",\"field_count\":10,\"name\":\"m\",\"inner_class_count\":1,\"inner_classes\":[\"F8.m.a\"],\"methods\":[{\"def_pos\":0,\"signature\":\"<clinit>(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"<clinit>\"},{\"def_pos\":0,\"signature\":\"<init>(android.content.Context, com.oplus.melody.btsdk.api.data.DeviceInfo): void\",\"dex_descriptor\":\"(Landroid/content/Context;Lcom/oplus/melody/btsdk/api/data/DeviceInfo;)V\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"b(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"c(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"c\"},{\"def_pos\":0,\"signature\":\"d(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"d\"},{\"def_pos\":0,\"signature\":\"f(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"f\"},{\"def_pos\":0,\"signature\":\"g(): boolean\",\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"g\"},{\"def_pos\":0,\"signature\":\"i(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"i\"},{\"def_pos\":0,\"signature\":\"k(byte[], M8.b$a): int\",\"dex_descriptor\":\"([BLM8/b$a;)I\",\"is_constructor\":false,\"name\":\"k\"},{\"def_pos\":0,\"signature\":\"l(F8.m): boolean\",\"dex_descriptor\":\"(LF8/m;)Z\",\"is_constructor\":false,\"name\":\"l\"},{\"def_pos\":0,\"signature\":\"toString(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"toString\"}],\"fields\":[{\"type\":\"java.util.UUID\",\"name\":\"H\",\"def_pos\":0},{\"type\":\"java.util.UUID\",\"name\":\"f1898F\",\"def_pos\":0},{\"type\":\"java.util.UUID\",\"name\":\"f1899G\",\"def_pos\":0},{\"type\":\"java.util.UUID\",\"name\":\"f1900I\",\"def_pos\":0},{\"type\":\"F8.j\",\"name\":\"f1901A\",\"def_pos\":0},{\"type\":\"F8.j\",\"name\":\"f1902B\",\"def_pos\":0},{\"type\":\"android.bluetooth.BluetoothDevice\",\"name\":\"f1903C\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f1904D\",\"def_pos\":0},{\"type\":\"F8.m$a\",\"name\":\"f1905E\",\"def_pos\":0},{\"type\":\"java.util.UUID\",\"name\":\"f1906z\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "F8.m",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, com.oplus.melody.btsdk.api.data.DeviceInfo): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(Landroid/content/Context;Lcom/oplus/melody/btsdk/api/data/DeviceInfo;)V"
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(byte[], M8.b$a): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "([BLM8/b$a;)I"
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(F8.m): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LF8/m;)Z"
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      }
+    ],
+    "fields": [
+      {
+        "name": "H",
+        "reported_type": "java.util.UUID",
+        "dex_static_value": null
+      },
+      {
+        "name": "f1898F",
+        "reported_type": "java.util.UUID",
+        "dex_static_value": null
+      },
+      {
+        "name": "f1899G",
+        "reported_type": "java.util.UUID",
+        "dex_static_value": null
+      },
+      {
+        "name": "f1900I",
+        "reported_type": "java.util.UUID",
+        "dex_static_value": null
+      },
+      {
+        "name": "f1901A",
+        "reported_type": "F8.j",
+        "dex_static_value": null
+      },
+      {
+        "name": "f1902B",
+        "reported_type": "F8.j",
+        "dex_static_value": null
+      },
+      {
+        "name": "f1903C",
+        "reported_type": "android.bluetooth.BluetoothDevice",
+        "dex_static_value": null
+      },
+      {
+        "name": "f1904D",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "f1905E",
+        "reported_type": "F8.m$a",
+        "dex_static_value": null
+      },
+      {
+        "name": "f1906z",
+        "reported_type": "java.util.UUID",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": [
+      "F8.m.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

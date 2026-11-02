@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_c4ead9dfc756eb1242c4d108b98a37b6b2589956b2aa0a3eaf946f8fbfac1374",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "Ab.Z",
+    "method_name": "v",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8376025088,\"java_version\":\"21.0.12\",\"available_processors\":16,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "Ab.Z"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":12,\"name\":\"Z\",\"field_count\":54,\"full_name\":\"Ab.Z\",\"method_count\":29,\"raw_name\":\"Ab.Z\",\"fields\":[{\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\",\"def_pos\":0,\"name\":\"H\"},{\"type\":\"int[]\",\"def_pos\":0,\"name\":\"f258D0\"},{\"type\":\"Ab.Z$i\",\"def_pos\":0,\"name\":\"f259A0\"},{\"type\":\"Ab.Z$j\",\"def_pos\":0,\"name\":\"f260B0\"},{\"type\":\"com.oplus.melody.ui.widget.MelodyCompatToolbar\",\"def_pos\":0,\"name\":\"f261C\"},{\"type\":\"Ab.Z$k\",\"def_pos\":0,\"name\":\"f262C0\"},{\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\",\"def_pos\":0,\"name\":\"f263D\"},{\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\",\"def_pos\":0,\"name\":\"f264E\"},{\"type\":\"com.oplus.melody.ui.component.detail.equalizer.AddCustomEqPreference\",\"def_pos\":0,\"name\":\"f265F\"},{\"type\":\"com.coui.appcompat.preference.COUISwitchPreference\",\"def_pos\":0,\"name\":\"f266G\"},{\"type\":\"com.coui.appcompat.preference.COUIPreferenceCategory\",\"def_pos\":0,\"name\":\"f267I\"},{\"type\":\"com.coui.appcompat.preference.COUISwitchPreference\",\"def_pos\":0,\"name\":\"f268J\"},{\"type\":\"com.oplus.melody.ui.widget.MelodyBassEngineSeekBarPreference\",\"def_pos\":0,\"name\":\"f269K\"},{\"type\":\"android.view.View\",\"def_pos\":0,\"name\":\"f270L\"},{\"type\":\"android.view.MenuItem\",\"def_pos\":0,\"name\":\"f271M\"},{\"type\":\"android.view.MenuItem\",\"def_pos\":0,\"name\":\"f272N\"},{\"type\":\"android.view.MenuItem\",\"def_pos\":0,\"name\":\"f273O\"},{\"type\":\"com.coui.appcompat.panel.COUIBottomSheetDialog\",\"def_pos\":0,\"name\":\"f274P\"},{\"type\":\"androidx.appcompat.app.g\",\"def_pos\":0,\"name\":\"f275Q\"},{\"type\":\"com.oplus.melody.ui.widget.MelodyCompatNavigationView\",\"def_pos\":0,\"name\":\"f276R\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f277S\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f278T\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f279U\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f280V\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f281W\"},{\"type\":\"java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$EqualizerMode>\",\"def_pos\":0,\"name\":\"f282X\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f283Y\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f284Z\"},{\"type\":\"ha.k<java.lang.Integer>\",\"def_pos\":0,\"name\":\"f285a0\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f286b0\"},{\"type\":\"ta.b\",\"def_pos\":0,\"name\":\"f287c0\"},{\"type\":\"java.util.List<ta.b>\",\"def_pos\":0,\"name\":\"f288d0\"},{\"type\":\"java.util.ArrayList\",\"def_pos\":0,\"name\":\"f289e0\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f290f0\"},{\"type\":\"java.util.concurrent.CompletableFuture<com.oplus.melody.model.repository.earphone.U>\",\"def_pos\":0,\"name\":\"f291g0\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f292h0\"},{\"type\":\"Ab.Z$l\",\"def_pos\":0,\"name\":\"f293i0\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f294j0\"},{\"type\":\"com.oplus.melody.ui.component.detail.equalizer.EqualizerViewModel\",\"def_pos\":0,\"name\":\"f295k0\"},{\"type\":\"com.oplus.melody.ui.component.detail.equalizer.GameEqualizerViewModel\",\"def_pos\":0,\"name\":\"f296l0\"},{\"type\":\"com.oplus.melody.ui.component.detail.gamemode.GameSetViewModel\",\"def_pos\":0,\"name\":\"f297m0\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f298n0\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f299o0\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f300p0\"},{\"type\":\"androidx.appcompat.app.g\",\"def_pos\":0,\"name\":\"f301q0\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f302r0\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f303s0\"},{\"type\":\"Ab.G\",\"def_pos\":0,\"name\":\"f304t0\"},{\"type\":\"int[]\",\"def_pos\":0,\"name\":\"f305u0\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f306v0\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f307w0\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f308x0\"},{\"type\":\"Ab.Z$f\",\"def_pos\":0,\"name\":\"f309y0\"},{\"type\":\"A9.m\",\"def_pos\":0,\"name\":\"f310z0\"}],\"methods\":[{\"signature\":\"<clinit>(): void\",\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"<init>(): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"signature\":\"A(): java.lang.String\",\"def_pos\":0,\"name\":\"A\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"B(): java.util.List<com.oplus.melody.common.data.WhitelistConfigDTO$EqualizerMode>\",\"def_pos\":0,\"name\":\"B\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\"},{\"signature\":\"C(java.lang.String): androidx.fragment.app.f\",\"def_pos\":0,\"name\":\"C\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Landroidx/fragment/app/f;\"},{\"signature\":\"D(): int\",\"def_pos\":0,\"name\":\"D\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"E(): boolean\",\"def_pos\":0,\"name\":\"E\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"F(): boolean\",\"def_pos\":0,\"name\":\"F\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"G(boolean): void\",\"def_pos\":0,\"name\":\"G\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\"},{\"signature\":\"H(java.lang.String, boolean): void\",\"def_pos\":0,\"name\":\"H\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Z)V\"},{\"signature\":\"I(): void\",\"def_pos\":0,\"name\":\"I\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"J(): void\",\"def_pos\":0,\"name\":\"J\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"K(): void\",\"def_pos\":0,\"name\":\"K\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"L(): void\",\"def_pos\":0,\"name\":\"L\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"M(com.oplus.melody.ui.component.detail.equalizer.CustomEqPreference, java.lang.String, int): void\",\"def_pos\":0,\"name\":\"M\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/oplus/melody/ui/component/detail/equalizer/CustomEqPreference;Ljava/lang/String;I)V\"},{\"signature\":\"O(): void\",\"def_pos\":0,\"name\":\"O\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"h(androidx.preference.Preference, java.lang.Object): boolean\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/Preference;Ljava/lang/Object;)Z\"},{\"signature\":\"m(androidx.preference.Preference): boolean\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/Preference;)Z\"},{\"signature\":\"onCreate(android.os.Bundle): void\",\"def_pos\":0,\"name\":\"onCreate\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/os/Bundle;)V\"},{\"signature\":\"onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater): void\",\"def_pos\":0,\"name\":\"onCreateOptionsMenu\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/view/Menu;Landroid/view/MenuInflater;)V\"},{\"signature\":\"onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle): android.view.View\",\"def_pos\":0,\"name\":\"onCreateView\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;\"},{\"signature\":\"onDestroy(): void\",\"def_pos\":0,\"name\":\"onDestroy\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"onViewCreated(android.view.View, android.os.Bundle): void\",\"def_pos\":0,\"name\":\"onViewCreated\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/view/View;Landroid/os/Bundle;)V\"},{\"signature\":\"r(): void\",\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"v(Ab.Z, com.oplus.melody.ui.component.detail.equalizer.CustomEqPreference): void\",\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false,\"dex_descriptor\":\"(LAb/Z;Lcom/oplus/melody/ui/component/detail/equalizer/CustomEqPreference;)V\"},{\"signature\":\"w(Ab.Z, java.lang.String): void\",\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false,\"dex_descriptor\":\"(LAb/Z;Ljava/lang/String;)V\"},{\"signature\":\"x(androidx.appcompat.app.g, ta.b): void\",\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/appcompat/app/g;Lta/b;)V\"},{\"signature\":\"y(androidx.preference.Preference): void\",\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroidx/preference/Preference;)V\"},{\"signature\":\"z(): void\",\"def_pos\":0,\"name\":\"z\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"}],\"inner_classes\":[\"Ab.Z.a\",\"Ab.Z.b\",\"Ab.Z.c\",\"Ab.Z.d\",\"Ab.Z.e\",\"Ab.Z.f\",\"Ab.Z.g\",\"Ab.Z.h\",\"Ab.Z.i\",\"Ab.Z.j\",\"Ab.Z.k\",\"Ab.Z.l\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "Ab.Z",
+          "method_name": "v",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"Ab.Z.v\",\"overload_index\":0,\"method_name\":\"v\",\"overload_count\":1,\"dex_descriptor\":\"(LAb/Z;Lcom/oplus/melody/ui/component/detail/equalizer/CustomEqPreference;)V\",\"class_name\":\"Ab.Z\",\"mode\":\"java\",\"body\":\"    public static void v(Z z10, CustomEqPreference customEqPreference) {\\r\\n        if (customEqPreference.isChecked()) {\\r\\n            return;\\r\\n        }\\r\\n        customEqPreference.setChecked(true);\\r\\n        for (int i10 = 0; i10 < z10.f263D.f12886c.size(); i10++) {\\r\\n            Preference preferenceH = z10.f263D.h(i10);\\r\\n            if (customEqPreference != preferenceH) {\\r\\n                ((CheckBoxPreference) preferenceH).setChecked(false);\\r\\n            }\\r\\n        }\\r\\n        for (int i11 = 0; i11 < z10.f264E.f12886c.size(); i11++) {\\r\\n            Preference preferenceH2 = z10.f264E.h(i11);\\r\\n            if ((preferenceH2 instanceof CheckBoxPreference) && customEqPreference != preferenceH2) {\\r\\n                ((CheckBoxPreference) preferenceH2).setChecked(false);\\r\\n            }\\r\\n        }\\r\\n        ta.b bVar = customEqPreference.f25469s;\\r\\n        if (bVar != null) {\\r\\n            z10.f292h0 = bVar.getEqId();\\r\\n            ta.c.e().i(2, z10.f278T, bVar);\\r\\n        }\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "Ab.Z",
+    "method": {
+      "name": "v",
+      "reported_signature": "v(Ab.Z, com.oplus.melody.ui.component.detail.equalizer.CustomEqPreference): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(LAb/Z;Lcom/oplus/melody/ui/component/detail/equalizer/CustomEqPreference;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static void v(Z z10, CustomEqPreference customEqPreference) {\r\n        if (customEqPreference.isChecked()) {\r\n            return;\r\n        }\r\n        customEqPreference.setChecked(true);\r\n        for (int i10 = 0; i10 < z10.f263D.f12886c.size(); i10++) {\r\n            Preference preferenceH = z10.f263D.h(i10);\r\n            if (customEqPreference != preferenceH) {\r\n                ((CheckBoxPreference) preferenceH).setChecked(false);\r\n            }\r\n        }\r\n        for (int i11 = 0; i11 < z10.f264E.f12886c.size(); i11++) {\r\n            Preference preferenceH2 = z10.f264E.h(i11);\r\n            if ((preferenceH2 instanceof CheckBoxPreference) && customEqPreference != preferenceH2) {\r\n                ((CheckBoxPreference) preferenceH2).setChecked(false);\r\n            }\r\n        }\r\n        ta.b bVar = customEqPreference.f25469s;\r\n        if (bVar != null) {\r\n            z10.f292h0 = bVar.getEqId();\r\n            ta.c.e().i(2, z10.f278T, bVar);\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

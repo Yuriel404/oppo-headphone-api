@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_1f51c5d6d6c793601260ec35b5818de0eddc3b696dac0ffd3217658f956ee6ff",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "F8.j",
+    "method_name": "n"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "F8.j"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":16,\"full_name\":\"F8.j\",\"field_count\":18,\"name\":\"j\",\"inner_class_count\":1,\"inner_classes\":[\"F8.j.a\"],\"methods\":[{\"def_pos\":0,\"signature\":\"<init>(android.content.Context, android.bluetooth.BluetoothDevice, F8.m$a): void\",\"dex_descriptor\":\"(Landroid/content/Context;Landroid/bluetooth/BluetoothDevice;LF8/m$a;)V\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"a(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(int): void\",\"dex_descriptor\":\"(I)V\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"c(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"c\"},{\"def_pos\":0,\"signature\":\"d(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"d\"},{\"def_pos\":0,\"signature\":\"e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"e\"},{\"def_pos\":0,\"signature\":\"f(java.util.UUID, java.util.UUID): android.bluetooth.BluetoothGattCharacteristic\",\"dex_descriptor\":\"(Ljava/util/UUID;Ljava/util/UUID;)Landroid/bluetooth/BluetoothGattCharacteristic;\",\"is_constructor\":false,\"name\":\"f\"},{\"def_pos\":0,\"signature\":\"g(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"g\"},{\"def_pos\":0,\"signature\":\"h(): boolean\",\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"h\"},{\"def_pos\":0,\"signature\":\"i(): boolean\",\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"i\"},{\"def_pos\":0,\"signature\":\"j(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"j\"},{\"def_pos\":0,\"signature\":\"k(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"k\"},{\"def_pos\":0,\"signature\":\"l(java.util.UUID, java.util.UUID): void\",\"dex_descriptor\":\"(Ljava/util/UUID;Ljava/util/UUID;)V\",\"is_constructor\":false,\"name\":\"l\"},{\"def_pos\":0,\"signature\":\"m(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"m\"},{\"def_pos\":0,\"signature\":\"n(java.util.UUID, java.util.UUID, byte[], M8.b$a): void\",\"dex_descriptor\":\"(Ljava/util/UUID;Ljava/util/UUID;[BLM8/b$a;)V\",\"is_constructor\":false,\"name\":\"n\"},{\"def_pos\":0,\"signature\":\"toString(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"toString\"}],\"fields\":[{\"type\":\"android.content.Context\",\"name\":\"f1876a\",\"def_pos\":0},{\"type\":\"android.bluetooth.BluetoothDevice\",\"name\":\"f1877b\",\"def_pos\":0},{\"type\":\"F8.m$a\",\"name\":\"f1878c\",\"def_pos\":0},{\"type\":\"java.util.concurrent.LinkedBlockingQueue\",\"name\":\"f1879d\",\"def_pos\":0},{\"type\":\"android.os.Handler\",\"name\":\"f1880e\",\"def_pos\":0},{\"type\":\"Ab.n0\",\"name\":\"f1881f\",\"def_pos\":0},{\"type\":\"Ab.k\",\"name\":\"f1882g\",\"def_pos\":0},{\"type\":\"Ab.E\",\"name\":\"f1883i\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f1884j\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f1885k\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f1886l\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f1887m\",\"def_pos\":0},{\"type\":\"long\",\"name\":\"f1888n\",\"def_pos\":0},{\"type\":\"F8.a\",\"name\":\"f1889o\",\"def_pos\":0},{\"type\":\"android.bluetooth.BluetoothGatt\",\"name\":\"f1890p\",\"def_pos\":0},{\"type\":\"com.oplus.melody.btsdk.spp.internal.connect.ble.GattConnectionAttempt\",\"name\":\"f1891q\",\"def_pos\":0},{\"type\":\"F8.j$a\",\"name\":\"f1892r\",\"def_pos\":0},{\"type\":\"Ab.l0\",\"name\":\"h\",\"def_pos\":0}],\"raw_name\":\"F8.j\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "F8.j",
+          "method_name": "n",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"F8.j.n\",\"fell_back\":false,\"markers\":[],\"body\":\"    public final void n(UUID uuid, UUID uuid2, byte[] bArr, M8.b.a aVar) {\\r\\n        y.a aVar2 = Q8.a.f5077a;\\r\\n        if (y.l()) {\\r\\n            Q8.a.a(\\\"m_bt_le.GattConnection\\\", \\\"write, this = \\\" + this + \\\", data: \\\" + Wa.a.g(bArr));\\r\\n        }\\r\\n        BluetoothGattCharacteristic bluetoothGattCharacteristicF = f(uuid, uuid2);\\r\\n        if (bluetoothGattCharacteristicF == null) {\\r\\n            Q8.a.m(\\\"m_bt_le.GattConnection\\\", \\\"Write failed!\\\");\\r\\n            if (aVar != null) {\\r\\n                new RuntimeException(\\\"Write failed. Didn't find characteristic!\\\");\\r\\n                aVar.b();\\r\\n                return;\\r\\n            }\\r\\n            return;\\r\\n        }\\r\\n        this.f1888n = System.currentTimeMillis();\\r\\n        n nVar = new n(bluetoothGattCharacteristicF, bArr, aVar);\\r\\n        synchronized (this) {\\r\\n            try {\\r\\n                if (y.l()) {\\r\\n                    Q8.a.a(\\\"m_bt_le.GattConnection\\\", \\\"runCommand-------->, forceDisconnect = \\\" + this.f1884j + \\\", isNotificationOK: \\\" + this.f1885k + \\\", \\\" + this);\\r\\n                }\\r\\n                if (this.f1884j) {\\r\\n                    Q8.a.a(\\\"m_bt_le.GattConnection\\\", \\\"Rejecting new command since we're disconnecting\\\");\\r\\n                    nVar.b(new RuntimeException(\\\"Disconnecting\\\"));\\r\\n                } else if (this.f1889o == null && this.f1885k) {\\r\\n                    if (y.l()) {\\r\\n                        Q8.a.a(\\\"m_bt_le.GattConnection\\\", \\\"Starting command directly: , mCommandList.size: \\\" + this.f1879d.size() + \\\", cmd: \\\" + nVar);\\r\\n                    }\\r\\n                    Handler handler = this.f1880e;\\r\\n                    n0 n0Var = this.f1881f;\\r\\n                    handler.removeCallbacks(n0Var);\\r\\n                    handler.postDelayed(n0Var, 3000L);\\r\\n                    this.f1889o = nVar;\\r\\n                    nVar.a(this.f1890p);\\r\\n                } else {\\r\\n                    if (y.l()) {\\r\\n                        Q8.a.a(\\\"m_bt_le.GattConnection\\\", \\\"Queuing command, list.size: \\\" + this.f1879d.size() + \\\", cmd: \\\" + nVar + \\\", exeCmd: \\\" + this.f1889o);\\r\\n                    }\\r\\n                    this.f1879d.offer(nVar);\\r\\n                }\\r\\n            } catch (Throwable th) {\\r\\n                throw th;\\r\\n            }\\r\\n        }\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"F8.j\",\"dex_descriptor\":\"(Ljava/util/UUID;Ljava/util/UUID;[BLM8/b$a;)V\",\"overload_count\":1,\"method_name\":\"n\",\"overload_index\":0}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "F8.j",
+    "method": {
+      "name": "n",
+      "reported_signature": "n(java.util.UUID, java.util.UUID, byte[], M8.b$a): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/util/UUID;Ljava/util/UUID;[BLM8/b$a;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void n(UUID uuid, UUID uuid2, byte[] bArr, M8.b.a aVar) {\r\n        y.a aVar2 = Q8.a.f5077a;\r\n        if (y.l()) {\r\n            Q8.a.a(\"m_bt_le.GattConnection\", \"write, this = \" + this + \", data: \" + Wa.a.g(bArr));\r\n        }\r\n        BluetoothGattCharacteristic bluetoothGattCharacteristicF = f(uuid, uuid2);\r\n        if (bluetoothGattCharacteristicF == null) {\r\n            Q8.a.m(\"m_bt_le.GattConnection\", \"Write failed!\");\r\n            if (aVar != null) {\r\n                new RuntimeException(\"Write failed. Didn't find characteristic!\");\r\n                aVar.b();\r\n                return;\r\n            }\r\n            return;\r\n        }\r\n        this.f1888n = System.currentTimeMillis();\r\n        n nVar = new n(bluetoothGattCharacteristicF, bArr, aVar);\r\n        synchronized (this) {\r\n            try {\r\n                if (y.l()) {\r\n                    Q8.a.a(\"m_bt_le.GattConnection\", \"runCommand-------->, forceDisconnect = \" + this.f1884j + \", isNotificationOK: \" + this.f1885k + \", \" + this);\r\n                }\r\n                if (this.f1884j) {\r\n                    Q8.a.a(\"m_bt_le.GattConnection\", \"Rejecting new command since we're disconnecting\");\r\n                    nVar.b(new RuntimeException(\"Disconnecting\"));\r\n                } else if (this.f1889o == null && this.f1885k) {\r\n                    if (y.l()) {\r\n                        Q8.a.a(\"m_bt_le.GattConnection\", \"Starting command directly: , mCommandList.size: \" + this.f1879d.size() + \", cmd: \" + nVar);\r\n                    }\r\n                    Handler handler = this.f1880e;\r\n                    n0 n0Var = this.f1881f;\r\n                    handler.removeCallbacks(n0Var);\r\n                    handler.postDelayed(n0Var, 3000L);\r\n                    this.f1889o = nVar;\r\n                    nVar.a(this.f1890p);\r\n                } else {\r\n                    if (y.l()) {\r\n                        Q8.a.a(\"m_bt_le.GattConnection\", \"Queuing command, list.size: \" + this.f1879d.size() + \", cmd: \" + nVar + \", exeCmd: \" + this.f1889o);\r\n                    }\r\n                    this.f1879d.offer(nVar);\r\n                }\r\n            } catch (Throwable th) {\r\n                throw th;\r\n            }\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}
