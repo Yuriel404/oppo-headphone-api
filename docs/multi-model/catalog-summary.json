@@ -1,0 +1,50 @@
+{
+  "collections": {
+    "compatWhiteList": 85,
+    "whiteList": 0
+  },
+  "records": 85,
+  "unique_ids": 85,
+  "unique_names": 83,
+  "brands": {
+    "oppo": 53,
+    "OnePlus": 32
+  },
+  "types": {
+    "T1": 45,
+    "O1": 4,
+    "T2": 32,
+    "N": 4
+  },
+  "uuids": {
+    "0000079A-D102-11E1-9B23-00025B00A5A5": 66,
+    "00001107-D102-11E1-9B23-00025B00A5A5": 19
+  },
+  "support_spp_true": 85,
+  "hidden_records": 28,
+  "records_with_aliases": 14,
+  "aliases": 18,
+  "duplicate_names": {
+    "OnePlus Buds Z": [
+      "060814",
+      "068814"
+    ],
+    "OnePlus Buds": [
+      "060414",
+      "068414"
+    ]
+  },
+  "duplicate_ids": {},
+  "source_root_keys": [
+    "//from",
+    "//transferEncoding",
+    "compatCaseNumSite",
+    "txMusicCollectUrl",
+    "compatAppMarket",
+    "heyTranslationLanguage",
+    "compatWhiteList",
+    "versionCode",
+    "mail",
+    "whiteList"
+  ]
+}

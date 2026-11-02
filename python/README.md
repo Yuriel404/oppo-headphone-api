@@ -1,5 +1,14 @@
 # Enco Free4 reference SDK
 
+Version 0.2.0 adds an offline 85-record model catalog and raw battery/version
+queries. See [multi-model findings](../docs/multi-model/README.md). Catalog
+entries are not executable write profiles; `--profile` remains Free4-only.
+
+~~~powershell
+python -m enco_free4 models --query 'Enco X'
+python -m enco_free4 model-info 063C10
+~~~
+
 See ../配置流程与API方案.md and ../API参考.md for the Chinese workflow, protocol sources, hardware limits and API examples.
 
 Requires Python 3.11+. RFCOMM uses the standard library on Windows. The optional BLE transport uses Bleak and has not been hardware-validated.

@@ -1,7 +1,53 @@
-Repository preparation validation: 2026-11-02
-Command (from python/): python -m unittest discover -s tests -v
-Result: Ran 38 tests in 0.681s; OK; exit code 0
-Environment: Windows, local Python
-Scope: offline vectors and fake transports; no Bluetooth operations
-CLI smoke check: python -m enco_free4 --help; exit code 0
-GitHub Actions results are separate from this local run.
+test_catalog_keeps_all_ids_and_same_name_variants (test_catalog_device_info.CatalogTests.test_catalog_keeps_all_ids_and_same_name_variants) ... ok
+test_model_values_are_not_free4_enums_or_boolean_capabilities (test_catalog_device_info.CatalogTests.test_model_values_are_not_free4_enums_or_boolean_capabilities) ... ok
+test_results_do_not_share_mutable_state (test_catalog_device_info.CatalogTests.test_results_do_not_share_mutable_state) ... ok
+test_search_preserves_hidden_alias_and_brand_choices (test_catalog_device_info.CatalogTests.test_search_preserves_hidden_alias_and_brand_choices) ... ok
+test_catalog_cli_never_creates_a_transport (test_catalog_device_info.DeviceInfoClientTests.test_catalog_cli_never_creates_a_transport) ... ok
+test_reads_use_empty_payload_and_require_initialization (test_catalog_device_info.DeviceInfoClientTests.test_reads_use_empty_payload_and_require_initialization) ... ok
+test_bad_battery_counts_and_trailing_data_fail (test_catalog_device_info.DeviceInfoParserTests.test_bad_battery_counts_and_trailing_data_fail) ... ok
+test_battery_flags_preserve_unknown_levels_and_identity (test_catalog_device_info.DeviceInfoParserTests.test_battery_flags_preserve_unknown_levels_and_identity) ... ok
+test_malformed_versions_fail_without_guessing (test_catalog_device_info.DeviceInfoParserTests.test_malformed_versions_fail_without_guessing) ... ok
+test_version_triples_preserve_prefix_and_unknown_types (test_catalog_device_info.DeviceInfoParserTests.test_version_triples_preserve_prefix_and_unknown_types) ... ok
+test_client_rejects_unbounded_verification_configuration (test_cli.CliTests.test_client_rejects_unbounded_verification_configuration) ... ok
+test_invalid_verification_timeouts_are_rejected_without_hardware (test_cli.CliTests.test_invalid_verification_timeouts_are_rejected_without_hardware) ... ok
+test_user_commands_are_independent_subcommands (test_cli.CliTests.test_user_commands_are_independent_subcommands) ... ok
+test_verification_timeout_flag_is_parsed_before_command (test_cli.CliTests.test_verification_timeout_flag_is_parsed_before_command) ... ok
+test_adaptive_noise_uses_two_byte_mask_and_type_one (test_client.ClientTests.test_adaptive_noise_uses_two_byte_mask_and_type_one) ... ok
+test_anc_read_preserves_action_and_type_offsets (test_client.ClientTests.test_anc_read_preserves_action_and_type_offsets) ... ok
+test_capability_gate_prevents_optional_write (test_client.ClientTests.test_capability_gate_prevents_optional_write) ... ok
+test_custom_eq_rejects_gain_outside_device_limits_before_write (test_client.ClientTests.test_custom_eq_rejects_gain_outside_device_limits_before_write) ... ok
+test_custom_eq_retains_frequencies_and_reads_back_signed_gains (test_client.ClientTests.test_custom_eq_retains_frequencies_and_reads_back_signed_gains) ... ok
+test_disconnect_fails_pending_request (test_client.ClientTests.test_disconnect_fails_pending_request) ... ok
+test_eq_mode_is_verified (test_client.ClientTests.test_eq_mode_is_verified) ... ok
+test_feature_readback_timeout_does_not_resend_the_setting (test_client.ClientTests.test_feature_readback_timeout_does_not_resend_the_setting) ... ok
+test_find_is_acknowledged_without_claiming_audible_verification (test_client.ClientTests.test_find_is_acknowledged_without_claiming_audible_verification) ... ok
+test_game_mode_waits_for_stale_reads_in_both_directions_without_resending (test_client.ClientTests.test_game_mode_waits_for_stale_reads_in_both_directions_without_resending) ... ok
+test_host_requests_keep_received_sequence (test_client.ClientTests.test_host_requests_keep_received_sequence) ... ok
+test_key_write_preserves_identity_uses_0401_and_reads_back (test_client.ClientTests.test_key_write_preserves_identity_uses_0401_and_reads_back) ... ok
+test_key_write_refuses_an_unread_identity (test_client.ClientTests.test_key_write_refuses_an_unread_identity) ... ok
+test_missing_feature_is_not_written (test_client.ClientTests.test_missing_feature_is_not_written) ... ok
+test_multipoint_uses_explicit_feature_query_then_ack_and_readback (test_client.ClientTests.test_multipoint_uses_explicit_feature_query_then_ack_and_readback) ... ok
+test_notification_discovery_is_separate_from_command_bitmap (test_client.ClientTests.test_notification_discovery_is_separate_from_command_bitmap) ... ok
+test_notifications_do_not_complete_an_outstanding_query (test_client.ClientTests.test_notifications_do_not_complete_an_outstanding_query) ... ok
+test_rejected_write_is_not_reported_as_success (test_client.ClientTests.test_rejected_write_is_not_reported_as_success) ... ok
+test_success_ack_with_wrong_readback_is_failure (test_client.ClientTests.test_success_ack_with_wrong_readback_is_failure) ... ok
+test_wrong_sequence_does_not_complete_request (test_client.ClientTests.test_wrong_sequence_does_not_complete_request) ... ok
+test_zero_verification_window_reads_once_and_reports_stale_state (test_client.ClientTests.test_zero_verification_window_reads_once_and_reports_stale_state) ... ok
+test_bad_eq_lengths_are_rejected (test_equalizer_profile.DescriptorTests.test_bad_eq_lengths_are_rejected) ... ok
+test_eq_firmware_gates_and_model_variants_stay_distinct (test_equalizer_profile.DescriptorTests.test_eq_firmware_gates_and_model_variants_stay_distinct) ... ok
+test_eq_name_length_is_utf8_bytes (test_equalizer_profile.DescriptorTests.test_eq_name_length_is_utf8_bytes) ... ok
+test_fixed_eq_descriptor_signed_fields_and_utf8_name (test_equalizer_profile.DescriptorTests.test_fixed_eq_descriptor_signed_fields_and_utf8_name) ... ok
+test_free4_profile_controls_uuid_and_optional_features (test_equalizer_profile.DescriptorTests.test_free4_profile_controls_uuid_and_optional_features) ... ok
+test_concatenated_packets_preserve_sequence (test_protocol.WireProtocolTests.test_concatenated_packets_preserve_sequence) ... ok
+test_empty_capability_request_matches_apk_layout (test_protocol.WireProtocolTests.test_empty_capability_request_matches_apk_layout) ... ok
+test_feature_write_has_little_endian_opcode_and_payload_length (test_protocol.WireProtocolTests.test_feature_write_has_little_endian_opcode_and_payload_length) ... ok
+test_fixed_multi_frame_packet_and_order_validation (test_protocol.WireProtocolTests.test_fixed_multi_frame_packet_and_order_validation) ... ok
+test_fixed_response_survives_every_transport_boundary (test_protocol.WireProtocolTests.test_fixed_response_survives_every_transport_boundary) ... ok
+test_malformed_frames_are_not_treated_as_success (test_protocol.WireProtocolTests.test_malformed_frames_are_not_treated_as_success) ... ok
+test_uleb_length_boundary_includes_control_bytes (test_protocol.WireProtocolTests.test_uleb_length_boundary_includes_control_bytes) ... ok
+test_windows_sockaddr_uses_sdk_pack1_and_guid_byte_order (test_protocol.WireProtocolTests.test_windows_sockaddr_uses_sdk_pack1_and_guid_byte_order) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.791s
+
+OK

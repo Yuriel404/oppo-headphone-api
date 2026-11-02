@@ -1,0 +1,3578 @@
+{
+  "scope": "Static packaged whitelist, not device verification",
+  "model_records": 85,
+  "field_types": {
+    "gameMode": {
+      "int:1": [
+        {
+          "id": "06EC10",
+          "name": "OPPO Enco X4"
+        },
+        {
+          "id": "067410",
+          "name": "OPPO Enco X3"
+        },
+        {
+          "id": "063C10",
+          "name": "OPPO Enco X2"
+        },
+        {
+          "id": "06E010",
+          "name": "OPPO Enco Clip2"
+        },
+        {
+          "id": "06B810",
+          "name": "OPPO Enco Clip"
+        },
+        {
+          "id": "06BC10",
+          "name": "OPPO Enco X3s"
+        },
+        {
+          "id": "066810",
+          "name": "OPPO Enco X3i"
+        },
+        {
+          "id": "068C10",
+          "name": "OPPO Enco Free4"
+        },
+        {
+          "id": "06C010",
+          "name": "OPPO Enco Free4（丹拿版）"
+        },
+        {
+          "id": "066010",
+          "name": "OPPO Enco Free3"
+        },
+        {
+          "id": "062010",
+          "name": "OPPO Enco Free2"
+        },
+        {
+          "id": "064010",
+          "name": "OPPO Enco Free2i"
+        },
+        {
+          "id": "06C410",
+          "name": "OPPO Enco Air5 Pro"
+        },
+        {
+          "id": "06C810",
+          "name": "OPPO Enco Air5s"
+        },
+        {
+          "id": "06E810",
+          "name": "OPPO Enco Air5s（星光版）"
+        },
+        {
+          "id": "06D810",
+          "name": "OPPO Enco Air5"
+        },
+        {
+          "id": "067C10",
+          "name": "OPPO Enco Air4 Pro"
+        },
+        {
+          "id": "06F010",
+          "name": "OPPO Enco Air4s"
+        },
+        {
+          "id": "06B050",
+          "name": "OPPO Enco Air4（新声版）"
+        },
+        {
+          "id": "069010",
+          "name": "OPPO Enco Air4"
+        },
+        {
+          "id": "065C10",
+          "name": "OPPO Enco Air3 Pro"
+        },
+        {
+          "id": "064C10",
+          "name": "OPPO Enco Air3"
+        },
+        {
+          "id": "067010",
+          "name": "OPPO Enco Air3i"
+        },
+        {
+          "id": "067810",
+          "name": "OPPO Enco Air3s"
+        },
+        {
+          "id": "063810",
+          "name": "OPPO Enco Air2 Pro"
+        },
+        {
+          "id": "066C10",
+          "name": "OPPO Enco Air2（新声版）"
+        },
+        {
+          "id": "063410",
+          "name": "OPPO Enco Air2"
+        },
+        {
+          "id": "069850",
+          "name": "OPPO Enco Air4i"
+        },
+        {
+          "id": "068810",
+          "name": "OPPO Enco Air 3i"
+        },
+        {
+          "id": "064410",
+          "name": "OPPO Enco Air2i"
+        },
+        {
+          "id": "062810",
+          "name": "OPPO Enco Air Lite"
+        },
+        {
+          "id": "06B450",
+          "name": "OPPO Enco R5"
+        },
+        {
+          "id": "06AC50",
+          "name": "OPPO Enco R4"
+        },
+        {
+          "id": "069C10",
+          "name": "OPPO Enco R3 Pro"
+        },
+        {
+          "id": "068410",
+          "name": "OPPO Enco R3"
+        },
+        {
+          "id": "065010",
+          "name": "OPPO Enco R Pro"
+        },
+        {
+          "id": "065810",
+          "name": "OPPO Enco R2"
+        },
+        {
+          "id": "063010",
+          "name": "OPPO Enco R"
+        },
+        {
+          "id": "06F450",
+          "name": "OPPO Enco Buds3s"
+        },
+        {
+          "id": "06A010",
+          "name": "OPPO Enco Buds3 Pro+"
+        },
+        {
+          "id": "06A850",
+          "name": "OPPO Enco Buds3 Pro"
+        },
+        {
+          "id": "068010",
+          "name": "OPPO Enco Buds2 Pro"
+        },
+        {
+          "id": "06A450",
+          "name": "OPPO Enco Buds3"
+        },
+        {
+          "id": "064810",
+          "name": "OPPO Enco Buds2"
+        },
+        {
+          "id": "062410",
+          "name": "OPPO Enco Buds"
+        },
+        {
+          "id": "067414",
+          "name": "OnePlus Flow Buds"
+        },
+        {
+          "id": "067814",
+          "name": "OnePlus Buds Pro 4"
+        },
+        {
+          "id": "064014",
+          "name": "OnePlus Buds Pro 3"
+        },
+        {
+          "id": "06E410",
+          "name": "OnePlus Buds Clip"
+        },
+        {
+          "id": "065C14",
+          "name": "OnePlus Open Buds"
+        },
+        {
+          "id": "062014",
+          "name": "OnePlus Buds Pro 2"
+        },
+        {
+          "id": "063414",
+          "name": "OnePlus Buds Pro 2R"
+        },
+        {
+          "id": "063014",
+          "name": "OnePlus Buds Pro 2（轻享版）"
+        },
+        {
+          "id": "065414",
+          "name": "OnePlus Buds 4"
+        },
+        {
+          "id": "063C14",
+          "name": "OnePlus Buds 3"
+        },
+        {
+          "id": "066414",
+          "name": "OnePlus Buds Ace 3"
+        },
+        {
+          "id": "064C14",
+          "name": "OnePlus Buds Ace 2"
+        },
+        {
+          "id": "062814",
+          "name": "OnePlus Buds Ace"
+        },
+        {
+          "id": "066814",
+          "name": "OnePlus Nord Buds 4 Pro"
+        },
+        {
+          "id": "067014",
+          "name": "OnePlus Nord Buds 4"
+        },
+        {
+          "id": "064414",
+          "name": "OnePlus Nord Buds 3 Pro"
+        },
+        {
+          "id": "065014",
+          "name": "OnePlus Nord Buds 3"
+        },
+        {
+          "id": "062414",
+          "name": "OnePlus Nord Buds 2"
+        },
+        {
+          "id": "066054",
+          "name": "OnePlus Buds 3V"
+        },
+        {
+          "id": "064814",
+          "name": "OnePlus Buds V"
+        },
+        {
+          "id": "065854",
+          "name": "OnePlus Nord Buds 3r"
+        },
+        {
+          "id": "062C14",
+          "name": "OnePlus Nord Buds 2r"
+        },
+        {
+          "id": "061C14",
+          "name": "OnePlus Nord Buds CE"
+        }
+      ],
+      "NoneType:None": [
+        {
+          "id": "061410",
+          "name": "OPPO Enco X"
+        },
+        {
+          "id": "060410",
+          "name": "OPPO Enco Free"
+        },
+        {
+          "id": "061810",
+          "name": "OPPO Enco Air"
+        },
+        {
+          "id": "060C10",
+          "name": "OPPO Enco W51"
+        },
+        {
+          "id": "060810",
+          "name": "OPPO Enco W31"
+        },
+        {
+          "id": "061C10",
+          "name": "OPPO Enco Play"
+        },
+        {
+          "id": "050C10",
+          "name": "OPPO Enco M33"
+        },
+        {
+          "id": "050410",
+          "name": "OPPO Enco M31"
+        },
+        {
+          "id": "060C14",
+          "name": "OnePlus Buds Pro"
+        },
+        {
+          "id": "061014",
+          "name": "OnePlus Buds Z2"
+        },
+        {
+          "id": "060814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "068814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "061414",
+          "name": "OnePlus Buds N"
+        },
+        {
+          "id": "060414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "068414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "051014",
+          "name": "OnePlus Bullets Wireless Z3"
+        },
+        {
+          "id": "050C14",
+          "name": "OnePlus BulletsWireless Z2 ANC"
+        }
+      ]
+    },
+    "multiDevicesConnect": {
+      "int:2": [
+        {
+          "id": "06EC10",
+          "name": "OPPO Enco X4"
+        },
+        {
+          "id": "06E010",
+          "name": "OPPO Enco Clip2"
+        },
+        {
+          "id": "06C410",
+          "name": "OPPO Enco Air5 Pro"
+        },
+        {
+          "id": "06C810",
+          "name": "OPPO Enco Air5s"
+        },
+        {
+          "id": "06E810",
+          "name": "OPPO Enco Air5s（星光版）"
+        },
+        {
+          "id": "06D810",
+          "name": "OPPO Enco Air5"
+        },
+        {
+          "id": "067414",
+          "name": "OnePlus Flow Buds"
+        },
+        {
+          "id": "067814",
+          "name": "OnePlus Buds Pro 4"
+        },
+        {
+          "id": "06E410",
+          "name": "OnePlus Buds Clip"
+        },
+        {
+          "id": "066414",
+          "name": "OnePlus Buds Ace 3"
+        },
+        {
+          "id": "066814",
+          "name": "OnePlus Nord Buds 4 Pro"
+        },
+        {
+          "id": "067014",
+          "name": "OnePlus Nord Buds 4"
+        }
+      ],
+      "int:1": [
+        {
+          "id": "067410",
+          "name": "OPPO Enco X3"
+        },
+        {
+          "id": "063C10",
+          "name": "OPPO Enco X2"
+        },
+        {
+          "id": "06B810",
+          "name": "OPPO Enco Clip"
+        },
+        {
+          "id": "06BC10",
+          "name": "OPPO Enco X3s"
+        },
+        {
+          "id": "066810",
+          "name": "OPPO Enco X3i"
+        },
+        {
+          "id": "068C10",
+          "name": "OPPO Enco Free4"
+        },
+        {
+          "id": "06C010",
+          "name": "OPPO Enco Free4（丹拿版）"
+        },
+        {
+          "id": "066010",
+          "name": "OPPO Enco Free3"
+        },
+        {
+          "id": "062010",
+          "name": "OPPO Enco Free2"
+        },
+        {
+          "id": "064010",
+          "name": "OPPO Enco Free2i"
+        },
+        {
+          "id": "067C10",
+          "name": "OPPO Enco Air4 Pro"
+        },
+        {
+          "id": "06F010",
+          "name": "OPPO Enco Air4s"
+        },
+        {
+          "id": "06B050",
+          "name": "OPPO Enco Air4（新声版）"
+        },
+        {
+          "id": "069010",
+          "name": "OPPO Enco Air4"
+        },
+        {
+          "id": "065C10",
+          "name": "OPPO Enco Air3 Pro"
+        },
+        {
+          "id": "064C10",
+          "name": "OPPO Enco Air3"
+        },
+        {
+          "id": "067810",
+          "name": "OPPO Enco Air3s"
+        },
+        {
+          "id": "069850",
+          "name": "OPPO Enco Air4i"
+        },
+        {
+          "id": "06B450",
+          "name": "OPPO Enco R5"
+        },
+        {
+          "id": "06AC50",
+          "name": "OPPO Enco R4"
+        },
+        {
+          "id": "069C10",
+          "name": "OPPO Enco R3 Pro"
+        },
+        {
+          "id": "065810",
+          "name": "OPPO Enco R2"
+        },
+        {
+          "id": "06F450",
+          "name": "OPPO Enco Buds3s"
+        },
+        {
+          "id": "06A010",
+          "name": "OPPO Enco Buds3 Pro+"
+        },
+        {
+          "id": "06A850",
+          "name": "OPPO Enco Buds3 Pro"
+        },
+        {
+          "id": "06A450",
+          "name": "OPPO Enco Buds3"
+        },
+        {
+          "id": "064014",
+          "name": "OnePlus Buds Pro 3"
+        },
+        {
+          "id": "065C14",
+          "name": "OnePlus Open Buds"
+        },
+        {
+          "id": "062014",
+          "name": "OnePlus Buds Pro 2"
+        },
+        {
+          "id": "063414",
+          "name": "OnePlus Buds Pro 2R"
+        },
+        {
+          "id": "063014",
+          "name": "OnePlus Buds Pro 2（轻享版）"
+        },
+        {
+          "id": "060C14",
+          "name": "OnePlus Buds Pro"
+        },
+        {
+          "id": "065414",
+          "name": "OnePlus Buds 4"
+        },
+        {
+          "id": "063C14",
+          "name": "OnePlus Buds 3"
+        },
+        {
+          "id": "064C14",
+          "name": "OnePlus Buds Ace 2"
+        },
+        {
+          "id": "064414",
+          "name": "OnePlus Nord Buds 3 Pro"
+        },
+        {
+          "id": "065014",
+          "name": "OnePlus Nord Buds 3"
+        },
+        {
+          "id": "066054",
+          "name": "OnePlus Buds 3V"
+        },
+        {
+          "id": "065854",
+          "name": "OnePlus Nord Buds 3r"
+        }
+      ],
+      "NoneType:None": [
+        {
+          "id": "061410",
+          "name": "OPPO Enco X"
+        },
+        {
+          "id": "060410",
+          "name": "OPPO Enco Free"
+        },
+        {
+          "id": "067010",
+          "name": "OPPO Enco Air3i"
+        },
+        {
+          "id": "063810",
+          "name": "OPPO Enco Air2 Pro"
+        },
+        {
+          "id": "066C10",
+          "name": "OPPO Enco Air2（新声版）"
+        },
+        {
+          "id": "063410",
+          "name": "OPPO Enco Air2"
+        },
+        {
+          "id": "068810",
+          "name": "OPPO Enco Air 3i"
+        },
+        {
+          "id": "064410",
+          "name": "OPPO Enco Air2i"
+        },
+        {
+          "id": "061810",
+          "name": "OPPO Enco Air"
+        },
+        {
+          "id": "062810",
+          "name": "OPPO Enco Air Lite"
+        },
+        {
+          "id": "068410",
+          "name": "OPPO Enco R3"
+        },
+        {
+          "id": "065010",
+          "name": "OPPO Enco R Pro"
+        },
+        {
+          "id": "063010",
+          "name": "OPPO Enco R"
+        },
+        {
+          "id": "060C10",
+          "name": "OPPO Enco W51"
+        },
+        {
+          "id": "060810",
+          "name": "OPPO Enco W31"
+        },
+        {
+          "id": "061C10",
+          "name": "OPPO Enco Play"
+        },
+        {
+          "id": "068010",
+          "name": "OPPO Enco Buds2 Pro"
+        },
+        {
+          "id": "064810",
+          "name": "OPPO Enco Buds2"
+        },
+        {
+          "id": "062410",
+          "name": "OPPO Enco Buds"
+        },
+        {
+          "id": "050C10",
+          "name": "OPPO Enco M33"
+        },
+        {
+          "id": "050410",
+          "name": "OPPO Enco M31"
+        },
+        {
+          "id": "061014",
+          "name": "OnePlus Buds Z2"
+        },
+        {
+          "id": "060814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "068814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "062814",
+          "name": "OnePlus Buds Ace"
+        },
+        {
+          "id": "062414",
+          "name": "OnePlus Nord Buds 2"
+        },
+        {
+          "id": "064814",
+          "name": "OnePlus Buds V"
+        },
+        {
+          "id": "061414",
+          "name": "OnePlus Buds N"
+        },
+        {
+          "id": "062C14",
+          "name": "OnePlus Nord Buds 2r"
+        },
+        {
+          "id": "061C14",
+          "name": "OnePlus Nord Buds CE"
+        },
+        {
+          "id": "060414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "068414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "051014",
+          "name": "OnePlus Bullets Wireless Z3"
+        },
+        {
+          "id": "050C14",
+          "name": "OnePlus BulletsWireless Z2 ANC"
+        }
+      ]
+    },
+    "highToneQuality": {
+      "int:1": [
+        {
+          "id": "06EC10",
+          "name": "OPPO Enco X4"
+        },
+        {
+          "id": "067410",
+          "name": "OPPO Enco X3"
+        },
+        {
+          "id": "063C10",
+          "name": "OPPO Enco X2"
+        },
+        {
+          "id": "061410",
+          "name": "OPPO Enco X"
+        },
+        {
+          "id": "06E010",
+          "name": "OPPO Enco Clip2"
+        },
+        {
+          "id": "06BC10",
+          "name": "OPPO Enco X3s"
+        },
+        {
+          "id": "066810",
+          "name": "OPPO Enco X3i"
+        },
+        {
+          "id": "068C10",
+          "name": "OPPO Enco Free4"
+        },
+        {
+          "id": "06C010",
+          "name": "OPPO Enco Free4（丹拿版）"
+        },
+        {
+          "id": "066010",
+          "name": "OPPO Enco Free3"
+        },
+        {
+          "id": "06C410",
+          "name": "OPPO Enco Air5 Pro"
+        },
+        {
+          "id": "06C810",
+          "name": "OPPO Enco Air5s"
+        },
+        {
+          "id": "06E810",
+          "name": "OPPO Enco Air5s（星光版）"
+        },
+        {
+          "id": "067C10",
+          "name": "OPPO Enco Air4 Pro"
+        },
+        {
+          "id": "065C10",
+          "name": "OPPO Enco Air3 Pro"
+        },
+        {
+          "id": "069C10",
+          "name": "OPPO Enco R3 Pro"
+        },
+        {
+          "id": "067414",
+          "name": "OnePlus Flow Buds"
+        },
+        {
+          "id": "067814",
+          "name": "OnePlus Buds Pro 4"
+        },
+        {
+          "id": "064014",
+          "name": "OnePlus Buds Pro 3"
+        },
+        {
+          "id": "06E410",
+          "name": "OnePlus Buds Clip"
+        },
+        {
+          "id": "062014",
+          "name": "OnePlus Buds Pro 2"
+        },
+        {
+          "id": "063414",
+          "name": "OnePlus Buds Pro 2R"
+        },
+        {
+          "id": "063014",
+          "name": "OnePlus Buds Pro 2（轻享版）"
+        },
+        {
+          "id": "065414",
+          "name": "OnePlus Buds 4"
+        },
+        {
+          "id": "063C14",
+          "name": "OnePlus Buds 3"
+        },
+        {
+          "id": "066414",
+          "name": "OnePlus Buds Ace 3"
+        },
+        {
+          "id": "066814",
+          "name": "OnePlus Nord Buds 4 Pro"
+        },
+        {
+          "id": "064414",
+          "name": "OnePlus Nord Buds 3 Pro"
+        }
+      ],
+      "NoneType:None": [
+        {
+          "id": "06B810",
+          "name": "OPPO Enco Clip"
+        },
+        {
+          "id": "062010",
+          "name": "OPPO Enco Free2"
+        },
+        {
+          "id": "064010",
+          "name": "OPPO Enco Free2i"
+        },
+        {
+          "id": "060410",
+          "name": "OPPO Enco Free"
+        },
+        {
+          "id": "06D810",
+          "name": "OPPO Enco Air5"
+        },
+        {
+          "id": "06F010",
+          "name": "OPPO Enco Air4s"
+        },
+        {
+          "id": "06B050",
+          "name": "OPPO Enco Air4（新声版）"
+        },
+        {
+          "id": "069010",
+          "name": "OPPO Enco Air4"
+        },
+        {
+          "id": "064C10",
+          "name": "OPPO Enco Air3"
+        },
+        {
+          "id": "067010",
+          "name": "OPPO Enco Air3i"
+        },
+        {
+          "id": "067810",
+          "name": "OPPO Enco Air3s"
+        },
+        {
+          "id": "063810",
+          "name": "OPPO Enco Air2 Pro"
+        },
+        {
+          "id": "066C10",
+          "name": "OPPO Enco Air2（新声版）"
+        },
+        {
+          "id": "063410",
+          "name": "OPPO Enco Air2"
+        },
+        {
+          "id": "069850",
+          "name": "OPPO Enco Air4i"
+        },
+        {
+          "id": "068810",
+          "name": "OPPO Enco Air 3i"
+        },
+        {
+          "id": "064410",
+          "name": "OPPO Enco Air2i"
+        },
+        {
+          "id": "061810",
+          "name": "OPPO Enco Air"
+        },
+        {
+          "id": "062810",
+          "name": "OPPO Enco Air Lite"
+        },
+        {
+          "id": "06B450",
+          "name": "OPPO Enco R5"
+        },
+        {
+          "id": "06AC50",
+          "name": "OPPO Enco R4"
+        },
+        {
+          "id": "068410",
+          "name": "OPPO Enco R3"
+        },
+        {
+          "id": "065010",
+          "name": "OPPO Enco R Pro"
+        },
+        {
+          "id": "065810",
+          "name": "OPPO Enco R2"
+        },
+        {
+          "id": "063010",
+          "name": "OPPO Enco R"
+        },
+        {
+          "id": "060C10",
+          "name": "OPPO Enco W51"
+        },
+        {
+          "id": "060810",
+          "name": "OPPO Enco W31"
+        },
+        {
+          "id": "061C10",
+          "name": "OPPO Enco Play"
+        },
+        {
+          "id": "06F450",
+          "name": "OPPO Enco Buds3s"
+        },
+        {
+          "id": "06A010",
+          "name": "OPPO Enco Buds3 Pro+"
+        },
+        {
+          "id": "06A850",
+          "name": "OPPO Enco Buds3 Pro"
+        },
+        {
+          "id": "068010",
+          "name": "OPPO Enco Buds2 Pro"
+        },
+        {
+          "id": "06A450",
+          "name": "OPPO Enco Buds3"
+        },
+        {
+          "id": "064810",
+          "name": "OPPO Enco Buds2"
+        },
+        {
+          "id": "062410",
+          "name": "OPPO Enco Buds"
+        },
+        {
+          "id": "050C10",
+          "name": "OPPO Enco M33"
+        },
+        {
+          "id": "050410",
+          "name": "OPPO Enco M31"
+        },
+        {
+          "id": "065C14",
+          "name": "OnePlus Open Buds"
+        },
+        {
+          "id": "060C14",
+          "name": "OnePlus Buds Pro"
+        },
+        {
+          "id": "064C14",
+          "name": "OnePlus Buds Ace 2"
+        },
+        {
+          "id": "061014",
+          "name": "OnePlus Buds Z2"
+        },
+        {
+          "id": "060814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "068814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "062814",
+          "name": "OnePlus Buds Ace"
+        },
+        {
+          "id": "067014",
+          "name": "OnePlus Nord Buds 4"
+        },
+        {
+          "id": "065014",
+          "name": "OnePlus Nord Buds 3"
+        },
+        {
+          "id": "062414",
+          "name": "OnePlus Nord Buds 2"
+        },
+        {
+          "id": "066054",
+          "name": "OnePlus Buds 3V"
+        },
+        {
+          "id": "064814",
+          "name": "OnePlus Buds V"
+        },
+        {
+          "id": "061414",
+          "name": "OnePlus Buds N"
+        },
+        {
+          "id": "065854",
+          "name": "OnePlus Nord Buds 3r"
+        },
+        {
+          "id": "062C14",
+          "name": "OnePlus Nord Buds 2r"
+        },
+        {
+          "id": "061C14",
+          "name": "OnePlus Nord Buds CE"
+        },
+        {
+          "id": "060414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "068414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "051014",
+          "name": "OnePlus Bullets Wireless Z3"
+        },
+        {
+          "id": "050C14",
+          "name": "OnePlus BulletsWireless Z2 ANC"
+        }
+      ]
+    },
+    "spatialTypes": {
+      "list:3 entries": [
+        {
+          "id": "06EC10",
+          "name": "OPPO Enco X4"
+        },
+        {
+          "id": "067410",
+          "name": "OPPO Enco X3"
+        },
+        {
+          "id": "067814",
+          "name": "OnePlus Buds Pro 4"
+        },
+        {
+          "id": "064014",
+          "name": "OnePlus Buds Pro 3"
+        }
+      ],
+      "NoneType:None": [
+        {
+          "id": "063C10",
+          "name": "OPPO Enco X2"
+        },
+        {
+          "id": "061410",
+          "name": "OPPO Enco X"
+        },
+        {
+          "id": "062010",
+          "name": "OPPO Enco Free2"
+        },
+        {
+          "id": "064010",
+          "name": "OPPO Enco Free2i"
+        },
+        {
+          "id": "060410",
+          "name": "OPPO Enco Free"
+        },
+        {
+          "id": "063810",
+          "name": "OPPO Enco Air2 Pro"
+        },
+        {
+          "id": "063410",
+          "name": "OPPO Enco Air2"
+        },
+        {
+          "id": "068810",
+          "name": "OPPO Enco Air 3i"
+        },
+        {
+          "id": "064410",
+          "name": "OPPO Enco Air2i"
+        },
+        {
+          "id": "061810",
+          "name": "OPPO Enco Air"
+        },
+        {
+          "id": "062810",
+          "name": "OPPO Enco Air Lite"
+        },
+        {
+          "id": "065010",
+          "name": "OPPO Enco R Pro"
+        },
+        {
+          "id": "063010",
+          "name": "OPPO Enco R"
+        },
+        {
+          "id": "060C10",
+          "name": "OPPO Enco W51"
+        },
+        {
+          "id": "060810",
+          "name": "OPPO Enco W31"
+        },
+        {
+          "id": "061C10",
+          "name": "OPPO Enco Play"
+        },
+        {
+          "id": "068010",
+          "name": "OPPO Enco Buds2 Pro"
+        },
+        {
+          "id": "064810",
+          "name": "OPPO Enco Buds2"
+        },
+        {
+          "id": "062410",
+          "name": "OPPO Enco Buds"
+        },
+        {
+          "id": "050C10",
+          "name": "OPPO Enco M33"
+        },
+        {
+          "id": "050410",
+          "name": "OPPO Enco M31"
+        },
+        {
+          "id": "062014",
+          "name": "OnePlus Buds Pro 2"
+        },
+        {
+          "id": "063414",
+          "name": "OnePlus Buds Pro 2R"
+        },
+        {
+          "id": "063014",
+          "name": "OnePlus Buds Pro 2（轻享版）"
+        },
+        {
+          "id": "060C14",
+          "name": "OnePlus Buds Pro"
+        },
+        {
+          "id": "061014",
+          "name": "OnePlus Buds Z2"
+        },
+        {
+          "id": "060814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "068814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "062814",
+          "name": "OnePlus Buds Ace"
+        },
+        {
+          "id": "062414",
+          "name": "OnePlus Nord Buds 2"
+        },
+        {
+          "id": "064814",
+          "name": "OnePlus Buds V"
+        },
+        {
+          "id": "061414",
+          "name": "OnePlus Buds N"
+        },
+        {
+          "id": "062C14",
+          "name": "OnePlus Nord Buds 2r"
+        },
+        {
+          "id": "061C14",
+          "name": "OnePlus Nord Buds CE"
+        },
+        {
+          "id": "060414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "068414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "050C14",
+          "name": "OnePlus BulletsWireless Z2 ANC"
+        }
+      ],
+      "list:2 entries": [
+        {
+          "id": "06E010",
+          "name": "OPPO Enco Clip2"
+        },
+        {
+          "id": "06B810",
+          "name": "OPPO Enco Clip"
+        },
+        {
+          "id": "06BC10",
+          "name": "OPPO Enco X3s"
+        },
+        {
+          "id": "066810",
+          "name": "OPPO Enco X3i"
+        },
+        {
+          "id": "068C10",
+          "name": "OPPO Enco Free4"
+        },
+        {
+          "id": "06C010",
+          "name": "OPPO Enco Free4（丹拿版）"
+        },
+        {
+          "id": "066010",
+          "name": "OPPO Enco Free3"
+        },
+        {
+          "id": "06C410",
+          "name": "OPPO Enco Air5 Pro"
+        },
+        {
+          "id": "06C810",
+          "name": "OPPO Enco Air5s"
+        },
+        {
+          "id": "06E810",
+          "name": "OPPO Enco Air5s（星光版）"
+        },
+        {
+          "id": "06D810",
+          "name": "OPPO Enco Air5"
+        },
+        {
+          "id": "067C10",
+          "name": "OPPO Enco Air4 Pro"
+        },
+        {
+          "id": "06F010",
+          "name": "OPPO Enco Air4s"
+        },
+        {
+          "id": "06B050",
+          "name": "OPPO Enco Air4（新声版）"
+        },
+        {
+          "id": "069010",
+          "name": "OPPO Enco Air4"
+        },
+        {
+          "id": "065C10",
+          "name": "OPPO Enco Air3 Pro"
+        },
+        {
+          "id": "064C10",
+          "name": "OPPO Enco Air3"
+        },
+        {
+          "id": "067010",
+          "name": "OPPO Enco Air3i"
+        },
+        {
+          "id": "067810",
+          "name": "OPPO Enco Air3s"
+        },
+        {
+          "id": "066C10",
+          "name": "OPPO Enco Air2（新声版）"
+        },
+        {
+          "id": "069850",
+          "name": "OPPO Enco Air4i"
+        },
+        {
+          "id": "06B450",
+          "name": "OPPO Enco R5"
+        },
+        {
+          "id": "06AC50",
+          "name": "OPPO Enco R4"
+        },
+        {
+          "id": "069C10",
+          "name": "OPPO Enco R3 Pro"
+        },
+        {
+          "id": "068410",
+          "name": "OPPO Enco R3"
+        },
+        {
+          "id": "065810",
+          "name": "OPPO Enco R2"
+        },
+        {
+          "id": "06F450",
+          "name": "OPPO Enco Buds3s"
+        },
+        {
+          "id": "06A010",
+          "name": "OPPO Enco Buds3 Pro+"
+        },
+        {
+          "id": "06A850",
+          "name": "OPPO Enco Buds3 Pro"
+        },
+        {
+          "id": "06A450",
+          "name": "OPPO Enco Buds3"
+        },
+        {
+          "id": "067414",
+          "name": "OnePlus Flow Buds"
+        },
+        {
+          "id": "06E410",
+          "name": "OnePlus Buds Clip"
+        },
+        {
+          "id": "065C14",
+          "name": "OnePlus Open Buds"
+        },
+        {
+          "id": "065414",
+          "name": "OnePlus Buds 4"
+        },
+        {
+          "id": "063C14",
+          "name": "OnePlus Buds 3"
+        },
+        {
+          "id": "066414",
+          "name": "OnePlus Buds Ace 3"
+        },
+        {
+          "id": "064C14",
+          "name": "OnePlus Buds Ace 2"
+        },
+        {
+          "id": "066814",
+          "name": "OnePlus Nord Buds 4 Pro"
+        },
+        {
+          "id": "067014",
+          "name": "OnePlus Nord Buds 4"
+        },
+        {
+          "id": "064414",
+          "name": "OnePlus Nord Buds 3 Pro"
+        },
+        {
+          "id": "065014",
+          "name": "OnePlus Nord Buds 3"
+        },
+        {
+          "id": "066054",
+          "name": "OnePlus Buds 3V"
+        },
+        {
+          "id": "065854",
+          "name": "OnePlus Nord Buds 3r"
+        },
+        {
+          "id": "051014",
+          "name": "OnePlus Bullets Wireless Z3"
+        }
+      ]
+    },
+    "bassEngineSupport": {
+      "int:1": [
+        {
+          "id": "06EC10",
+          "name": "OPPO Enco X4"
+        },
+        {
+          "id": "066810",
+          "name": "OPPO Enco X3i"
+        },
+        {
+          "id": "06C410",
+          "name": "OPPO Enco Air5 Pro"
+        },
+        {
+          "id": "06C810",
+          "name": "OPPO Enco Air5s"
+        },
+        {
+          "id": "06E810",
+          "name": "OPPO Enco Air5s（星光版）"
+        },
+        {
+          "id": "050C10",
+          "name": "OPPO Enco M33"
+        },
+        {
+          "id": "067414",
+          "name": "OnePlus Flow Buds"
+        },
+        {
+          "id": "067814",
+          "name": "OnePlus Buds Pro 4"
+        },
+        {
+          "id": "064014",
+          "name": "OnePlus Buds Pro 3"
+        },
+        {
+          "id": "062014",
+          "name": "OnePlus Buds Pro 2"
+        },
+        {
+          "id": "063414",
+          "name": "OnePlus Buds Pro 2R"
+        },
+        {
+          "id": "063014",
+          "name": "OnePlus Buds Pro 2（轻享版）"
+        },
+        {
+          "id": "065414",
+          "name": "OnePlus Buds 4"
+        },
+        {
+          "id": "063C14",
+          "name": "OnePlus Buds 3"
+        },
+        {
+          "id": "066414",
+          "name": "OnePlus Buds Ace 3"
+        },
+        {
+          "id": "064C14",
+          "name": "OnePlus Buds Ace 2"
+        },
+        {
+          "id": "062814",
+          "name": "OnePlus Buds Ace"
+        },
+        {
+          "id": "066814",
+          "name": "OnePlus Nord Buds 4 Pro"
+        },
+        {
+          "id": "067014",
+          "name": "OnePlus Nord Buds 4"
+        },
+        {
+          "id": "064414",
+          "name": "OnePlus Nord Buds 3 Pro"
+        },
+        {
+          "id": "065014",
+          "name": "OnePlus Nord Buds 3"
+        },
+        {
+          "id": "062414",
+          "name": "OnePlus Nord Buds 2"
+        },
+        {
+          "id": "051014",
+          "name": "OnePlus Bullets Wireless Z3"
+        },
+        {
+          "id": "050C14",
+          "name": "OnePlus BulletsWireless Z2 ANC"
+        }
+      ],
+      "NoneType:None": [
+        {
+          "id": "067410",
+          "name": "OPPO Enco X3"
+        },
+        {
+          "id": "063C10",
+          "name": "OPPO Enco X2"
+        },
+        {
+          "id": "061410",
+          "name": "OPPO Enco X"
+        },
+        {
+          "id": "06E010",
+          "name": "OPPO Enco Clip2"
+        },
+        {
+          "id": "06B810",
+          "name": "OPPO Enco Clip"
+        },
+        {
+          "id": "06BC10",
+          "name": "OPPO Enco X3s"
+        },
+        {
+          "id": "068C10",
+          "name": "OPPO Enco Free4"
+        },
+        {
+          "id": "06C010",
+          "name": "OPPO Enco Free4（丹拿版）"
+        },
+        {
+          "id": "066010",
+          "name": "OPPO Enco Free3"
+        },
+        {
+          "id": "062010",
+          "name": "OPPO Enco Free2"
+        },
+        {
+          "id": "064010",
+          "name": "OPPO Enco Free2i"
+        },
+        {
+          "id": "060410",
+          "name": "OPPO Enco Free"
+        },
+        {
+          "id": "06D810",
+          "name": "OPPO Enco Air5"
+        },
+        {
+          "id": "067C10",
+          "name": "OPPO Enco Air4 Pro"
+        },
+        {
+          "id": "06F010",
+          "name": "OPPO Enco Air4s"
+        },
+        {
+          "id": "06B050",
+          "name": "OPPO Enco Air4（新声版）"
+        },
+        {
+          "id": "069010",
+          "name": "OPPO Enco Air4"
+        },
+        {
+          "id": "065C10",
+          "name": "OPPO Enco Air3 Pro"
+        },
+        {
+          "id": "064C10",
+          "name": "OPPO Enco Air3"
+        },
+        {
+          "id": "067010",
+          "name": "OPPO Enco Air3i"
+        },
+        {
+          "id": "067810",
+          "name": "OPPO Enco Air3s"
+        },
+        {
+          "id": "063810",
+          "name": "OPPO Enco Air2 Pro"
+        },
+        {
+          "id": "066C10",
+          "name": "OPPO Enco Air2（新声版）"
+        },
+        {
+          "id": "063410",
+          "name": "OPPO Enco Air2"
+        },
+        {
+          "id": "069850",
+          "name": "OPPO Enco Air4i"
+        },
+        {
+          "id": "068810",
+          "name": "OPPO Enco Air 3i"
+        },
+        {
+          "id": "064410",
+          "name": "OPPO Enco Air2i"
+        },
+        {
+          "id": "061810",
+          "name": "OPPO Enco Air"
+        },
+        {
+          "id": "062810",
+          "name": "OPPO Enco Air Lite"
+        },
+        {
+          "id": "06B450",
+          "name": "OPPO Enco R5"
+        },
+        {
+          "id": "06AC50",
+          "name": "OPPO Enco R4"
+        },
+        {
+          "id": "069C10",
+          "name": "OPPO Enco R3 Pro"
+        },
+        {
+          "id": "068410",
+          "name": "OPPO Enco R3"
+        },
+        {
+          "id": "065010",
+          "name": "OPPO Enco R Pro"
+        },
+        {
+          "id": "065810",
+          "name": "OPPO Enco R2"
+        },
+        {
+          "id": "063010",
+          "name": "OPPO Enco R"
+        },
+        {
+          "id": "060C10",
+          "name": "OPPO Enco W51"
+        },
+        {
+          "id": "060810",
+          "name": "OPPO Enco W31"
+        },
+        {
+          "id": "061C10",
+          "name": "OPPO Enco Play"
+        },
+        {
+          "id": "06F450",
+          "name": "OPPO Enco Buds3s"
+        },
+        {
+          "id": "06A010",
+          "name": "OPPO Enco Buds3 Pro+"
+        },
+        {
+          "id": "06A850",
+          "name": "OPPO Enco Buds3 Pro"
+        },
+        {
+          "id": "068010",
+          "name": "OPPO Enco Buds2 Pro"
+        },
+        {
+          "id": "06A450",
+          "name": "OPPO Enco Buds3"
+        },
+        {
+          "id": "064810",
+          "name": "OPPO Enco Buds2"
+        },
+        {
+          "id": "062410",
+          "name": "OPPO Enco Buds"
+        },
+        {
+          "id": "050410",
+          "name": "OPPO Enco M31"
+        },
+        {
+          "id": "06E410",
+          "name": "OnePlus Buds Clip"
+        },
+        {
+          "id": "065C14",
+          "name": "OnePlus Open Buds"
+        },
+        {
+          "id": "060C14",
+          "name": "OnePlus Buds Pro"
+        },
+        {
+          "id": "061014",
+          "name": "OnePlus Buds Z2"
+        },
+        {
+          "id": "060814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "068814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "066054",
+          "name": "OnePlus Buds 3V"
+        },
+        {
+          "id": "064814",
+          "name": "OnePlus Buds V"
+        },
+        {
+          "id": "061414",
+          "name": "OnePlus Buds N"
+        },
+        {
+          "id": "065854",
+          "name": "OnePlus Nord Buds 3r"
+        },
+        {
+          "id": "062C14",
+          "name": "OnePlus Nord Buds 2r"
+        },
+        {
+          "id": "061C14",
+          "name": "OnePlus Nord Buds CE"
+        },
+        {
+          "id": "060414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "068414",
+          "name": "OnePlus Buds"
+        }
+      ]
+    },
+    "gameEqPkgList": {
+      "NoneType:None": [
+        {
+          "id": "06EC10",
+          "name": "OPPO Enco X4"
+        },
+        {
+          "id": "067410",
+          "name": "OPPO Enco X3"
+        },
+        {
+          "id": "063C10",
+          "name": "OPPO Enco X2"
+        },
+        {
+          "id": "061410",
+          "name": "OPPO Enco X"
+        },
+        {
+          "id": "06E010",
+          "name": "OPPO Enco Clip2"
+        },
+        {
+          "id": "06B810",
+          "name": "OPPO Enco Clip"
+        },
+        {
+          "id": "06BC10",
+          "name": "OPPO Enco X3s"
+        },
+        {
+          "id": "066810",
+          "name": "OPPO Enco X3i"
+        },
+        {
+          "id": "068C10",
+          "name": "OPPO Enco Free4"
+        },
+        {
+          "id": "06C010",
+          "name": "OPPO Enco Free4（丹拿版）"
+        },
+        {
+          "id": "066010",
+          "name": "OPPO Enco Free3"
+        },
+        {
+          "id": "062010",
+          "name": "OPPO Enco Free2"
+        },
+        {
+          "id": "064010",
+          "name": "OPPO Enco Free2i"
+        },
+        {
+          "id": "060410",
+          "name": "OPPO Enco Free"
+        },
+        {
+          "id": "06C410",
+          "name": "OPPO Enco Air5 Pro"
+        },
+        {
+          "id": "06C810",
+          "name": "OPPO Enco Air5s"
+        },
+        {
+          "id": "06E810",
+          "name": "OPPO Enco Air5s（星光版）"
+        },
+        {
+          "id": "06D810",
+          "name": "OPPO Enco Air5"
+        },
+        {
+          "id": "067C10",
+          "name": "OPPO Enco Air4 Pro"
+        },
+        {
+          "id": "06F010",
+          "name": "OPPO Enco Air4s"
+        },
+        {
+          "id": "06B050",
+          "name": "OPPO Enco Air4（新声版）"
+        },
+        {
+          "id": "069010",
+          "name": "OPPO Enco Air4"
+        },
+        {
+          "id": "065C10",
+          "name": "OPPO Enco Air3 Pro"
+        },
+        {
+          "id": "064C10",
+          "name": "OPPO Enco Air3"
+        },
+        {
+          "id": "067010",
+          "name": "OPPO Enco Air3i"
+        },
+        {
+          "id": "067810",
+          "name": "OPPO Enco Air3s"
+        },
+        {
+          "id": "063810",
+          "name": "OPPO Enco Air2 Pro"
+        },
+        {
+          "id": "066C10",
+          "name": "OPPO Enco Air2（新声版）"
+        },
+        {
+          "id": "063410",
+          "name": "OPPO Enco Air2"
+        },
+        {
+          "id": "069850",
+          "name": "OPPO Enco Air4i"
+        },
+        {
+          "id": "068810",
+          "name": "OPPO Enco Air 3i"
+        },
+        {
+          "id": "064410",
+          "name": "OPPO Enco Air2i"
+        },
+        {
+          "id": "061810",
+          "name": "OPPO Enco Air"
+        },
+        {
+          "id": "062810",
+          "name": "OPPO Enco Air Lite"
+        },
+        {
+          "id": "06B450",
+          "name": "OPPO Enco R5"
+        },
+        {
+          "id": "06AC50",
+          "name": "OPPO Enco R4"
+        },
+        {
+          "id": "069C10",
+          "name": "OPPO Enco R3 Pro"
+        },
+        {
+          "id": "068410",
+          "name": "OPPO Enco R3"
+        },
+        {
+          "id": "065010",
+          "name": "OPPO Enco R Pro"
+        },
+        {
+          "id": "065810",
+          "name": "OPPO Enco R2"
+        },
+        {
+          "id": "063010",
+          "name": "OPPO Enco R"
+        },
+        {
+          "id": "060C10",
+          "name": "OPPO Enco W51"
+        },
+        {
+          "id": "060810",
+          "name": "OPPO Enco W31"
+        },
+        {
+          "id": "061C10",
+          "name": "OPPO Enco Play"
+        },
+        {
+          "id": "06F450",
+          "name": "OPPO Enco Buds3s"
+        },
+        {
+          "id": "06A010",
+          "name": "OPPO Enco Buds3 Pro+"
+        },
+        {
+          "id": "06A850",
+          "name": "OPPO Enco Buds3 Pro"
+        },
+        {
+          "id": "068010",
+          "name": "OPPO Enco Buds2 Pro"
+        },
+        {
+          "id": "06A450",
+          "name": "OPPO Enco Buds3"
+        },
+        {
+          "id": "064810",
+          "name": "OPPO Enco Buds2"
+        },
+        {
+          "id": "062410",
+          "name": "OPPO Enco Buds"
+        },
+        {
+          "id": "050C10",
+          "name": "OPPO Enco M33"
+        },
+        {
+          "id": "050410",
+          "name": "OPPO Enco M31"
+        },
+        {
+          "id": "067414",
+          "name": "OnePlus Flow Buds"
+        },
+        {
+          "id": "067814",
+          "name": "OnePlus Buds Pro 4"
+        },
+        {
+          "id": "064014",
+          "name": "OnePlus Buds Pro 3"
+        },
+        {
+          "id": "06E410",
+          "name": "OnePlus Buds Clip"
+        },
+        {
+          "id": "065C14",
+          "name": "OnePlus Open Buds"
+        },
+        {
+          "id": "062014",
+          "name": "OnePlus Buds Pro 2"
+        },
+        {
+          "id": "063414",
+          "name": "OnePlus Buds Pro 2R"
+        },
+        {
+          "id": "063014",
+          "name": "OnePlus Buds Pro 2（轻享版）"
+        },
+        {
+          "id": "060C14",
+          "name": "OnePlus Buds Pro"
+        },
+        {
+          "id": "065414",
+          "name": "OnePlus Buds 4"
+        },
+        {
+          "id": "063C14",
+          "name": "OnePlus Buds 3"
+        },
+        {
+          "id": "066414",
+          "name": "OnePlus Buds Ace 3"
+        },
+        {
+          "id": "064C14",
+          "name": "OnePlus Buds Ace 2"
+        },
+        {
+          "id": "061014",
+          "name": "OnePlus Buds Z2"
+        },
+        {
+          "id": "060814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "068814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "062814",
+          "name": "OnePlus Buds Ace"
+        },
+        {
+          "id": "066814",
+          "name": "OnePlus Nord Buds 4 Pro"
+        },
+        {
+          "id": "067014",
+          "name": "OnePlus Nord Buds 4"
+        },
+        {
+          "id": "064414",
+          "name": "OnePlus Nord Buds 3 Pro"
+        },
+        {
+          "id": "065014",
+          "name": "OnePlus Nord Buds 3"
+        },
+        {
+          "id": "062414",
+          "name": "OnePlus Nord Buds 2"
+        },
+        {
+          "id": "066054",
+          "name": "OnePlus Buds 3V"
+        },
+        {
+          "id": "064814",
+          "name": "OnePlus Buds V"
+        },
+        {
+          "id": "061414",
+          "name": "OnePlus Buds N"
+        },
+        {
+          "id": "065854",
+          "name": "OnePlus Nord Buds 3r"
+        },
+        {
+          "id": "062C14",
+          "name": "OnePlus Nord Buds 2r"
+        },
+        {
+          "id": "061C14",
+          "name": "OnePlus Nord Buds CE"
+        },
+        {
+          "id": "060414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "068414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "051014",
+          "name": "OnePlus Bullets Wireless Z3"
+        },
+        {
+          "id": "050C14",
+          "name": "OnePlus BulletsWireless Z2 ANC"
+        }
+      ]
+    },
+    "gameSoundList": {
+      "list:2 entries": [
+        {
+          "id": "06EC10",
+          "name": "OPPO Enco X4"
+        },
+        {
+          "id": "067410",
+          "name": "OPPO Enco X3"
+        },
+        {
+          "id": "06C410",
+          "name": "OPPO Enco Air5 Pro"
+        },
+        {
+          "id": "06C810",
+          "name": "OPPO Enco Air5s"
+        },
+        {
+          "id": "06E810",
+          "name": "OPPO Enco Air5s（星光版）"
+        },
+        {
+          "id": "06D810",
+          "name": "OPPO Enco Air5"
+        },
+        {
+          "id": "069850",
+          "name": "OPPO Enco Air4i"
+        },
+        {
+          "id": "06AC50",
+          "name": "OPPO Enco R4"
+        },
+        {
+          "id": "06A850",
+          "name": "OPPO Enco Buds3 Pro"
+        },
+        {
+          "id": "067414",
+          "name": "OnePlus Flow Buds"
+        },
+        {
+          "id": "067814",
+          "name": "OnePlus Buds Pro 4"
+        },
+        {
+          "id": "064014",
+          "name": "OnePlus Buds Pro 3"
+        },
+        {
+          "id": "063C14",
+          "name": "OnePlus Buds 3"
+        },
+        {
+          "id": "066414",
+          "name": "OnePlus Buds Ace 3"
+        },
+        {
+          "id": "066814",
+          "name": "OnePlus Nord Buds 4 Pro"
+        },
+        {
+          "id": "067014",
+          "name": "OnePlus Nord Buds 4"
+        },
+        {
+          "id": "066054",
+          "name": "OnePlus Buds 3V"
+        }
+      ],
+      "NoneType:None": [
+        {
+          "id": "063C10",
+          "name": "OPPO Enco X2"
+        },
+        {
+          "id": "061410",
+          "name": "OPPO Enco X"
+        },
+        {
+          "id": "06E010",
+          "name": "OPPO Enco Clip2"
+        },
+        {
+          "id": "06B810",
+          "name": "OPPO Enco Clip"
+        },
+        {
+          "id": "06BC10",
+          "name": "OPPO Enco X3s"
+        },
+        {
+          "id": "066810",
+          "name": "OPPO Enco X3i"
+        },
+        {
+          "id": "068C10",
+          "name": "OPPO Enco Free4"
+        },
+        {
+          "id": "06C010",
+          "name": "OPPO Enco Free4（丹拿版）"
+        },
+        {
+          "id": "066010",
+          "name": "OPPO Enco Free3"
+        },
+        {
+          "id": "062010",
+          "name": "OPPO Enco Free2"
+        },
+        {
+          "id": "064010",
+          "name": "OPPO Enco Free2i"
+        },
+        {
+          "id": "060410",
+          "name": "OPPO Enco Free"
+        },
+        {
+          "id": "067C10",
+          "name": "OPPO Enco Air4 Pro"
+        },
+        {
+          "id": "06F010",
+          "name": "OPPO Enco Air4s"
+        },
+        {
+          "id": "06B050",
+          "name": "OPPO Enco Air4（新声版）"
+        },
+        {
+          "id": "069010",
+          "name": "OPPO Enco Air4"
+        },
+        {
+          "id": "065C10",
+          "name": "OPPO Enco Air3 Pro"
+        },
+        {
+          "id": "064C10",
+          "name": "OPPO Enco Air3"
+        },
+        {
+          "id": "067010",
+          "name": "OPPO Enco Air3i"
+        },
+        {
+          "id": "067810",
+          "name": "OPPO Enco Air3s"
+        },
+        {
+          "id": "063810",
+          "name": "OPPO Enco Air2 Pro"
+        },
+        {
+          "id": "066C10",
+          "name": "OPPO Enco Air2（新声版）"
+        },
+        {
+          "id": "063410",
+          "name": "OPPO Enco Air2"
+        },
+        {
+          "id": "068810",
+          "name": "OPPO Enco Air 3i"
+        },
+        {
+          "id": "064410",
+          "name": "OPPO Enco Air2i"
+        },
+        {
+          "id": "061810",
+          "name": "OPPO Enco Air"
+        },
+        {
+          "id": "062810",
+          "name": "OPPO Enco Air Lite"
+        },
+        {
+          "id": "06B450",
+          "name": "OPPO Enco R5"
+        },
+        {
+          "id": "069C10",
+          "name": "OPPO Enco R3 Pro"
+        },
+        {
+          "id": "068410",
+          "name": "OPPO Enco R3"
+        },
+        {
+          "id": "065010",
+          "name": "OPPO Enco R Pro"
+        },
+        {
+          "id": "065810",
+          "name": "OPPO Enco R2"
+        },
+        {
+          "id": "063010",
+          "name": "OPPO Enco R"
+        },
+        {
+          "id": "060C10",
+          "name": "OPPO Enco W51"
+        },
+        {
+          "id": "060810",
+          "name": "OPPO Enco W31"
+        },
+        {
+          "id": "061C10",
+          "name": "OPPO Enco Play"
+        },
+        {
+          "id": "06F450",
+          "name": "OPPO Enco Buds3s"
+        },
+        {
+          "id": "06A010",
+          "name": "OPPO Enco Buds3 Pro+"
+        },
+        {
+          "id": "068010",
+          "name": "OPPO Enco Buds2 Pro"
+        },
+        {
+          "id": "06A450",
+          "name": "OPPO Enco Buds3"
+        },
+        {
+          "id": "064810",
+          "name": "OPPO Enco Buds2"
+        },
+        {
+          "id": "062410",
+          "name": "OPPO Enco Buds"
+        },
+        {
+          "id": "050C10",
+          "name": "OPPO Enco M33"
+        },
+        {
+          "id": "050410",
+          "name": "OPPO Enco M31"
+        },
+        {
+          "id": "06E410",
+          "name": "OnePlus Buds Clip"
+        },
+        {
+          "id": "065C14",
+          "name": "OnePlus Open Buds"
+        },
+        {
+          "id": "062014",
+          "name": "OnePlus Buds Pro 2"
+        },
+        {
+          "id": "063414",
+          "name": "OnePlus Buds Pro 2R"
+        },
+        {
+          "id": "063014",
+          "name": "OnePlus Buds Pro 2（轻享版）"
+        },
+        {
+          "id": "060C14",
+          "name": "OnePlus Buds Pro"
+        },
+        {
+          "id": "065414",
+          "name": "OnePlus Buds 4"
+        },
+        {
+          "id": "064C14",
+          "name": "OnePlus Buds Ace 2"
+        },
+        {
+          "id": "061014",
+          "name": "OnePlus Buds Z2"
+        },
+        {
+          "id": "060814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "068814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "062814",
+          "name": "OnePlus Buds Ace"
+        },
+        {
+          "id": "064414",
+          "name": "OnePlus Nord Buds 3 Pro"
+        },
+        {
+          "id": "065014",
+          "name": "OnePlus Nord Buds 3"
+        },
+        {
+          "id": "062414",
+          "name": "OnePlus Nord Buds 2"
+        },
+        {
+          "id": "064814",
+          "name": "OnePlus Buds V"
+        },
+        {
+          "id": "061414",
+          "name": "OnePlus Buds N"
+        },
+        {
+          "id": "065854",
+          "name": "OnePlus Nord Buds 3r"
+        },
+        {
+          "id": "062C14",
+          "name": "OnePlus Nord Buds 2r"
+        },
+        {
+          "id": "061C14",
+          "name": "OnePlus Nord Buds CE"
+        },
+        {
+          "id": "060414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "068414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "051014",
+          "name": "OnePlus Bullets Wireless Z3"
+        },
+        {
+          "id": "050C14",
+          "name": "OnePlus BulletsWireless Z2 ANC"
+        }
+      ]
+    },
+    "customEqualizer": {
+      "int:1": [
+        {
+          "id": "06EC10",
+          "name": "OPPO Enco X4"
+        },
+        {
+          "id": "067410",
+          "name": "OPPO Enco X3"
+        },
+        {
+          "id": "06BC10",
+          "name": "OPPO Enco X3s"
+        },
+        {
+          "id": "068C10",
+          "name": "OPPO Enco Free4"
+        },
+        {
+          "id": "06C010",
+          "name": "OPPO Enco Free4（丹拿版）"
+        },
+        {
+          "id": "06C410",
+          "name": "OPPO Enco Air5 Pro"
+        },
+        {
+          "id": "06C810",
+          "name": "OPPO Enco Air5s"
+        },
+        {
+          "id": "06E810",
+          "name": "OPPO Enco Air5s（星光版）"
+        },
+        {
+          "id": "06D810",
+          "name": "OPPO Enco Air5"
+        },
+        {
+          "id": "069850",
+          "name": "OPPO Enco Air4i"
+        },
+        {
+          "id": "06AC50",
+          "name": "OPPO Enco R4"
+        },
+        {
+          "id": "06F450",
+          "name": "OPPO Enco Buds3s"
+        },
+        {
+          "id": "06A850",
+          "name": "OPPO Enco Buds3 Pro"
+        },
+        {
+          "id": "067414",
+          "name": "OnePlus Flow Buds"
+        },
+        {
+          "id": "067814",
+          "name": "OnePlus Buds Pro 4"
+        },
+        {
+          "id": "064014",
+          "name": "OnePlus Buds Pro 3"
+        },
+        {
+          "id": "062014",
+          "name": "OnePlus Buds Pro 2"
+        },
+        {
+          "id": "063414",
+          "name": "OnePlus Buds Pro 2R"
+        },
+        {
+          "id": "063014",
+          "name": "OnePlus Buds Pro 2（轻享版）"
+        },
+        {
+          "id": "060C14",
+          "name": "OnePlus Buds Pro"
+        },
+        {
+          "id": "065414",
+          "name": "OnePlus Buds 4"
+        },
+        {
+          "id": "063C14",
+          "name": "OnePlus Buds 3"
+        },
+        {
+          "id": "066414",
+          "name": "OnePlus Buds Ace 3"
+        },
+        {
+          "id": "064C14",
+          "name": "OnePlus Buds Ace 2"
+        },
+        {
+          "id": "061014",
+          "name": "OnePlus Buds Z2"
+        },
+        {
+          "id": "062814",
+          "name": "OnePlus Buds Ace"
+        },
+        {
+          "id": "066814",
+          "name": "OnePlus Nord Buds 4 Pro"
+        },
+        {
+          "id": "067014",
+          "name": "OnePlus Nord Buds 4"
+        },
+        {
+          "id": "064414",
+          "name": "OnePlus Nord Buds 3 Pro"
+        },
+        {
+          "id": "065014",
+          "name": "OnePlus Nord Buds 3"
+        },
+        {
+          "id": "062414",
+          "name": "OnePlus Nord Buds 2"
+        },
+        {
+          "id": "066054",
+          "name": "OnePlus Buds 3V"
+        },
+        {
+          "id": "064814",
+          "name": "OnePlus Buds V"
+        },
+        {
+          "id": "061414",
+          "name": "OnePlus Buds N"
+        },
+        {
+          "id": "065854",
+          "name": "OnePlus Nord Buds 3r"
+        },
+        {
+          "id": "062C14",
+          "name": "OnePlus Nord Buds 2r"
+        },
+        {
+          "id": "050C14",
+          "name": "OnePlus BulletsWireless Z2 ANC"
+        }
+      ],
+      "NoneType:None": [
+        {
+          "id": "063C10",
+          "name": "OPPO Enco X2"
+        },
+        {
+          "id": "061410",
+          "name": "OPPO Enco X"
+        },
+        {
+          "id": "06E010",
+          "name": "OPPO Enco Clip2"
+        },
+        {
+          "id": "06B810",
+          "name": "OPPO Enco Clip"
+        },
+        {
+          "id": "066810",
+          "name": "OPPO Enco X3i"
+        },
+        {
+          "id": "066010",
+          "name": "OPPO Enco Free3"
+        },
+        {
+          "id": "062010",
+          "name": "OPPO Enco Free2"
+        },
+        {
+          "id": "064010",
+          "name": "OPPO Enco Free2i"
+        },
+        {
+          "id": "060410",
+          "name": "OPPO Enco Free"
+        },
+        {
+          "id": "067C10",
+          "name": "OPPO Enco Air4 Pro"
+        },
+        {
+          "id": "06F010",
+          "name": "OPPO Enco Air4s"
+        },
+        {
+          "id": "06B050",
+          "name": "OPPO Enco Air4（新声版）"
+        },
+        {
+          "id": "069010",
+          "name": "OPPO Enco Air4"
+        },
+        {
+          "id": "065C10",
+          "name": "OPPO Enco Air3 Pro"
+        },
+        {
+          "id": "064C10",
+          "name": "OPPO Enco Air3"
+        },
+        {
+          "id": "067010",
+          "name": "OPPO Enco Air3i"
+        },
+        {
+          "id": "067810",
+          "name": "OPPO Enco Air3s"
+        },
+        {
+          "id": "063810",
+          "name": "OPPO Enco Air2 Pro"
+        },
+        {
+          "id": "066C10",
+          "name": "OPPO Enco Air2（新声版）"
+        },
+        {
+          "id": "063410",
+          "name": "OPPO Enco Air2"
+        },
+        {
+          "id": "068810",
+          "name": "OPPO Enco Air 3i"
+        },
+        {
+          "id": "064410",
+          "name": "OPPO Enco Air2i"
+        },
+        {
+          "id": "061810",
+          "name": "OPPO Enco Air"
+        },
+        {
+          "id": "062810",
+          "name": "OPPO Enco Air Lite"
+        },
+        {
+          "id": "06B450",
+          "name": "OPPO Enco R5"
+        },
+        {
+          "id": "069C10",
+          "name": "OPPO Enco R3 Pro"
+        },
+        {
+          "id": "068410",
+          "name": "OPPO Enco R3"
+        },
+        {
+          "id": "065010",
+          "name": "OPPO Enco R Pro"
+        },
+        {
+          "id": "065810",
+          "name": "OPPO Enco R2"
+        },
+        {
+          "id": "063010",
+          "name": "OPPO Enco R"
+        },
+        {
+          "id": "060C10",
+          "name": "OPPO Enco W51"
+        },
+        {
+          "id": "060810",
+          "name": "OPPO Enco W31"
+        },
+        {
+          "id": "061C10",
+          "name": "OPPO Enco Play"
+        },
+        {
+          "id": "06A010",
+          "name": "OPPO Enco Buds3 Pro+"
+        },
+        {
+          "id": "068010",
+          "name": "OPPO Enco Buds2 Pro"
+        },
+        {
+          "id": "06A450",
+          "name": "OPPO Enco Buds3"
+        },
+        {
+          "id": "064810",
+          "name": "OPPO Enco Buds2"
+        },
+        {
+          "id": "062410",
+          "name": "OPPO Enco Buds"
+        },
+        {
+          "id": "050C10",
+          "name": "OPPO Enco M33"
+        },
+        {
+          "id": "050410",
+          "name": "OPPO Enco M31"
+        },
+        {
+          "id": "06E410",
+          "name": "OnePlus Buds Clip"
+        },
+        {
+          "id": "065C14",
+          "name": "OnePlus Open Buds"
+        },
+        {
+          "id": "060814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "068814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "061C14",
+          "name": "OnePlus Nord Buds CE"
+        },
+        {
+          "id": "060414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "068414",
+          "name": "OnePlus Buds"
+        }
+      ],
+      "int:0": [
+        {
+          "id": "051014",
+          "name": "OnePlus Bullets Wireless Z3"
+        }
+      ]
+    },
+    "noiseReductionUIVersion": {
+      "int:2": [
+        {
+          "id": "06EC10",
+          "name": "OPPO Enco X4"
+        },
+        {
+          "id": "06BC10",
+          "name": "OPPO Enco X3s"
+        },
+        {
+          "id": "068C10",
+          "name": "OPPO Enco Free4"
+        },
+        {
+          "id": "06C010",
+          "name": "OPPO Enco Free4（丹拿版）"
+        },
+        {
+          "id": "067814",
+          "name": "OnePlus Buds Pro 4"
+        },
+        {
+          "id": "065414",
+          "name": "OnePlus Buds 4"
+        }
+      ],
+      "NoneType:None": [
+        {
+          "id": "067410",
+          "name": "OPPO Enco X3"
+        },
+        {
+          "id": "063C10",
+          "name": "OPPO Enco X2"
+        },
+        {
+          "id": "061410",
+          "name": "OPPO Enco X"
+        },
+        {
+          "id": "06E010",
+          "name": "OPPO Enco Clip2"
+        },
+        {
+          "id": "06B810",
+          "name": "OPPO Enco Clip"
+        },
+        {
+          "id": "066810",
+          "name": "OPPO Enco X3i"
+        },
+        {
+          "id": "066010",
+          "name": "OPPO Enco Free3"
+        },
+        {
+          "id": "062010",
+          "name": "OPPO Enco Free2"
+        },
+        {
+          "id": "064010",
+          "name": "OPPO Enco Free2i"
+        },
+        {
+          "id": "060410",
+          "name": "OPPO Enco Free"
+        },
+        {
+          "id": "06C410",
+          "name": "OPPO Enco Air5 Pro"
+        },
+        {
+          "id": "06C810",
+          "name": "OPPO Enco Air5s"
+        },
+        {
+          "id": "06E810",
+          "name": "OPPO Enco Air5s（星光版）"
+        },
+        {
+          "id": "06D810",
+          "name": "OPPO Enco Air5"
+        },
+        {
+          "id": "067C10",
+          "name": "OPPO Enco Air4 Pro"
+        },
+        {
+          "id": "06F010",
+          "name": "OPPO Enco Air4s"
+        },
+        {
+          "id": "06B050",
+          "name": "OPPO Enco Air4（新声版）"
+        },
+        {
+          "id": "069010",
+          "name": "OPPO Enco Air4"
+        },
+        {
+          "id": "065C10",
+          "name": "OPPO Enco Air3 Pro"
+        },
+        {
+          "id": "064C10",
+          "name": "OPPO Enco Air3"
+        },
+        {
+          "id": "067010",
+          "name": "OPPO Enco Air3i"
+        },
+        {
+          "id": "067810",
+          "name": "OPPO Enco Air3s"
+        },
+        {
+          "id": "063810",
+          "name": "OPPO Enco Air2 Pro"
+        },
+        {
+          "id": "066C10",
+          "name": "OPPO Enco Air2（新声版）"
+        },
+        {
+          "id": "063410",
+          "name": "OPPO Enco Air2"
+        },
+        {
+          "id": "069850",
+          "name": "OPPO Enco Air4i"
+        },
+        {
+          "id": "068810",
+          "name": "OPPO Enco Air 3i"
+        },
+        {
+          "id": "064410",
+          "name": "OPPO Enco Air2i"
+        },
+        {
+          "id": "061810",
+          "name": "OPPO Enco Air"
+        },
+        {
+          "id": "062810",
+          "name": "OPPO Enco Air Lite"
+        },
+        {
+          "id": "06B450",
+          "name": "OPPO Enco R5"
+        },
+        {
+          "id": "06AC50",
+          "name": "OPPO Enco R4"
+        },
+        {
+          "id": "069C10",
+          "name": "OPPO Enco R3 Pro"
+        },
+        {
+          "id": "068410",
+          "name": "OPPO Enco R3"
+        },
+        {
+          "id": "065010",
+          "name": "OPPO Enco R Pro"
+        },
+        {
+          "id": "065810",
+          "name": "OPPO Enco R2"
+        },
+        {
+          "id": "063010",
+          "name": "OPPO Enco R"
+        },
+        {
+          "id": "060C10",
+          "name": "OPPO Enco W51"
+        },
+        {
+          "id": "060810",
+          "name": "OPPO Enco W31"
+        },
+        {
+          "id": "061C10",
+          "name": "OPPO Enco Play"
+        },
+        {
+          "id": "06F450",
+          "name": "OPPO Enco Buds3s"
+        },
+        {
+          "id": "06A010",
+          "name": "OPPO Enco Buds3 Pro+"
+        },
+        {
+          "id": "06A850",
+          "name": "OPPO Enco Buds3 Pro"
+        },
+        {
+          "id": "068010",
+          "name": "OPPO Enco Buds2 Pro"
+        },
+        {
+          "id": "06A450",
+          "name": "OPPO Enco Buds3"
+        },
+        {
+          "id": "064810",
+          "name": "OPPO Enco Buds2"
+        },
+        {
+          "id": "062410",
+          "name": "OPPO Enco Buds"
+        },
+        {
+          "id": "050C10",
+          "name": "OPPO Enco M33"
+        },
+        {
+          "id": "050410",
+          "name": "OPPO Enco M31"
+        },
+        {
+          "id": "067414",
+          "name": "OnePlus Flow Buds"
+        },
+        {
+          "id": "064014",
+          "name": "OnePlus Buds Pro 3"
+        },
+        {
+          "id": "06E410",
+          "name": "OnePlus Buds Clip"
+        },
+        {
+          "id": "065C14",
+          "name": "OnePlus Open Buds"
+        },
+        {
+          "id": "062014",
+          "name": "OnePlus Buds Pro 2"
+        },
+        {
+          "id": "063414",
+          "name": "OnePlus Buds Pro 2R"
+        },
+        {
+          "id": "063014",
+          "name": "OnePlus Buds Pro 2（轻享版）"
+        },
+        {
+          "id": "060C14",
+          "name": "OnePlus Buds Pro"
+        },
+        {
+          "id": "063C14",
+          "name": "OnePlus Buds 3"
+        },
+        {
+          "id": "066414",
+          "name": "OnePlus Buds Ace 3"
+        },
+        {
+          "id": "064C14",
+          "name": "OnePlus Buds Ace 2"
+        },
+        {
+          "id": "061014",
+          "name": "OnePlus Buds Z2"
+        },
+        {
+          "id": "060814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "068814",
+          "name": "OnePlus Buds Z"
+        },
+        {
+          "id": "062814",
+          "name": "OnePlus Buds Ace"
+        },
+        {
+          "id": "066814",
+          "name": "OnePlus Nord Buds 4 Pro"
+        },
+        {
+          "id": "067014",
+          "name": "OnePlus Nord Buds 4"
+        },
+        {
+          "id": "064414",
+          "name": "OnePlus Nord Buds 3 Pro"
+        },
+        {
+          "id": "065014",
+          "name": "OnePlus Nord Buds 3"
+        },
+        {
+          "id": "062414",
+          "name": "OnePlus Nord Buds 2"
+        },
+        {
+          "id": "066054",
+          "name": "OnePlus Buds 3V"
+        },
+        {
+          "id": "064814",
+          "name": "OnePlus Buds V"
+        },
+        {
+          "id": "061414",
+          "name": "OnePlus Buds N"
+        },
+        {
+          "id": "065854",
+          "name": "OnePlus Nord Buds 3r"
+        },
+        {
+          "id": "062C14",
+          "name": "OnePlus Nord Buds 2r"
+        },
+        {
+          "id": "061C14",
+          "name": "OnePlus Nord Buds CE"
+        },
+        {
+          "id": "060414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "068414",
+          "name": "OnePlus Buds"
+        },
+        {
+          "id": "051014",
+          "name": "OnePlus Bullets Wireless Z3"
+        },
+        {
+          "id": "050C14",
+          "name": "OnePlus BulletsWireless Z2 ANC"
+        }
+      ]
+    }
+  },
+  "noise_conflicts": [
+    {
+      "id": "061410",
+      "name": "OPPO Enco X",
+      "conflicts": [
+        {
+          "protocolIndex": 2,
+          "modeType": 3,
+          "free4ModeType": 2
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 2,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "062010",
+      "name": "OPPO Enco Free2",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "064010",
+      "name": "OPPO Enco Free2i",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "06F010",
+      "name": "OPPO Enco Air4s",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "069010",
+      "name": "OPPO Enco Air4",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "063810",
+      "name": "OPPO Enco Air2 Pro",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "065010",
+      "name": "OPPO Enco R Pro",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "06A010",
+      "name": "OPPO Enco Buds3 Pro+",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "050C10",
+      "name": "OPPO Enco M33",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "060C14",
+      "name": "OnePlus Buds Pro",
+      "conflicts": [
+        {
+          "protocolIndex": 4,
+          "modeType": 7,
+          "free4ModeType": 4
+        },
+        {
+          "protocolIndex": 2,
+          "modeType": 3,
+          "free4ModeType": 2
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 2,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "064C14",
+      "name": "OnePlus Buds Ace 2",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "061014",
+      "name": "OnePlus Buds Z2",
+      "conflicts": [
+        {
+          "protocolIndex": 2,
+          "modeType": 3,
+          "free4ModeType": 2
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 2,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "062814",
+      "name": "OnePlus Buds Ace",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "065014",
+      "name": "OnePlus Nord Buds 3",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "062414",
+      "name": "OnePlus Nord Buds 2",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    },
+    {
+      "id": "050C14",
+      "name": "OnePlus BulletsWireless Z2 ANC",
+      "conflicts": [
+        {
+          "protocolIndex": 0,
+          "modeType": 5,
+          "free4ModeType": 1
+        },
+        {
+          "protocolIndex": 1,
+          "modeType": 1,
+          "free4ModeType": 5
+        }
+      ]
+    }
+  ],
+  "empty_feature_candidates": [
+    {
+      "id": "060410",
+      "name": "OPPO Enco Free"
+    },
+    {
+      "id": "061810",
+      "name": "OPPO Enco Air"
+    },
+    {
+      "id": "060C10",
+      "name": "OPPO Enco W51"
+    },
+    {
+      "id": "060810",
+      "name": "OPPO Enco W31"
+    },
+    {
+      "id": "061C10",
+      "name": "OPPO Enco Play"
+    },
+    {
+      "id": "050410",
+      "name": "OPPO Enco M31"
+    },
+    {
+      "id": "061014",
+      "name": "OnePlus Buds Z2"
+    },
+    {
+      "id": "060814",
+      "name": "OnePlus Buds Z"
+    },
+    {
+      "id": "068814",
+      "name": "OnePlus Buds Z"
+    },
+    {
+      "id": "061414",
+      "name": "OnePlus Buds N"
+    },
+    {
+      "id": "060414",
+      "name": "OnePlus Buds"
+    },
+    {
+      "id": "068414",
+      "name": "OnePlus Buds"
+    }
+  ],
+  "eq_gates": [
+    {
+      "id": "063C10",
+      "name": "OPPO Enco X2",
+      "group": "equalizerModeCompat",
+      "protocolIndex": 4,
+      "modeType": 16,
+      "minFirmVersion": 112,
+      "order": 1
+    },
+    {
+      "id": "06E010",
+      "name": "OPPO Enco Clip2",
+      "group": "equalizerModeByVersion",
+      "protocolIndex": 1,
+      "modeType": 41,
+      "minFirmVersion": 130,
+      "minAppVersion": 16009000,
+      "summaryId": 10,
+      "tag": 3,
+      "order": 5
+    },
+    {
+      "id": "06B810",
+      "name": "OPPO Enco Clip",
+      "group": "equalizerModeByVersion",
+      "protocolIndex": 3,
+      "modeType": 12,
+      "summaryId": 9,
+      "minAppVersion": 15007000,
+      "order": 4
+    },
+    {
+      "id": "06BC10",
+      "name": "OPPO Enco X3s",
+      "group": "equalizerModeByVersion",
+      "protocolIndex": 8,
+      "modeType": 40,
+      "minFirmVersion": 136,
+      "minAppVersion": 15011000,
+      "order": 5,
+      "tag": 3
+    },
+    {
+      "id": "066810",
+      "name": "OPPO Enco X3i",
+      "group": "equalizerModeCompat",
+      "protocolIndex": 3,
+      "modeType": 13,
+      "minFirmVersion": 119,
+      "order": 4,
+      "tag": 0
+    },
+    {
+      "id": "068C10",
+      "name": "OPPO Enco Free4",
+      "group": "equalizerModeCompat",
+      "protocolIndex": 7,
+      "modeType": 34,
+      "minFirmVersion": 118,
+      "order": 4,
+      "tag": 0
+    },
+    {
+      "id": "06C010",
+      "name": "OPPO Enco Free4（丹拿版）",
+      "group": "equalizerModeCompat",
+      "protocolIndex": 7,
+      "modeType": 34,
+      "minFirmVersion": 118,
+      "order": 4,
+      "tag": 0
+    },
+    {
+      "id": "06C010",
+      "name": "OPPO Enco Free4（丹拿版）",
+      "group": "equalizerModeByVersion",
+      "protocolIndex": 8,
+      "modeType": 40,
+      "minFirmVersion": 136,
+      "minAppVersion": 15011000,
+      "order": 6,
+      "tag": 3
+    },
+    {
+      "id": "06E410",
+      "name": "OnePlus Buds Clip",
+      "group": "equalizerModeByVersion",
+      "protocolIndex": 1,
+      "modeType": 41,
+      "minFirmVersion": 130,
+      "minAppVersion": 16009000,
+      "summaryId": 10,
+      "tag": 3,
+      "order": 5
+    },
+    {
+      "id": "065C14",
+      "name": "OnePlus Open Buds",
+      "group": "equalizerModeByVersion",
+      "protocolIndex": 3,
+      "modeType": 12,
+      "summaryId": 9,
+      "minAppVersion": 15007000,
+      "order": 4
+    },
+    {
+      "id": "062014",
+      "name": "OnePlus Buds Pro 2",
+      "group": "equalizerModeCompat",
+      "protocolIndex": 7,
+      "modeType": 19,
+      "minFirmVersion": 165
+    },
+    {
+      "id": "063414",
+      "name": "OnePlus Buds Pro 2R",
+      "group": "equalizerModeCompat",
+      "protocolIndex": 7,
+      "modeType": 19,
+      "minFirmVersion": 165
+    },
+    {
+      "id": "063014",
+      "name": "OnePlus Buds Pro 2（轻享版）",
+      "group": "equalizerModeCompat",
+      "protocolIndex": 7,
+      "modeType": 19,
+      "minFirmVersion": 165
+    },
+    {
+      "id": "063C14",
+      "name": "OnePlus Buds 3",
+      "group": "equalizerModeCompat",
+      "protocolIndex": 3,
+      "modeType": 13,
+      "minFirmVersion": 119,
+      "order": 4,
+      "tag": 0
+    }
+  ]
+}

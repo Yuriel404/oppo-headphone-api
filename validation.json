@@ -1,21 +1,23 @@
 {
   "analysis_date": "2026-10-26",
-  "sdk_version": "0.1.1",
+  "sdk_version": "0.2.0",
   "python_version": "3.14.6",
   "python_executable": "<local>/python.exe",
   "tests": {
     "runner": "python -m unittest discover -s tests -v",
-    "passed": 38,
+    "passed": 48,
     "exit_code": 0,
     "log": "test-results.txt",
-    "source": "Offline vectors and fake transport, not hardware traffic"
+    "source": "Offline vectors and fake transport, not hardware traffic",
+    "date": "2026-11-02"
   },
   "compileall": {
     "exit_code": 0
   },
   "evidence_json": {
-    "records": 202,
-    "parse_failures": []
+    "records": 222,
+    "parse_failures": [],
+    "indexed_records_including_dex_locators": 225
   },
   "profile_resource_matches": true,
   "bleak_installed": true,
@@ -95,11 +97,15 @@
   },
   "repository_validation": {
     "date": "2026-11-02",
-    "tests_passed": 38,
+    "tests_passed": 48,
     "test_exit_code": 0,
     "log": "test-results.txt",
     "hardware_operations": false,
     "json_parse": "passed",
-    "relative_links": "passed"
+    "relative_links": "passed",
+    "wheel_offline_build_and_isolated_import": "passed",
+    "catalog_reproduction_byte_identical": true,
+    "catalog_records": 85,
+    "new_queries_hardware_tested": false
   }
 }

@@ -1,0 +1,76 @@
+{
+  "source": "Python DEX metadata and instruction format parsing; static, not runtime; const-string/invoke-only matches",
+  "query": "getRemote.*(Product|Version)|getProductId|readProductId",
+  "mode": "strings",
+  "count": 4,
+  "results": [
+    {
+      "dex": "classes.dex",
+      "class": "p4.f",
+      "method": "c",
+      "descriptor": "(Lcom/oplus/mydevices/sdk/device/DeviceInfo;)Lp4/a;",
+      "method_index": 62740,
+      "code": 6538052,
+      "access": 9,
+      "matches": [
+        {
+          "offset": 58,
+          "opcode": "0x1a",
+          "string_index": 45360,
+          "string": "getProductIdByModelId exception"
+        }
+      ]
+    },
+    {
+      "dex": "classes3.dex",
+      "class": "F8.d",
+      "method": "get",
+      "descriptor": "()Ljava/lang/Object;",
+      "method_index": 2288,
+      "code": 1432748,
+      "access": 17,
+      "matches": [
+        {
+          "offset": 207,
+          "opcode": "0x1a",
+          "string_index": 32396,
+          "string": "getRemoteVersion UNSUPPORTED cmd=0x"
+        }
+      ]
+    },
+    {
+      "dex": "classes3.dex",
+      "class": "com.oplus.melody.model.repository.earphone.EarphoneDTO",
+      "method": "createFrom",
+      "descriptor": "(Lcom/oplus/melody/model/db/G;Lcom/oplus/melody/model/repository/earphone/P;)Lcom/oplus/melody/model/repository/earphone/EarphoneDTO;",
+      "method_index": 21557,
+      "code": 2951840,
+      "access": 25,
+      "matches": [
+        {
+          "offset": 59,
+          "opcode": "0x1a",
+          "string_index": 32290,
+          "string": "getProductId(...)"
+        }
+      ]
+    },
+    {
+      "dex": "classes3.dex",
+      "class": "com.oplus.melody.ui.component.detail.automaticfirmwareupdate.FirmwareUpgradeFragment",
+      "method": "x",
+      "descriptor": "()V",
+      "method_index": 24825,
+      "code": 3196236,
+      "access": 17,
+      "matches": [
+        {
+          "offset": 79,
+          "opcode": "0x1a",
+          "string_index": 32290,
+          "string": "getProductId(...)"
+        }
+      ]
+    }
+  ]
+}

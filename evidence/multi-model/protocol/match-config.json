@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_02d672d2d02ed8c70a16ce99a082a1786cfc90e3a9230be833b2786bd053662d",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.common.util.Y",
+    "method_name": "a"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.common.util.Y"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"methods\":[{\"dex_descriptor\":\"(Ljava/util/Collection;Ljava/lang/String;Ljava/lang/String;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(java.util.Collection<com.oplus.melody.common.data.WhitelistConfigDTO>, java.lang.String, java.lang.String): com.oplus.melody.common.data.WhitelistConfigDTO\"},{\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;Ljava/util/Collection;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(android.bluetooth.BluetoothDevice, java.util.Collection<com.oplus.melody.common.data.WhitelistConfigDTO>): com.oplus.melody.common.data.WhitelistConfigDTO\"},{\"dex_descriptor\":\"(Ljava/lang/String;Lcom/oplus/melody/common/data/WhitelistConfigDTO;)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(java.lang.String, com.oplus.melody.common.data.WhitelistConfigDTO): java.util.List<java.lang.String>\"},{\"dex_descriptor\":\"(Landroid/content/Context;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(android.content.Context): java.lang.String\"},{\"dex_descriptor\":\"(IZ)Z\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(int, boolean): boolean\"},{\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO$Function;I)Z\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(com.oplus.melody.common.data.WhitelistConfigDTO$Function, int): boolean\"},{\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO$Function;)Z\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(com.oplus.melody.common.data.WhitelistConfigDTO$Function): boolean\"},{\"dex_descriptor\":\"(I)Z\",\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(int): boolean\"},{\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO;)Z\",\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(com.oplus.melody.common.data.WhitelistConfigDTO): boolean\"},{\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO;)Z\",\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(com.oplus.melody.common.data.WhitelistConfigDTO): boolean\"},{\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(java.lang.String): boolean\"},{\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO;)Z\",\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(com.oplus.melody.common.data.WhitelistConfigDTO): boolean\"},{\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO;)Z\",\"is_constructor\":false,\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(com.oplus.melody.common.data.WhitelistConfigDTO): boolean\"},{\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(java.lang.String): boolean\"},{\"dex_descriptor\":\"(Ljava/lang/String;)Z\",\"is_constructor\":false,\"name\":\"o\",\"def_pos\":0,\"signature\":\"o(java.lang.String): boolean\"},{\"dex_descriptor\":\"(Ljava/lang/String;Lcom/oplus/melody/common/data/WhitelistConfigDTO;)Z\",\"is_constructor\":false,\"name\":\"p\",\"def_pos\":0,\"signature\":\"p(java.lang.String, com.oplus.melody.common.data.WhitelistConfigDTO): boolean\"},{\"dex_descriptor\":\"(Lcom/heytap/headset/HeyMelodyApplication;Landroid/net/Uri;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;\",\"is_constructor\":false,\"name\":\"q\",\"def_pos\":0,\"signature\":\"q(com.heytap.headset.HeyMelodyApplication, android.net.Uri): com.oplus.melody.common.data.WhitelistConfigDTO\"},{\"dex_descriptor\":\"(Lcom/heytap/headset/HeyMelodyApplication;Ljava/lang/String;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;\",\"is_constructor\":false,\"name\":\"r\",\"def_pos\":0,\"signature\":\"r(com.heytap.headset.HeyMelodyApplication, java.lang.String): com.oplus.melody.common.data.WhitelistConfigDTO\"},{\"dex_descriptor\":\"(Lcom/heytap/headset/HeyMelodyApplication;Ljava/lang/String;Ljava/lang/String;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;\",\"is_constructor\":false,\"name\":\"s\",\"def_pos\":0,\"signature\":\"s(com.heytap.headset.HeyMelodyApplication, java.lang.String, java.lang.String): com.oplus.melody.common.data.WhitelistConfigDTO\"},{\"dex_descriptor\":\"(Lcom/oplus/melody/common/data/WhitelistConfigDTO$Function;I)Z\",\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(com.oplus.melody.common.data.WhitelistConfigDTO$Function, int): boolean\"}],\"fields\":[],\"raw_name\":\"com.oplus.melody.common.util.Y\",\"method_count\":20,\"full_name\":\"com.oplus.melody.common.util.Y\",\"field_count\":0,\"name\":\"Y\",\"inner_class_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.common.util.Y",
+          "method_name": "a",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"/* JADX INFO: compiled from: WhitelistUtils.java */\\r\\n/* JADX INFO: loaded from: classes3.dex */\\r\\npublic final class Y {\\r\\n    public static WhitelistConfigDTO a(Collection<WhitelistConfigDTO> collection, String str, String str2) {\\r\\n        if (collection == null || collection.isEmpty()) {\\r\\n            return null;\\r\\n        }\\r\\n        boolean zIsEmpty = TextUtils.isEmpty(str2);\\r\\n        boolean zIsEmpty2 = TextUtils.isEmpty(str);\\r\\n        ArrayList arrayList = null;\\r\\n        ArrayList arrayList2 = null;\\r\\n        for (WhitelistConfigDTO whitelistConfigDTO : collection) {\\r\\n            if (!zIsEmpty && p(str2, whitelistConfigDTO)) {\\r\\n                if (arrayList == null) {\\r\\n                    arrayList = new ArrayList();\\r\\n                }\\r\\n                arrayList.add(whitelistConfigDTO);\\r\\n            }\\r\\n            if (!zIsEmpty2 && whitelistConfigDTO != null && str.equalsIgnoreCase(whitelistConfigDTO.getId())) {\\r\\n                if (arrayList2 == null) {\\r\\n                    arrayList2 = new ArrayList();\\r\\n                }\\r\\n                arrayList2.add(whitelistConfigDTO);\\r\\n            }\\r\\n        }\\r\\n        if (arrayList == null && arrayList2 == null) {\\r\\n            if (!TextUtils.isEmpty(str) && !TextUtils.equals(\\\"000000\\\", str)) {\\r\\n                y.o(5, \\\"WhitelistUtils\\\", \\\"findWhitelistConfig failed\\\", MelodyException.f(404, \\\"None by \\\" + str + '(' + y.q(str2) + ')'));\\r\\n            }\\r\\n            return null;\\r\\n        }\\r\\n        if (arrayList == null) {\\r\\n            WhitelistConfigDTO whitelistConfigDTO2 = (WhitelistConfigDTO) arrayList2.get(0);\\r\\n            whitelistConfigDTO2.getId();\\r\\n            whitelistConfigDTO2.getName();\\r\\n            return whitelistConfigDTO2;\\r\\n        }\\r\\n        if (arrayList2 != null) {\\r\\n            int size = arrayList.size();\\r\\n            int i10 = 0;\\r\\n            while (i10 < size) {\\r\\n                Object obj = arrayList.get(i10);\\r\\n                i10++;\\r\\n                WhitelistConfigDTO whitelistConfigDTO3 = (WhitelistConfigDTO) obj;\\r\\n                if (arrayList2.contains(whitelistConfigDTO3)) {\\r\\n                    return whitelistConfigDTO3;\\r\\n                }\\r\\n            }\\r\\n        }\\r\\n        WhitelistConfigDTO whitelistConfigDTO4 = (WhitelistConfigDTO) arrayList.get(0);\\r\\n        whitelistConfigDTO4.getId();\\r\\n        whitelistConfigDTO4.getName();\\r\\n        return whitelistConfigDTO4;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"com.oplus.melody.common.util.Y\",\"dex_descriptor\":\"(Ljava/util/Collection;Ljava/lang/String;Ljava/lang/String;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;\",\"overload_count\":1,\"method_name\":\"a\",\"overload_index\":0,\"full_name\":\"com.oplus.melody.common.util.Y.a\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.common.util.Y",
+    "method": {
+      "name": "a",
+      "reported_signature": "a(java.util.Collection<com.oplus.melody.common.data.WhitelistConfigDTO>, java.lang.String, java.lang.String): com.oplus.melody.common.data.WhitelistConfigDTO",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/util/Collection;Ljava/lang/String;Ljava/lang/String;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "/* JADX INFO: compiled from: WhitelistUtils.java */\r\n/* JADX INFO: loaded from: classes3.dex */\r\npublic final class Y {\r\n    public static WhitelistConfigDTO a(Collection<WhitelistConfigDTO> collection, String str, String str2) {\r\n        if (collection == null || collection.isEmpty()) {\r\n            return null;\r\n        }\r\n        boolean zIsEmpty = TextUtils.isEmpty(str2);\r\n        boolean zIsEmpty2 = TextUtils.isEmpty(str);\r\n        ArrayList arrayList = null;\r\n        ArrayList arrayList2 = null;\r\n        for (WhitelistConfigDTO whitelistConfigDTO : collection) {\r\n            if (!zIsEmpty && p(str2, whitelistConfigDTO)) {\r\n                if (arrayList == null) {\r\n                    arrayList = new ArrayList();\r\n                }\r\n                arrayList.add(whitelistConfigDTO);\r\n            }\r\n            if (!zIsEmpty2 && whitelistConfigDTO != null && str.equalsIgnoreCase(whitelistConfigDTO.getId())) {\r\n                if (arrayList2 == null) {\r\n                    arrayList2 = new ArrayList();\r\n                }\r\n                arrayList2.add(whitelistConfigDTO);\r\n            }\r\n        }\r\n        if (arrayList == null && arrayList2 == null) {\r\n            if (!TextUtils.isEmpty(str) && !TextUtils.equals(\"000000\", str)) {\r\n                y.o(5, \"WhitelistUtils\", \"findWhitelistConfig failed\", MelodyException.f(404, \"None by \" + str + '(' + y.q(str2) + ')'));\r\n            }\r\n            return null;\r\n        }\r\n        if (arrayList == null) {\r\n            WhitelistConfigDTO whitelistConfigDTO2 = (WhitelistConfigDTO) arrayList2.get(0);\r\n            whitelistConfigDTO2.getId();\r\n            whitelistConfigDTO2.getName();\r\n            return whitelistConfigDTO2;\r\n        }\r\n        if (arrayList2 != null) {\r\n            int size = arrayList.size();\r\n            int i10 = 0;\r\n            while (i10 < size) {\r\n                Object obj = arrayList.get(i10);\r\n                i10++;\r\n                WhitelistConfigDTO whitelistConfigDTO3 = (WhitelistConfigDTO) obj;\r\n                if (arrayList2.contains(whitelistConfigDTO3)) {\r\n                    return whitelistConfigDTO3;\r\n                }\r\n            }\r\n        }\r\n        WhitelistConfigDTO whitelistConfigDTO4 = (WhitelistConfigDTO) arrayList.get(0);\r\n        whitelistConfigDTO4.getId();\r\n        whitelistConfigDTO4.getName();\r\n        return whitelistConfigDTO4;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

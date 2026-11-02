@@ -1,0 +1,41 @@
+{
+  "source": "Python DEX metadata and instruction format parsing; static, not runtime; const-string/invoke-only matches",
+  "query": "w8.b",
+  "mode": "class",
+  "count": 1,
+  "results": [
+    {
+      "dex": "classes3.dex",
+      "class": "w8.b",
+      "method": "<clinit>",
+      "descriptor": "()V",
+      "method_index": 42046,
+      "code": 4490360,
+      "access": 65544,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "0x12",
+          "const": 0
+        },
+        {
+          "offset": 1,
+          "opcode": "0x23"
+        },
+        {
+          "offset": 3,
+          "opcode": "0x69",
+          "field": {
+            "class": "w8.b",
+            "field": "b",
+            "type": "[B"
+          }
+        },
+        {
+          "offset": 5,
+          "opcode": "0xe"
+        }
+      ]
+    }
+  ]
+}

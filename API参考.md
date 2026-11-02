@@ -1,5 +1,7 @@
 # Enco Free4 Python API 与蓝牙协议参考
 
+0.2.0新增内容见 [多型号目录与适配方案](docs/multi-model/README.md) 和 [电量、版本查询](docs/multi-model/common-queries.md)。下面的Free4设置枚举继续保持原范围。
+
 这份参考来自本次 APK 静态还原。Python 类名与方法名是本项目设计的封装；命令号与 payload 字段来自 APK。不能把它当成 OPPO 的官方 API 合约。0.1.1 已在本机通过 RFCOMM 验证功能状态读取与游戏模式开关，完整验证范围见 validation.json 和 [修复说明](修复说明-0.1.1.md)。
 
 ## 1. 导入与生命周期

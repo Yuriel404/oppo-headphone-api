@@ -2,7 +2,9 @@
 
 用于 OPPO Enco Free4 的非官方 Python 蓝牙配置 API，包含 Windows RFCOMM 连接、配置命令、命令行工具及协议分析文档。基于 HeyMelody / 欢律 17.6.5 APK 的静态分析实现，不是 OPPO 官方 SDK。
 
-当前版本 **0.1.1**。支持 Python **3.11+**；首选连接方式为 Windows RFCOMM，使用 Python 标准库，无须安装串口驱动或创建 COM 口。BLE 为可选实现，尚未完成真机验证。
+当前版本 **0.2.0**。支持 Python **3.11+**；首选连接方式为 Windows RFCOMM，使用 Python 标准库，无须安装串口驱动或创建 COM 口。BLE 为可选实现，尚未完成真机验证。
+
+新增 [多型号逆向报告](docs/multi-model/README.md)：85条OPPO / OnePlus APK型号配置、离线目录API，以及电量和版本查询。目录包含隐藏项，**不表示85个型号已支持配置写入**；当前可执行profile仍为Free4两项。
 
 ## 功能与验证范围
 
@@ -25,6 +27,8 @@ git clone git@github.com:Yuriel404/oppo-headphone-api.git
 cd oppo-headphone-api/python
 python -m enco_free4 --help
 python -m enco_free4 profile
+python -m enco_free4 models --query 'Enco X'
+python -m enco_free4 model-info 063C10
 python -m unittest discover -s tests -v
 ```
 

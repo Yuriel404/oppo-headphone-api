@@ -1,0 +1,220 @@
+{
+  "source": "Python DEX metadata and instruction format parsing; static, not runtime; const-string/invoke-only matches",
+  "query": "com.oplus.melody.btsdk.api.manager.DeviceInfoManager",
+  "mode": "class",
+  "count": 1,
+  "results": [
+    {
+      "dex": "classes3.dex",
+      "class": "com.oplus.melody.btsdk.api.manager.DeviceInfoManager",
+      "method": "c",
+      "descriptor": "(Landroid/bluetooth/BluetoothDevice;)Lcom/oplus/melody/btsdk/api/data/DeviceInfo;",
+      "method_index": 14550,
+      "code": 2281700,
+      "access": 17,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "0x39"
+        },
+        {
+          "offset": 2,
+          "opcode": "0x1a",
+          "string_index": 7036,
+          "string": "DeviceInfoManager"
+        },
+        {
+          "offset": 4,
+          "opcode": "0x1a",
+          "string_index": 26681,
+          "string": "checkGetDeviceInfo device is null!"
+        },
+        {
+          "offset": 6,
+          "opcode": "0x71",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "Q8.a",
+            "method": "f",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+            "method_index": 5456
+          }
+        },
+        {
+          "offset": 9,
+          "opcode": "0x12",
+          "const": 0
+        },
+        {
+          "offset": 10,
+          "opcode": "0x11"
+        },
+        {
+          "offset": 11,
+          "opcode": "0x6e",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "android.bluetooth.BluetoothDevice",
+            "method": "getAddress",
+            "descriptor": "()Ljava/lang/String;",
+            "method_index": 8026
+          }
+        },
+        {
+          "offset": 14,
+          "opcode": "0xc"
+        },
+        {
+          "offset": 15,
+          "opcode": "0x6e",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "com.oplus.melody.btsdk.api.manager.DeviceInfoManager",
+            "method": "f",
+            "descriptor": "(Ljava/lang/String;)Lcom/oplus/melody/btsdk/api/data/DeviceInfo;",
+            "method_index": 14553
+          }
+        },
+        {
+          "offset": 18,
+          "opcode": "0xc"
+        },
+        {
+          "offset": 19,
+          "opcode": "0x39"
+        },
+        {
+          "offset": 21,
+          "opcode": "0x62",
+          "field": {
+            "class": "p8.a$a",
+            "field": "a",
+            "type": "Lp8/a;"
+          }
+        },
+        {
+          "offset": 23,
+          "opcode": "0x6e",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "p8.a",
+            "method": "b",
+            "descriptor": "()Ljava/util/List;",
+            "method_index": 40610
+          }
+        },
+        {
+          "offset": 26,
+          "opcode": "0xc"
+        },
+        {
+          "offset": 27,
+          "opcode": "0x71",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "com.oplus.melody.common.util.Y",
+            "method": "b",
+            "descriptor": "(Landroid/bluetooth/BluetoothDevice;Ljava/util/Collection;)Lcom/oplus/melody/common/data/WhitelistConfigDTO;",
+            "method_index": 16382
+          }
+        },
+        {
+          "offset": 30,
+          "opcode": "0xc"
+        },
+        {
+          "offset": 31,
+          "opcode": "0x38"
+        },
+        {
+          "offset": 33,
+          "opcode": "0x6e",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "com.oplus.melody.common.data.WhitelistConfigDTO",
+            "method": "getId",
+            "descriptor": "()Ljava/lang/String;",
+            "method_index": 16054
+          }
+        },
+        {
+          "offset": 36,
+          "opcode": "0xc"
+        },
+        {
+          "offset": 37,
+          "opcode": "0x71",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "com.oplus.melody.common.util.E",
+            "method": "b",
+            "descriptor": "(Ljava/lang/String;)I",
+            "method_index": 16224
+          }
+        },
+        {
+          "offset": 40,
+          "opcode": "0xa"
+        },
+        {
+          "offset": 41,
+          "opcode": "0x28"
+        },
+        {
+          "offset": 42,
+          "opcode": "0x12",
+          "const": 0
+        },
+        {
+          "offset": 43,
+          "opcode": "0x6e",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "com.oplus.melody.btsdk.api.manager.DeviceInfoManager",
+            "method": "a",
+            "descriptor": "(ILandroid/bluetooth/BluetoothDevice;)V",
+            "method_index": 14548
+          }
+        },
+        {
+          "offset": 46,
+          "opcode": "0x6e",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "android.bluetooth.BluetoothDevice",
+            "method": "getAddress",
+            "descriptor": "()Ljava/lang/String;",
+            "method_index": 8026
+          }
+        },
+        {
+          "offset": 49,
+          "opcode": "0xc"
+        },
+        {
+          "offset": 50,
+          "opcode": "0x6e",
+          "invoke": {
+            "dex": "classes3.dex",
+            "class": "com.oplus.melody.btsdk.api.manager.DeviceInfoManager",
+            "method": "f",
+            "descriptor": "(Ljava/lang/String;)Lcom/oplus/melody/btsdk/api/data/DeviceInfo;",
+            "method_index": 14553
+          }
+        },
+        {
+          "offset": 53,
+          "opcode": "0xc"
+        },
+        {
+          "offset": 54,
+          "opcode": "0x11"
+        },
+        {
+          "offset": 55,
+          "opcode": "0x11"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_443404301269e0abf0fa03254c814ce8941ca124b38575239642df44558b9db1",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.btsdk.api.data.BatteryInfo",
+    "method_name": "<init>",
+    "overload_index": 3
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.api.data.BatteryInfo"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[\"com.oplus.melody.btsdk.api.data.BatteryInfo.a\"],\"methods\":[{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0,\"signature\":\"<clinit>(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(): void\"},{\"dex_descriptor\":\"(II)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(int, int): void\"},{\"dex_descriptor\":\"(III)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(int, int, int): void\"},{\"dex_descriptor\":\"(I[B)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(int, byte[]): void\"},{\"dex_descriptor\":\"(Landroid/os/Parcel;)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.os.Parcel): void\"},{\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"describeContents\",\"def_pos\":0,\"signature\":\"describeContents(): int\"},{\"dex_descriptor\":\"(Ljava/util/Collection;Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"fixBatteries\",\"def_pos\":0,\"signature\":\"fixBatteries(java.util.Collection<com.oplus.melody.btsdk.api.data.BatteryInfo>, java.lang.String): void\"},{\"dex_descriptor\":\"(III)I\",\"is_constructor\":false,\"name\":\"fixBattery\",\"def_pos\":0,\"signature\":\"fixBattery(int, int, int): int\"},{\"dex_descriptor\":\"(Landroid/os/Parcel;I)V\",\"is_constructor\":false,\"name\":\"writeToParcel\",\"def_pos\":0,\"signature\":\"writeToParcel(android.os.Parcel, int): void\"}],\"fields\":[{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator<com.oplus.melody.btsdk.api.data.BatteryInfo>\"},{\"name\":\"LENGTH_REMOTE_BATTERY_LEVEL\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MASK_BATTERY_LEVEL\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MASK_CHARGING_STATE\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MAX_BATTERY_LEVEL\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MIN_BATTERY_LEVEL\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"TAG\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"mCharging\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"mDeviceType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"mLevel\",\"def_pos\":0,\"type\":\"int\"}],\"raw_name\":\"com.oplus.melody.btsdk.api.data.BatteryInfo\",\"method_count\":10,\"full_name\":\"com.oplus.melody.btsdk.api.data.BatteryInfo\",\"field_count\":10,\"name\":\"BatteryInfo\",\"inner_class_count\":1}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.api.data.BatteryInfo",
+          "method_name": "<init>",
+          "overload_index": 3,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public BatteryInfo(int i10, byte[] bArr) {\\r\\n        this.mDeviceType = bArr[i10];\\r\\n        byte b10 = bArr[i10 + 1];\\r\\n        this.mLevel = b10 & 127;\\r\\n        this.mCharging = (b10 & 128) == 0 ? 0 : 1;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"com.oplus.melody.btsdk.api.data.BatteryInfo\",\"dex_descriptor\":\"(I[B)V\",\"overload_count\":5,\"method_name\":\"<init>\",\"overload_index\":3,\"full_name\":\"com.oplus.melody.btsdk.api.data.BatteryInfo.<init>\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.btsdk.api.data.BatteryInfo",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(int, byte[]): void",
+      "overload_index": 3,
+      "is_constructor": true,
+      "dex_descriptor": "(I[B)V"
+    },
+    "overload_count": 5,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public BatteryInfo(int i10, byte[] bArr) {\r\n        this.mDeviceType = bArr[i10];\r\n        byte b10 = bArr[i10 + 1];\r\n        this.mLevel = b10 & 127;\r\n        this.mCharging = (b10 & 128) == 0 ? 0 : 1;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

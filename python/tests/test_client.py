@@ -53,6 +53,10 @@ class FakeTransport:
                 payload = b"\0" + bytes([255] * 8 + [31])
             elif command == 0x0200:
                 payload = bytes([0, 3, 3, 6, 0xF2])
+            elif command == 0x0106:
+                payload = bytes.fromhex("0003016402b203ff")
+            elif command == 0x0105:
+                payload = b"\x00\x021,0,Version_118,3,2,ABC"
             elif command == 0x010D:
                 assert body[0] == len(body) - 1
                 ids = [value for value in body[1:] if value in self.features]

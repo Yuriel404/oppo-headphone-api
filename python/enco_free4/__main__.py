@@ -13,6 +13,7 @@ import sys
 from . import (HeadsetClient, WindowsRfcommTransport, BleakTransport,
                scan_ble, inspect_gatt, Feature, KeyBinding, NoiseMode)
 from .profiles import load_profile
+from .catalog import list_models, get_model
 from .client import ReadbackMismatch
 
 
@@ -58,6 +59,14 @@ def parser() -> argparse.ArgumentParser:
     commands.add_parser("scan", help="BLE scan only; requires optional bleak dependency")
     commands.add_parser("gatt", help="list GATT services; requires bleak")
     commands.add_parser("profile", help="show packaged model configuration without Bluetooth")
+    models = commands.add_parser("models", help="search all APK model records offline; not a support list")
+    models.add_argument("--query", default="")
+    models.add_argument("--brand")
+    models.add_argument("--visible-only", action="store_true")
+    model_info = commands.add_parser("model-info", help="show raw catalog settings by exact product ID offline")
+    model_info.add_argument("product_id")
+    commands.add_parser("battery", help="read raw battery records (0106)")
+    commands.add_parser("versions", help="read raw version triples (0105)")
     commands.add_parser("snapshot", help="discover capabilities and read settings")
     commands.add_parser("features", help="read this profile's feature switches")
     commands.add_parser("noise", help="read current ANC raw state")
@@ -90,8 +99,12 @@ def parser() -> argparse.ArgumentParser:
 
 
 async def run(args):
-    profile = load_profile(args.profile)
     action = args.action or "snapshot"
+    if action == "models":
+        return list_models(args.query, brand=args.brand, include_hidden=not args.visible_only)
+    if action == "model-info":
+        return get_model(args.product_id)
+    profile = load_profile(args.profile)
     if action == "profile":
         return profile.raw
     if action == "scan":
@@ -116,6 +129,10 @@ async def run(args):
                                  trace=trace if trace_file else None, profile=profile,
                                  verify_timeout=args.verify_timeout) as device:
             info = await device.initialize()
+            if action == "battery":
+                return await device.get_batteries()
+            if action == "versions":
+                return await device.get_versions()
             if action == "snapshot":
                 state = await device.snapshot()
                 return {"profile": profile.product_id, "discovery": info, "state": state}

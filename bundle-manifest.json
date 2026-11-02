@@ -19,8 +19,8 @@
     },
     {
       "file": "API参考.md",
-      "bytes": 16635,
-      "sha256": "6881e1805992caf8efadfa31662e9de380592fef7503743302ea49493918210a"
+      "bytes": 16835,
+      "sha256": "6cb69bc54b815a07e8db338acb018c8a1e51a2766dd562d91082282deba30854"
     },
     {
       "file": "diagnostics/game-mode-after-fix.json",
@@ -46,6 +46,46 @@
       "file": "diagnostics/README.md",
       "bytes": 868,
       "sha256": "166afe0c9ee9679bc6a1d6d6770e3d9a7d675bc36eaa04255d4f1f31ef22b15d"
+    },
+    {
+      "file": "docs/multi-model/catalog-report.md",
+      "bytes": 5651,
+      "sha256": "242cdfe7467cd66c513daf5b638bde6146c46f9e205ddb3888f664f26a44b810"
+    },
+    {
+      "file": "docs/multi-model/catalog-summary.json",
+      "bytes": 879,
+      "sha256": "24eae323e795bedb1812e06b7f828143de5d9c53cf11f28090ac1590d7e1c93c"
+    },
+    {
+      "file": "docs/multi-model/common-queries.md",
+      "bytes": 3219,
+      "sha256": "e494c895858ff03101d6aa4dbfb5527e88e89456fdbe856cc9b522035669eee9"
+    },
+    {
+      "file": "docs/multi-model/compatibility-audit.json",
+      "bytes": 74836,
+      "sha256": "532f3e2b3894ba576c6830d91382ff9ea9d144c78c9a34daf8999635ce06df80"
+    },
+    {
+      "file": "docs/multi-model/compatibility.md",
+      "bytes": 9141,
+      "sha256": "35987eae8e996f00bc37631f023e13312a279eb2066bb6092435a3cd9a6d0372"
+    },
+    {
+      "file": "docs/multi-model/model-table.md",
+      "bytes": 5615,
+      "sha256": "95cc09dbc5d42a037345f7ee2a529f0a3206a960dcb9c6f23b3243b1032e75af"
+    },
+    {
+      "file": "docs/multi-model/protocol-families.md",
+      "bytes": 6673,
+      "sha256": "6ce6d4f4dcf1bfdbfcf20bb8e61ae62d562282f722f00299e95c22239da2dd4e"
+    },
+    {
+      "file": "docs/multi-model/README.md",
+      "bytes": 7544,
+      "sha256": "d4126dd55ae8e3b5d7bed26ae4db47916f7c6901f600776c67e7944ddef21e92"
     },
     {
       "file": "evidence/commands/anc-array-growth.java",
@@ -1408,6 +1448,201 @@
       "sha256": "b59042fc23ec0c1c6c89e80c42f83421d3e284a561a462f42deb5ed8b537dbd3"
     },
     {
+      "file": "evidence/multi-model/common-queries/battery-class.json",
+      "bytes": 10853,
+      "sha256": "80ca080139d161a96ce3fb94f12b14edcc72338f7dcc970a5e3810176227522a"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/battery-parser.java",
+      "bytes": 741,
+      "sha256": "ccaa74596861380eab72ad6b36966054e117d1f40adfb097aace8effb49abe8c"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/battery-parser.json",
+      "bytes": 9133,
+      "sha256": "b2fd50b8c2521b3db2d2b62fef46c9de3392c7e8b0030185c49803bc1a8300dd"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/battery-record.java",
+      "bytes": 209,
+      "sha256": "39a5e50a25c9acddaa7ff5529623230df275a563935bee81dff1538f558ed190"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/battery-record.json",
+      "bytes": 7692,
+      "sha256": "6f0f2708acdb540044ed62b37eaf562bfea59aabe7fe6d5767a35850889e6410"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/class-m.json",
+      "bytes": 20689,
+      "sha256": "d17e9a55f7269f29171a2383ca2627af17948f337888b89cf5a0ba9837136017"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/empty-payload-dex.json",
+      "bytes": 840,
+      "sha256": "d6492d241a1f773a673904e57e4aab79baac08e0b63c56d099b52870188a3788"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/parse-0105.java",
+      "bytes": 587,
+      "sha256": "20092c3d752bcb0cada6634e73397b5aeb5535612b2de05b016658d4f3454553"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/parse-0105.json",
+      "bytes": 12933,
+      "sha256": "1d796fdc44efdc8b0f91ab237ba1633fa81e00d8a7f678e2ffe3fd675768c037"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/query-battery.java",
+      "bytes": 333,
+      "sha256": "21943a18589b7a39ab35f26e6980b2694d30c56e887afb56e14aba2d149ee45b"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/query-battery.json",
+      "bytes": 12354,
+      "sha256": "87dc829e059d3827af0f61840f1bf7b95d5d705b2e9d698a8feae9c260206bfd"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/query-versions.java",
+      "bytes": 276,
+      "sha256": "2d948da7bc4e0a19803d0f0bf11c48a0a03730226aa0c64d281c9cec0862ef6a"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/query-versions.json",
+      "bytes": 12224,
+      "sha256": "b523b3f5f2933348be68fa23fcdb8d3c60aad1b7c4dd21ede2f5378597ae2102"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/version-class.json",
+      "bytes": 11401,
+      "sha256": "18acfb066885bb5b58a8a4c65fe5903e72633ca29321dfbf57cc1f984271d1e5"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/version-parser.java",
+      "bytes": 2605,
+      "sha256": "c916516346d3e0346b67aa98663933488846be2994e9232a35d8ad827a46dc4e"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/version-parser.json",
+      "bytes": 13237,
+      "sha256": "6403c0778d472f379e567d52f7ba403cafd3c832809ebe3d27198335cf074956"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/version-record.java",
+      "bytes": 701,
+      "sha256": "20700492e87f12fc4e355cf1324bf250f4bef4a1af01a73b88dc52c18ca83c35"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/version-record.json",
+      "bytes": 9546,
+      "sha256": "ab8de42d099c5140e99e372597fe0287e3903ea128208156c665c9d3709d2d3d"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-add.java",
+      "bytes": 659,
+      "sha256": "c205a2d88ed8d74147605f4ba4845db08b92a5b4b954b3cc5ba4814db100ad9a"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-add.json",
+      "bytes": 8743,
+      "sha256": "76806f3d317c6e5d647581c06dd5bb6b7ee72a88e159ecae3a3ea328e5c33cdd"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-create-dex.json",
+      "bytes": 5689,
+      "sha256": "9fa944512f28440387f6a136218c407485f12a7213ee179514c70798a36cb4ed"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-create.java",
+      "bytes": 607,
+      "sha256": "5a5385e5c2ed2f116082c002b34eaacd8b8f461909c2a8ed4ca301908e882938"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-create.json",
+      "bytes": 8724,
+      "sha256": "90d14936142be63c0c0271cfa100a41e37c8269afa2af043d942919892d0dd46"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-init.java",
+      "bytes": 1739,
+      "sha256": "565e6e0374e4d857e3a7181278418a2b89f80f33919ee500cc370b752832f8ea"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-init.json",
+      "bytes": 11319,
+      "sha256": "85b40bb7f387f25bcb0bfeab14a315d67fd198ce7f644383b7e2a3a5b6a376d3"
+    },
+    {
+      "file": "evidence/multi-model/protocol/deviceclass.json",
+      "bytes": 8999,
+      "sha256": "a08349a345ed9ab2ecb372ba00d11880083446d0ce28caf37518dc088713bc10"
+    },
+    {
+      "file": "evidence/multi-model/protocol/identity-strings.json",
+      "bytes": 2042,
+      "sha256": "ee9ef9cdf103dd14f96bab32ca714e1b6d0eb0401ba5f26ef02e89ce121c1080"
+    },
+    {
+      "file": "evidence/multi-model/protocol/match-config.java",
+      "bytes": 2324,
+      "sha256": "d8be1e44ed8da0b849c7dc55db811b4fcb8574f03d12b254cd5ec63e9cb099a3"
+    },
+    {
+      "file": "evidence/multi-model/protocol/match-config.json",
+      "bytes": 14920,
+      "sha256": "111d983fa29efd64286596426d9f98e55e52287271160675cd581c15e48edf52"
+    },
+    {
+      "file": "evidence/multi-model/protocol/match-device.java",
+      "bytes": 1998,
+      "sha256": "3012412cf79bc0ff7c7cc99d1ee02b42d05ae5a2c5f5b9cf67c7f98da6f04b89"
+    },
+    {
+      "file": "evidence/multi-model/protocol/match-device.json",
+      "bytes": 14185,
+      "sha256": "e9cdda6605047370098772a9579475be6a74b387c0184d368ee681e727a669fb"
+    },
+    {
+      "file": "evidence/multi-model/protocol/match-name.java",
+      "bytes": 376,
+      "sha256": "1bb4eaad8906e1fe3bd29d11a381e712280e7e35145b7888a7d9ac9101a99518"
+    },
+    {
+      "file": "evidence/multi-model/protocol/match-name.json",
+      "bytes": 10450,
+      "sha256": "67e3026a7db6f225520f4d4009371b813c287843ab136d0a28d78b73e1d75d6b"
+    },
+    {
+      "file": "evidence/multi-model/protocol/route-j.java",
+      "bytes": 1884,
+      "sha256": "47fa028c3517a056044835396621f9b90b867d61d4beafbf64b00d429ad9bcad"
+    },
+    {
+      "file": "evidence/multi-model/protocol/route-j.json",
+      "bytes": 10729,
+      "sha256": "0d556c19eca40d180e2addcc1a520c479d0b2e6a7e5d37320d54224527b01aee"
+    },
+    {
+      "file": "evidence/multi-model/protocol/route-k.java",
+      "bytes": 1108,
+      "sha256": "8b0444e4ec95cdd2c45fdd5de590f8e5b6e183cd7bcbc9a70bdb6140a83e2fd2"
+    },
+    {
+      "file": "evidence/multi-model/protocol/route-k.json",
+      "bytes": 8977,
+      "sha256": "92ffb807231f48e09d40881d2620733eecb9855f248c60db98445b515d4023cb"
+    },
+    {
+      "file": "evidence/multi-model/protocol/route.java",
+      "bytes": 149,
+      "sha256": "7fbfe44acd7662e54a32e11978424bb14d0ddbc11ce70a69ac145fca4ee5b14c"
+    },
+    {
+      "file": "evidence/multi-model/protocol/route.json",
+      "bytes": 6871,
+      "sha256": "4396dd9c294b00aa9a98ca0d161ad2ed38457a56a3b9bedd2ef722983f038252"
+    },
+    {
       "file": "evidence/switches/feature-business.java",
       "bytes": 4231,
       "sha256": "a735740674de6feeb34368e629af28aaa09f3657d4719cb09fc039ffa938f2ba"
@@ -1909,13 +2144,18 @@
     },
     {
       "file": "evidence-index.json",
-      "bytes": 363085,
-      "sha256": "f8271f7757ee5bb6b36e84b500e4ef2de6f5a74b54d98f27d1a93aef228f4594"
+      "bytes": 397604,
+      "sha256": "09180c668095e5e65ef4e176191d87ad01d779a7f621db3805272b3b0b23e3d5"
     },
     {
       "file": "profiles/enco-free4.json",
       "bytes": 11366,
       "sha256": "807df83d37ecf0b41716193cfe41ca98068e5aeb200dbd578b1799bbac267a83"
+    },
+    {
+      "file": "profiles/model-catalog.json",
+      "bytes": 235240,
+      "sha256": "46f328da80e777f77e1da5f62aab097cbd59693377de81c99a0a00890246db2f"
     },
     {
       "file": "profiles/ordinary-cli.json",
@@ -1929,13 +2169,13 @@
     },
     {
       "file": "python/enco_free4/__init__.py",
-      "bytes": 864,
-      "sha256": "fbf295ac59b64cdeb8f6acd5088cdb78b113572d8b803a9923f8c8892183905e"
+      "bytes": 1145,
+      "sha256": "04d08d297fdd72a319026b09a28c53dcf82bb493be24afba824c3fad88dd7deb"
     },
     {
       "file": "python/enco_free4/__main__.py",
-      "bytes": 9024,
-      "sha256": "eca34058777920331f9f4e1bc83fa175c0fa81cdc6c642b1b129500bb5b5f107"
+      "bytes": 9998,
+      "sha256": "1912a3042395b614e13b2ed3fd940595f5e43a0a7a49d92c4c133a6aa33d55a7"
     },
     {
       "file": "python/enco_free4/capabilities.py",
@@ -1943,14 +2183,29 @@
       "sha256": "1763666ab82423897ef9d9930098f3462b79bd7fb4d04052c03163827bacbd78"
     },
     {
+      "file": "python/enco_free4/catalog.py",
+      "bytes": 1885,
+      "sha256": "f2a11174df34bbf6d8a6390ce151cd0691723c2946a7ef8847d20caf5718bd52"
+    },
+    {
       "file": "python/enco_free4/client.py",
-      "bytes": 24721,
-      "sha256": "d75f554232d2e19b77b8074b355cfc249fd15621b58bdb9561141e997a857b6d"
+      "bytes": 25491,
+      "sha256": "406eea6608a11a18c5101f1dbcc6dcd35cc8acee78d95421cd9b2c8bc629acea"
     },
     {
       "file": "python/enco_free4/data/enco-free4.json",
       "bytes": 11366,
       "sha256": "807df83d37ecf0b41716193cfe41ca98068e5aeb200dbd578b1799bbac267a83"
+    },
+    {
+      "file": "python/enco_free4/data/model-catalog.json",
+      "bytes": 235240,
+      "sha256": "46f328da80e777f77e1da5f62aab097cbd59693377de81c99a0a00890246db2f"
+    },
+    {
+      "file": "python/enco_free4/device_info.py",
+      "bytes": 1527,
+      "sha256": "8f418496f5757567d308687e2185d69f0c84818da88358d34084b083c23c5b70"
     },
     {
       "file": "python/enco_free4/equalizer.py",
@@ -1990,12 +2245,17 @@
     {
       "file": "python/pyproject.toml",
       "bytes": 522,
-      "sha256": "86dcb9a91e01efcdec3b247ae1a67ee803467d8ccea023e8f1c74f68a8ce92bd"
+      "sha256": "a46d2ec6c1a40f9498382a559138c726227bbc9aac9e63321608198739052698"
     },
     {
       "file": "python/README.md",
-      "bytes": 1838,
-      "sha256": "010f9d0a12e90e4b21eb8a5935b88734b6a30d45ce6b92344714d5b8f51fed19"
+      "bytes": 2171,
+      "sha256": "0866191dbc76d4ffd15c990e8b2e5f272ee7aa91ed1cf8d25d645f352dcf60bb"
+    },
+    {
+      "file": "python/tests/test_catalog_device_info.py",
+      "bytes": 4833,
+      "sha256": "da705d34870b1a00e1e6a769f8b27377219f2f552fd6c312921c5044dd1f1c00"
     },
     {
       "file": "python/tests/test_cli.py",
@@ -2004,8 +2264,8 @@
     },
     {
       "file": "python/tests/test_client.py",
-      "bytes": 13229,
-      "sha256": "9e86b9c5969cf57abbf0a2aa8b43fc2f92f1a1e7c378df08b3358c250b635f8f"
+      "bytes": 13422,
+      "sha256": "64388b869ce9b00ffd52d23cb85f54caad473258a595310fd6e79637ef65d187"
     },
     {
       "file": "python/tests/test_equalizer_profile.py",
@@ -2019,18 +2279,23 @@
     },
     {
       "file": "README.md",
-      "bytes": 4892,
-      "sha256": "62e66936c4f30965a05838b02efd5124482671fc6ea8f32b2ca93cd96c448299"
+      "bytes": 5239,
+      "sha256": "8cdaf44eabdef6f233e43dffd6032b063cf4b4bac93756bca1aa36005e4cd405"
+    },
+    {
+      "file": "scripts/extract_model_catalog.py",
+      "bytes": 6125,
+      "sha256": "e24c122b218a57f719a3fcd0e73243efe10324a02df67b04dcf1d87f301ee68a"
     },
     {
       "file": "test-results.txt",
-      "bytes": 376,
-      "sha256": "58146f578d30beb11bbcae417cbf85fdd0807e81b504047b5372d2932f5e5cae"
+      "bytes": 6946,
+      "sha256": "132ebda5fa987c207266a94b6641e1b7c9e7acde9bd5702603f96741d2b60f92"
     },
     {
       "file": "validation.json",
-      "bytes": 3687,
-      "sha256": "b5be71c8b272b4206a8d0bf39facdb31cd4bea78798957bec1f0e89e5f2caed8"
+      "bytes": 3939,
+      "sha256": "5c94f61719aa30ec5a9bff7c7913b725131962abd7cfebd166b1a9405a019027"
     },
     {
       "file": "修复说明-0.1.1.md",
@@ -2039,8 +2304,8 @@
     },
     {
       "file": "证据索引.md",
-      "bytes": 5915,
-      "sha256": "111660c4fe85aa1deb54b225086c026b5a03e2cae27294974e896ab9f9a21be9"
+      "bytes": 6160,
+      "sha256": "3afb1a03221f1bf9ca3baaf42ee6490c91773378266465993e0004df67f9a99f"
     },
     {
       "file": "配置流程与API方案.md",

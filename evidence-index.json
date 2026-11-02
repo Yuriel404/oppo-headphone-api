@@ -4642,6 +4642,408 @@
         "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
       ],
       "original_file_sha256": "b375acf1f7f059378c2dad362b7df6f3b6241a479914034cb88859a2b80cf9ee"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-add.json",
+      "file_sha256": "76806f3d317c6e5d647581c06dd5bb6b7ee72a88e159ecae3a3ea328e5c33cdd",
+      "original_file_sha256": "6f55ef943894d5c928d230317f84e36e83069672ac07d95d91f7814e738e0063",
+      "evidence_id": "ev_c2d870664d76797491c101ca5c43cba993c5da9e3df7f5eed251e181dd62c9b7",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.api.manager.DeviceInfoManager",
+      "method": "a"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-create-dex.json",
+      "file_sha256": "9fa944512f28440387f6a136218c407485f12a7213ee179514c70798a36cb4ed",
+      "original_file_sha256": "ce5c7ccb43b190c1a03d1aea183dc295baaada55447ed4ceb00ae3b83d9e326d",
+      "evidence_id": null,
+      "operation": "local_dex_instruction_locator",
+      "authority": "analyst-inference",
+      "confidence": "derived",
+      "limitations": [
+        "Static DEX observation; no runtime execution"
+      ],
+      "class_name": null,
+      "method": null
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-create.json",
+      "file_sha256": "90d14936142be63c0c0271cfa100a41e37c8269afa2af043d942919892d0dd46",
+      "original_file_sha256": "a808e897f19494ba0bec223d06535477c78eb83d6c522fc674958a6b0e971cbd",
+      "evidence_id": "ev_502ae418b93dead9e79c0faee3a8c7312c4e1216d5bf8bb1c9da439bee3eee20",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.api.manager.DeviceInfoManager",
+      "method": "c"
+    },
+    {
+      "file": "evidence/multi-model/protocol/device-init.json",
+      "file_sha256": "85b40bb7f387f25bcb0bfeab14a315d67fd198ce7f644383b7e2a3a5b6a376d3",
+      "original_file_sha256": "ef8e40aa4ccfd7385fd1ef6e984e16dffdd0bd4b89a890977ef148cac7d3a4b4",
+      "evidence_id": "ev_8be2c45213c3804959f1b7ba26ce2f2541398913a23c28cd1c94b4950db55c48",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.api.manager.DeviceInfoManager",
+      "method": "e"
+    },
+    {
+      "file": "evidence/multi-model/protocol/deviceclass.json",
+      "file_sha256": "a08349a345ed9ab2ecb372ba00d11880083446d0ce28caf37518dc088713bc10",
+      "original_file_sha256": "c5acf7ced19eaec7940928f3243144182056bb3d8c5bffd7cb781a4cd1a9d84d",
+      "evidence_id": "ev_4a2f634c2f56eeab1523f4d664859fbbae14b9a009448c3fdee1106018310405",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.api.manager.DeviceInfoManager",
+      "method": null
+    },
+    {
+      "file": "evidence/multi-model/protocol/identity-strings.json",
+      "file_sha256": "ee9ef9cdf103dd14f96bab32ca714e1b6d0eb0401ba5f26ef02e89ce121c1080",
+      "original_file_sha256": "44c30750bde55b9716191618c0053a19d000f88c8f44faaa3e814a97f03b624d",
+      "evidence_id": null,
+      "operation": "local_dex_instruction_locator",
+      "authority": "analyst-inference",
+      "confidence": "derived",
+      "limitations": [
+        "Static DEX observation; no runtime execution"
+      ],
+      "class_name": null,
+      "method": null
+    },
+    {
+      "file": "evidence/multi-model/protocol/match-config.json",
+      "file_sha256": "111d983fa29efd64286596426d9f98e55e52287271160675cd581c15e48edf52",
+      "original_file_sha256": "84b078c2791c951ff7d8af87aed7359d1ef2078fbe982330762ebf386ebf899f",
+      "evidence_id": "ev_02d672d2d02ed8c70a16ce99a082a1786cfc90e3a9230be833b2786bd053662d",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.common.util.Y",
+      "method": "a"
+    },
+    {
+      "file": "evidence/multi-model/protocol/match-device.json",
+      "file_sha256": "e9cdda6605047370098772a9579475be6a74b387c0184d368ee681e727a669fb",
+      "original_file_sha256": "43bdf7e6f3d77ba7ad67ef9347f07802cc9895088259f42b8079ad8cdf234046",
+      "evidence_id": "ev_955ea48767f52a7cb73ee433a50a922f5f6dcdbce2fc70210c699c4893f3ce51",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.common.util.Y",
+      "method": "b"
+    },
+    {
+      "file": "evidence/multi-model/protocol/match-name.json",
+      "file_sha256": "67e3026a7db6f225520f4d4009371b813c287843ab136d0a28d78b73e1d75d6b",
+      "original_file_sha256": "ff0a519fb81090f4dfb65ebcff1a00013fc3e80c5dc10ae4fdca81017dae1be4",
+      "evidence_id": "ev_c157fb7f7f52f0c054f4c8d6acabb17af8d74da08aaf2b40f1182302e46170b5",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.common.util.Y",
+      "method": "p"
+    },
+    {
+      "file": "evidence/multi-model/protocol/route-j.json",
+      "file_sha256": "0d556c19eca40d180e2addcc1a520c479d0b2e6a7e5d37320d54224527b01aee",
+      "original_file_sha256": "6bf0d027467f35c47f062963d189b45185d4b68a429ed015e11957eb5fbf8f94",
+      "evidence_id": "ev_c08a15dac23be77e23a125100d2abcd0e11c3cd6ba30a58b221b4e85d9d74833",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "n8.b",
+      "method": "j"
+    },
+    {
+      "file": "evidence/multi-model/protocol/route-k.json",
+      "file_sha256": "92ffb807231f48e09d40881d2620733eecb9855f248c60db98445b515d4023cb",
+      "original_file_sha256": "5a1808c22432dc35de2eb193b42da069655f941903ecde2afb78408dad4f4611",
+      "evidence_id": "ev_62e6a1d8e873f208e5f9f3e921bd9b0c15d92cd33943a3a4d4e8d450e0252a8f",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "n8.b",
+      "method": "k"
+    },
+    {
+      "file": "evidence/multi-model/protocol/route.json",
+      "file_sha256": "4396dd9c294b00aa9a98ca0d161ad2ed38457a56a3b9bedd2ef722983f038252",
+      "original_file_sha256": "148015764d56219ad77dbc5a3edebae5f24f0705b7e76f3ebe06fc26d5e392af",
+      "evidence_id": "ev_733a606dd42adb63fefa0448bf28ad03aa6b647ade175d846f62ef9c18e734fb",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "n8.b",
+      "method": "d"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/battery-class.json",
+      "file_sha256": "80ca080139d161a96ce3fb94f12b14edcc72338f7dcc970a5e3810176227522a",
+      "original_file_sha256": "f2208a7f3cd5a07f0ed176b15fd0f3521c12f9b9f7ef84d20e5d424ca644d0a5",
+      "evidence_id": "ev_16ad43f8e3c548f4f0749026d259e887829067e12461101445ffde1b30113448",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.api.data.BatteryInfo",
+      "method": null
+    },
+    {
+      "file": "evidence/multi-model/common-queries/battery-parser.json",
+      "file_sha256": "b2fd50b8c2521b3db2d2b62fef46c9de3392c7e8b0030185c49803bc1a8300dd",
+      "original_file_sha256": "45fe0d4752f6c2e897f49757ced2619e29e20d5038ba010360d95d3ddc3ce887",
+      "evidence_id": "ev_5a10a3184cb6ad57ef1714c39e2b24c9d3cca3a636abb3b47ed4a95b666b954f",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.protocol.commands.e",
+      "method": "d"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/battery-record.json",
+      "file_sha256": "6f0f2708acdb540044ed62b37eaf562bfea59aabe7fe6d5767a35850889e6410",
+      "original_file_sha256": "31d4616464d383f83944bb2e26c506c04841a1c1ddbd52068c132c2bcbebc8f7",
+      "evidence_id": "ev_443404301269e0abf0fa03254c814ce8941ca124b38575239642df44558b9db1",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.api.data.BatteryInfo",
+      "method": "<init>"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/class-m.json",
+      "file_sha256": "d17e9a55f7269f29171a2383ca2627af17948f337888b89cf5a0ba9837136017",
+      "original_file_sha256": "dc0b00433d4e759a1a58845b2e48289b2a4ad00eadb4eba08392440b3b982633",
+      "evidence_id": "ev_7f642f05815baf99b585aa97dad7a6d24b6771e081afc343f64d56f52c129389",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.protocol.commands.m",
+      "method": null
+    },
+    {
+      "file": "evidence/multi-model/common-queries/empty-payload-dex.json",
+      "file_sha256": "d6492d241a1f773a673904e57e4aab79baac08e0b63c56d099b52870188a3788",
+      "original_file_sha256": "95c4f9e7209a9d095656d0782f9a18613db91675cda294906f7c7291c97fa469",
+      "evidence_id": null,
+      "operation": "local_dex_instruction_locator",
+      "authority": "analyst-inference",
+      "confidence": "derived",
+      "limitations": [
+        "Static DEX observation; no runtime execution"
+      ],
+      "class_name": null,
+      "method": null
+    },
+    {
+      "file": "evidence/multi-model/common-queries/parse-0105.json",
+      "file_sha256": "1d796fdc44efdc8b0f91ab237ba1633fa81e00d8a7f678e2ffe3fd675768c037",
+      "original_file_sha256": "a334cbb56644e0c27fdea5f985c947cc7d33750afe4c3552b3f6fd94abe09116",
+      "evidence_id": "ev_0dd933a1e94d7db590e09069cca3b742999917dc8120e3cbef5bcf453809719f",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.protocol.commands.m",
+      "method": "K"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/query-battery.json",
+      "file_sha256": "87dc829e059d3827af0f61840f1bf7b95d5d705b2e9d698a8feae9c260206bfd",
+      "original_file_sha256": "ca2ab707aa8210fbb6bc5cc1cb1331ac758bfa45ea76fa0df54415d26c944401",
+      "evidence_id": "ev_45e0333739989384e430a6e58f163f66a8365f07d2696d81cc319b3af22af4fb",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.protocol.commands.m",
+      "method": "e"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/query-versions.json",
+      "file_sha256": "b523b3f5f2933348be68fa23fcdb8d3c60aad1b7c4dd21ede2f5378597ae2102",
+      "original_file_sha256": "0731ff2fffad27cc41f1259d69534c997fd6ccc1d8c4ddc9edea69b871ad1419",
+      "evidence_id": "ev_e23d1708ec6b476cd4c0fff668e0f2808990b6ca7fc327fe9f4fe93f7fce4f34",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.protocol.commands.m",
+      "method": "A"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/version-class.json",
+      "file_sha256": "18acfb066885bb5b58a8a4c65fe5903e72633ca29321dfbf57cc1f984271d1e5",
+      "original_file_sha256": "e45b43d27aee1c8bab651887694670f7f44d565a414948d8210c797e612c86f0",
+      "evidence_id": "ev_610d5b114844911ef43fdaad011e31c18f082446654c973c3c537154ad14a3f9",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.api.data.VersionInfo",
+      "method": null
+    },
+    {
+      "file": "evidence/multi-model/common-queries/version-parser.json",
+      "file_sha256": "6403c0778d472f379e567d52f7ba403cafd3c832809ebe3d27198335cf074956",
+      "original_file_sha256": "792760593320248101171c27b4f7d972bc9776b7c31bafab353e6859d37e9e48",
+      "evidence_id": "ev_33615f17cd72576c7435f28e31df64604b9f18a3209747de6b0a58fc91346c02",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.protocol.commands.e",
+      "method": "m"
+    },
+    {
+      "file": "evidence/multi-model/common-queries/version-record.json",
+      "file_sha256": "ab8de42d099c5140e99e372597fe0287e3903ea128208156c665c9d3709d2d3d",
+      "original_file_sha256": "771eb908443ffdf652bda391df1bb26d95ca8968cc42e23cb2a489e7b3915813",
+      "evidence_id": "ev_01c7c7a3179cdaba3c8fe1241ace299514eb06485e5314dabdd26621b3a9834e",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "class_name": "com.oplus.melody.btsdk.api.data.VersionInfo",
+      "method": "<init>"
     }
   ],
   "non_evidence_files": "Decoded profiles, protocol tables and analyst notes are separately labeled"

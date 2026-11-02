@@ -12,6 +12,7 @@ from .protocol import FrameStream, Packet, ProtocolError, encode_frames
 from .capabilities import decode_capabilities
 from .models import DEFAULT_FEATURES, Feature, KeyBinding, NoiseMode, byte_ids
 from .equalizer import Equalizer, parse_equalizers
+from .device_info import BatteryReading, VersionReading, parse_batteries, parse_versions
 
 
 class UnsupportedFeature(RuntimeError):
@@ -242,6 +243,22 @@ class HeadsetClient:
         if len(result) != data[0]:
             raise ProtocolError("duplicate feature switch id")
         return result
+
+    async def get_batteries(self) -> list[BatteryReading]:
+        """Read 0106. Raw device IDs/levels are not mapped to ear sides/percent.
+
+        This APK considers 0106 baseline; a device can still reject it.
+        """
+        self._require_initialized(0x0106)
+        return parse_batteries(checked_payload(await self.request(0x0106)))
+
+    async def get_versions(self) -> list[VersionReading]:
+        """Read capability-gated 0105, retaining original CSV fields.
+
+        Version strings are not automatically converted to EQ firmware gates.
+        """
+        self._require_initialized(0x0105)
+        return parse_versions(checked_payload(await self.request(0x0105)))
 
     async def set_feature(self, feature_id: int, enabled: bool) -> WriteResult:
         """Write once, then poll until the acknowledged feature takes effect.

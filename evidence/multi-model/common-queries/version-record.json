@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_01c7c7a3179cdaba3c8fe1241ace299514eb06485e5314dabdd26621b3a9834e",
+  "subject": {
+    "name": "example.apk",
+    "digest": {
+      "sha256": "eacb314e092cfb6c2f075eee834498412255cadf184978f3dc16400f6e1dd5d4"
+    },
+    "local_path": "<local>/example.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "<local>/example.apk",
+    "class_name": "com.oplus.melody.btsdk.api.data.VersionInfo",
+    "method_name": "<init>",
+    "overload_index": 2
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "<local>/target.apk",
+      "class_count": 9809,
+      "resource_count": 3008,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":16,\"java_version\":\"21.0.12\",\"max_heap_bytes\":8376025088,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.api.data.VersionInfo"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[\"com.oplus.melody.btsdk.api.data.VersionInfo.a\"],\"methods\":[{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0,\"signature\":\"<clinit>(): void\"},{\"dex_descriptor\":\"(IILjava/lang/String;)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(int, int, java.lang.String): void\"},{\"dex_descriptor\":\"(Landroid/os/Parcel;)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.os.Parcel): void\"},{\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(java.lang.String, java.lang.String, java.lang.String): void\"},{\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"describeContents\",\"def_pos\":0,\"signature\":\"describeContents(): int\"},{\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"getDeviceType\",\"def_pos\":0,\"signature\":\"getDeviceType(): int\"},{\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getDeviceVersion\",\"def_pos\":0,\"signature\":\"getDeviceVersion(java.util.List<com.oplus.melody.btsdk.api.data.VersionInfo>): java.lang.String\"},{\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getVersion\",\"def_pos\":0,\"signature\":\"getVersion(): java.lang.String\"},{\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"getVersionType\",\"def_pos\":0,\"signature\":\"getVersionType(): int\"},{\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"trimVersion\",\"def_pos\":0,\"signature\":\"trimVersion(java.lang.String): java.lang.String\"},{\"dex_descriptor\":\"(Lcom/oplus/melody/btsdk/api/data/VersionInfo;)V\",\"is_constructor\":false,\"name\":\"update\",\"def_pos\":0,\"signature\":\"update(com.oplus.melody.btsdk.api.data.VersionInfo): void\"},{\"dex_descriptor\":\"(Landroid/os/Parcel;I)V\",\"is_constructor\":false,\"name\":\"writeToParcel\",\"def_pos\":0,\"signature\":\"writeToParcel(android.os.Parcel, int): void\"}],\"fields\":[{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator<com.oplus.melody.btsdk.api.data.VersionInfo>\"},{\"name\":\"HARDWARE_CODE_DEFAULT_VERSION\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"PREFIX\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"TAG\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"VENDOR_CODE_DEFAULT_VERSION\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"VENDOR_CODE_ERROR_VERSION\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"mDeviceType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"mVersion\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"mVersionType\",\"def_pos\":0,\"type\":\"int\"}],\"raw_name\":\"com.oplus.melody.btsdk.api.data.VersionInfo\",\"method_count\":12,\"full_name\":\"com.oplus.melody.btsdk.api.data.VersionInfo\",\"field_count\":9,\"name\":\"VersionInfo\",\"inner_class_count\":1}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.oplus.melody.btsdk.api.data.VersionInfo",
+          "method_name": "<init>",
+          "overload_index": 2,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public VersionInfo(String str, String str2, String str3) {\\r\\n        str.getClass();\\r\\n        switch (str) {\\r\\n            case \\\"1\\\":\\r\\n                this.mDeviceType = 1;\\r\\n                break;\\r\\n            case \\\"2\\\":\\r\\n                this.mDeviceType = 2;\\r\\n                break;\\r\\n            case \\\"3\\\":\\r\\n                this.mDeviceType = 3;\\r\\n                break;\\r\\n            default:\\r\\n                this.mDeviceType = 255;\\r\\n                break;\\r\\n        }\\r\\n        try {\\r\\n            this.mVersionType = Integer.parseInt(str2);\\r\\n        } catch (NumberFormatException e3) {\\r\\n            Q8.a.h(TAG, \\\"VersionInfo throws NumberFormatException:\\\", e3);\\r\\n        }\\r\\n        this.mVersion = trimVersion(str3);\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"com.oplus.melody.btsdk.api.data.VersionInfo\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V\",\"overload_count\":3,\"method_name\":\"<init>\",\"overload_index\":2,\"full_name\":\"com.oplus.melody.btsdk.api.data.VersionInfo.<init>\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 7988
+    },
+    "class_name": "com.oplus.melody.btsdk.api.data.VersionInfo",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(java.lang.String, java.lang.String, java.lang.String): void",
+      "overload_index": 2,
+      "is_constructor": true,
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    "overload_count": 3,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public VersionInfo(String str, String str2, String str3) {\r\n        str.getClass();\r\n        switch (str) {\r\n            case \"1\":\r\n                this.mDeviceType = 1;\r\n                break;\r\n            case \"2\":\r\n                this.mDeviceType = 2;\r\n                break;\r\n            case \"3\":\r\n                this.mDeviceType = 3;\r\n                break;\r\n            default:\r\n                this.mDeviceType = 255;\r\n                break;\r\n        }\r\n        try {\r\n            this.mVersionType = Integer.parseInt(str2);\r\n        } catch (NumberFormatException e3) {\r\n            Q8.a.h(TAG, \"VersionInfo throws NumberFormatException:\", e3);\r\n        }\r\n        this.mVersion = trimVersion(str3);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}
